@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Granny Square Dataset</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<aside>
+  <header>
+    <button id="fold" title="Fold sidebar (⌘B)">«</button>
+    <h1>Granny squares</h1>
+    <button id="new">+ New</button>
+  </header>
+  <ul id="list"></ul>
+</aside>
+
+<main id="empty"><p>Select a pattern or create a new one.</p></main>
+
+<main id="editor" hidden>
+  <div class="topbar">
+    <input id="title" class="title" placeholder="Pattern title">
+    <span id="save-state"></span>
+  </div>
+
+  <section class="meta">
+    <label>Terms
+      <select id="terms"><option>US</option><option>UK</option></select>
+    </label>
+    <label>Source URL <input id="source" placeholder="https://…"></label>
+    <label>Author <input id="author"></label>
+    <label>License <input id="license" placeholder="e.g. CC-BY, personal use"></label>
+    <label class="wide">Notes <input id="notes"></label>
+  </section>
+
+  <section>
+    <h2>Images <small>drop, paste, or <label class="link">browse<input id="file" type="file" accept="image/*" multiple hidden></label></small></h2>
+    <div id="images" class="images"></div>
+  </section>
+
+  <section class="texts">
+    <div>
+      <h2>Human pattern <small>as published; one “Round N:” per round</small></h2>
+      <div class="hl"><div class="hl-back" id="human-back"></div><textarea id="human" spellcheck="false"></textarea></div>
+    </div>
+    <div>
+      <h2>Machine pattern <small>DSL · select to find it in the human text · <a href="#" id="toggle-help">cheat sheet</a></small></h2>
+      <div class="hl mono"><div class="hl-back" id="dsl-back"></div><textarea id="dsl" class="mono" spellcheck="false"></textarea></div>
+    </div>
+  </section>
+
+  <section id="help" class="help" hidden>
+    <table>
+      <tr><td><code>start: mr</code></td><td>setup line (magic ring, <code>4ch join</code>…)</td></tr>
+      <tr><td><code>R3: …</code></td><td>one line per round; numbers match “Round 3:” in the human text</td></tr>
+      <tr><td><code>3tr</code> <code>sc</code> <code>2ch</code></td><td>count + stitch (count defaults to 1). Use the pattern’s own terms; set UK/US above</td></tr>
+      <tr><td><code>3ch=tr</code></td><td>chain that counts as a stitch</td></tr>
+      <tr><td><code>3sk</code></td><td>skip 3 stitches</td></tr>
+      <tr><td><code>3tr@sp</code></td><td>placement: <code>@ring @sp @corner @same @st @top @side</code></td></tr>
+      <tr><td><code>{3tr 3ch 3tr}@corner</code></td><td>group worked into one place</td></tr>
+      <tr><td><code>[…]x3</code></td><td>repeat 3 times total (“repeat from * twice more” = x3)</td></tr>
+      <tr><td><code>[…]&gt;corner</code> <code>[…]&gt;end</code></td><td>repeat until a landmark (count depends on previous round)</td></tr>
+      <tr><td><code>sl join turn fo</code></td><td>slip stitch (ss), join round, turn, fasten off</td></tr>
+      <tr><td><code># …</code></td><td>comment</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Round alignment <small id="summary"></small></h2>
+    <div id="errors"></div>
+    <table id="rounds" class="rounds">
+      <thead><tr><th>Rnd</th><th>Human</th><th>Machine</th><th>Stated</th><th>Computed</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
