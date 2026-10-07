@@ -64,7 +64,7 @@ def _expand(items, ids, rename, ctx, out, group):
                 # join = sl st into the top of the beginning chain, same as sl@top.
                 top = it.st == "join" or it.place == "top"
                 out.append({"kind": "dot", "atoms": atoms, "group": None, "top": top})
-            elif it.st in ("sk", "sksp", "turn", "fo", "mr"):
+            elif it.st in ("sk", "turn", "fo", "mr"):
                 continue
             else:
                 # "3tr@sp": the three share a base even outside a {...} group.

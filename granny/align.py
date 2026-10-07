@@ -24,7 +24,6 @@ _MENTION = re.compile(
   | (?P<turn>\bturn\b)
   | (?P<fo>\bfasten\s+off\b)
   | (?P<mr>\b(?:magic|adjustable)\s+(?:ring|loop)\b)
-  | (?P<sksp>\b(?:skip|sk)\s+(?:the\s+)?(?:next\s+)?(?:(?P<spn>\d+)\s+)?(?:[\w-]+\s+){{0,2}}?(?:[\w-]*sp|spaces?)\b)
   | (?P<skip>\b(?:skip|sk)\s+(?:the\s+)?(?:next\s+)?(?P<skn>\d+)?\s*(?:sts?\b|stitch(?:es)?\b)?)
   | (?P<rep>\brep(?:eat)?\s+from\s+\*+[^,.;]*
         | \]\s*(?:[x×]\s*\d+\b|twice|three\s+times|four\s+times|\d+\s+times|to\s+[^,.;]*)
@@ -37,7 +36,7 @@ _MENTION = re.compile(
     re.VERBOSE | re.IGNORECASE,
 )
 
-_KINDS = ("join", "turn", "fo", "mr", "sksp", "skip", "rep", "place", "chain", "st")
+_KINDS = ("join", "turn", "fo", "mr", "skip", "rep", "place", "chain", "st")
 _HUMAN_NAMES = {"ss": "sl", "slst": "sl", "sl st": "sl", "slip st": "sl", "slip stitch": "sl"}
 _INSTRUCTION = re.compile(rf"\s*(?:\d+\s*)?(?:ch(?:ain)?\s*\d*|(?:{_ST_NAMES})s?)\s*", re.I)
 
@@ -75,8 +74,6 @@ def human_atoms(text: str, offset: int = 0) -> list[tuple]:
             atoms.append(("op", name, int(m.group("n1") or 1), s, e))
         elif kind == "skip":
             atoms.append(("op", "sk", int(m.group("skn") or 1), s, e))
-        elif kind == "sksp":
-            atoms.append(("op", "sksp", int(m.group("spn") or 1), s, e))
         elif kind == "place":
             atoms.append(("place", m.group(0).lower(), 1, s, e))
         elif kind == "rep":
