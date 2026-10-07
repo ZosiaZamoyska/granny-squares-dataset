@@ -6,37 +6,55 @@
      "s": 27,
      "e": 30,
      "text": "ch5",
-     "line": "R1: 2ch 3ch=tr [3tr@ring 2ch]x2"
+     "line": "R1: 3ch=tr 2ch [3tr@ring 2ch]x2 2tr slst@top"
     },
     "1": {
      "s": 27,
      "e": 30,
      "text": "ch5",
-     "line": "R1: 2ch 3ch=tr [3tr@ring 2ch]x2"
+     "line": "R1: 3ch=tr 2ch [3tr@ring 2ch]x2 2tr slst@top"
     },
     "2": {
      "s": 71,
      "e": 75,
      "text": "3 tr",
-     "line": "R1: 2ch 3ch=tr [3tr@ring 2ch]x2"
+     "line": "R1: 3ch=tr 2ch [3tr@ring 2ch]x2 2tr slst@top"
     },
     "3": {
      "s": 76,
      "e": 97,
      "text": "into centre of circle",
-     "line": "R1: 2ch 3ch=tr [3tr@ring 2ch]x2"
+     "line": "R1: 3ch=tr 2ch [3tr@ring 2ch]x2 2tr slst@top"
     },
     "4": {
      "s": 99,
      "e": 102,
      "text": "ch2",
-     "line": "R1: 2ch 3ch=tr [3tr@ring 2ch]x2"
+     "line": "R1: 3ch=tr 2ch [3tr@ring 2ch]x2 2tr slst@top"
     },
     "5": {
      "s": 116,
      "e": 140,
      "text": "Repeat from * twice more",
-     "line": "R1: 2ch 3ch=tr [3tr@ring 2ch]x2"
+     "line": "R1: 3ch=tr 2ch [3tr@ring 2ch]x2 2tr slst@top"
+    },
+    "6": {
+     "s": 147,
+     "e": 151,
+     "text": "2 tr",
+     "line": "R1: 3ch=tr 2ch [3tr@ring 2ch]x2 2tr slst@top"
+    },
+    "7": {
+     "s": 156,
+     "e": 167,
+     "text": "slip stitch",
+     "line": "R1: 3ch=tr 2ch [3tr@ring 2ch]x2 2tr slst@top"
+    },
+    "8": {
+     "s": 168,
+     "e": 179,
+     "text": "into 3rd ch",
+     "line": "R1: 3ch=tr 2ch [3tr@ring 2ch]x2 2tr slst@top"
     }
    }
   },

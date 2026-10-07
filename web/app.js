@@ -113,7 +113,15 @@ $("#toggle-help").addEventListener("click", (e) => { e.preventDefault(); $("#hel
 
 // ---- images -------------------------------------------------------------
 
+function renderPhoto() {
+  const imgs = current.meta.images;
+  const img = imgs.find((i) => i.kind === "finished") || imgs[0];
+  $("#chart-photo").innerHTML = img
+    ? `<img src="/images/${current.meta.id}/${encodeURIComponent(img.file)}" alt="${esc(img.caption || "photo")}">` : "";
+}
+
 function renderImages() {
+  renderPhoto();
   const id = current.meta.id;
   $("#images").innerHTML = current.meta.images.map((img, i) => `
     <div class="img" data-i="${i}">
@@ -196,6 +204,7 @@ async function runCheck() {
   report = r;
   renderGen([]);
   renderProgress();
+  drawChart(r.chart);
   $("#errors").innerHTML = r.errors.map((e) => `<div>${esc(e)}</div>`).join("");
   const n = r.rounds.length, ok = r.rounds.filter((x) => x.status === "ok").length;
   $("#summary").textContent = n ? `${ok}/${n} rounds verified` : "";
@@ -264,6 +273,7 @@ function clearMarks() {
   renderBack("human", []);
   renderBack("dsl", []);
   renderGen([]);
+  highlightChart([]);
   for (const tr of document.querySelectorAll("#rounds tr.active")) tr.classList.remove("active");
 }
 
@@ -363,6 +373,7 @@ function showLinked(sel, side, extra, round, resolved) {
   renderBack("dsl", side === "dsl" ? [...dslR, ...extra] : dslR);
   renderBack("human", side === "human" ? [...humR, ...extra] : humR);
   renderGen(genR);
+  highlightChart(sel);
   for (const p of ["dsl", "human", "gen"]) if (p !== side) reveal(p, ["strong", "soft"]);
   markRound(round?.label);
 }
@@ -497,6 +508,7 @@ function renderLinking() {
   renderBack("dsl", dslR);
   renderBack("human", humR);
   renderGen(genR);
+  highlightChart([cur]);
   reveal("dsl", ["cur"]); reveal("gen", ["cur"]); reveal("human", ["cand"]);
   markRound(atom.r);
 
@@ -613,6 +625,93 @@ for (const side of ["human", "dsl"]) {
   for (const ev of ["select", "keyup", "mouseup", "focus"]) ta.addEventListener(ev, scheduleFollow);
   ta.addEventListener("scroll", () => syncScroll(side));
 }
+
+// ---- chart ---------------------------------------------------------------
+// Standard crochet symbols from the server's layout (granny/chart.py), one colour per round.
+
+const ROUND_COLORS = ["#c2546b", "#3a7bd5", "#e8892b", "#3f8f5a", "#8a5cc2", "#1f9e9e", "#b5852a"];
+
+function chartAtoms(label, atoms) {
+  // Chart atoms are per-round indices; map them to links.dsl indices.
+  return atoms.map((i) => links.dsl.findIndex((d) => d.r === label && d.i === i)).filter((k) => k >= 0);
+}
+
+function symbol(p, color) {
+  const f = (n) => n.toFixed(2);
+  const line = (a, b) => `<line x1="${f(a[0])}" y1="${f(a[1])}" x2="${f(b[0])}" y2="${f(b[1])}" stroke="${color}" stroke-width="0.6" stroke-linecap="round"/>`;
+  const oval = (c, ang) => `<ellipse cx="${f(c[0])}" cy="${f(c[1])}" rx="2.1" ry="1.1" transform="rotate(${f(ang)} ${f(c[0])} ${f(c[1])})" fill="none" stroke="${color}" stroke-width="0.6"/>`;
+  if (p.k === "oval") return oval(p.c, p.ang) + `<circle class="hitbox" cx="${f(p.c[0])}" cy="${f(p.c[1])}" r="2.4"/>`;
+  if (p.k === "dot") return `<circle class="dot" cx="${f(p.c[0])}" cy="${f(p.c[1])}" r="1.1" fill="${color}"/>`
+    + `<circle class="hitbox" cx="${f(p.c[0])}" cy="${f(p.c[1])}" r="2.4"/>`;
+
+  const [b, t] = [p.b, p.t];
+  const dx = t[0] - b[0], dy = t[1] - b[1], len = Math.hypot(dx, dy) || 1;
+  const ux = dx / len, uy = dy / len, nx = -uy, ny = ux; // along / across the stem
+  const at = (s, w = 0) => [b[0] + dx * s + nx * w, b[1] + dy * s + ny * w];
+  const mid = at(0.5);
+  const hit = `<circle class="hitbox" cx="${f(mid[0])}" cy="${f(mid[1])}" r="${f(Math.max(2.4, len / 2))}"/>`;
+
+  if (p.k === "chcol") { // chain that counts as a stitch: stacked ovals
+    const n = Math.max(1, Math.round(len / 3.2)), ang = Math.atan2(dy, dx) * 180 / Math.PI;
+    return Array.from({ length: n }, (_, j) => oval(at((j + 0.5) / n), ang)).join("") + hit;
+  }
+  if (p.k === "sc") { // ×
+    const c = at(0.55), r = 1.6;
+    return line([c[0] - r, c[1] - r], [c[0] + r, c[1] + r]) + line([c[0] - r, c[1] + r], [c[0] + r, c[1] - r]) + hit;
+  }
+  const slashes = { dc: 1, tr: 2, dtr: 3, trtr: 4 }[p.k] ?? 0;
+  let svg = line(b, t) + line(at(1, -1.8), at(1, 1.8)); // stem + top bar
+  for (let j = 0; j < slashes; j++) {
+    const s = 0.5 + (j - (slashes - 1) / 2) * 0.16;
+    svg += line(at(s - 0.07, -1.3), at(s + 0.07, 1.3));
+  }
+  if (!["hdc", "dc", "tr", "dtr", "trtr"].includes(p.k)) { // puff, pc, …: stem + bobble
+    svg += `<ellipse cx="${f(at(0.6)[0])}" cy="${f(at(0.6)[1])}" rx="1.8" ry="1.8" fill="none" stroke="${color}" stroke-width="0.6"/>`;
+  }
+  return svg + hit;
+}
+
+function drawChart(chart) {
+  $("#chart-notes").innerHTML = (chart?.rounds || []).filter((r) => r.note)
+    .map((r) => `<div>R${esc(r.label)}: ${esc(r.note)}</div>`).join("");
+  if (!chart || !chart.rounds.length) {
+    $("#chart").innerHTML = `<svg viewBox="-50 -50 100 100"><text class="empty" x="0" y="0" text-anchor="middle">No rounds to draw yet</text></svg>`;
+    return;
+  }
+  const S = chart.size;
+  let svg = `<svg viewBox="${-S} ${-S} ${2 * S} ${2 * S}" xmlns="http://www.w3.org/2000/svg">`;
+  if (chart.ring) {
+    const a = chartAtoms("start", chart.ring.a);
+    svg += `<g data-a="${a.join(" ")}" data-own="${a[0] ?? ""}"><circle cx="0" cy="0" r="${chart.ring.r}" fill="none" stroke="var(--muted)" stroke-width="0.6"/></g>`;
+  }
+  chart.rounds.forEach((r, ri) => {
+    const color = ROUND_COLORS[ri % ROUND_COLORS.length];
+    for (const p of r.prims) {
+      const a = chartAtoms(r.label, p.a);
+      svg += `<g data-a="${a.join(" ")}" data-own="${a[0] ?? ""}">${symbol(p, color)}</g>`;
+    }
+  });
+  $("#chart").innerHTML = svg + "</svg>";
+}
+
+function highlightChart(sel) {
+  const set = new Set(sel);
+  for (const g of $("#chart").querySelectorAll("g[data-a]")) {
+    g.classList.toggle("hit", !!g.dataset.a && g.dataset.a.split(" ").some((x) => set.has(+x)));
+  }
+}
+
+// Hover a stitch: show where it is in the text. In link mode, click to jump to it.
+$("#chart").addEventListener("mouseover", (e) => {
+  const g = e.target.closest("g[data-own]");
+  if (!g || g.dataset.own === "" || !links || linking) return;
+  const k = +g.dataset.own;
+  showLinked([k], "chart", [], roundOf(links.dsl[k].r), links.dsl.map(manual));
+});
+$("#chart").addEventListener("click", (e) => {
+  const g = e.target.closest("g[data-own]");
+  if (g && g.dataset.own !== "" && linking) goTo(+g.dataset.own);
+});
 
 // ---- boot ---------------------------------------------------------------
 

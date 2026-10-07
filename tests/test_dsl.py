@@ -11,8 +11,10 @@ DATA = Path(__file__).resolve().parent.parent / "data" / "patterns"
 
 class ParseTest(unittest.TestCase):
     def test_round_trip(self):
-        src = "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+        src = "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@sp 1ch]x3 2sksp join turn"
         self.assertEqual(dsl.format_line(dsl.parse_line(src)), src)
+        # @corner is just another name for a space
+        self.assertEqual(dsl.parse_line("R1: 3tr@corner").items[0].place, "sp")
 
     def test_aliases_and_commas(self):
         line = dsl.parse_line("R1: ss@sp, 3ch, skip")

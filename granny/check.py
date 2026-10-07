@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import re
 
-from . import align, dsl, render
+from . import align, chart, dsl, render
 
 _ROUND = re.compile(
     r"^\s*(?:Rounds?|Rnds?|Rds?|Rows?|R)\s*(\d+(?:\s*[-–]\s*\d+)?)\s*[:.)]\s*",
@@ -193,4 +193,5 @@ def check(human: str, dsl_text: str, terms: str = "US") -> dict:
     if report["errors"]:
         report["ok"] = False
     report["links"] = links(human, dsl_text)
+    report["chart"] = chart.layout([d["line"] for d in dsl_lines.values()], terms)
     return report

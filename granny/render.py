@@ -29,6 +29,8 @@ def _op_text(op: Op) -> str:
         return "sl st" if n == 1 else f"{n} sl st"
     if op.st == "sk":
         return f"skip {n} st" + ("s" if n > 1 else "")
+    if op.st == "sksp":
+        return f"skip {n} sp" + ("s" if n > 1 else "")
     if op.st == "join":
         return "join with sl st"
     if op.st == "turn":

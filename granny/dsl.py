@@ -14,7 +14,7 @@ from collections import Counter
 from dataclasses import dataclass, field
 
 # Stitch vocabulary. Unknown stitches parse fine but produce a warning.
-STRUCTURAL = {"ch", "sl", "sk", "join", "turn", "fo", "mr", "st"}
+STRUCTURAL = {"ch", "sl", "sk", "sksp", "join", "turn", "fo", "mr", "st"}
 US_STITCHES = {"sc", "hdc", "dc", "tr", "dtr", "trtr"}
 UK_STITCHES = {"dc", "htr", "tr", "dtr", "ttr", "qtr"}
 SPECIAL = {"puff", "pc", "bob", "cl", "picot", "fpdc", "bpdc", "fptr", "bptr", "blo", "flo", "spike"}
@@ -25,9 +25,11 @@ KNOWN = STRUCTURAL | US_STITCHES | UK_STITCHES | SPECIAL
 UK_TO_US = {"dc": "sc", "htr": "hdc", "tr": "dc", "dtr": "tr", "ttr": "dtr", "qtr": "trtr"}
 
 # Stitches that don't count toward stitch totals.
-NON_STITCH = {"ch", "sl", "sk", "join", "turn", "fo", "mr"}
+NON_STITCH = {"ch", "sl", "sk", "sksp", "join", "turn", "fo", "mr"}
 
-PLACES = {"ring", "sp", "same", "st", "corner", "top", "next", "side"}
+PLACES = {"ring", "sp", "same", "st", "top", "next", "side"}
+# Corners are just chain spaces: "@corner" is accepted and means "@sp".
+PLACE_ALIASES = {"corner": "sp"}
 
 
 class DSLError(ValueError):
@@ -101,6 +103,7 @@ def _lex(text: str):
 
 def _place(m, warnings):
     place = m.group("place").lower()
+    place = PLACE_ALIASES.get(place, place)
     if place not in PLACES:
         warnings.append(f"unknown place @{place}")
     return place
@@ -195,7 +198,7 @@ def _op_counts(op: Op) -> Counter:
             c["st"] += 1
         else:
             c[f"{op.count}ch-sp"] += 1
-    elif op.st == "sk":
+    elif op.st in ("sk", "sksp"):
         pass
     elif op.st in ("join", "turn", "fo", "mr"):
         c[op.st] += 1
