@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import re
 
-from . import align, dsl
+from . import align, dsl, render
 
 _ROUND = re.compile(
     r"^\s*(?:Rounds?|Rnds?|Rds?|Rows?|R)\s*(\d+(?:\s*[-–]\s*\d+)?)\s*[:.)]\s*",
@@ -57,8 +57,11 @@ def links(human: str, dsl_text: str) -> dict:
 
     Offsets are absolute within each document (UTF-16, for the browser):
       rounds: [{label, human: [s, e] | None, dsl: [s, e] | None}]
-      dsl:    [{s, e, r, link: [human atom index...]}]
+      dsl:    [{s, e, r, i, g: [s, e], run, link: [human atom index...]}]
+              i = index within its round, g = span in the uniform text,
+              link = automatic suggestion only
       human:  [{s, e, r, clause: [s, e], link: [dsl atom index...]}]
+      gen:    uniform human-style text rendered from the DSL
     """
     h16, d16 = _utf16(human), _utf16(dsl_text)
     h_rounds = {l: (s, e) for l, s, e in round_spans(human)}
@@ -72,7 +75,17 @@ def links(human: str, dsl_text: str) -> dict:
             d_lines[line.label] = (line, pos, pos + len(raw))
         pos += len(raw) + 1
 
-    out = {"rounds": [], "dsl": [], "human": []}
+    # Uniform text, one line per DSL round, in DSL order.
+    gen_lines, gen_spans, gpos = [], {}, 0
+    for label, (line, _, _) in d_lines.items():
+        text, spans = render.render_line(line)
+        gen_spans[label] = [(s + gpos, e + gpos) for s, e in spans]
+        gen_lines.append(text)
+        gpos += len(text) + 1
+    gen = "\n".join(gen_lines)
+    g16 = _utf16(gen)
+
+    out = {"rounds": [], "dsl": [], "human": [], "gen": gen}
     for label in list(h_rounds) + [l for l in d_lines if l not in h_rounds]:
         hs = h_rounds.get(label)
         dl = d_lines.get(label)
@@ -86,8 +99,10 @@ def links(human: str, dsl_text: str) -> dict:
         h_clauses = align.clauses(human[hs[0]:hs[1]], hs[0]) if hs else []
         d0, h0 = len(out["dsl"]), len(out["human"])
         running = dsl.running_counts(dl[0]) if dl else []
-        for a, run in zip(d_atoms, running):
-            out["dsl"].append({"s": d16(a[3]), "e": d16(a[4]), "r": label, "link": [], "run": run})
+        for i, (a, run) in enumerate(zip(d_atoms, running)):
+            gs, ge = gen_spans[label][i]
+            out["dsl"].append({"s": d16(a[3]), "e": d16(a[4]), "r": label, "i": i,
+                               "g": [g16(gs), g16(ge)], "link": [], "run": run})
         for a in h_atoms:
             clause = next(([s, e] for s, e in h_clauses if s <= a[3] < e), [a[3], a[4]])
             out["human"].append({"s": h16(a[3]), "e": h16(a[4]), "r": label,

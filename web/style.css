@@ -56,8 +56,12 @@ a { color: var(--accent); }
 .img .fields input, .img .fields select { padding: 3px 5px; font-size: 12px; }
 .img .fields .cap { grid-column: 1 / -1; }
 .img .del { grid-column: 1 / -1; color: var(--bad); font-size: 11px; padding: 2px; }
-.texts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-textarea { min-height: 260px; resize: vertical; }
+.texts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+textarea { height: 380px; min-height: 160px; resize: vertical; }
+.gen { height: 380px; overflow: auto; resize: vertical; white-space: pre-wrap; overflow-wrap: break-word;
+  background: color-mix(in srgb, var(--panel) 60%, var(--bg)); border: 1px solid var(--line); border-radius: 6px;
+  padding: 6px 8px; cursor: pointer; }
+.gen mark { color: inherit; border-radius: 2px; }
 /* Highlight layer: a div behind a transparent textarea with identical text metrics. */
 .hl { position: relative; }
 .hl textarea, .hl-back { white-space: pre-wrap; overflow-wrap: break-word; scrollbar-gutter: stable; }
@@ -69,6 +73,12 @@ textarea { min-height: 260px; resize: vertical; }
 .hl-back mark.strong { background: color-mix(in srgb, var(--accent) 34%, transparent); }
 .hl-back mark.brace { background: color-mix(in srgb, #1f9e6e 32%, transparent); outline: 1px solid #1f9e6e; }
 .hl-back mark.brace-bad { background: color-mix(in srgb, var(--bad) 35%, transparent); outline: 1px solid var(--bad); }
+.hl-back mark.done, .gen mark.done { background: color-mix(in srgb, var(--ok) 14%, transparent); }
+.hl-back mark.none { background: none; text-decoration: underline dotted var(--muted); }
+.hl-back mark.stale { background: color-mix(in srgb, var(--warn) 25%, transparent); }
+.hl-back mark.cur, .gen mark.cur { background: color-mix(in srgb, #3a7bd5 32%, transparent); outline: 1px solid #3a7bd5; }
+.hl-back mark.cand { background: color-mix(in srgb, #e8892b 35%, transparent); outline: 2px solid #e8892b; }
+.gen mark.strong { background: color-mix(in srgb, var(--accent) 34%, transparent); }
 .hl-back mark.src { background: color-mix(in srgb, #3a7bd5 30%, transparent); }
 .rounds tr.active td { background: color-mix(in srgb, var(--accent) 8%, transparent); }
 .mono, code, .rounds td.code { font-family: var(--mono); font-size: 12.5px; }
@@ -92,6 +102,17 @@ textarea { min-height: 260px; resize: vertical; }
 .tip { font-family: var(--mono); color: var(--ink); line-height: 1.6; }
 .lightbox { position: fixed; inset: 0; background: rgb(0 0 0 / .8); display: grid; place-items: center; z-index: 10; cursor: zoom-out; }
 .lightbox img { max-width: 92vw; max-height: 92vh; }
+.linkbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 12px; }
+.linkbar > div { flex-basis: 100%; font-size: 12px; }
+#link-controls { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+#link-controls[hidden] { display: none !important; }
+#link-current { font-size: 13px; padding: 0 4px; }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+kbd { font-family: var(--mono); font-size: 11px; border: 1px solid var(--line); border-bottom-width: 2px;
+  border-radius: 4px; padding: 0 4px; background: var(--panel); }
+body.linking .hl textarea { cursor: text; }
+body.linking #link-start { display: none; }
+@media (max-width: 1100px) { .texts { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } .texts > :last-child { grid-column: 1 / -1; } }
 @media (max-width: 900px) {
   body { flex-direction: column; } aside { width: auto; height: auto; position: static; }
   .texts, .meta { grid-template-columns: 1fr; } main { padding: 16px; }

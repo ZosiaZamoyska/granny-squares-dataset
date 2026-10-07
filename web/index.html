@@ -39,14 +39,37 @@
     <div id="images" class="images"></div>
   </section>
 
+  <section class="linkbar">
+    <button id="link-start" title="Step through the machine pattern and mark each piece in the original">Link mode</button>
+    <span id="link-progress" class="muted"></span>
+    <span id="link-controls" hidden>
+      <button id="link-prev" title="Previous piece (↑)">↑</button>
+      <span id="link-current"></span>
+      <button id="link-next" title="Next piece (↓)">↓</button>
+      <button id="link-ok" class="primary" title="Confirm and go to next (Enter)">Confirm ⏎</button>
+      <button id="link-none" title="This piece has no counterpart in the original (Backspace)">No match ⌫</button>
+      <button id="link-clear" title="Remove this piece's link">Unlink</button>
+      <button id="link-exit" title="Leave link mode (Esc)">Done</button>
+    </span>
+    <div id="link-help" class="muted" hidden>
+      Adjust the orange highlight in the original: <kbd>←</kbd> <kbd>→</kbd> move its end ·
+      <kbd>⇧←</kbd> <kbd>⇧→</kbd> move its start · hold <kbd>⌥</kbd> for single letters ·
+      or drag-select · click a piece in the machine or uniform pattern to jump to it
+    </div>
+  </section>
+
   <section class="texts">
     <div>
-      <h2>Human pattern <small>as published; one “Round N:” per round</small></h2>
+      <h2>Original <small>as published; one “Round N:” per round</small></h2>
       <div class="hl"><div class="hl-back" id="human-back"></div><textarea id="human" spellcheck="false"></textarea></div>
     </div>
     <div>
-      <h2>Machine pattern <small>DSL · select to find it in the human text · <a href="#" id="toggle-help">cheat sheet</a></small></h2>
+      <h2>Machine <small>DSL · <a href="#" id="toggle-help">cheat sheet</a></small></h2>
       <div class="hl mono"><div class="hl-back" id="dsl-back"></div><textarea id="dsl" class="mono" spellcheck="false"></textarea></div>
+    </div>
+    <div>
+      <h2>Uniform <small>generated from the machine pattern</small></h2>
+      <div id="gen" class="gen"></div>
     </div>
   </section>
 

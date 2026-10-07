@@ -52,7 +52,9 @@ async function openPattern(id) {
   for (const f of META_FIELDS) $("#" + f).value = current.meta[f] ?? "";
   $("#human").value = current.human;
   $("#dsl").value = current.dsl;
+  if (linking) stopLinking();
   links = null;
+  $("#gen").textContent = "";
   clearMarks();
   $("#save-state").textContent = "";
   renderImages();
@@ -78,9 +80,9 @@ function changed() {
 async function save() {
   saveTimer = null;
   if (!current) return;
-  const { meta, human, dsl } = current;
+  const { meta, human, dsl, links } = current;
   try {
-    await api(`/api/patterns/${meta.id}`, { method: "PUT", body: { meta, human, dsl } });
+    await api(`/api/patterns/${meta.id}`, { method: "PUT", body: { meta, human, dsl, links } });
     $("#save-state").textContent = "Saved";
     loadList();
   } catch (e) {
@@ -192,6 +194,8 @@ async function runCheck() {
   if (current.human !== human || current.dsl !== dsl) return; // stale; a newer check is queued
   links = r.links;
   report = r;
+  renderGen([]);
+  renderProgress();
   $("#errors").innerHTML = r.errors.map((e) => `<div>${esc(e)}</div>`).join("");
   const n = r.rounds.length, ok = r.rounds.filter((x) => x.status === "ok").length;
   $("#summary").textContent = n ? `${ok}/${n} rounds verified` : "";
@@ -219,21 +223,21 @@ async function runCheck() {
   if (["human", "dsl"].includes(document.activeElement?.id)) followSelection();
 }
 
-// ---- linked highlighting -------------------------------------------------
-// Selecting in one pattern highlights the matching part of the other:
-//   src    = the selected atoms (blue), strong = their counterparts, soft = surrounding clause / round.
+// ---- highlighting --------------------------------------------------------
+// Three panes: original (#human), machine (#dsl), uniform (#gen, generated from the DSL).
+// Links machine <-> uniform are exact; machine <-> original are the ones you confirm in link mode.
 
 let report = null; // last /api/check result
-let links = null; // from /api/check: {rounds, dsl: [{s, e, r, link}], human: [{s, e, r, clause, link}]}
+let links = null; // report.links: {rounds, dsl: [{s, e, r, i, g, run, link}], human: [...], gen}
 
-function renderBack(side, ranges) {
-  const text = $("#" + side).value;
+const RANK = { done: 0.5, none: 0.5, stale: 0.7, soft: 1, strong: 2, src: 3, cur: 3, cand: 3, brace: 4, "brace-bad": 4 };
+
+function marksHTML(text, ranges) {
   // Per-character class, strongest wins; then emit runs.
-  const rank = { soft: 1, strong: 2, src: 3, brace: 4, "brace-bad": 4 };
   const cls = new Array(text.length).fill("");
   for (const { s, e, c } of ranges) {
     for (let i = Math.max(0, s); i < Math.min(e, text.length); i++) {
-      if (!cls[i] || rank[c] > rank[cls[i]]) cls[i] = c;
+      if (!cls[i] || RANK[c] > RANK[cls[i]]) cls[i] = c;
     }
   }
   let html = "", i = 0;
@@ -244,13 +248,22 @@ function renderBack(side, ranges) {
     html += cls[i] ? `<mark class="${cls[i]}">${chunk}</mark>` : chunk;
     i = j;
   }
-  $("#" + side + "-back").innerHTML = html + "\n ";
+  return html;
+}
+
+function renderBack(side, ranges) {
+  $("#" + side + "-back").innerHTML = marksHTML($("#" + side).value, ranges) + "\n ";
   syncScroll(side);
+}
+
+function renderGen(ranges) {
+  $("#gen").innerHTML = links ? marksHTML(links.gen, ranges) : $("#gen").innerHTML;
 }
 
 function clearMarks() {
   renderBack("human", []);
   renderBack("dsl", []);
+  renderGen([]);
   for (const tr of document.querySelectorAll("#rounds tr.active")) tr.classList.remove("active");
 }
 
@@ -258,15 +271,120 @@ function syncScroll(side) {
   $("#" + side + "-back").scrollTop = $("#" + side).scrollTop;
 }
 
-function revealMark(side) {
-  const ta = $("#" + side), m = $("#" + side + "-back").querySelector("mark.strong, mark.soft");
+/** Scroll a pane so its first mark of the given classes is visible. */
+function reveal(side, classes) {
+  const box = side === "gen" ? $("#gen") : $("#" + side + "-back");
+  const scroller = side === "gen" ? $("#gen") : $("#" + side);
+  const m = box.querySelector(classes.map((c) => "mark." + c).join(","));
   if (!m) return;
-  const top = m.offsetTop, view = ta.clientHeight;
-  if (top < ta.scrollTop || top + m.offsetHeight > ta.scrollTop + view) {
-    ta.scrollTop = Math.max(0, top - view / 3);
-    syncScroll(side);
+  const top = m.offsetTop - (side === "gen" ? box.offsetTop : 0), view = scroller.clientHeight;
+  if (top < scroller.scrollTop || top + m.offsetHeight > scroller.scrollTop + view) {
+    scroller.scrollTop = Math.max(0, top - view / 3);
+    if (side !== "gen") syncScroll(side);
   }
 }
+
+function markRound(label) {
+  for (const tr of document.querySelectorAll("#rounds tbody tr")) tr.classList.toggle("active", tr.dataset.label === label);
+}
+
+// ---- manual links ----------------------------------------------------------
+// current.links = {rounds: {"2": {atoms: {"3": {s, e, text, line} | {none: true, line}}}}}
+// "line" is the DSL line when the link was confirmed; if it changes, the link needs review.
+// s/e are offsets into the original; if the original moves, the link follows its text.
+
+const roundOf = (label) => links.rounds.find((r) => r.label === label);
+const dslLine = (label) => { const r = roundOf(label); return r?.dsl ? $("#dsl").value.slice(...r.dsl) : null; };
+
+function nearest(text, needle, near) {
+  let best = -1;
+  for (let i = text.indexOf(needle); i !== -1; i = text.indexOf(needle, i + 1)) {
+    if (best < 0 || Math.abs(i - near) < Math.abs(best - near)) best = i;
+  }
+  return best;
+}
+
+/** The confirmed link for a DSL atom: null | {none, stale} | {s, e, stale} | {lost}. */
+function manual(atom) {
+  const v = current.links.rounds[atom.r]?.atoms?.[atom.i];
+  if (!v) return null;
+  const stale = v.line !== dslLine(atom.r);
+  if (v.none) return { none: true, stale };
+  const H = $("#human").value;
+  const s = H.slice(v.s, v.s + v.text.length) === v.text ? v.s : nearest(H, v.text, v.s);
+  return s < 0 ? { lost: true, stale: true } : { s, e: s + v.text.length, stale };
+}
+
+function atomClass(m) {
+  if (!m) return null;
+  if (m.lost || m.stale) return "stale";
+  return m.none ? "none" : "done";
+}
+
+function renderProgress() {
+  if (!links || !links.dsl.length) { $("#link-progress").textContent = ""; return; }
+  const ms = links.dsl.map(manual);
+  const ok = ms.filter((m) => m && !m.stale && !m.lost).length;
+  const review = ms.filter((m) => m && (m.stale || m.lost)).length;
+  $("#link-progress").textContent = `${ok}/${ms.length} pieces linked` + (review ? ` · ${review} to review` : "");
+}
+
+// ---- normal mode: selection follows links ---------------------------------
+
+function followSelection() {
+  if (linking) return;
+  const side = document.activeElement?.id;
+  if (!["human", "dsl"].includes(side)) return;
+  const ta = $("#" + side), a = ta.selectionStart, b = ta.selectionEnd;
+  const braces = a === b ? braceRanges(ta.value, a) : [];
+  if (!links) { renderBack(side, braces); return; } // mid-edit: brackets still work
+
+  const hit = (s, e) => (a === b ? s <= a && a <= e : s < b && e > a);
+  const resolved = links.dsl.map(manual);
+  const sel = links.dsl.map((_, k) => k).filter((k) => side === "dsl"
+    ? hit(links.dsl[k].s, links.dsl[k].e)
+    : resolved[k]?.e != null && hit(resolved[k].s, resolved[k].e));
+  const round = links.rounds.find((r) => r[side] && r[side][0] <= a && a <= r[side][1]);
+  showLinked(sel, side, braces, round, resolved);
+}
+
+function showLinked(sel, side, extra, round, resolved) {
+  const dslR = [], humR = [], genR = [];
+  for (const k of sel) {
+    const d = links.dsl[k], m = resolved[k];
+    dslR.push({ s: d.s, e: d.e, c: side === "dsl" ? "src" : "strong" });
+    genR.push({ s: d.g[0], e: d.g[1], c: side === "gen" ? "src" : "strong" });
+    if (m?.e != null) humR.push({ s: m.s, e: m.e, c: side === "human" ? "src" : "strong" });
+  }
+  // Round context, so there's always something to look at even without a confirmed link.
+  if (round?.human && side !== "human" && !humR.length) humR.push({ s: round.human[0], e: round.human[1], c: "soft" });
+  if (round?.dsl && side === "human" && !sel.length) dslR.push({ s: round.dsl[0], e: round.dsl[1], c: "soft" });
+
+  renderBack("dsl", side === "dsl" ? [...dslR, ...extra] : dslR);
+  renderBack("human", side === "human" ? [...humR, ...extra] : humR);
+  renderGen(genR);
+  for (const p of ["dsl", "human", "gen"]) if (p !== side) reveal(p, ["strong", "soft"]);
+  markRound(round?.label);
+}
+
+/** Offset of a click inside the uniform pane. */
+function genOffset() {
+  const sel = getSelection();
+  if (!sel.rangeCount || !$("#gen").contains(sel.anchorNode)) return -1;
+  const r = document.createRange();
+  r.setStart($("#gen"), 0);
+  r.setEnd(sel.anchorNode, sel.anchorOffset);
+  return r.toString().length;
+}
+
+$("#gen").addEventListener("mouseup", () => {
+  if (!links) return;
+  const o = genOffset();
+  const k = links.dsl.findIndex((d) => d.g[0] <= o && o < d.g[1]);
+  if (k < 0) return;
+  if (linking) return goTo(k);
+  showLinked([k], "gen", [], roundOf(links.dsl[k].r), links.dsl.map(manual));
+});
 
 // ---- bracket matching ----------------------------------------------------
 
@@ -301,37 +419,187 @@ function braceRanges(text, caret) {
   ];
 }
 
-function followSelection() {
-  const side = document.activeElement?.id;
-  if (!["human", "dsl"].includes(side)) return;
-  const other = side === "dsl" ? "human" : "dsl";
-  const ta = $("#" + side), a = ta.selectionStart, b = ta.selectionEnd;
-  const braces = a === b ? braceRanges(ta.value, a) : [];
-  if (!links) { renderBack(side, braces); return; } // mid-edit: brackets still work
-  const atoms = links[side], otherAtoms = links[other];
+// ---- link mode -------------------------------------------------------------
+// Step through DSL atoms; for each, adjust a highlight (cand) in the original and confirm.
 
-  const hit = (x) => (a === b ? x.s <= a && a <= x.e : x.s < b && x.e > a);
-  const sel = atoms.filter(hit);
-  const targets = [...new Set(sel.flatMap((x) => x.link))].map((k) => otherAtoms[k]);
+let linking = false, cur = -1, cand = null;
+let tokCache = { text: null, toks: [] };
 
-  const src = sel.map((x) => ({ s: x.s, e: x.e, c: "src" }));
-  const out = targets.map((x) => ({ s: x.s, e: x.e, c: "strong" }));
-  // Round under the caret, so there's always some context even with no direct match.
-  const round = links.rounds.find((r) => r[side] && r[side][0] <= a && a <= r[side][1]);
-  if (targets.length) {
-    const spans = targets.map((x) => x.clause || [x.s, x.e]);
-    out.push({ s: Math.min(...spans.map((x) => x[0])), e: Math.max(...spans.map((x) => x[1])), c: "soft" });
-  } else if (round && round[other]) {
-    out.push({ s: round[other][0], e: round[other][1], c: "soft" });
+/** Words and bracket-like marks of the original, for word-wise edge moves.
+ *  Separators (, . ; :) are skipped so a step never just grabs a comma. */
+function tokens() {
+  const H = $("#human").value;
+  if (tokCache.text !== H) {
+    tokCache = { text: H, toks: [...H.matchAll(/[A-Za-z0-9]+(?:['’-][A-Za-z0-9]+)*|[^\sA-Za-z0-9,.;:]/g)]
+      .map((m) => ({ s: m.index, e: m.index + m[0].length, word: /\w/.test(m[0]) })) };
   }
-  renderBack(side, [...src, ...braces]);
-  renderBack(other, out);
-  revealMark(other);
-
-  for (const tr of document.querySelectorAll("#rounds tbody tr")) {
-    tr.classList.toggle("active", !!round && tr.dataset.label === round.label);
-  }
+  return tokCache.toks;
 }
+
+/** Starting highlight for atom k: its confirmed link, else the matcher's guess,
+ *  else the word after the previous linked piece in the round. */
+function guess(k) {
+  const atom = links.dsl[k];
+  const m = manual(atom);
+  if (m?.e != null) return { s: m.s, e: m.e };
+  const sug = links.human[atom.link[0]];
+  if (sug) return { s: sug.s, e: sug.e };
+  let from = roundOf(atom.r)?.human?.[0];
+  for (let p = k - 1; p >= 0 && links.dsl[p].r === atom.r; p--) {
+    const pm = manual(links.dsl[p]);
+    if (pm?.e != null) { from = pm.e; break; }
+  }
+  if (from == null) return null;
+  const t = tokens().find((t) => t.s >= from && t.word);
+  return t ? { s: t.s, e: t.e } : null;
+}
+
+function startLinking() {
+  if (!links?.dsl.length) return;
+  linking = true;
+  document.body.classList.add("linking");
+  $("#human").readOnly = $("#dsl").readOnly = true;
+  $("#link-controls").hidden = $("#link-help").hidden = false;
+  tip.hidden = true;
+  // Start at the piece under the DSL caret, else the first one not yet linked.
+  const caret = $("#dsl").selectionStart;
+  let k = document.activeElement === $("#dsl") ? links.dsl.findIndex((d) => d.s <= caret && caret <= d.e) : -1;
+  if (k < 0) k = links.dsl.findIndex((d) => { const m = manual(d); return !m || m.stale || m.lost; });
+  goTo(Math.max(0, k));
+}
+
+function stopLinking() {
+  linking = false;
+  document.body.classList.remove("linking");
+  $("#human").readOnly = $("#dsl").readOnly = false;
+  $("#link-controls").hidden = $("#link-help").hidden = true;
+  clearMarks();
+  renderProgress();
+}
+
+function goTo(k) {
+  cur = Math.max(0, Math.min(k, links.dsl.length - 1));
+  cand = guess(cur);
+  renderLinking();
+}
+
+function renderLinking() {
+  const atom = links.dsl[cur];
+  const dslR = [], humR = [], genR = [];
+  links.dsl.forEach((d, k) => {
+    const m = manual(d), c = atomClass(m);
+    if (c) dslR.push({ s: d.s, e: d.e, c });
+    if (c === "done") { humR.push({ s: m.s, e: m.e, c }); genR.push({ s: d.g[0], e: d.g[1], c }); }
+  });
+  dslR.push({ s: atom.s, e: atom.e, c: "cur" });
+  genR.push({ s: atom.g[0], e: atom.g[1], c: "cur" });
+  if (cand) humR.push({ ...cand, c: "cand" });
+  renderBack("dsl", dslR);
+  renderBack("human", humR);
+  renderGen(genR);
+  reveal("dsl", ["cur"]); reveal("gen", ["cur"]); reveal("human", ["cand"]);
+  markRound(atom.r);
+
+  const inRound = links.dsl.filter((d) => d.r === atom.r).length;
+  const m = manual(atom);
+  const state = !m ? "" : m.lost ? " · <b>text moved, re-link</b>" : m.stale ? " · <b>machine line changed, review</b>"
+    : m.none ? " · no match" : " · linked";
+  const H = $("#human").value;
+  $("#link-current").innerHTML = `R${esc(atom.r)} · ${atom.i + 1}/${inRound} · <code>${esc($("#dsl").value.slice(atom.s, atom.e))}</code>`
+    + ` → ${cand ? `“${esc(H.slice(cand.s, cand.e))}”` : "<span class=muted>select in the original</span>"}${state}`;
+  renderProgress();
+}
+
+function linkSaved() {
+  $("#save-state").textContent = "Unsaved…";
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(save, 800);
+}
+
+function setLink(value) {
+  const atom = links.dsl[cur];
+  const r = (current.links.rounds[atom.r] ??= { atoms: {} });
+  if (value === undefined) delete r.atoms[atom.i];
+  else r.atoms[atom.i] = { ...value, line: dslLine(atom.r) };
+  linkSaved();
+}
+
+function confirmLink() {
+  if (!cand) return;
+  const H = $("#human").value;
+  setLink({ s: cand.s, e: cand.e, text: H.slice(cand.s, cand.e) });
+  next();
+}
+
+function next() {
+  if (cur < links.dsl.length - 1) goTo(cur + 1);
+  else { renderLinking(); $("#link-current").innerHTML += " · <b>last piece done</b>"; }
+}
+
+/** Move one edge of the highlight by a word (or a letter with alt). */
+function moveEdge(edge, dir, letter) {
+  const H = $("#human").value, toks = tokens();
+  if (!cand) {
+    const t = toks.find((t) => t.s >= $("#human").selectionStart && t.word);
+    if (t) cand = { s: t.s, e: t.e };
+    return renderLinking();
+  }
+  if (letter) {
+    if (edge === "s") cand.s = Math.max(0, Math.min(cand.s + dir, cand.e - 1));
+    else cand.e = Math.min(H.length, Math.max(cand.e + dir, cand.s + 1));
+  } else if (edge === "e") {
+    const t = dir > 0 ? toks.find((t) => t.e > cand.e) : toks.findLast((t) => t.e < cand.e && t.e > cand.s);
+    if (t) cand.e = t.e;
+  } else {
+    const t = dir < 0 ? toks.findLast((t) => t.s < cand.s) : toks.find((t) => t.s > cand.s && t.s < cand.e);
+    if (t) cand.s = t.s;
+  }
+  renderLinking();
+}
+
+document.addEventListener("keydown", (e) => {
+  if (!linking || ["INPUT", "SELECT"].includes(document.activeElement?.tagName)) return;
+  const act = {
+    ArrowLeft: () => moveEdge(e.shiftKey ? "s" : "e", -1, e.altKey),
+    ArrowRight: () => moveEdge(e.shiftKey ? "s" : "e", 1, e.altKey),
+    ArrowUp: () => goTo(cur - 1),
+    ArrowDown: () => goTo(cur + 1),
+    Enter: confirmLink,
+    Backspace: () => { setLink({ none: true }); next(); },
+    Delete: () => { setLink({ none: true }); next(); },
+    Escape: stopLinking,
+  }[e.key];
+  if (act) { e.preventDefault(); e.stopPropagation(); act(); }
+}, true);
+
+// Mouse: drag-select in the original sets the highlight; clicking a machine piece jumps to it.
+$("#human").addEventListener("mouseup", () => {
+  if (!linking) return;
+  const ta = $("#human"), H = ta.value;
+  let a = ta.selectionStart, b = ta.selectionEnd;
+  if (a === b) {
+    const t = tokens().find((t) => t.s <= a && a <= t.e);
+    if (!t) return;
+    [a, b] = [t.s, t.e];
+  }
+  while (a < b && /\s/.test(H[a])) a++;
+  while (b > a && /\s/.test(H[b - 1])) b--;
+  if (a < b) { cand = { s: a, e: b }; renderLinking(); }
+});
+$("#dsl").addEventListener("mouseup", () => {
+  if (!linking) return;
+  const c = $("#dsl").selectionStart;
+  const k = links.dsl.findIndex((d) => d.s <= c && c <= d.e);
+  if (k >= 0) goTo(k);
+});
+
+$("#link-start").addEventListener("click", startLinking);
+$("#link-exit").addEventListener("click", stopLinking);
+$("#link-prev").addEventListener("click", () => goTo(cur - 1));
+$("#link-next").addEventListener("click", () => goTo(cur + 1));
+$("#link-ok").addEventListener("click", confirmLink);
+$("#link-none").addEventListener("click", () => { setLink({ none: true }); next(); });
+$("#link-clear").addEventListener("click", () => { setLink(undefined); cand = guess(cur); renderLinking(); });
 
 let followPending = false;
 const scheduleFollow = () => {

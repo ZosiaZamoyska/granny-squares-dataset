@@ -1,0 +1,224 @@
+{
+ "rounds": {
+  "1": {
+   "atoms": {
+    "0": {
+     "s": 27,
+     "e": 30,
+     "text": "ch5",
+     "line": "R1: 2ch 3ch=tr [3tr@ring 2ch]x2"
+    },
+    "1": {
+     "s": 27,
+     "e": 30,
+     "text": "ch5",
+     "line": "R1: 2ch 3ch=tr [3tr@ring 2ch]x2"
+    },
+    "2": {
+     "s": 71,
+     "e": 75,
+     "text": "3 tr",
+     "line": "R1: 2ch 3ch=tr [3tr@ring 2ch]x2"
+    },
+    "3": {
+     "s": 76,
+     "e": 97,
+     "text": "into centre of circle",
+     "line": "R1: 2ch 3ch=tr [3tr@ring 2ch]x2"
+    },
+    "4": {
+     "s": 99,
+     "e": 102,
+     "text": "ch2",
+     "line": "R1: 2ch 3ch=tr [3tr@ring 2ch]x2"
+    },
+    "5": {
+     "s": 116,
+     "e": 140,
+     "text": "Repeat from * twice more",
+     "line": "R1: 2ch 3ch=tr [3tr@ring 2ch]x2"
+    }
+   }
+  },
+  "2": {
+   "atoms": {
+    "0": {
+     "s": 190,
+     "e": 193,
+     "text": "ch3",
+     "line": "R2: 3ch [2tr 2ch 2tr 3tr@top]x2 [2tr 2ch 2tr]>corner 2tr slst@top "
+    },
+    "1": {
+     "s": 213,
+     "e": 217,
+     "text": "2 tr",
+     "line": "R2: 3ch [2tr 2ch 2tr 3tr@top]x2 [2tr 2ch 2tr]>corner 2tr slst@top "
+    },
+    "2": {
+     "s": 219,
+     "e": 222,
+     "text": "ch2",
+     "line": "R2: 3ch [2tr 2ch 2tr 3tr@top]x2 [2tr 2ch 2tr]>corner 2tr slst@top "
+    },
+    "3": {
+     "s": 224,
+     "e": 228,
+     "text": "2 tr",
+     "line": "R2: 3ch [2tr 2ch 2tr 3tr@top]x2 [2tr 2ch 2tr]>corner 2tr slst@top "
+    },
+    "4": {
+     "s": 235,
+     "e": 238,
+     "text": "3tr",
+     "line": "R2: 3ch [2tr 2ch 2tr 3tr@top]x2 [2tr 2ch 2tr]>corner 2tr slst@top "
+    },
+    "5": {
+     "s": 239,
+     "e": 273,
+     "text": "into the top of the three stitches",
+     "line": "R2: 3ch [2tr 2ch 2tr 3tr@top]x2 [2tr 2ch 2tr]>corner 2tr slst@top "
+    },
+    "6": {
+     "s": 296,
+     "e": 320,
+     "text": "Repeat from * twice more",
+     "line": "R2: 3ch [2tr 2ch 2tr 3tr@top]x2 [2tr 2ch 2tr]>corner 2tr slst@top "
+    },
+    "7": {
+     "s": 339,
+     "e": 342,
+     "text": "2tr",
+     "line": "R2: 3ch [2tr 2ch 2tr 3tr@top]x2 [2tr 2ch 2tr]>corner 2tr slst@top "
+    },
+    "8": {
+     "s": 344,
+     "e": 347,
+     "text": "ch2",
+     "line": "R2: 3ch [2tr 2ch 2tr 3tr@top]x2 [2tr 2ch 2tr]>corner 2tr slst@top "
+    },
+    "9": {
+     "s": 349,
+     "e": 353,
+     "text": "2 tr",
+     "line": "R2: 3ch [2tr 2ch 2tr 3tr@top]x2 [2tr 2ch 2tr]>corner 2tr slst@top "
+    },
+    "10": {
+     "s": 325,
+     "e": 337,
+     "text": "corner space",
+     "line": "R2: 3ch [2tr 2ch 2tr 3tr@top]x2 [2tr 2ch 2tr]>corner 2tr slst@top "
+    },
+    "11": {
+     "s": 360,
+     "e": 364,
+     "text": "2 tr",
+     "line": "R2: 3ch [2tr 2ch 2tr 3tr@top]x2 [2tr 2ch 2tr]>corner 2tr slst@top "
+    },
+    "12": {
+     "s": 369,
+     "e": 390,
+     "text": "join with slip stitch",
+     "line": "R2: 3ch [2tr 2ch 2tr 3tr@top]x2 [2tr 2ch 2tr]>corner 2tr slst@top "
+    },
+    "13": {
+     "s": 391,
+     "e": 404,
+     "text": "to top of ch3",
+     "line": "R2: 3ch [2tr 2ch 2tr 3tr@top]x2 [2tr 2ch 2tr]>corner 2tr slst@top "
+    }
+   }
+  },
+  "3": {
+   "atoms": {
+    "0": {
+     "s": 416,
+     "e": 419,
+     "text": "ch3",
+     "line": "R3: 3ch 2tr [2tr 2ch 2tr 7tr]x3 2tr 2ch 2tr 4tr slst@top "
+    },
+    "1": {
+     "s": 426,
+     "e": 429,
+     "text": "2tr",
+     "line": "R3: 3ch 2tr [2tr 2ch 2tr 7tr]x3 2tr 2ch 2tr 4tr slst@top "
+    },
+    "2": {
+     "s": 455,
+     "e": 458,
+     "text": "2tr",
+     "line": "R3: 3ch 2tr [2tr 2ch 2tr 7tr]x3 2tr 2ch 2tr 4tr slst@top "
+    },
+    "3": {
+     "s": 460,
+     "e": 463,
+     "text": "ch2",
+     "line": "R3: 3ch 2tr [2tr 2ch 2tr 7tr]x3 2tr 2ch 2tr 4tr slst@top "
+    },
+    "4": {
+     "s": 465,
+     "e": 468,
+     "text": "2tr",
+     "line": "R3: 3ch 2tr [2tr 2ch 2tr 7tr]x3 2tr 2ch 2tr 4tr slst@top "
+    },
+    "5": {
+     "s": 481,
+     "e": 485,
+     "text": "7 tr",
+     "line": "R3: 3ch 2tr [2tr 2ch 2tr 7tr]x3 2tr 2ch 2tr 4tr slst@top "
+    },
+    "6": {
+     "s": 488,
+     "e": 512,
+     "text": "Repeat from * twice more",
+     "line": "R3: 3ch 2tr [2tr 2ch 2tr 7tr]x3 2tr 2ch 2tr 4tr slst@top "
+    },
+    "7": {
+     "s": 529,
+     "e": 532,
+     "text": "2tr",
+     "line": "R3: 3ch 2tr [2tr 2ch 2tr 7tr]x3 2tr 2ch 2tr 4tr slst@top "
+    },
+    "8": {
+     "s": 534,
+     "e": 537,
+     "text": "ch2",
+     "line": "R3: 3ch 2tr [2tr 2ch 2tr 7tr]x3 2tr 2ch 2tr 4tr slst@top "
+    },
+    "9": {
+     "s": 539,
+     "e": 542,
+     "text": "2tr",
+     "line": "R3: 3ch 2tr [2tr 2ch 2tr 7tr]x3 2tr 2ch 2tr 4tr slst@top "
+    },
+    "10": {
+     "s": 553,
+     "e": 556,
+     "text": "4tr",
+     "line": "R3: 3ch 2tr [2tr 2ch 2tr 7tr]x3 2tr 2ch 2tr 4tr slst@top "
+    },
+    "11": {
+     "s": 558,
+     "e": 581,
+     "text": "join with a slip stitch",
+     "line": "R3: 3ch 2tr [2tr 2ch 2tr 7tr]x3 2tr 2ch 2tr 4tr slst@top "
+    },
+    "12": {
+     "s": 582,
+     "e": 588,
+     "text": "to ch3",
+     "line": "R3: 3ch 2tr [2tr 2ch 2tr 7tr]x3 2tr 2ch 2tr 4tr slst@top "
+    }
+   }
+  },
+  "start": {
+   "atoms": {
+    "0": {
+     "s": 7,
+     "e": 17,
+     "text": "magic ring",
+     "line": "start: mr"
+    }
+   }
+  }
+ }
+}

@@ -75,7 +75,8 @@ class Handler(BaseHTTPRequestHandler):
                     return self._send(200, store.load(pid))
                 if method == "PUT":
                     b = self._json()
-                    store.save(pid, meta=b.get("meta"), human=b.get("human"), dsl=b.get("dsl"))
+                    store.save(pid, meta=b.get("meta"), human=b.get("human"), dsl=b.get("dsl"),
+                               links=b.get("links"))
                     return self._send(200, store.load(pid))
             if len(p) >= 4 and p[3] == "images":
                 if method == "POST" and len(p) == 4:

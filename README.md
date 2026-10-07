@@ -24,6 +24,21 @@ Round status:
 - `no-counts`: the human text states no counts.
 - `missing-*`: a round exists on only one side.
 
+## Linking human ↔ machine
+
+The editor shows three panes:
+- **Original:** the pattern as published.
+- **Machine:** the DSL.
+- **Uniform:** human-style text generated from the DSL, one phrase per DSL piece, so its links are exact.
+
+**Link mode** steps through every DSL piece. For each one, adjust the orange highlight in the original:
+- <kbd>←</kbd>/<kbd>→</kbd> move its end; add <kbd>⇧</kbd> to move its start, or <kbd>⌥</kbd> to move one letter at a time.
+- Or drag-select the text directly.
+- <kbd>Enter</kbd> confirms, <kbd>⌫</kbd> marks "no counterpart in the original", <kbd>↑</kbd>/<kbd>↓</kbd> move between pieces, and <kbd>Esc</kbd> exits.
+
+The starting highlight is a guess from `granny/align.py`; only what you confirm is saved, to `links.json`.
+A link turns amber ("to review") when its DSL line changes after you confirmed it.
+
 ## Layout
 
 ```
@@ -31,6 +46,7 @@ data/patterns/0001/
   meta.json      title, terms (UK|US), source, author, license, tags, images[{file, kind, round, caption}]
   human.txt
   pattern.dsl
+  links.json     confirmed DSL piece -> original text span, per round
   images/
 ```
 

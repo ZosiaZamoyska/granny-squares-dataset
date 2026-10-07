@@ -1,0 +1,736 @@
+{
+ "rounds": {
+  "1": {
+   "atoms": {
+    "0": {
+     "s": 27,
+     "e": 31,
+     "text": "3 ch",
+     "line": "R1: 3ch=tr {2tr 3ch [3tr 3ch]x3}@ring join turn"
+    },
+    "1": {
+     "s": 83,
+     "e": 87,
+     "text": "2 tr",
+     "line": "R1: 3ch=tr {2tr 3ch [3tr 3ch]x3}@ring join turn"
+    },
+    "2": {
+     "s": 89,
+     "e": 93,
+     "text": "3 ch",
+     "line": "R1: 3ch=tr {2tr 3ch [3tr 3ch]x3}@ring join turn"
+    },
+    "3": {
+     "s": 96,
+     "e": 100,
+     "text": "3 tr",
+     "line": "R1: 3ch=tr {2tr 3ch [3tr 3ch]x3}@ring join turn"
+    },
+    "4": {
+     "s": 102,
+     "e": 106,
+     "text": "3 ch",
+     "line": "R1: 3ch=tr {2tr 3ch [3tr 3ch]x3}@ring join turn"
+    },
+    "5": {
+     "s": 108,
+     "e": 132,
+     "text": "repeat from * twice more",
+     "line": "R1: 3ch=tr {2tr 3ch [3tr 3ch]x3}@ring join turn"
+    },
+    "6": {
+     "s": 68,
+     "e": 77,
+     "text": "into ring",
+     "line": "R1: 3ch=tr {2tr 3ch [3tr 3ch]x3}@ring join turn"
+    },
+    "7": {
+     "s": 134,
+     "e": 163,
+     "text": "join with ss into top of 3-ch",
+     "line": "R1: 3ch=tr {2tr 3ch [3tr 3ch]x3}@ring join turn"
+    },
+    "8": {
+     "s": 165,
+     "e": 169,
+     "text": "Turn",
+     "line": "R1: 3ch=tr {2tr 3ch [3tr 3ch]x3}@ring join turn"
+    }
+   }
+  },
+  "2": {
+   "atoms": {
+    "0": {
+     "s": 201,
+     "e": 203,
+     "text": "ss",
+     "line": "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+    },
+    "1": {
+     "s": 204,
+     "e": 219,
+     "text": "into next ch sp",
+     "line": "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+    },
+    "2": {
+     "s": 221,
+     "e": 225,
+     "text": "3 ch",
+     "line": "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+    },
+    "3": {
+     "s": 228,
+     "e": 232,
+     "text": "2 tr",
+     "line": "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+    },
+    "4": {
+     "s": 234,
+     "e": 238,
+     "text": "3 ch",
+     "line": "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+    },
+    "5": {
+     "s": 240,
+     "e": 244,
+     "text": "3 tr",
+     "line": "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+    },
+    "6": {
+     "s": 246,
+     "e": 261,
+     "text": "in same 3-ch sp",
+     "line": "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+    },
+    "7": {
+     "s": 263,
+     "e": 267,
+     "text": "1 ch",
+     "line": "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+    },
+    "8": {
+     "s": 271,
+     "e": 275,
+     "text": "3 tr",
+     "line": "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+    },
+    "9": {
+     "s": 277,
+     "e": 281,
+     "text": "3 ch",
+     "line": "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+    },
+    "10": {
+     "s": 283,
+     "e": 287,
+     "text": "3 tr",
+     "line": "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+    },
+    "11": {
+     "s": 289,
+     "e": 304,
+     "text": "in next 3-ch sp",
+     "line": "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+    },
+    "12": {
+     "s": 306,
+     "e": 310,
+     "text": "1 ch",
+     "line": "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+    },
+    "13": {
+     "s": 312,
+     "e": 336,
+     "text": "repeat from * twice more",
+     "line": "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+    },
+    "14": {
+     "s": 338,
+     "e": 367,
+     "text": "join with ss into top of 3-ch",
+     "line": "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+    },
+    "15": {
+     "s": 369,
+     "e": 373,
+     "text": "Turn",
+     "line": "R2: sl@sp 3ch=tr {2tr 3ch 3tr}@same 1ch [{3tr 3ch 3tr}@corner 1ch]x3 join turn"
+    }
+   }
+  },
+  "3": {
+   "atoms": {
+    "0": {
+     "s": 417,
+     "e": 419,
+     "text": "ss",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "1": {
+     "s": 420,
+     "e": 435,
+     "text": "into next ch sp",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "2": {
+     "s": 437,
+     "e": 441,
+     "text": "3 ch",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "3": {
+     "s": 443,
+     "e": 447,
+     "text": "2 tr",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "4": {
+     "s": 448,
+     "e": 461,
+     "text": "in same ch-sp",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "5": {
+     "s": 463,
+     "e": 467,
+     "text": "1 ch",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "6": {
+     "s": 471,
+     "e": 475,
+     "text": "3 tr",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "7": {
+     "s": 477,
+     "e": 481,
+     "text": "3 ch",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "8": {
+     "s": 483,
+     "e": 487,
+     "text": "3 tr",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "9": {
+     "s": 489,
+     "e": 499,
+     "text": "in 3-ch sp",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "10": {
+     "s": 501,
+     "e": 505,
+     "text": "1 ch",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "11": {
+     "s": 507,
+     "e": 517,
+     "text": "skip 3 sts",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "12": {
+     "s": 519,
+     "e": 523,
+     "text": "3 tr",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "13": {
+     "s": 524,
+     "e": 532,
+     "text": "in ch sp",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "14": {
+     "s": 534,
+     "e": 538,
+     "text": "1 ch",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "15": {
+     "s": 540,
+     "e": 550,
+     "text": "skip 3 sts",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "16": {
+     "s": 552,
+     "e": 576,
+     "text": "repeat from * twice more",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "17": {
+     "s": 579,
+     "e": 583,
+     "text": "3 tr",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "18": {
+     "s": 585,
+     "e": 589,
+     "text": "3 ch",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "19": {
+     "s": 591,
+     "e": 595,
+     "text": "3 tr",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "20": {
+     "s": 597,
+     "e": 607,
+     "text": "in 3-ch sp",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "21": {
+     "s": 609,
+     "e": 613,
+     "text": "1 ch",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "22": {
+     "s": 615,
+     "e": 625,
+     "text": "skip 3 sts",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "23": {
+     "s": 627,
+     "e": 656,
+     "text": "join with ss into top of 3-ch",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    },
+    "24": {
+     "s": 658,
+     "e": 662,
+     "text": "Turn",
+     "line": "R3: sl@sp 3ch=tr 2tr@same 1ch [{3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk join turn"
+    }
+   }
+  },
+  "4": {
+   "atoms": {
+    "0": {
+     "s": 706,
+     "e": 708,
+     "text": "ss",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "1": {
+     "s": 709,
+     "e": 724,
+     "text": "into next ch sp",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "2": {
+     "s": 726,
+     "e": 730,
+     "text": "3 ch",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "3": {
+     "s": 732,
+     "e": 736,
+     "text": "2 tr",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "4": {
+     "s": 737,
+     "e": 747,
+     "text": "in same sp",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "5": {
+     "s": 749,
+     "e": 753,
+     "text": "1 ch",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "6": {
+     "s": 755,
+     "e": 765,
+     "text": "skip 3 sts",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "7": {
+     "s": 769,
+     "e": 773,
+     "text": "3 tr",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "8": {
+     "s": 775,
+     "e": 779,
+     "text": "3 ch",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "9": {
+     "s": 781,
+     "e": 785,
+     "text": "3 tr",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "10": {
+     "s": 787,
+     "e": 797,
+     "text": "in 3-ch sp",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "11": {
+     "s": 799,
+     "e": 803,
+     "text": "1 ch",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "12": {
+     "s": 806,
+     "e": 816,
+     "text": "skip 3 sts",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "13": {
+     "s": 818,
+     "e": 822,
+     "text": "3 tr",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "14": {
+     "s": 823,
+     "e": 831,
+     "text": "in ch-sp",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "15": {
+     "s": 833,
+     "e": 837,
+     "text": "1 ch",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "16": {
+     "s": 837,
+     "e": 844,
+     "text": "] twice",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "17": {
+     "s": 846,
+     "e": 856,
+     "text": "skip 3 sts",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "18": {
+     "s": 858,
+     "e": 882,
+     "text": "repeat from * twice more",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "19": {
+     "s": 885,
+     "e": 889,
+     "text": "3 tr",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "20": {
+     "s": 891,
+     "e": 895,
+     "text": "3 ch",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "21": {
+     "s": 897,
+     "e": 901,
+     "text": "3 tr",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "22": {
+     "s": 903,
+     "e": 913,
+     "text": "in 3-ch sp",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "23": {
+     "s": 915,
+     "e": 919,
+     "text": "1 ch",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "24": {
+     "s": 921,
+     "e": 931,
+     "text": "skip 3 sts",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "25": {
+     "s": 933,
+     "e": 937,
+     "text": "3 tr",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "26": {
+     "s": 938,
+     "e": 946,
+     "text": "in ch-sp",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "27": {
+     "s": 948,
+     "e": 952,
+     "text": "1 ch",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "28": {
+     "s": 954,
+     "e": 964,
+     "text": "skip 3 sts",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "29": {
+     "s": 966,
+     "e": 995,
+     "text": "join with ss into top of 3-ch",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    },
+    "30": {
+     "s": 997,
+     "e": 1001,
+     "text": "Turn",
+     "line": "R4: sl@sp 3ch=tr 2tr@same 1ch 3sk [{3tr 3ch 3tr}@corner 1ch [3sk 3tr@sp 1ch]x2 3sk]x3 {3tr 3ch 3tr}@corner 1ch 3sk 3tr@sp 1ch 3sk join turn"
+    }
+   }
+  },
+  "5": {
+   "atoms": {
+    "0": {
+     "s": 1046,
+     "e": 1048,
+     "text": "ss",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "1": {
+     "s": 1049,
+     "e": 1064,
+     "text": "into next ch sp",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "2": {
+     "s": 1066,
+     "e": 1070,
+     "text": "3 ch",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "3": {
+     "s": 1072,
+     "e": 1076,
+     "text": "2 tr",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "4": {
+     "s": 1077,
+     "e": 1090,
+     "text": "in same ch-sp",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "5": {
+     "s": 1092,
+     "e": 1096,
+     "text": "1 ch",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "6": {
+     "s": 1099,
+     "e": 1109,
+     "text": "skip 3 sts",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "7": {
+     "s": 1111,
+     "e": 1115,
+     "text": "3 tr",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "8": {
+     "s": 1116,
+     "e": 1124,
+     "text": "in ch-sp",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "9": {
+     "s": 1126,
+     "e": 1130,
+     "text": "1 ch",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "10": {
+     "s": 1130,
+     "e": 1133,
+     "text": "]x2",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "11": {
+     "s": 1143,
+     "e": 1153,
+     "text": "skip 3 sts",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "12": {
+     "s": 1157,
+     "e": 1161,
+     "text": "3 tr",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "13": {
+     "s": 1163,
+     "e": 1167,
+     "text": "3 ch",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "14": {
+     "s": 1169,
+     "e": 1173,
+     "text": "3 tr",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "15": {
+     "s": 1175,
+     "e": 1185,
+     "text": "in 3-ch sp",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "16": {
+     "s": 1187,
+     "e": 1191,
+     "text": "1 ch",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "17": {
+     "s": 1193,
+     "e": 1203,
+     "text": "skip 3 sts",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "18": {
+     "s": 1206,
+     "e": 1210,
+     "text": "3 tr",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "19": {
+     "s": 1211,
+     "e": 1219,
+     "text": "in ch-sp",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "20": {
+     "s": 1221,
+     "e": 1225,
+     "text": "1 ch",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "21": {
+     "s": 1227,
+     "e": 1237,
+     "text": "skip 3 sts",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "22": {
+     "s": 1237,
+     "e": 1240,
+     "text": "]x2",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "23": {
+     "s": 1251,
+     "e": 1275,
+     "text": "repeat from * twice more",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "24": {
+     "s": 1278,
+     "e": 1282,
+     "text": "3 tr",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "25": {
+     "s": 1284,
+     "e": 1288,
+     "text": "3 ch",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "26": {
+     "s": 1290,
+     "e": 1294,
+     "text": "3 tr",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "27": {
+     "s": 1296,
+     "e": 1306,
+     "text": "in 3-ch sp",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "28": {
+     "s": 1309,
+     "e": 1313,
+     "text": "1 ch",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "29": {
+     "s": 1315,
+     "e": 1325,
+     "text": "skip 3 sts",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "30": {
+     "s": 1327,
+     "e": 1331,
+     "text": "3 tr",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "31": {
+     "s": 1332,
+     "e": 1340,
+     "text": "in ch sp",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "32": {
+     "s": 1340,
+     "e": 1348,
+     "text": "] to end",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "33": {
+     "s": 1350,
+     "e": 1354,
+     "text": "1 ch",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "34": {
+     "s": 1356,
+     "e": 1385,
+     "text": "join with ss into top of 3-ch",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    },
+    "35": {
+     "s": 1387,
+     "e": 1391,
+     "text": "Turn",
+     "line": "R5: sl@sp 3ch=tr 2tr@same 1ch [3sk 3tr@sp 1ch]x2 3sk [{3tr 3ch 3tr}@corner 1ch 3sk [3tr@sp 1ch 3sk]x2]x3 {3tr 3ch 3tr}@corner [1ch 3sk 3tr@sp]x3 1ch join turn"
+    }
+   }
+  },
+  "start": {
+   "atoms": {
+    "0": {
+     "s": 7,
+     "e": 17,
+     "text": "magic ring",
+     "line": "start: mr"
+    }
+   }
+  }
+ }
+}

@@ -78,6 +78,29 @@ class LinkTest(unittest.TestCase):
         self.assertEqual(names, [("op", "tr", 3), ("place", "in 3-ch sp", 1), ("op", "ch", 2), ("op", "sk", 3)])
 
 
+    def test_varied_wording(self):
+        """Phrasings from real patterns (UK blog style, glued numbers, US-style groups)."""
+        from granny.align import human_atoms
+        text = ("ch5 (counts as tr plus 2 for corner). *Work 3 tr into centre of circle, ch2.* "
+                "In corner space, make a corner (2tr, ch2, 2tr), [3 dc] x2, slip stitch into 3rd ch. (12 tr)")
+        got = [(k, key if k == "op" else text[s:e], n) for k, key, n, s, e in human_atoms(text)]
+        self.assertEqual(got, [
+            ("op", "ch", 5), ("op", "tr", 3), ("place", "into centre of circle", 1), ("op", "ch", 2),
+            ("place", "In corner space", 1), ("op", "tr", 2), ("op", "ch", 2), ("op", "tr", 2),
+            ("op", "dc", 3), ("rep", "] x2", 1), ("op", "sl", 1), ("place", "into 3rd ch", 1)])
+
+    def test_split_op_and_join_links(self):
+        from granny.check import links
+        human = "Round 1: ch5 (counts as tr plus 2 for corner), 3 tr into ring, slip stitch into 3rd ch."
+        code = "R1: 3ch=tr 2ch 3tr@ring join"
+        L = links(human, code)
+        pairs = {code[d["s"]:d["e"]]: [human[L["human"][j]["s"]:L["human"][j]["e"]] for j in d["link"]]
+                 for d in L["dsl"]}
+        self.assertEqual(pairs["3ch=tr"], ["ch5"])
+        self.assertEqual(pairs["2ch"], ["ch5"])
+        self.assertEqual(pairs["join"], ["slip stitch"])
+
+
 class DatasetTest(unittest.TestCase):
     """Every pattern in data/ must parse and must not have count mismatches."""
 

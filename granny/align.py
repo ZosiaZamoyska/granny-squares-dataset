@@ -13,8 +13,10 @@ import re
 
 from . import dsl
 
-_ST_NAMES = r"ch(?:ain)?|sc|hdc|htr|dc|tr|dtr|ttr|trtr|ss|sl\s*st|slst|puff|pc|bob|cl|picot|fpdc|bpdc|fptr|bptr"
+_ST_NAMES = r"sc|hdc|htr|dc|tr|dtr|ttr|trtr|ss|sl\s*st|slst|slip\s+st(?:itch)?|puff|pc|bob|cl|picot|fpdc|bpdc|fptr|bptr"
 _SP = r"(?!\s*-?\s*(?:sps?|spaces?)\b)(?!-)"
+# Words that end a placement phrase: "in next 3-ch sp", "into centre of circle", "into 3rd ch".
+_PLACE_END = r"[\w-]*sp\b|spaces?\b|ring\b|circle\b|cent(?:re|er)\b|sts?\b|stitch(?:es)?\b|corner\b|loop\b|ch\d*\b"
 
 _MENTION = re.compile(
     rf"""
@@ -24,29 +26,37 @@ _MENTION = re.compile(
   | (?P<mr>\b(?:magic|adjustable)\s+(?:ring|loop)\b)
   | (?P<skip>\b(?:skip|sk)\s+(?:the\s+)?(?:next\s+)?(?P<skn>\d+)?\s*(?:sts?\b|stitch(?:es)?\b)?)
   | (?P<rep>\brep(?:eat)?\s+from\s+\*+[^,.;]*
-        | \]\s*(?:twice|three\s+times|four\s+times|\d+\s+times|to\s+[^,.;]*)
+        | \]\s*(?:[x×]\s*\d+\b|twice|three\s+times|four\s+times|\d+\s+times|to\s+[^,.;]*)
         | \b(?:to|until)\s+(?:the\s+)?(?:next\s+)?(?:corner|end)\b[^,.;]*)
-  | (?P<place>\b(?:in|into)\s+(?:the\s+)?(?:same|next|each|first|last)?\s*(?:[\w-]+\s+){{0,2}}?
-        (?:[\w-]*sp\b|spaces?\b|ring\b|sts?\b|stitch\b|corner\b|loop\b))
-  | (?P<st>(?:\b(?P<n1>\d+)\s*)?(?<![-a-zA-Z])(?P<name>{_ST_NAMES})s?\b{_SP}(?:\s+(?P<n2>\d+)\b{_SP})?)
+  | (?P<place>\b(?:in|into)\s+(?:the\s+)?(?:[\w-]+\s+){{0,4}}(?:{_PLACE_END}))
+  | (?P<chain>(?:\b(?P<cn1>\d+)\s*)?(?<![-a-zA-Z])ch(?:ain)?s?(?:\b|(?=\d))(?!\s*-?\s*\d*\s*-?\s*(?:sps?|spaces?)\b)(?!-)
+        (?:\s*(?P<cn2>\d+)\b{_SP})?)
+  | (?P<st>(?:\b(?P<n1>\d+)\s*)?(?<![-a-zA-Z])(?P<name>{_ST_NAMES})s?\b{_SP})
     """,
     re.VERBOSE | re.IGNORECASE,
 )
 
-_KINDS = ("join", "turn", "fo", "mr", "skip", "rep", "place", "st")
-_HUMAN_NAMES = {"ss": "sl", "slst": "sl", "sl st": "sl", "chain": "ch"}
+_KINDS = ("join", "turn", "fo", "mr", "skip", "rep", "place", "chain", "st")
+_HUMAN_NAMES = {"ss": "sl", "slst": "sl", "sl st": "sl", "slip st": "sl", "slip stitch": "sl"}
+_INSTRUCTION = re.compile(rf"\s*(?:\d+\s*)?(?:ch(?:ain)?\s*\d*|(?:{_ST_NAMES})s?)\s*", re.I)
 
 
 def _mask_parens(text: str) -> str:
-    """Blank out (...) asides like "(counts as tr)" or "(12 tr, 4 3-ch sps.)",
-    keeping offsets intact."""
-    out, depth = [], 0
-    for c in text:
+    """Blank out (...) asides like "(counts as tr)" and the trailing "(12 tr, 4 3-ch sps.)",
+    keeping offsets intact. Parentheses that hold instructions, like "(2 dc, ch 2, 3 dc)",
+    are kept: US patterns use them for groups."""
+    out, stack = list(text), []
+    for i, c in enumerate(text):
         if c == "(":
-            depth += 1
-        out.append(" " if depth else c)
-        if c == ")" and depth:
-            depth -= 1
+            stack.append(i)
+        elif c == ")" and stack:
+            s = stack.pop()
+            if stack:
+                continue  # handled with the outer pair
+            inner = text[s + 1:i]
+            at_end = not text[i + 1:].strip(" \t\n.")
+            if at_end or not all(_INSTRUCTION.fullmatch(p) for p in re.split(r"[,;]", inner)):
+                out[s:i + 1] = " " * (i + 1 - s)
     return "".join(out)
 
 
@@ -56,10 +66,12 @@ def human_atoms(text: str, offset: int = 0) -> list[tuple]:
     for m in _MENTION.finditer(_mask_parens(text)):
         kind = next(k for k in _KINDS if m.group(k) is not None)
         s, e = m.start() + offset, m.end() + offset
-        if kind == "st":
+        if kind == "chain":
+            atoms.append(("op", "ch", int(m.group("cn1") or m.group("cn2") or 1), s, e))
+        elif kind == "st":
             name = re.sub(r"\s+", " ", m.group("name").lower())
             name = _HUMAN_NAMES.get(name, name)
-            atoms.append(("op", name, int(m.group("n1") or m.group("n2") or 1), s, e))
+            atoms.append(("op", name, int(m.group("n1") or 1), s, e))
         elif kind == "skip":
             atoms.append(("op", "sk", int(m.group("skn") or 1), s, e))
         elif kind == "place":
@@ -98,7 +110,9 @@ def clauses(text: str, offset: int = 0) -> list[tuple[int, int]]:
 
 
 def _place_key(text: str) -> str:
-    for k in ("ring", "same", "corner"):
+    if re.search(r"ring|circle|cent(?:re|er)", text):
+        return "ring"
+    for k in ("same", "corner", "top"):
         if k in text:
             return k
     return "sp" if "sp" in text else "st"
@@ -109,6 +123,8 @@ def _score(d, h) -> float | None:
     if d[0] != h[0]:
         return None
     if d[0] == "op":
+        if {d[1], h[1]} == {"join", "sl"}:
+            return 2  # "slip stitch into 3rd ch" is how many patterns say join
         if d[1] != h[1]:
             return None
         return 4 if d[2] == h[2] else 2
@@ -155,5 +171,19 @@ def align(d_atoms: list, h_atoms: list) -> list[tuple[int, int]]:
             if j not in used_h and h[0] == "place" and (_score(d, h) or 0) >= 3:
                 pairs.append((i, j))
                 used_h.add(j)
+                break
+
+    # Third pass: one human mention written as two DSL ops, e.g. "ch5 (counts as tr
+    # plus 2 for corner)" -> "3ch=tr 2ch". Link the leftover op to its neighbour's
+    # mention when the counts add up.
+    linked = dict(pairs)
+    for i, d in enumerate(d_atoms):
+        if d[0] != "op" or i in linked:
+            continue
+        for nb in (i - 1, i + 1):
+            j = linked.get(nb)
+            if j is not None and d_atoms[nb][1] == d[1] == h_atoms[j][1] \
+                    and d_atoms[nb][2] + d[2] == h_atoms[j][2]:
+                pairs.append((i, j))
                 break
     return sorted(pairs)

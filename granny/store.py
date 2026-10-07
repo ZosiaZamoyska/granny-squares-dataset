@@ -4,6 +4,7 @@
         meta.json      title, terms (UK/US), source, license, images[...]
         human.txt      the pattern as published
         pattern.dsl    the machine-readable version
+        links.json     manual DSL <-> human links (see web/app.js "link mode")
         images/        photos, charts
 """
 
@@ -36,10 +37,13 @@ def load(pid: str) -> dict:
     meta = {**DEFAULT_META, **json.loads((d / "meta.json").read_text())}
     meta["id"] = pid
     read = lambda name: (d / name).read_text() if (d / name).exists() else ""
-    return {"meta": meta, "human": read("human.txt"), "dsl": read("pattern.dsl")}
+    links = json.loads(read("links.json") or "{}")
+    return {"meta": meta, "human": read("human.txt"), "dsl": read("pattern.dsl"),
+            "links": {"rounds": {}, **links}}
 
 
-def save(pid: str, meta: dict | None = None, human: str | None = None, dsl: str | None = None):
+def save(pid: str, meta: dict | None = None, human: str | None = None, dsl: str | None = None,
+         links: dict | None = None):
     d = _dir(pid)
     d.mkdir(parents=True, exist_ok=True)
     if meta is not None:
@@ -49,6 +53,8 @@ def save(pid: str, meta: dict | None = None, human: str | None = None, dsl: str 
         (d / "human.txt").write_text(human)
     if dsl is not None:
         (d / "pattern.dsl").write_text(dsl)
+    if links is not None:
+        (d / "links.json").write_text(json.dumps(links, indent=1, ensure_ascii=False) + "\n")
 
 
 def create(title: str) -> str:
