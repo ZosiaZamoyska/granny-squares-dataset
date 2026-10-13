@@ -57,13 +57,14 @@ class Handler(BaseHTTPRequestHandler):
 
             if p == ["api", "check"] and method == "POST":
                 b = self._json()
-                return self._send(200, check(b.get("human", ""), b.get("dsl", ""), b.get("terms", "US")))
+                return self._send(200, check(b.get("human", ""), b.get("dsl", ""), b.get("terms", "US"),
+                                             b.get("abbreviations")))
             if len(p) == 2:
                 if method == "GET":
                     out = []
                     for pid in store.list_ids():
                         d = store.load(pid)
-                        r = check(d["human"], d["dsl"], d["meta"]["terms"])
+                        r = check(d["human"], d["dsl"], d["meta"]["terms"], d["meta"]["abbreviations"])
                         out.append({**d["meta"], "rounds": len(r["rounds"]), "ok": r["ok"],
                                     "statuses": [x["status"] for x in r["rounds"]]})
                     return self._send(200, out)

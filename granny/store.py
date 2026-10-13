@@ -1,7 +1,8 @@
 """Filesystem storage. One folder per pattern:
 
     data/patterns/<id>/
-        meta.json      title, terms (UK/US), source, license, images[...]
+        meta.json      title, terms (UK/US), source, license, images[...],
+                       abbreviations[{abbr, name, dsl}]
         human.txt      the pattern as published
         pattern.dsl    the machine-readable version
         links.json     manual DSL <-> human links (see web/app.js "link mode")
@@ -18,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent / "data" / "patterns"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".heic"}
 
 DEFAULT_META = {"title": "", "terms": "US", "source": "", "author": "", "license": "",
-                "notes": "", "tags": [], "images": []}
+                "notes": "", "tags": [], "images": [], "abbreviations": []}
 
 
 def _dir(pid: str) -> Path:

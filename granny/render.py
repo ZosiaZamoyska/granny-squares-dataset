@@ -7,12 +7,15 @@ phrase spans are returned in Line.atoms order, so the link DSL <-> uniform text 
  -> Round 2: sl st in next sp, 3 ch (counts as tr), (2 tr, 3 ch, 3 tr) in same sp, 1 ch,
     [(3 tr, 3 ch, 3 tr) in corner sp, 1 ch] 3 times, join with sl st, turn.
 
-Conventions: (...) = worked into one place, [...] = repeated.
+Conventions: (...) = worked into one place, [...] = repeated, {...} = worked in one colour.
+
+A pattern's own abbreviations (vs = tr 1ch tr) are defined once up front ("V-stitch is a
+set of 1 tr, 1 ch, 1 tr.") and then used by their full name ("1 v-stitch in same sp").
 """
 
 from __future__ import annotations
 
-from .dsl import Group, Line, Op
+from .dsl import Abbrev, Color, Group, Line, Op
 
 PLACE_TEXT = {
     "ring": "into ring", "sp": "in next sp", "same": "in same sp", "corner": "in corner sp",
@@ -21,8 +24,16 @@ PLACE_TEXT = {
 UNTIL_TEXT = {"corner": "to corner", "end": "to end"}
 
 
-def _op_text(op: Op) -> str:
+def _plural(name: str, n: int) -> str:
+    if n == 1:
+        return name
+    return name + ("es" if name.endswith(("ch", "sh", "s", "x")) else "s")
+
+
+def _op_text(op: Op, abbrevs: dict[str, Abbrev]) -> str:
     n = op.count
+    if op.expand and op.st in abbrevs:
+        return f"{n} {_plural(abbrevs[op.st].name, n)}"
     if op.st == "ch":
         return f"{n} ch" + (f" (counts as {op.as_})" if op.as_ else "")
     if op.st == "sl":
@@ -40,8 +51,10 @@ def _op_text(op: Op) -> str:
     return f"{n} {op.st}"
 
 
-def render_line(line: Line) -> tuple[str, list[tuple[int, int]]]:
-    """Return (text, spans) with one (start, end) span per entry of line.atoms."""
+def render_line(line: Line, abbrevs: dict[str, Abbrev] | None = None) -> tuple[str, list[tuple[int, int]]]:
+    """Return (text, spans) with one (start, end) span per entry of line.atoms.
+    abbrevs: from dsl.parse_abbreviations, for their full names."""
+    abbrevs = abbrevs or {}
     parts: list[str] = []
     spans: list[tuple[int, int]] = []
     pos = 0
@@ -61,7 +74,7 @@ def render_line(line: Line) -> tuple[str, list[tuple[int, int]]]:
             if k:
                 emit(", ")
             if isinstance(it, Op):
-                atom(_op_text(it))
+                atom(_op_text(it, abbrevs))
                 if it.place:
                     emit(" ")
                     atom(PLACE_TEXT.get(it.place, f"in {it.place}"))
@@ -72,6 +85,15 @@ def render_line(line: Line) -> tuple[str, list[tuple[int, int]]]:
                 if it.place:
                     emit(" ")
                     atom(PLACE_TEXT.get(it.place, f"in {it.place}"))
+            elif isinstance(it, Color):
+                atom(f"with {it.color}")
+                if len(it.items) == 1:
+                    emit(": ")
+                    items(it.items)
+                else:
+                    emit(" {")
+                    items(it.items)
+                    emit("}")
             else:
                 emit("[")
                 items(it.items)
@@ -90,5 +112,14 @@ def render_line(line: Line) -> tuple[str, list[tuple[int, int]]]:
     return text, spans
 
 
-def render(lines: list[Line]) -> str:
-    return "\n".join(render_line(l)[0] for l in lines)
+def definitions(abbrevs: dict[str, Abbrev] | None) -> list[str]:
+    """One sentence per abbreviation: "V-stitch is a set of 1 tr, 1 ch, 1 tr." """
+    out = []
+    for a in (abbrevs or {}).values():
+        body = render_line(Line("", a.items))[0].removeprefix("Round : ").removesuffix(".")
+        out.append(f"{a.name[:1].upper()}{a.name[1:]} is a set of {body}.")
+    return out
+
+
+def render(lines: list[Line], abbrevs: dict[str, Abbrev] | None = None) -> str:
+    return "\n".join(definitions(abbrevs) + [render_line(l, abbrevs)[0] for l in lines])

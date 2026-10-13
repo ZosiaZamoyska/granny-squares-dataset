@@ -1,0 +1,14 @@
+Bobble: similar to working 4 treble crochet together in one stitch: Yarn over, insert hook into stitch or space, yarn over, pull through (3 loops on hook), yarn over, pull through 2 loops (2 loops remain on hook), (yarn over, insert hook into same stitch, yarn over, pull through, yarn over, pull through 2 loops on hook) three times until you have 5 loops on hook, yarn over, pull through all loops on hook, chain 1 to secure.  Bobble will pop away from you.
+
+Beginning Bobble (Beg-Bob): Chain 3, (yarn over, insert hook in st at base of ch, yarn over, pull through, yarn over, pull through 2 loops on hook) four times until you have 5 loops on hook, yarn over and draw through all loops on hook, chain 1 to secure.  Bobble will pop out away from you. 
+
+
+Foundation chain: Ch 4, insert hook into first ch, ss to form a circle.
+
+Round 1: Ch 1, 7 dc in circle, ss in first st of round to join. (7 dc)
+
+Round 2: Beg-Bob in first st, (ch 1, Bobble in next st) around, work 1 bobble in loops of ss from previous round, ss to top of first bobble to join. (8 bobbles)
+
+It will feel like ch 2 between bobbles.  There is one chain to secure the bobble, then one chain to add space between bobbles.
+
+Round 3: Beg-bob in first st, ch 1, bobble in next space between bobbles, (ch 1, bobble in top of next bobble, ch 1, bobble in next space between bobbles) around, ss to top of first bobble to join. (16 bobbles)

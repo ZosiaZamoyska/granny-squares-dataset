@@ -35,6 +35,14 @@
   </section>
 
   <section>
+    <h2>Abbreviations <small>this pattern’s own stitches, usable in the machine pattern · <span class="link" id="abbr-add">add</span></small></h2>
+    <table id="abbrs" class="abbrs">
+      <thead><tr><th>Abbr</th><th>Stands for</th><th>Means (DSL)</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section>
     <h2>Images <small>drop, paste, or <label class="link">browse<input id="file" type="file" accept="image/*" multiple hidden></label></small></h2>
     <div id="images" class="images"></div>
   </section>
@@ -77,6 +85,7 @@
     <div>
       <h2>Chart <small>approximate layout · hover a stitch to find it in the text</small></h2>
       <div id="chart" class="chart"></div>
+      <div id="chart-yarns" class="chart-yarns"></div>
       <div id="chart-notes" class="warn"></div>
     </div>
     <div id="chart-photo" class="chart-photo"></div>
@@ -91,6 +100,8 @@
       <tr><td><code>3sk</code></td><td>skip 3 stitches</td></tr>
       <tr><td><code>3tr@sp</code></td><td>placement: <code>@ring @sp @corner @same @st @top @side</code></td></tr>
       <tr><td><code>{3tr 3ch 3tr}@corner</code></td><td>group worked into one place</td></tr>
+      <tr><td><code>C2@3tr</code> <code>C2@{…}</code></td><td>yarn colour for a stitch, group, repeat or any run of stitches in <code>{…}</code>; pick the colour under the chart</td></tr>
+      <tr><td><code>vs@sp</code></td><td>a pattern abbreviation (defined above, e.g. <code>vs</code> = <code>tr 1ch tr</code>); with <code>@place</code> its stitches all go into that place</td></tr>
       <tr><td><code>[…]x3</code></td><td>repeat 3 times total (“repeat from * twice more” = x3)</td></tr>
       <tr><td><code>[…]&gt;corner</code> <code>[…]&gt;end</code></td><td>repeat until a landmark (count depends on previous round)</td></tr>
       <tr><td><code>sl join turn fo</code></td><td>slip stitch (ss), join round, turn, fasten off</td></tr>

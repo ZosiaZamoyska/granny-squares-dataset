@@ -43,7 +43,8 @@ A link turns amber ("to review") when its DSL line changes after you confirmed i
 
 ```
 data/patterns/0001/
-  meta.json      title, terms (UK|US), source, author, license, tags, images[{file, kind, round, caption}]
+  meta.json      title, terms (UK|US), source, author, license, tags, images[{file, kind, round, caption}],
+                 colors {"C1": "#hex"} (set from the chart's swatches), abbreviations [{abbr, name, dsl}]
   human.txt
   pattern.dsl
   links.json     confirmed DSL piece -> original text span, per round
@@ -64,10 +65,19 @@ The export converts everything to US names, so UK and US patterns share one voca
 | `3sk` | skip 3 stitches |
 | `3tr@sp` | placement: `@ring @sp @corner @same @st @top @side` |
 | `{3tr 3ch 3tr}@corner` | group worked into one place |
+| `C2@3tr`, `C2@{…}@corner`, `C2@[…]x3` | yarn colour C2 for one stitch, group or repeat |
+| `C2@{…}` | colour block: everything inside in C2 (no `@place`, so not worked into one place) |
+| `vs`, `vs@sp` | a pattern abbreviation, defined per pattern (e.g. `vs` = `tr 1ch tr`); `@place` puts all its stitches into that place |
 | `[…]x3` | repeat 3 times total ("repeat from * twice more" = `x3`) |
 | `[…]>corner`, `[…]>end` | repeat until a landmark |
 | `sl` (`ss`), `join`, `turn`, `fo` | slip stitch, join round, turn, fasten off |
 | `# …` | comment |
+
+Abbreviations live in meta.json (edited in the editor):
+`"abbreviations": [{"abbr": "vs", "name": "v-stitch", "dsl": "tr 1ch tr"}]`.
+`vs` stays one token in the DSL and export (the export lists the definitions), while counts
+and the chart expand it. The uniform text defines each one up front ("V-stitch is a set of
+1 tr, 1 ch, 1 tr.") and then uses its full name ("2 v-stitches in next sp"). Stated counts like "(8 v-sts)" are checked against the `vs` tally.
 
 Example (UK terms):
 

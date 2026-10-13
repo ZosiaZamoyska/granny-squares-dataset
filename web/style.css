@@ -44,6 +44,13 @@ input:focus, textarea:focus, select:focus { outline: 2px solid color-mix(in srgb
 .meta > *, .texts > * { min-width: 0; }
 .meta label { display: flex; flex-direction: column; font-size: 12px; color: var(--muted); gap: 3px; }
 .meta .wide { grid-column: 1 / -1; }
+.abbrs { border-collapse: collapse; width: 100%; max-width: 760px; }
+.abbrs th { text-align: left; font-size: 12px; font-weight: normal; color: var(--muted); padding: 0 6px 3px 0; }
+.abbrs td { padding: 0 6px 6px 0; }
+.abbrs td:nth-child(1) { width: 90px; }
+.abbrs td:nth-child(4) { width: 1%; }
+.abbrs input { width: 100%; }
+.abbrs input.code { font-family: var(--mono); }
 .link { color: var(--accent); cursor: pointer; text-decoration: underline; }
 a { color: var(--accent); }
 .images { display: flex; flex-wrap: wrap; gap: 12px; min-height: 90px; padding: 10px;
@@ -112,6 +119,13 @@ textarea { height: 380px; min-height: 160px; resize: vertical; }
 .chart g.hit .dot, .chart g.hit .ring-fill { fill: var(--ink); }
 .chart .hitbox { fill: transparent; stroke: none !important; }
 #chart-notes { font-size: 12px; margin-top: 6px; }
+.chart .halo * { stroke: var(--muted); stroke-width: 1.2; }
+.chart .halo .hitbox { display: none; }
+.chart g.hit .halo { display: none; }
+.chart-yarns { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; font: 12px var(--mono); }
+.chart-yarns:empty { display: none; }
+.chart-yarns label { display: flex; align-items: center; gap: 5px; cursor: pointer; }
+.chart-yarns input { width: 22px; height: 22px; padding: 0; border: 1px solid var(--line); border-radius: 4px; background: none; cursor: pointer; }
 #chart-notes div + div { margin-top: 2px; }
 .chart .empty { fill: var(--muted); font-size: 6px; }
 .linkbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 12px; }

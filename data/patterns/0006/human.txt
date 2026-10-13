@@ -1,0 +1,9 @@
+Foundation: Magic ring
+
+Round 1: (Ch 4, tr) counts as first v-st, ch3. *v-st, ch 3; repeat from * twice more. Join with ss in third ch from beg ch-4. [8 tr, 4 ch-1, 4 ch-3]
+
+Round 2: Ch 3 *v-st in next ch-1 sp, (v-st, ch 3, v-st) in ch-3 sp; repeat from * twice more, v-st in next ch-1 sp, (v-st, ch 3, v-st, ch 1) in last ch-3 sp. Join with ss in top of beg ch-3. [24 tr, 12 ch-1, 4 ch3]
+
+Round 3: Ch 3, *v-st in each ch-1 sp to the corner, (v-st, ch 3, v-st) in corner ch-3 sp; repeat from * to last ch-1 sp. (Tr, ch 1) in last ch-1 sp, ss in top of beg ch-3. [40 tr, 5 ch-1, 4 ch-3]
+
+Round 4: Ch 3, *v-st in each ch-1 sp to the corner**, (v-st, ch 3, v-st) in corner ch-3 sp; rep from * twice, repeat from * to ** to beginning ch-1 sp, (tr, ch 1) in same sp as beg ch-3, ss in top of beg ch-3. [56 tr, 7 ch-1, 4 ch-3]

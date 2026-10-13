@@ -37,6 +37,43 @@ class ParseTest(unittest.TestCase):
         lines = dsl.to_us(dsl.parse("R1: 3ch=tr 2tr 1dc 1htr"), "UK")
         self.assertEqual(dsl.format_line(lines[0]), "R1: 3ch=dc 2dc sc hdc")
 
+    def test_colors(self):
+        src = "R2: C2@{3ch=tr tr}@same C3@[2tr@same]x11 C1@{1ch 3tr@sp} sl@top"
+        line = dsl.parse_line(src)
+        self.assertEqual(dsl.format_line(line), src)
+        self.assertEqual(line.warnings, [])
+        self.assertEqual([a[1] for a in line.atoms if a[0] == "color"], ["C2", "C3", "C1"])
+        self.assertEqual(dsl.count(line.items)[0]["tr"], 27)
+        with self.assertRaises(dsl.DSLError):
+            dsl.parse_line("R1: C2@ sl@top C3@")
+
+    def test_abbreviations(self):
+        abbrevs, errors = dsl.parse_abbreviations([{"abbr": "vs", "name": "v-stitch", "dsl": "tr 1ch tr"}])
+        self.assertEqual(errors, [])
+        src = "R2: 3ch=tr [vs@same {vs 3ch vs}@same]x3 sl@top"
+        line = dsl.parse_line(src, abbrevs)
+        self.assertEqual((dsl.format_line(line), line.warnings), (src, []))
+        self.assertIn("vs", dsl.line_tokens(line))
+        long = dsl.parse_line("R2: 3ch=tr [{tr 1ch tr}@same {tr 1ch tr 3ch tr 1ch tr}@same]x3 sl@top")
+        got, want = dsl.count(line.items)[0], dsl.count(long.items)[0]
+        self.assertEqual(got.pop("vs"), 9)
+        self.assertEqual(got, want)
+        self.assertEqual(dsl.parse_line("R1: vs").warnings, ["unknown stitch 'vs'"])
+        self.assertTrue(dsl.parse_abbreviations([{"abbr": "tr", "dsl": "tr"}])[1])
+
+    def test_abbreviations_uniform(self):
+        from granny import render
+        from granny.check import links
+        abbrevs, _ = dsl.parse_abbreviations([{"abbr": "vs", "name": "v-stitch", "dsl": "tr 1ch tr"}])
+        code = "R1: 3ch=tr [vs@same 2vs@sp]x3 sl@top"
+        self.assertEqual(render.render(dsl.parse(code, abbrevs), abbrevs),
+                         "V-stitch is a set of 1 tr, 1 ch, 1 tr.\n"
+                         "Round 1: 3 ch (counts as tr), [1 v-stitch in same sp, 2 v-stitches in next sp] 3 times,"
+                         " sl st in top of beginning ch.")
+        L = links("", code, abbrevs)
+        self.assertEqual([L["gen"][d["g"][0]:d["g"][1]] for d in L["dsl"]][1:4],
+                         ["1 v-stitch", "in same sp", "2 v-stitches"])
+
     def test_count(self):
         c, exact = dsl.count(dsl.parse_line("R1: 3ch=tr {2tr 3ch [3tr 3ch]x3}@ring join").items)
         self.assertTrue(exact)
@@ -50,6 +87,12 @@ class HumanTest(unittest.TestCase):
         pre, rounds = split_rounds("Make a ring\nRound 1: foo\nRnd 2. bar\nRounds 3-5: baz")
         self.assertEqual(pre, "Make a ring")
         self.assertEqual(rounds, {"1": "foo", "2": "bar", "3-5": "baz"})
+
+    def test_stated_abbreviation(self):
+        from granny.check import abbreviation_names
+        names = abbreviation_names([{"abbr": "vs", "name": "v-stitch", "dsl": "tr 1ch tr"}])
+        self.assertEqual(stated_counts("… (8 V-sts, 4 ch-3 sps)", names), {"vs": 8, "3ch-sp": 4})
+        self.assertEqual(stated_counts("… (12 v-stitches)", names), {"vs": 12})
 
     def test_stated(self):
         self.assertEqual(stated_counts("… Turn. (24 tr, 4 3-ch sps, 4 1-ch sps.)"),
@@ -101,6 +144,27 @@ class LinkTest(unittest.TestCase):
         self.assertEqual(pairs["join"], ["slip stitch"])
 
 
+FIXTURES = Path(__file__).resolve().parent / "fixtures"
+
+
+class ChartSnapshotTest(unittest.TestCase):
+    """The chart for 0001 (classic) and 0002 (solid) must not change by a single coordinate.
+    Fixtures are frozen copies; regenerate a snapshot only for an intended drawing change."""
+
+    def assert_snapshot(self, name, terms):
+        import json
+        from granny.chart import layout
+        got = json.loads(json.dumps(layout(dsl.parse((FIXTURES / f"{name}.dsl").read_text()), terms)))
+        want = json.loads((FIXTURES / f"{name}.chart.json").read_text())
+        self.assertEqual(got, want)
+
+    def test_classic(self):
+        self.assert_snapshot("classic", "UK")
+
+    def test_solid(self):
+        self.assert_snapshot("solid", "UK")
+
+
 class DatasetTest(unittest.TestCase):
     """Every pattern in data/ must parse and must not have count mismatches."""
 
@@ -108,7 +172,7 @@ class DatasetTest(unittest.TestCase):
         from granny import store
         for pid in store.list_ids():
             p = store.load(pid)
-            r = check(p["human"], p["dsl"], p["meta"]["terms"])
+            r = check(p["human"], p["dsl"], p["meta"]["terms"], p["meta"]["abbreviations"])
             with self.subTest(pid=pid):
                 self.assertEqual(r["errors"], [])
                 bad = [x["label"] for x in r["rounds"] if x["status"] == "mismatch"]

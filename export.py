@@ -31,12 +31,12 @@ def _locate(text: str, needle: str, near: int) -> int | None:
     return best
 
 
-def alignment(p: dict) -> dict[str, list]:
+def alignment(p: dict, abbrevs: dict) -> dict[str, list]:
     """Confirmed manual links per round, skipping stale ones."""
     raw_lines = {}
     for raw in p["dsl"].split("\n"):
         try:
-            line = dsl.parse_line(raw)
+            line = dsl.parse_line(raw, abbrevs)
         except dsl.DSLError:
             continue
         if line and line.label not in raw_lines:
@@ -47,7 +47,7 @@ def alignment(p: dict) -> dict[str, list]:
         if label not in raw_lines:
             continue
         raw, line = raw_lines[label]
-        gen, gen_spans = render.render_line(line)
+        gen, gen_spans = render.render_line(line, abbrevs)
         items = []
         for key, v in r.get("atoms", {}).items():
             i = int(key)
@@ -70,19 +70,22 @@ def alignment(p: dict) -> dict[str, list]:
 def export_pattern(pid: str) -> dict:
     p = store.load(pid)
     meta, terms = p["meta"], p["meta"]["terms"]
-    report = check(p["human"], p["dsl"], terms)
+    report = check(p["human"], p["dsl"], terms, meta["abbreviations"])
+    abbrevs, _ = dsl.parse_abbreviations(meta["abbreviations"])
 
     lines = []
     for raw in p["dsl"].splitlines():
         try:
-            line = dsl.parse_line(raw)
+            line = dsl.parse_line(raw, abbrevs)
         except dsl.DSLError:
             continue  # already reported in report["errors"]
         if line:
             lines.append(line)
     us = {l.label: l for l in dsl.to_us(lines, terms)}
+    us_abbrevs = {k: dsl.Abbrev(a.abbr, a.name, dsl.to_us([dsl.Line("", a.items)], terms)[0].items)
+                  for k, a in abbrevs.items()}
     own = {l.label: l for l in lines}
-    links = alignment(p)
+    links = alignment(p, abbrevs)
 
     rounds = []
     for r in report["rounds"]:
@@ -92,8 +95,8 @@ def export_pattern(pid: str) -> dict:
             "human": r["human"],
             "dsl_us": dsl.format_line(line) if line else None,
             "tokens": dsl.line_tokens(line) if line else None,
-            "uniform": render.render_line(own[r["label"]])[0] if r["label"] in own else None,
-            "uniform_us": render.render_line(line)[0] if line else None,
+            "uniform": render.render_line(own[r["label"]], abbrevs)[0] if r["label"] in own else None,
+            "uniform_us": render.render_line(line, us_abbrevs)[0] if line else None,
             "alignment": links.get(r["label"], []),
             "atoms": len(line.atoms) if line else 0,
             "stated_counts": r["stated"],
@@ -108,14 +111,17 @@ def export_pattern(pid: str) -> dict:
         "author": meta["author"],
         "license": meta["license"],
         "tags": meta["tags"],
+        # Abbreviations stay as one token ("vs"); their definitions are given here.
+        "abbreviations": [{**d, "dsl_us": dsl.format_items(us_abbrevs[d["abbr"].lower()].items)}
+                          for d in meta["abbreviations"] if d.get("abbr", "").lower() in abbrevs],
         "images": [{**img, "path": f"data/patterns/{pid}/images/{img['file']}"} for img in meta["images"]],
         "human": p["human"],
         "human_preamble": report["preamble"],
         "dsl": p["dsl"],
         "dsl_us": "\n".join(dsl.format_line(l) for l in us.values()),
         "tokens": [t for l in us.values() for t in dsl.line_tokens(l)],
-        "uniform": render.render(lines),
-        "uniform_us": render.render(list(us.values())),
+        "uniform": render.render(lines, abbrevs),
+        "uniform_us": render.render(list(us.values()), us_abbrevs),
         "rounds": rounds,
         "verified": report["ok"],
         "errors": report["errors"],

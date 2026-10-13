@@ -52,7 +52,7 @@ def _utf16(text: str):
     return lambda i: pre[i]
 
 
-def links(human: str, dsl_text: str) -> dict:
+def links(human: str, dsl_text: str, abbrevs: dict | None = None) -> dict:
     """Character-level links between DSL atoms and human-text mentions, per round.
 
     Offsets are absolute within each document (UTF-16, for the browser):
@@ -68,17 +68,18 @@ def links(human: str, dsl_text: str) -> dict:
     d_lines, pos = {}, 0
     for raw in dsl_text.split("\n"):
         try:
-            line = dsl.parse_line(raw)
+            line = dsl.parse_line(raw, abbrevs)
         except dsl.DSLError:
             line = None
         if line and line.label not in d_lines:
             d_lines[line.label] = (line, pos, pos + len(raw))
         pos += len(raw) + 1
 
-    # Uniform text, one line per DSL round, in DSL order.
-    gen_lines, gen_spans, gpos = [], {}, 0
+    # Uniform text: abbreviation definitions, then one line per DSL round, in DSL order.
+    gen_lines = render.definitions(abbrevs)
+    gen_spans, gpos = {}, sum(len(t) + 1 for t in gen_lines)
     for label, (line, _, _) in d_lines.items():
-        text, spans = render.render_line(line)
+        text, spans = render.render_line(line, abbrevs)
         gen_spans[label] = [(s + gpos, e + gpos) for s, e in spans]
         gen_lines.append(text)
         gpos += len(text) + 1
@@ -113,8 +114,27 @@ def links(human: str, dsl_text: str) -> dict:
     return out
 
 
-def stated_counts(round_text: str) -> dict[str, int]:
-    """Parse "(12 tr, 4 3-ch sps.)" -> {"tr": 12, "3ch-sp": 4}."""
+def _name_key(name: str) -> str:
+    """"V-sts", "v-stitches", "V-st" -> "vst": compare stitch names loosely."""
+    w = re.sub(r"[^a-z]", "", name.lower())
+    w = w[:-2] if re.search(r"(ch|sh|x)es$", w) else w[:-1] if w.endswith("s") and len(w) > 2 else w
+    return w.replace("stitch", "st")
+
+
+def abbreviation_names(defs) -> dict[str, str]:
+    """Loose spellings of each abbreviation and its full name -> the abbreviation."""
+    out = {}
+    for d in defs or []:
+        abbr = (d.get("abbr") or "").strip().lower()
+        for form in (abbr, d.get("name") or ""):
+            if abbr and form.strip():
+                out[_name_key(form)] = abbr
+    return out
+
+
+def stated_counts(round_text: str, names: dict[str, str] | None = None) -> dict[str, int]:
+    """Parse "(12 tr, 4 3-ch sps.)" -> {"tr": 12, "3ch-sp": 4}.
+    names: from abbreviation_names, so "8 v-sts" -> {"vs": 8}."""
     m = _STATED.search(round_text)
     if not m:
         return {}
@@ -127,6 +147,8 @@ def stated_counts(round_text: str) -> dict[str, int]:
         sp = _SP.match(name)
         if sp:
             key = f"{sp.group(1) or sp.group(2)}ch-sp"
+        elif names and _name_key(name) in names:
+            key = names[_name_key(name)]
         else:
             key = _NAMES.get(name, name)
             key = dsl.ALIASES.get(key, key)
@@ -134,15 +156,18 @@ def stated_counts(round_text: str) -> dict[str, int]:
     return out
 
 
-def check(human: str, dsl_text: str, terms: str = "US") -> dict:
-    """Round-by-round alignment report, JSON-serialisable for the web UI."""
+def check(human: str, dsl_text: str, terms: str = "US", abbreviations: list | None = None) -> dict:
+    """Round-by-round alignment report, JSON-serialisable for the web UI.
+    abbreviations: the pattern's own, from meta (see dsl.parse_abbreviations)."""
     preamble, human_rounds = split_rounds(human)
     report = {"preamble": preamble, "rounds": [], "errors": [], "ok": True}
+    abbrevs, report["errors"] = dsl.parse_abbreviations(abbreviations)
+    names = abbreviation_names(abbreviations)
 
     dsl_lines: dict[str, dict] = {}
     for n, raw in enumerate(dsl_text.splitlines(), 1):
         try:
-            line = dsl.parse_line(raw)
+            line = dsl.parse_line(raw, abbrevs)
         except dsl.DSLError as e:
             report["errors"].append(f"DSL line {n}: {e}")
             continue
@@ -161,7 +186,7 @@ def check(human: str, dsl_text: str, terms: str = "US") -> dict:
         h = human_rounds.get(label)
         d = dsl_lines.get(label)
         row = {"label": label, "human": h, "dsl": d["src"] if d else None,
-               "stated": stated_counts(h) if h else {}, "computed": {},
+               "stated": stated_counts(h, names) if h else {}, "computed": {},
                "exact": True, "warnings": [], "status": ""}
         if d:
             counts, exact = dsl.count(d["line"].items)
@@ -192,6 +217,6 @@ def check(human: str, dsl_text: str, terms: str = "US") -> dict:
 
     if report["errors"]:
         report["ok"] = False
-    report["links"] = links(human, dsl_text)
+    report["links"] = links(human, dsl_text, abbrevs)
     report["chart"] = chart.layout([d["line"] for d in dsl_lines.values()], terms)
     return report

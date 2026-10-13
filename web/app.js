@@ -52,6 +52,7 @@ async function openPattern(id) {
   for (const f of META_FIELDS) $("#" + f).value = current.meta[f] ?? "";
   $("#human").value = current.human;
   $("#dsl").value = current.dsl;
+  renderAbbrs();
   if (linking) stopLinking();
   links = null;
   $("#gen").textContent = "";
@@ -68,6 +69,42 @@ for (const f of META_FIELDS) {
 for (const f of ["human", "dsl"]) {
   $("#" + f).addEventListener("input", () => { current[f] = $("#" + f).value; links = null; clearMarks(); changed(); });
 }
+
+// ---- abbreviations -------------------------------------------------------
+// Per-pattern stitches like vs = "tr 1ch tr", saved in meta.abbreviations.
+
+const ABBR_FIELDS = ["abbr", "name", "dsl"];
+
+function renderAbbrs() {
+  $("#abbrs").hidden = !current.meta.abbreviations.length;
+  $("#abbrs tbody").innerHTML = current.meta.abbreviations.map((a, i) => `
+    <tr data-i="${i}">
+      <td><input data-f="abbr" value="${esc(a.abbr)}" placeholder="vs" spellcheck="false"></td>
+      <td><input data-f="name" value="${esc(a.name)}" placeholder="v-stitch"></td>
+      <td><input data-f="dsl" class="code" value="${esc(a.dsl)}" placeholder="tr 1ch tr" spellcheck="false"></td>
+      <td><button class="del" title="Remove">×</button></td>
+    </tr>`).join("");
+}
+
+$("#abbr-add").addEventListener("click", () => {
+  current.meta.abbreviations = [...current.meta.abbreviations, { abbr: "", name: "", dsl: "" }];
+  renderAbbrs();
+  $("#abbrs tbody tr:last-child input").focus();
+  changed();
+});
+$("#abbrs").addEventListener("input", (e) => {
+  const i = +e.target.closest("tr").dataset.i, f = e.target.dataset.f;
+  // A new array each time, so runCheck can tell a stale response apart.
+  current.meta.abbreviations = current.meta.abbreviations.map((a, j) => j === i ? { ...a, [f]: e.target.value } : a);
+  changed();
+});
+$("#abbrs").addEventListener("click", (e) => {
+  if (!e.target.matches(".del")) return;
+  const i = +e.target.closest("tr").dataset.i;
+  current.meta.abbreviations = current.meta.abbreviations.filter((_, j) => j !== i);
+  renderAbbrs();
+  changed();
+});
 
 function changed() {
   $("#save-state").textContent = "Unsaved…";
@@ -197,9 +234,10 @@ const fmtCounts = (c, diffs = {}) => Object.entries(c)
 
 async function runCheck() {
   if (!current) return;
-  const { human, dsl } = current;
-  const r = await api("/api/check", { method: "POST", body: { human, dsl, terms: current.meta.terms } });
-  if (current.human !== human || current.dsl !== dsl) return; // stale; a newer check is queued
+  const { human, dsl } = current, abbreviations = current.meta.abbreviations;
+  const r = await api("/api/check", { method: "POST", body: { human, dsl, terms: current.meta.terms, abbreviations } });
+  // Stale; a newer check is queued.
+  if (current.human !== human || current.dsl !== dsl || current.meta.abbreviations !== abbreviations) return;
   links = r.links;
   report = r;
   renderGen([]);
@@ -627,9 +665,25 @@ for (const side of ["human", "dsl"]) {
 }
 
 // ---- chart ---------------------------------------------------------------
-// Standard crochet symbols from the server's layout (granny/chart.py), one colour per round.
+// Standard crochet symbols from the server's layout (granny/chart.py). Stitches are drawn
+// in their yarn colour (C2@… in the DSL, hex in meta.colors); a pattern without colours
+// gets one colour per round instead.
 
 const ROUND_COLORS = ["#c2546b", "#3a7bd5", "#e8892b", "#3f8f5a", "#8a5cc2", "#1f9e9e", "#b5852a"];
+let lastChart = null;
+
+function yarnColor(c) {
+  // "C3" -> meta.colors.C3, else a default by number.
+  return current.meta.colors?.[c] || ROUND_COLORS[(parseInt(c.slice(1)) - 1 + ROUND_COLORS.length) % ROUND_COLORS.length];
+}
+
+function isLight(hex) {
+  // Pale yarns (cream, white) need an outline to show on the chart background.
+  const m = /^#(..)(..)(..)$/.exec(hex);
+  if (!m) return false;
+  const [r, g, b] = m.slice(1).map((x) => parseInt(x, 16) / 255);
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b > 0.75;
+}
 
 function chartAtoms(label, atoms) {
   // Chart atoms are per-round indices; map them to links.dsl indices.
@@ -672,6 +726,8 @@ function symbol(p, color) {
 }
 
 function drawChart(chart) {
+  lastChart = chart;
+  drawYarns(chart?.colors || []);
   $("#chart-notes").innerHTML = (chart?.rounds || []).filter((r) => r.note)
     .map((r) => `<div>R${esc(r.label)}: ${esc(r.note)}</div>`).join("");
   if (!chart || !chart.rounds.length) {
@@ -682,17 +738,40 @@ function drawChart(chart) {
   let svg = `<svg viewBox="${-S} ${-S} ${2 * S} ${2 * S}" xmlns="http://www.w3.org/2000/svg">`;
   if (chart.ring) {
     const a = chartAtoms("start", chart.ring.a);
-    svg += `<g data-a="${a.join(" ")}" data-own="${a[0] ?? ""}"><circle cx="0" cy="0" r="${chart.ring.r}" fill="none" stroke="var(--muted)" stroke-width="0.6"/></g>`;
+    const stroke = chart.ring.y ? yarnColor(chart.ring.y) : "var(--muted)";
+    svg += `<g data-a="${a.join(" ")}" data-own="${a[0] ?? ""}"><circle cx="0" cy="0" r="${chart.ring.r}" fill="none" stroke="${stroke}" stroke-width="0.6"/></g>`;
   }
+  const yarns = chart.colors?.length > 0;
   chart.rounds.forEach((r, ri) => {
-    const color = ROUND_COLORS[ri % ROUND_COLORS.length];
     for (const p of r.prims) {
+      // In a coloured pattern, stitches without a colour are drawn neutral.
+      const color = !yarns ? ROUND_COLORS[ri % ROUND_COLORS.length] : p.y ? yarnColor(p.y) : "var(--muted)";
       const a = chartAtoms(r.label, p.a);
-      svg += `<g data-a="${a.join(" ")}" data-own="${a[0] ?? ""}">${symbol(p, color)}</g>`;
+      const halo = isLight(color) ? `<g class="halo">${symbol(p, "var(--muted)")}</g>` : "";
+      svg += `<g data-a="${a.join(" ")}" data-own="${a[0] ?? ""}">${halo}${symbol(p, color)}</g>`;
     }
   });
   $("#chart").innerHTML = svg + "</svg>";
 }
+
+function drawYarns(colors) {
+  // One swatch per colour used; rebuilt only when the set changes, so an open picker survives redraws.
+  const el = $("#chart-yarns");
+  if (el.dataset.colors === colors.join(" ")) return;
+  el.dataset.colors = colors.join(" ");
+  el.innerHTML = colors.map((c) =>
+    `<label><input type="color" data-c="${esc(c)}" value="${esc(yarnColor(c))}"> ${esc(c)}</label>`).join("");
+}
+
+$("#chart-yarns").addEventListener("input", (e) => {
+  const c = e.target.dataset.c;
+  if (!c || !current) return;
+  current.meta.colors = { ...current.meta.colors, [c]: e.target.value };
+  drawChart(lastChart);
+  $("#save-state").textContent = "Unsaved…";
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(save, 800);
+});
 
 function highlightChart(sel) {
   const set = new Set(sel);

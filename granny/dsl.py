@@ -40,6 +40,7 @@ class Op:
     count: int = 1
     as_: str | None = None  # "3ch=tr": chain counts as a stitch
     place: str | None = None
+    expand: list | None = None  # a pattern abbreviation ("vs"): the items it stands for
 
 
 @dataclass
@@ -58,12 +59,28 @@ class Repeat:
 
 
 @dataclass
+class Color:
+    """C3@item: worked in yarn colour C3. C3@{...} without @place colours a run of items
+    (a colour block, not a group worked into one place)."""
+    color: str
+    items: list
+
+
+@dataclass
+class Abbrev:
+    """A pattern's own abbreviation: vs = v-stitch = tr 1ch tr."""
+    abbr: str
+    name: str  # full name for the uniform text; the abbreviation itself if none given
+    items: list
+
+
+@dataclass
 class Line:
     label: str  # "start", "1", "6-10"
     items: list
     warnings: list = field(default_factory=list)
     # Source positions in the raw line, in written order, for linking to the human text:
-    # (kind, key, count, start, end); kind is "op" | "place" | "rep".
+    # (kind, key, count, start, end); kind is "op" | "place" | "rep" | "color".
     atoms: list = field(default_factory=list)
 
 
@@ -74,11 +91,12 @@ _TOKEN = re.compile(
   | (?P<times>x(?P<n>\d+)\b)
   | (?P<until>>(?P<landmark>[a-z][\w-]*))
   | (?P<at>@(?P<place>[a-z][\w-]*))
+  | (?P<color>c(?P<cn>\d+)@)
   | (?P<op>(?P<count>\d+)?(?P<st>[a-z]+)(?:=(?P<as>[a-z]+))?)
     """,
     re.VERBOSE | re.IGNORECASE,
 )
-_KINDS = ("ws", "lbrace", "rbrace", "lbrack", "rbrack", "times", "until", "at", "op")
+_KINDS = ("ws", "lbrace", "rbrace", "lbrack", "rbrack", "times", "until", "at", "color", "op")
 
 _LINE = re.compile(r"^\s*(?:R(?:ound|nd)?\s*(?P<num>\d+(?:-\d+)?)|(?P<start>start))\s*:\s*(?P<body>.*)$", re.I)
 
@@ -106,57 +124,101 @@ def _place(m, warnings):
     return place
 
 
-def _parse_items(toks, i, closer, warnings, atoms):
+def _parse_items(toks, i, closer, warnings, atoms, abbrevs):
     items = []
     while i < len(toks):
-        kind, m = toks[i]
-        if kind == closer:
+        if toks[i][0] == closer:
             return items, i + 1
-        if kind in ("rbrace", "rbrack"):
-            raise DSLError(f"unexpected {m.group(0)!r}")
-        if kind == "lbrace":
-            inner, i = _parse_items(toks, i + 1, "rbrace", warnings, atoms)
-            g = Group(inner)
-            if i < len(toks) and toks[i][0] == "at":
-                g.place = _place(toks[i][1], warnings)
-                atoms.append(("place", g.place, 1, *toks[i][1].span()))
-                i += 1
-            else:
-                warnings.append("{...} group without @place")
-            items.append(g)
-        elif kind == "lbrack":
-            inner, i = _parse_items(toks, i + 1, "rbrack", warnings, atoms)
-            if i >= len(toks) or toks[i][0] not in ("times", "until"):
-                raise DSLError("[...] must be followed by xN or >landmark")
-            k, mm = toks[i]
-            atoms.append(("rep", mm.group(0).lower(), 1, *mm.span()))
-            items.append(Repeat(inner, times=int(mm.group("n"))) if k == "times"
-                         else Repeat(inner, until=mm.group("landmark").lower()))
-            i += 1
-        elif kind == "op":
-            st = m.group("st").lower()
-            st = ALIASES.get(st, st)
-            if st not in KNOWN:
-                warnings.append(f"unknown stitch {st!r}")
-            op = Op(st, int(m.group("count") or 1), (m.group("as") or "").lower() or None)
-            atoms.append(("op", st, op.count, *m.span()))
-            i += 1
-            if i < len(toks) and toks[i][0] == "at" and toks[i][1].start() == m.end():
-                op.place = _place(toks[i][1], warnings)
-                atoms.append(("place", op.place, 1, *toks[i][1].span()))
-                i += 1
-            items.append(op)
-        elif kind == "at":
-            raise DSLError(f"{m.group(0)!r} must directly follow a stitch or }}")
-        else:
-            raise DSLError(f"{m.group(0)!r} must directly follow ]")
+        item, i = _parse_item(toks, i, warnings, atoms, abbrevs)
+        items.append(item)
     if closer:
         raise DSLError(f"missing closing {'}' if closer == 'rbrace' else ']'}")
     return items, i
 
 
-def parse_line(text: str) -> Line | None:
-    """Parse one DSL line. Returns None for blank/comment lines."""
+def _parse_item(toks, i, warnings, atoms, abbrevs, block=False):
+    """One item starting at toks[i]. block: a {...} without @place is a colour block."""
+    kind, m = toks[i]
+    if kind in ("rbrace", "rbrack"):
+        raise DSLError(f"unexpected {m.group(0)!r}")
+    if kind == "color":
+        color = f"C{int(m.group('cn'))}"
+        atoms.append(("color", color, 1, *m.span()))
+        if i + 1 >= len(toks) or toks[i + 1][0] not in ("op", "lbrace", "lbrack"):
+            raise DSLError(f"{m.group(0)!r} must be followed by a stitch, {{...}} or [...]")
+        item, i = _parse_item(toks, i + 1, warnings, atoms, abbrevs, block=True)
+        return Color(color, item if isinstance(item, list) else [item]), i
+    if kind == "lbrace":
+        inner, i = _parse_items(toks, i + 1, "rbrace", warnings, atoms, abbrevs)
+        g = Group(inner)
+        if i < len(toks) and toks[i][0] == "at":
+            g.place = _place(toks[i][1], warnings)
+            atoms.append(("place", g.place, 1, *toks[i][1].span()))
+            i += 1
+        elif block:
+            return inner, i
+        else:
+            warnings.append("{...} group without @place")
+        return g, i
+    if kind == "lbrack":
+        inner, i = _parse_items(toks, i + 1, "rbrack", warnings, atoms, abbrevs)
+        if i >= len(toks) or toks[i][0] not in ("times", "until"):
+            raise DSLError("[...] must be followed by xN or >landmark")
+        k, mm = toks[i]
+        atoms.append(("rep", mm.group(0).lower(), 1, *mm.span()))
+        rep = (Repeat(inner, times=int(mm.group("n"))) if k == "times"
+               else Repeat(inner, until=mm.group("landmark").lower()))
+        return rep, i + 1
+    if kind == "op":
+        st = m.group("st").lower()
+        st = ALIASES.get(st, st)
+        if st not in KNOWN and st not in abbrevs:
+            warnings.append(f"unknown stitch {st!r}")
+        op = Op(st, int(m.group("count") or 1), (m.group("as") or "").lower() or None,
+                expand=abbrevs[st].items if st in abbrevs else None)
+        atoms.append(("op", st, op.count, *m.span()))
+        i += 1
+        if i < len(toks) and toks[i][0] == "at" and toks[i][1].start() == m.end():
+            op.place = _place(toks[i][1], warnings)
+            atoms.append(("place", op.place, 1, *toks[i][1].span()))
+            i += 1
+        return op, i
+    if kind == "at":
+        raise DSLError(f"{m.group(0)!r} must directly follow a stitch or }}")
+    raise DSLError(f"{m.group(0)!r} must directly follow ]")
+
+
+def parse_abbreviations(defs) -> tuple[dict[str, Abbrev], list[str]]:
+    """Pattern abbreviations from meta ([{abbr: "vs", name: "v-stitch", dsl: "tr 1ch tr"}])
+    -> ({"vs": Abbrev}, errors). Definitions are in the pattern's own terms and can't use
+    other abbreviations."""
+    out, errors = {}, []
+    for d in defs or []:
+        abbr = (d.get("abbr") or "").strip().lower()
+        if not abbr and not (d.get("dsl") or "").strip():
+            continue  # empty row
+        if not re.fullmatch(r"[a-z]+", abbr):
+            errors.append(f"abbreviation {abbr!r}: use letters only")
+        elif abbr in KNOWN or abbr in ALIASES:
+            errors.append(f"abbreviation {abbr!r}: already a built-in stitch")
+        else:
+            warnings = []
+            try:
+                items, _ = _parse_items(_lex(d.get("dsl") or ""), 0, None, warnings, [], {})
+            except DSLError as e:
+                errors.append(f"abbreviation {abbr!r}: {e}")
+                continue
+            if not items:
+                errors.append(f"abbreviation {abbr!r}: empty definition")
+                continue
+            errors += [f"abbreviation {abbr!r}: {w}" for w in warnings]
+            out[abbr] = Abbrev(abbr, (d.get("name") or "").strip() or abbr, items)
+    return out, errors
+
+
+def parse_line(text: str, abbrevs: dict | None = None) -> Line | None:
+    """Parse one DSL line. Returns None for blank/comment lines.
+    abbrevs: from parse_abbreviations."""
     code = text.split("#", 1)[0]
     if not code.strip():
         return None
@@ -165,19 +227,19 @@ def parse_line(text: str) -> Line | None:
         raise DSLError("line must start with 'R<n>:' or 'start:'")
     label = "start" if m.group("start") else m.group("num")
     warnings, atoms = [], []
-    items, _ = _parse_items(_lex(m.group("body")), 0, None, warnings, atoms)
+    items, _ = _parse_items(_lex(m.group("body")), 0, None, warnings, atoms, abbrevs or {})
     # Atom positions are relative to the body; shift them to the raw line.
     off = m.start("body")
     atoms = [(k, key, n, s + off, e + off) for k, key, n, s, e in atoms]
     return Line(label, items, warnings, atoms)
 
 
-def parse(text: str) -> list[Line]:
+def parse(text: str, abbrevs: dict | None = None) -> list[Line]:
     """Parse a whole DSL document; raises DSLError with the line number."""
     lines = []
     for n, raw in enumerate(text.splitlines(), 1):
         try:
-            line = parse_line(raw)
+            line = parse_line(raw, abbrevs)
         except DSLError as e:
             raise DSLError(f"line {n}: {e}") from None
         if line:
@@ -210,7 +272,15 @@ def _walk(items, cur: Counter, state: dict, snap, ctx=()):
     """Accumulate counts into cur. Calls snap(ctx) after each atom, in the same
     order the parser records Line.atoms. state["exact"] turns False after a >landmark repeat."""
     for it in items:
-        if isinstance(it, Op):
+        if isinstance(it, Op) and it.expand:
+            # Counted as its stitches, plus a tally of the abbreviation ("12 v-sts").
+            cur[it.st] += it.count
+            for _ in range(it.count):
+                _walk(it.expand, cur, state, lambda ctx: None)
+            snap(ctx)
+            if it.place:
+                snap(ctx)
+        elif isinstance(it, Op):
             cur.update(_op_counts(it))
             snap(ctx)
             if it.place:
@@ -219,6 +289,9 @@ def _walk(items, cur: Counter, state: dict, snap, ctx=()):
             _walk(it.items, cur, state, snap, ctx)
             if it.place:
                 snap(ctx)
+        elif isinstance(it, Color):
+            snap(ctx)
+            _walk(it.items, cur, state, snap, ctx)
         else:
             before = Counter(cur)
             marker = f"x{it.times}" if it.times else f">{it.until}"
@@ -261,10 +334,13 @@ def _rename(items, mapping):
     out = []
     for it in items:
         if isinstance(it, Op):
-            out.append(Op(mapping.get(it.st, it.st), it.count,
-                          mapping.get(it.as_, it.as_) if it.as_ else None, it.place))
+            out.append(Op(mapping.get(it.st, it.st) if not it.expand else it.st, it.count,
+                          mapping.get(it.as_, it.as_) if it.as_ else None, it.place,
+                          _rename(it.expand, mapping) if it.expand else None))
         elif isinstance(it, Group):
             out.append(Group(_rename(it.items, mapping), it.place))
+        elif isinstance(it, Color):
+            out.append(Color(it.color, _rename(it.items, mapping)))
         else:
             out.append(Repeat(_rename(it.items, mapping), it.times, it.until))
     return out
@@ -291,6 +367,9 @@ def format_items(items) -> str:
             s += f"@{it.place}" if it.place else ""
         elif isinstance(it, Group):
             s = "{" + format_items(it.items) + "}" + (f"@{it.place}" if it.place else "")
+        elif isinstance(it, Color):
+            single = len(it.items) == 1 and not (isinstance(it.items[0], Group) and not it.items[0].place)
+            s = f"{it.color}@" + (format_items(it.items) if single else "{" + format_items(it.items) + "}")
         else:
             s = "[" + format_items(it.items) + "]" + (f"x{it.times}" if it.times else f">{it.until}")
         parts.append(s)
@@ -318,6 +397,10 @@ def tokens(items) -> list[str]:
             out += ["{", *tokens(it.items), "}"]
             if it.place:
                 out.append(f"@{it.place}")
+        elif isinstance(it, Color):
+            single = len(it.items) == 1 and not (isinstance(it.items[0], Group) and not it.items[0].place)
+            inner = tokens(it.items)
+            out += [f"{it.color}@", *(inner if single else ["{", *inner, "}"])]
         else:
             out += ["[", *tokens(it.items), "]", f"x{it.times}" if it.times else f">{it.until}"]
     return out
