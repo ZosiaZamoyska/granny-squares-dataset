@@ -1,0 +1,25 @@
+ch- chain stitch
+dc– double crochet
+sc- single crochet
+ch-sp – chain space
+Sl St– slip stitch for joining for different round.
+st– stitch
+
+R0: make magic ring
+Round 1
+ch3(count as dc)+2dc, ch3, [3dc, ch3] repeat 3 times, sl st to the top of the first ch3, fasten off.
+
+Round 2
+New yarn in corner, ch1+sc+ch3, sc+ch3 in next corner, [sc+ch3 in the same corner, sc+ch3 in next corner] repeat 3 times, sl st to the first sc, fasten off.
+
+Round 3
+New yarn in corner, ch3(count as dc)+2dc+ch1, 3dc+ch1 in next ch-sp, 3dc+ch3 in next corner, [3dc+ch1 in the same corner, 3dc+ch1 in next ch-sp, 3dc+ch3 in next corner] repeat 3 times, sl st to the top of the first ch3, fasten off.
+
+Round 4
+New yarn in corner, ch1+sc+ch3, [sc+ch3 in the next ch-sp] repeat 2 times, sc+ch3 in next corner, [sc+ch3 in the same corner, *sc+ch3 in the next ch-sp* repeat 2 times, sc+ch3 in next corner] repeat 3 times, sl st to the first sc, fasten off. 
+
+Round 5
+New yarn in corner, ch3(count as dc)+2dc+ch1, [3dc+ch1 in next ch-sp] repeat 3 times, 3dc+ch3 in next corner, [3dc+ch1 in the same corner, *3dc+ch1 in next ch-sp* repeat 3 times, 3dc+ch3 in next corner] repeat 3 times, sl st to the top of the first ch3, fasten off.
+
+Round 6
+New yarn in corner, ch1+sc+ch3, [sc+ch3 in next ch-sp] repeat 4 times, sc+ch3 in next corner. [sc+ch3 in the same corner, *sc+ch3 in next ch-sp* repeat 4 times, sc+ch3 in next corner] repeat 3 times, sl st to the first sc, fasten off. 

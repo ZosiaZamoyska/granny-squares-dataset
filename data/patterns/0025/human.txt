@@ -1,0 +1,21 @@
+magic loop
+Round 1
+ch3(count as dc), 15dc in the loop, sl st to the top of ch3, fasten off.
+
+Round 2
+New yarn in any st, ch3(count as dc)+dc, third loop only(TLO): dc inc, dc, dc inc in next st, [dc inc in next st, TLO: dc inc, dc, dc inc in next st] repeat 3 times, sl st to the top of the first ch3, fasten off.
+
+Round 3
+New yarn in the left dc of the dc inc located at the right end of one side, ch3(count as dc)+dc, TLO: dc inc, 3dc, dc inc, and dc inc in next st, [dc inc in next st, TLO: dc inc, 3dc, dc inc, and dc inc in next st] repeat 3 times, sl st to the top of the first ch3, fasten off.
+
+Round 4
+New yarn in the right dc of the dc inc located at the right end of one side, ch3(count as dc)+dc, TLO: dc inc, 7dc, dc inc, and dc inc in next st, [dc inc in next st, TLO: dc inc, 7dc, dc inc, and dc inc in next st] repeat 3 times, sl st to the top of the ch3, fasten off.
+
+Round 5
+New yarn in the right dc of the dc inc located at the right end of one side, ch3(count as dc)+dc, TLO: dc inc, 11dc, dc inc, and dc inc in next st, [dc inc in next st, TLO: dc inc, 11dc, dc inc, and dc inc in next st] repeat 3 times, sl st to the top of the first ch3, fasten off.
+
+Round 6
+New yarn in the gap between any two of the dc inc groups, ch1+sc, TLO: 18sc, sc+ch2 in next gap, [sc in the same gap, TLO: 18sc, sc+ch2 in next gap] repeat 3 times, sl st to the first sc.
+
+Round 7
+ch1+sc, sc in following sts, 4sc in next corner, [sc in following sts, 4sc in corner] repeat 3 times, sl st to the first sc, fasten off.

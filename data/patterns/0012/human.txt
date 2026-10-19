@@ -1,0 +1,31 @@
+Rnd 1: Make a magic loop (or CH 4, join with a SLST in first CH to make a loop), in the loop,
+CH 4 (counts as DC and ch 1), *DC, CH 1* repeat *to* 10 more times, join with a SLST in the
+3rd CH of the CH 4, pull loop tight (12 DC, 12 CH 1 spaces)
+Rnd 2: SC in next CH 1 sp, CH 1 (this SC plus CH 1 counts as a DC), DC in same sp, CH 2,
+*DC2TOG in the next CH1 sp, CH2* repeat *to* 10 more times, join with a SLST in the 2nd DC
+(12 DC2TOG, 12 CH 2 spaces)
+Rnd 3: SC in next CH 2 sp, *CH 7, SC in next CH 2 sp, chain 3, SC in next CH 2 sp, chain 3, SC
+in next CH 2 sp* repeat *to* 2 more times, CH 7, SC in next CH 2 sp, chain 3, SC in next CH 2
+sp, chain 3, join with SLST to first SC (4 CH 7 spaces, 8 CH 3 spaces)
+Rnd 4: [SC, CH 1 (first DC), 4 DC, CH 3, 5 DC] in CH 7 loop, *SC in next CH 3 loop, CH 4, SC in
+next CH 3 loop, [5 DC, CH 3, 5 DC] in chain 7 loop*, repeat *to* 2 times, SC in next CH 3
+loop, CH 4, SC in next CH 3 loop, join with SLST to top of first DC
+Rnd 5: SC in next DC, CH1, DC in next 3 sts, [2 DC, CH 3, 2 DC] in next CH 3 sp (corner
+made), *DC in next 4 sts, CH 4, SC in CH 3 loop, CH 4, skip next DC, DC in next 4 sts, [2 DC,
+CH 3, 2 DC] in next CH 3 sp*, repeat *to* 2 times, DC in next 4 sts, CH 4, SC in CH 3 loop, CH
+4, join with SLST in top of first DC
+Rnd 6: SLST in next DC, SC in next DC, CH 1, DC in next 3 sts, [2 DC, CH 3, 2 DC] in CH 3 sp
+(corner made), *DC in next 4 sts, {CH 4, SC in next CH 4 loop} 2 times, CH 4, skip next 2 DC,
+DC in next 4 sts, [2 DC, CH 3, 2 DC] in CH 3 sp*, repeat *to* 2 times, DC in next 4 sts, {CH 4,
+SC in next CH 4 loop} twice, CH 4, join with SLST in top of first DC
+Rnd 7: In same space as join, SC, CH 1, DC in next 5 sts, [2 DC, CH 3, 2 DC] in CH 3 sp (corner
+made),* DC in next 6 sts, 2 DC in CH 4 loop, CH 4, SC in next CH 4 loop, CH 4, 2 DC in next CH
+4 loop, DC in next 6 sts, [2 DC, CH 3, 2 DC] in CH 3 sp*, repeat *to* 2 times, DC in next 6 sts,
+2 DC in CH 4 loop, CH 4, SC in next CH 4 loop, CH 4, 2 DC in next CH 4 loop, join with a SLST
+in top of first DC
+Rnd 8: In same space as join, SC, CH 1, DC in next 7 sts, [2 DC, CH 3, 2 DC] in CH 3 sp (corner
+made), *DC in next 10 sts, 2 DC in CH 4 loop, CH 1, 2 DC in CH 4 loop, DC in next 10 sts, [2
+DC, CH 3, 2 DC] in CH 3 sp* repeat *to* 2 times, DC in next 10 sts, 2 DC in CH 4 loop, CH 1, 2
+DC in CH 4 loop, DC in last 2 sts, join with SLST in top of first DC
+Rnd 9: SC in each st around including the CH 1 space and working [2 SC, CH 3, 2 SC] in each
+corner CH 3 space. Join with a SLST in beginning SC and fasten off! 

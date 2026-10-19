@@ -1,0 +1,30 @@
+ch– chain stitch
+ch-sp – chain space
+dc– double crochet
+dtr– double treble crochet
+FPdtr– front post double treble crochet
+rep– repeat
+st– stitch
+slst– slip stitch for joining for different round.
+
+
+Magic ring,
+Round 1 
+ch3=dc 2dc, ch2, [3dc, ch2] rep 13 times, tighten tail, slst to top, fasten off.
+
+Round 2
+Join new color yarn in any ch-sp, (an ch3=dc+2dc+ch2+3dc) in same ch-sp, ch1, [(3dc+2dc+ch2+3dc) in next ch-sp, ch1] rep 3 times, slst to top, fasten off.
+
+Round 3
+Join new color yarn in any corner sp, (an 3ch=dc+2dc+ch2+3dc) in same ch-sp, ch1, 3dc in next ch-sp, ch1, [(3dc+2dc+ch2+3dc) in next ch-sp, ch1, 3dc in next ch-sp, ch1] rep 3 times, slst to top, fasten off.
+
+Round 4
+Join new color yarn in any corner sp, note: in this round we make all dc in ch-sp:
+(an 3ch=dc+2dc+ch2+3dc) in same ch-sp, ch1, [3dc, ch1] rep 2 times, [(3dc+2dc+ch2+3dc) in next ch-sp, ch1, *(3dc, ch1) rep* 2 times] rep 3 times, slst to top, fasten off.
+
+Round 5
+Join new color yarn in corner sp, note: make all dc in ch-sp:
+
+(3ch=dc+2dc+ch2+3dc) in same ch-sp, ch1, ch1, dc, In round 2: (FPdtr in 2nd shell's st, FPdtr in 1st shell's 3ch=dc), ch1, 3dc, ch1, 
+
+[(3dc+2dc+ch2+3dc) in next corner sp, ch1, 3dc, ch1, dc, In round 2: (FPdtr in 2nd shell's st 3ch=dc, FPdtr in 1st shell's last 3ch=dc), ch1, 3dc, ch1], slst to top , fasten off and weave in ends.

@@ -1,12 +1,26 @@
 {
-  "title": "",
+  "title": "The Simple Square",
+  "status": "done",
   "terms": "US",
-  "source": "",
-  "author": "",
+  "source": "https://nillakcreates.blogspot.com/2018/07/the-simple-square-pattern.html",
+  "author": "Nilla K",
   "license": "",
   "notes": "",
   "tags": [],
-  "images": [],
+  "images": [
+    {
+      "file": "pasted-1792397045174.png",
+      "kind": "finished",
+      "round": null,
+      "caption": ""
+    },
+    {
+      "file": "pasted-1792397056118.png",
+      "kind": "finished",
+      "round": null,
+      "caption": ""
+    }
+  ],
   "abbreviations": [],
   "id": "0010"
 }

@@ -1,0 +1,29 @@
+rep– repeat
+ch– chain stitch
+dc– double crochet
+sc– single crochet
+ch-sp – chain space
+yo– yarn over
+st– stitch
+sk– skip
+sl st– slip stitch for joining to different rounds.
+
+magic ring
+R1: ch3 as standing st(count as dc), 15dc, slst into top of ch3, fasten off.
+
+Round 2 Join new yarn into any st, ch3 as a standing st(count as 1dc), ch1. *(1dc+ch1) in next st* rep 15 times, sl st to the top of the first ch3, fasten off.
+Round 3 Join new yarn into any st, ch3 as a standing st(count as 1dc), 2dc in next ch-sp. *1dc, 2dc in next ch-sp* rep 15 times, sl st to the top of the first ch3, fasten off.
+
+Round 4 Join new yarn into any st, ch1 as a standing st. 1sc in this st, ch5, sk2, 1sc in next st, ch2, sk2, 1sc in next st, ch3, sk2, 1sc in next st, ch2. *sk2, 1sc in next st, ch5, sk2, 1sc in next st, ch2, sk2, 1sc in next st, ch3, sk2, 1sc in next st, ch2* rep 3 times, sl st to the top of the first sc.
+
+Round 5
+All stitches work in ch-sp only for this round. sl st to the next ch-sp, ch3 as a standing st(count as 1dc), (4dc+ch3+5dc), 1sc, 5dc, 1sc. *(5dc+ch3+5dc), 1sc, 5dc, 1sc* rep 3 times, sl st to the top of the first ch3, fasten off. 
+
+Round 6
+Join new yarn to the top of the first ch3 from the last round. ch3 as a standing st(count as 1dc), ch5, (1sc+ch3+1sc) in next ch-sp, ch5,  sk5, 1dc in next sc, ch3, sk2, 1sc in next dc, ch3. *1dc in next sc, ch5,(1sc+ch3+1sc) in next ch-sp, ch5, sk5, 1dc in next sc, ch3, sk2, 1sc in next dc, ch3* rep 3 times, sl st to the top of the ch3.
+
+Round 7
+All stitches work in ch-sp only for this Round. sl st to the next ch-sp, ch3 as a standing st(count as 1dc), 4dc in this ch-sp, (3dc+ch3+3dc) , (5dc), (3dc), (3dc). *(5dc), (3dc+ch3+3dc), (5dc), (3dc), (3dc)* rep 3 times, sl st to the top of the first ch3, fasten off.
+
+
+

@@ -1,0 +1,42 @@
+ch- chain stitch
+dc- double crochet
+sp- space
+Sl St– slip stitch for joining to different round
+ch-sp- chain space
+st– stitch
+
+Magic loop, 
+Round 1
+with white yarn:
+ch1+invisible standing st(count as dc)+2dc+ch1;
+With blue yarn: ch1, fasten off white and weave in ends, 3dc+ch1;
+With purple yarn: ch1, fasten off blue and weave in ends, 3dc+ch1;
+With teal yarn: ch1, fasten off purple and weave in ends, 3dc+ch1;
+With white yarn: ch1, sl st to the top of the first invisible standing st.
+
+Round 2
+Sl st back to the last ch-sp, ch1+invisible standing st(count as dc)+2dc+ch1, 3dc+ch1 in next ch-sp;
+With blue yarn: ch1, fasten off white and weave in ends, 3dc+ch1 in the same ch-sp, 3dc+ch1 in next ch-sp;
+With purple yarn: ch1, fasten off blue and weave in ends, 3dc+ch1 in the same ch-sp, 3dc+ch1 in next ch-sp;
+With teal yarn: ch1, fasten off purple and weave in ends, 3dc+ch1 in the same ch-sp, 3dc+ch1 in next ch-sp;
+With white yarn: ch1, sl st to the top of the first invisible standing st.
+
+Round 3
+Sl st back to the last corner, ch1+invisible standing st(count as dc)+2dc+ch1, 3dc+ch1 in next ch-sp, 3dc+ch1 in next corner;
+With blue yarn: ch1, fasten off white and weave in ends, 3dc+ch1 in the same corner, 3dc+ch1 in next ch-sp, 3dc+ch1 in next corner;
+With purple yarn: ch1, fasten off blue and weave in ends, 3dc+ch1 in the same corner, 3dc+ch1 in next ch-sp, 3dc+ch1 in next corner;
+With teal yarn: ch1, fasten off purple and weave in ends, 3dc+ch1 in the same corner, 3dc+ch1 in next ch-sp, 3dc+ch1 in next corner;
+With white yarn: ch1, sl st to the top of the first invisible standing st.
+
+Round 4
+Sl st back to the last corner, ch1+invisible standing st(count as dc)+2dc+ch1, *3dc+ch1 in next ch-sp* repeat 2 times, 3dc+ch1 in next corner;
+With blue yarn: ch1, fasten off white and weave in ends, 3dc+ch1 in the same corner, *3dc+ch1 in next ch-sp* repeat 2 times, 3dc+ch1 in next corner;
+With purple yarn: ch1, fasten off blue and weave in ends, 3dc+ch1 in the same corner, *3dc+ch1 in next ch-sp* repeat 2 times, 3dc+ch1 in next corner;
+With teal yarn: ch1, fasten off purple and weave in ends, 3dc+ch1 in the same corner, *3dc+ch1 in next ch-sp* repeat 2 times, 3dc+ch1 in next corner;
+With white yarn: ch1, sl st to the top of the first invisible standing st.
+
+Round 5
+Sl st back to the last corner, ch1+invisible standing st(count as dc)+2dc+ch1, *3dc+ch1 in next ch-sp* repeat 3 times, 3dc+ch1 in next corner;
+With blue yarn: ch1, fasten off white and weave in ends, 3dc+ch1 in the same corner, *3dc+ch1 in next ch-sp* repeat 3 times, 3dc+ch1 in next corner;
+With purple yarn: ch1, fasten off blue and weave in ends, 3dc+ch1 in the same corner, *3dc+ch1 in next ch-sp* repeat 3 times, 3dc+ch1 in next corner;
+With teal yarn: ch1, fasten off purple and weave in ends, 3dc+ch1 in the same corner, *3dc+ch1 in next ch-sp* repeat 3 times, 3dc+ch2 in next corner, sl st to the top of the invisible standing st, fasten off. 

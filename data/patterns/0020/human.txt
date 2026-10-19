@@ -1,0 +1,20 @@
+ch- chain stitch
+dc– double crochet
+ch-sp – chain space
+Sl St– slip stitch for joining for different round.
+st– stitch
+
+magic loop
+
+Round 1 
+ch3(count as 1dc), 2dc ch2, then [3dc, ch2] repeat 3 times, sl st to the fist ch3, fasten off.
+
+Round 2
+Step 2: Add new yarn to any corner space, ch3(count as 1dc), make another 2dc, then ch2, and 3dc in the same corner space, and finally ch1. [3dc, ch2, 3dc, ch1 in the same corner space] repeat 3 times, sl st to the top of ch3. Fasten off.
+
+Round 3
+Step 3: Switch the yarn back to the color used in round 1 and add new yarn to any corner space, ch3 as a standing st (count as 1dc), then 2dc, ch2, 3dc in the same corner space.
+Step 4: Switch the yarn by making a yarn over and pulling the blue yarn through the loop on the hook. Then, continue to make 3dc in the next ch-sp. [3dc, ch2, 3dc in corner space with the yellow yarn, 3dc in the next ch-sp with the blue yarn] repeat 3 times, finally sl st to the top of the first ch3. Fasten off.
+
+Round 4
+Step 5: Add new blue yarn in any corner space, make ch3(count as 1dc), then 2dc, ch2, and 3dc in the same corner space, switch the yarn, 3dc in the next ch-sp + ch1, 3dc in the next ch-sp. [ 3dc, ch2, 3dc in the corner space with the blue yarn, switch the yarn, 3dc in next ch-sp + ch1, 3dc in next ch-sp with the yellow yarn] repeat 3 times, finally sl st to the top of the first ch3. Fasten off.

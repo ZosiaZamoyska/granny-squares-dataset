@@ -1,0 +1,17 @@
+Make a magic ring
+
+Round 1: Ch 3 (first dc), 2 dc in ring, *ch 3, 3 dc in ring*. Repeat from * to * two more times, ch 3. Join  with sl st to ch-3.
+
+Round 2: Join yarn in any ch-3 space. Ch 4 (first dc + ch 1), *dc in next dc, ch 1, sk 1 st, dc in next dc, ch 1, (dc, ch 3, dc) in ch-3 space, ch 1*. Repeat from * to * two more times. Dc in next dc, ch 1, sk 1 st, dc in next dc, ch 1, (dc, ch 3) in ch-3 space. Join  with sl st to third ch in ch-4.
+
+Round 3: If you use a new colour, join yarn in the first dc on any side. Ch 3 (first dc), *dc in ch-1 space, dc in dc* repeat from * to * until you reach the corner. *Make (2 dc, ch 3, 2 dc) in ch-3 space. Dc in every dc and ch-1 space until you reach corner.* Repeat from * to * two more times. Make (2 dc, ch 3, 2 dc) in ch-3 space. Join  with sl st to ch-3.
+
+Round 4: Join yarn in any ch-3 space. Ch 4 (first dc + ch 1). *Dc in next dc, ch 1, sk 1 st; repeat until you reach last dc before corner, dc in last dc, ch 1, make (dc, ch 3, dc) in ch-3 space, ch 1.* Repeat from * to * two more times. Dc in next dc, ch 1, sk 1 st; repeat until you reach last dc before corner, dc in last dc, ch 1, make (dc, ch 3) in corner. Join  with sl st to third ch in ch-4.
+
+Round 5: Repeat round 3.
+
+Round 6: Repeat round 4.
+
+Round 7: Repeat round 3.
+
+Keep repeating  round 4 and round 3 if you want to make a bigger square.

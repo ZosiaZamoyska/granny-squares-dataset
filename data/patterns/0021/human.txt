@@ -1,0 +1,18 @@
+ch– chain stitch
+dc– double crochet
+ch-sp – chain space
+st– stitch
+sl st– slip stitch for joining for different round.
+
+magic ring
+Round 1
+ch3(count as dc), 2dc, ch4, [4dc, ch4] repeat repeat 3 times, slst to top of ch3.
+
+Round 2
+ch6, sk 3 st, 4dc ch4 4dc in corner space, ch2, [sk 3 st, 4dc ch4 4dc in corner space, ch2] repeat 2 times, sk 3 st, 4dc ch4 4dc in corner space, slst to top of ch3. 
+
+Round 3
+5ch(3ch as dc), sk 2 ch-sp, dc in next st, ch2, skip 3 st, 4dc ch4 4dc in corner sp, ch2, [sk 3 st, dc in next st, ch2, sk 2 ch-sp, dc in next st, ch2, sk 3 st, 4dc ch4 4dc in corner sp, ch2] repeat 3 times, slst to top of ch3. 
+
+Round 4
+5ch(3ch as dc), [sk 2 ch-sp, dc in next st, ch2] repeat 2 times, sk 3 st, 4dc ch4 4dc in corner sp, ch2, sk 3 st, dc in next st, [*(sk 2 ch-sp, dc in next st) repeat* 3 times, ch2, sk 3 st, 4dc ch4 4dc in corner sp, ch2, sk 3 st, dc in next st] repeat 3 times, ch2, slst to top of ch3, fasten off.
