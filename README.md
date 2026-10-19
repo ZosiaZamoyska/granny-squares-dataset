@@ -11,10 +11,12 @@ Crochet granny-square patterns, each stored three ways:
 ```sh
 python3 server.py          # editor at http://localhost:8765 (stdlib only, no installs)
 python3 -m unittest        # every pattern must parse with no count mismatches
-python3 export.py          # -> exports/dataset.jsonl   (--strict skips failing patterns)
+python3 export.py          # -> exports/dataset.jsonl   (--strict skips failing patterns, --done-only skips WIP)
 ```
 
-The editor autosaves. It lines up each `Round N:` in the human text with `RN:` in the DSL.
+The editor autosaves. Each pattern has a status next to its title (WIP, finished, rejected), also shown in the sidebar; rejected patterns are never exported.
+
+The editor lines up each `Round N:` in the human text with `RN:` in the DSL.
 It also compares the stitch counts it computes against the counts stated in the pattern, e.g. `(24 tr, 4 3-ch sps.)`.
 
 Round status:
@@ -43,7 +45,7 @@ A link turns amber ("to review") when its DSL line changes after you confirmed i
 
 ```
 data/patterns/0001/
-  meta.json      title, terms (UK|US), source, author, license, tags, images[{file, kind, round, caption}],
+  meta.json      title, status (wip|done|rejected), terms (UK|US), source, author, license, tags, images[{file, kind, round, caption}],
                  colors {"C1": "#hex"} (set from the chart's swatches), abbreviations [{abbr, name, dsl}]
   human.txt
   pattern.dsl

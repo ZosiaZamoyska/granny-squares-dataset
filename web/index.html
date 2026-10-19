@@ -21,6 +21,9 @@
 <main id="editor" hidden>
   <div class="topbar">
     <input id="title" class="title" placeholder="Pattern title">
+    <select id="status" class="status" title="Completion status; rejected patterns are left out of the export">
+      <option value="wip">WIP</option><option value="done">Finished</option><option value="rejected">Rejected</option>
+    </select>
     <span id="save-state"></span>
   </div>
 

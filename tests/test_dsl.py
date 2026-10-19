@@ -172,6 +172,8 @@ class DatasetTest(unittest.TestCase):
         from granny import store
         for pid in store.list_ids():
             p = store.load(pid)
+            if p["meta"]["status"] == "rejected":
+                continue
             r = check(p["human"], p["dsl"], p["meta"]["terms"], p["meta"]["abbreviations"])
             with self.subTest(pid=pid):
                 self.assertEqual(r["errors"], [])

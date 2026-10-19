@@ -1,5 +1,6 @@
 const $ = (s) => document.querySelector(s);
-const META_FIELDS = ["title", "terms", "source", "author", "license", "notes"];
+const META_FIELDS = ["title", "status", "terms", "source", "author", "license", "notes"];
+const STATUS_LABELS = { wip: "WIP", done: "Finished", rejected: "Rejected" };
 const IMAGE_KINDS = ["finished", "in-progress", "chart", "diagram", "other"];
 
 let current = null; // {meta, human, dsl}
@@ -23,8 +24,9 @@ const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<
 async function loadList() {
   const items = await api("/api/patterns");
   $("#list").innerHTML = items.map((p) => `
-    <li data-id="${p.id}" class="${current?.meta.id === p.id ? "active" : ""}">
-      <div>${esc(p.title || "Untitled")}</div>
+    <li data-id="${p.id}" class="${current?.meta.id === p.id ? "active" : ""} ${p.status}">
+      <div class="name"><span>${esc(p.title || "Untitled")}</span>
+        <span class="status-tag ${p.status}">${STATUS_LABELS[p.status] || p.status}</span></div>
       <div class="sub">${p.id} · ${p.terms} · ${p.rounds} rnds · ${p.images.length} img
         ${p.statuses.map((s) => `<span class="dot ${s}" title="${s}"></span>`).join("")}</div>
     </li>`).join("");
@@ -50,6 +52,7 @@ async function openPattern(id) {
   $("#empty").hidden = true;
   $("#editor").hidden = false;
   for (const f of META_FIELDS) $("#" + f).value = current.meta[f] ?? "";
+  $("#status").className = "status " + current.meta.status;
   $("#human").value = current.human;
   $("#dsl").value = current.dsl;
   renderAbbrs();
@@ -64,7 +67,11 @@ async function openPattern(id) {
 }
 
 for (const f of META_FIELDS) {
-  $("#" + f).addEventListener("input", () => { current.meta[f] = $("#" + f).value; changed(); });
+  $("#" + f).addEventListener("input", () => {
+    current.meta[f] = $("#" + f).value;
+    if (f === "status") $("#status").className = "status " + current.meta.status;
+    changed();
+  });
 }
 for (const f of ["human", "dsl"]) {
   $("#" + f).addEventListener("input", () => { current[f] = $("#" + f).value; links = null; clearMarks(); changed(); });

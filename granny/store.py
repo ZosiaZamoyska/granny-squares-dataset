@@ -1,7 +1,7 @@
 """Filesystem storage. One folder per pattern:
 
     data/patterns/<id>/
-        meta.json      title, terms (UK/US), source, license, images[...],
+        meta.json      title, status (wip|done|rejected), terms (UK/US), source, license, images[...],
                        abbreviations[{abbr, name, dsl}]
         human.txt      the pattern as published
         pattern.dsl    the machine-readable version
@@ -18,7 +18,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent / "data" / "patterns"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".heic"}
 
-DEFAULT_META = {"title": "", "terms": "US", "source": "", "author": "", "license": "",
+STATUSES = ("wip", "done", "rejected")
+
+DEFAULT_META = {"title": "", "status": "wip", "terms": "US", "source": "", "author": "", "license": "",
                 "notes": "", "tags": [], "images": [], "abbreviations": []}
 
 

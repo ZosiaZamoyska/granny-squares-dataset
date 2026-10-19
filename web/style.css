@@ -24,6 +24,16 @@ h2 small { text-transform: none; letter-spacing: 0; font-weight: normal; color: 
 #list li { padding: 8px 16px; cursor: pointer; border-left: 3px solid transparent; }
 #list li:hover { background: var(--bg); }
 #list li.active { border-left-color: var(--accent); background: var(--bg); }
+#list .name { display: flex; align-items: baseline; gap: 6px; }
+#list .name span:first-child { flex: 1; min-width: 0; }
+#list li.rejected .name span:first-child { color: var(--muted); text-decoration: line-through; }
+.status-tag { font-size: 10px; padding: 1px 6px; border-radius: 8px; white-space: nowrap; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .03em; border: 1px solid currentColor; }
+.status-tag.wip, select.status.wip { color: var(--warn); }
+.status-tag.done, select.status.done { color: var(--ok); }
+.status-tag.rejected, select.status.rejected { color: var(--muted); }
+select.status { width: auto; flex: none; font-weight: 600; }
+select.status option { color: var(--ink); }
 #list .sub { color: var(--muted); font-size: 12px; display: flex; gap: 3px; align-items: center; }
 .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; background: var(--line); }
 .dot.ok { background: var(--ok); } .dot.unverified, .dot.no-counts { background: var(--warn); }
