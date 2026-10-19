@@ -1,0 +1,31 @@
+# Tell granny-squares-llm (the next-stitch visualizer) to retrain its models on this commit.
+#
+# Needs a secret VISUALIZER_TOKEN: a fine-grained personal access token with access to
+# ZosiaZamoyska/granny-squares-llm and "Contents: Read and write" permission.
+
+name: Notify visualizer
+
+on:
+  push:
+    branches: [main]
+    # Only what ends up in /api/dataset.json.
+    paths:
+      - "data/**"
+      - "granny/**"
+      - "export.py"
+      - "build_static.py"
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send repository_dispatch
+        env:
+          TOKEN: ${{ secrets.VISUALIZER_TOKEN }}
+        run: |
+          curl -fsS -X POST \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/ZosiaZamoyska/granny-squares-llm/dispatches \
+            -d '{"event_type": "dataset-updated", "client_payload": {"sha": "${{ github.sha }}"}}'
