@@ -3,10 +3,18 @@ const META_FIELDS = ["title", "status", "terms", "source", "author", "license", 
 const STATUS_LABELS = { wip: "WIP", done: "Finished", rejected: "Rejected" };
 const IMAGE_KINDS = ["finished", "in-progress", "chart", "diagram", "other"];
 
+// The static build (build_static.py) is read-only: no server, checks are precomputed.
+const READONLY = document.documentElement.hasAttribute("data-readonly");
+
 let current = null; // {meta, human, dsl}
 let saveTimer = null, checkTimer = null;
 
 async function api(path, opts = {}) {
+  if (READONLY) {
+    if (path === "/api/check") return current.check;
+    if (opts.method) throw new Error("read-only");
+    path = path === "/api/patterns" ? "/ui/patterns.json" : `/ui/${path.split("/").pop()}.json`;
+  }
   const res = await fetch(path, {
     ...opts,
     headers: { "Content-Type": "application/json" },
@@ -64,7 +72,17 @@ async function openPattern(id) {
   renderImages();
   runCheck();
   loadList();
+  if (READONLY) lock();
 }
+
+// Read-only build: inputs stay visible (and selectable) but can't be changed.
+function lock() {
+  for (const el of $("#editor").querySelectorAll("input, select, textarea")) {
+    if (el.tagName === "TEXTAREA") el.readOnly = true; else el.disabled = true;
+  }
+  $("#save-state").textContent = "read-only";
+}
+if (READONLY) document.body.classList.add("readonly");
 
 for (const f of META_FIELDS) {
   $("#" + f).addEventListener("input", () => {
@@ -114,6 +132,7 @@ $("#abbrs").addEventListener("click", (e) => {
 });
 
 function changed() {
+  if (READONLY) return;
   $("#save-state").textContent = "Unsaved…";
   clearTimeout(saveTimer);
   saveTimer = setTimeout(save, 800);
@@ -207,6 +226,7 @@ $("#images").addEventListener("click", async (e) => {
 });
 
 async function upload(files) {
+  if (READONLY) return;
   await flushSave();
   for (const file of files) {
     if (!file.type.startsWith("image/")) continue;

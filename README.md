@@ -26,6 +26,24 @@ Round status:
 - `no-counts`: the human text states no counts.
 - `missing-*`: a round exists on only one side.
 
+## Hosting and API
+
+`python3 build_static.py` builds a static, read-only copy of the editor and a JSON API into `public/`.
+Vercel runs it on every push (see `vercel.json`). Rejected patterns are left out; every record has a `status`,
+so you can filter for `"done"` yourself. All of these allow cross-origin requests:
+
+| URL | |
+|---|---|
+| `/api/index.json` | summary of every pattern, with links to each |
+| `/api/patterns/<id>.json` | one pattern (same record as `export.py`) |
+| `/api/dataset.json` | all records as a JSON array |
+| `/api/dataset.jsonl` | all records, one per line |
+| `/images/<id>/<file>` | images (each record's `images[].url`) |
+
+```js
+const { patterns } = await (await fetch("https://<your-site>.vercel.app/api/index.json")).json();
+```
+
 ## Linking human ↔ machine
 
 The editor shows three panes:

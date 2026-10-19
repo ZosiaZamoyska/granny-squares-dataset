@@ -1,0 +1,15 @@
+{
+  "framework": null,
+  "buildCommand": "python3 build_static.py",
+  "outputDirectory": "public",
+  "headers": [
+    {
+      "source": "/(api|images)/(.*)",
+      "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
+    },
+    {
+      "source": "/api/(.*).jsonl",
+      "headers": [{ "key": "Content-Type", "value": "application/x-ndjson; charset=utf-8" }]
+    }
+  ]
+}
