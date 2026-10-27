@@ -100,14 +100,14 @@
       <div>
         <div id="gchart" class="chart"></div>
         <div id="graph-info" class="graph-info muted"></div>
+        <div id="graph-edit" class="graph-edit"></div>
       </div>
       <div>
         <div id="graph-help" class="muted graph-help">
-          Click a stitch (in the chart or a token) to select it; it shows dashed what it's worked into.
-          <kbd>←</kbd> <kbd>→</kbd> move it and the rest of the round one place · <kbd>⌥←</kbd> <kbd>⌥→</kbd> move just this stitch (also into the gaps between groups) ·
-          click a place in the round below to put it there (<kbd>⇧</kbd>-click: the rest of the round follows, <kbd>⌥</kbd>-click: the gap before it) ·
-          <kbd>↑</kbd> <kbd>↓</kbd> previous / next stitch · <kbd>Esc</kbd> deselect.
-          An edit marks the round checked; <b>Looks right</b> checks a guess as it is.
+          <b>To fix a connection:</b> 1. click a stitch, in the chart or a token below. Dashed shows what it's worked into now.
+          2. Click where it should go in the round below (the round below stays lit up), or use the buttons under the chart.
+          A round you've edited is <b>checked</b>, and only checked rounds go to the LLM app. If a guess is already right, press <b>Looks right</b>.
+          Keys: <kbd>←</kbd> <kbd>→</kbd> move · <kbd>⌥←</kbd> <kbd>⌥→</kbd> move only this stitch · <kbd>↑</kbd> <kbd>↓</kbd> previous / next stitch · <kbd>Esc</kbd> done.
         </div>
         <div id="graph-rounds" class="graph-rounds"></div>
       </div>

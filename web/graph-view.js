@@ -107,7 +107,7 @@ function drawRounds() {
     const buttons = ro ? "" : `<span class="gbtns">${g.rounds[r.k].given ? "" : `<button data-act="ok" title="Save the guess as checked">Looks right</button>`}
       ${r.saved ? `<button data-act="reset" title="Forget the checked connections and use the guess">Use the guess</button>` : ""}</span>`;
     return `<div class="gr" data-k="${r.k}"><div class="ghead"><b>${r.label === "start" ? "start" : `R${esc(r.label)}`}</b>
-      <span class="tag ${cls}">${esc(label)}</span>${buttons}</div><div class="gtoks">${chips}</div></div>`;
+      <span class="tag ${cls}">${esc(label)}</span>${ro || g.rounds[r.k].given ? "" : `<span class="muted">wrong? click a stitch to fix it</span>`}${buttons}</div><div class="gtoks">${chips}</div></div>`;
   });
   $("#graph-rounds").innerHTML = rows.join("") || `<div class="muted">No rounds to connect yet.</div>`;
   const all = rounds.filter((r) => g.rounds[r.k].places), done = all.filter((r) => g.rounds[r.k].given).length;
@@ -116,6 +116,7 @@ function drawRounds() {
 }
 
 function info(hover = null) {
+  editBar();
   const i = hover ?? sel, el = $("#graph-info");
   if (!view || i === null) { el.innerHTML = message ? `<span class="flash">${esc(message)}</span>` : "Hover a stitch to see what it's worked into."; return; }
   const k = roundOf(i), r = view.rounds[k], t = view.stream[i], rt = placed(i) && roundTokens(view.g, view.stream, k);
@@ -123,6 +124,28 @@ function info(hover = null) {
   el.innerHTML = `${hover !== null && hover !== sel ? "" : "<b>selected</b> "}R${esc(r?.label)} · <b>${esc(tok)}</b> · ${esc(describe(t))}`
     + `<br>${esc(linkText(view.g, view.stream, i) || "—")}${message ? `<br><span class="flash">${esc(message)}</span>` : ""}`;
 }
+
+/** What you can do now: pick a stitch, or move the selected one. */
+function editBar() {
+  const el = $("#graph-edit");
+  if (!view || ed.readonly) { el.innerHTML = ""; return; }
+  if (sel === null) { el.innerHTML = `<div class="prompt"><b>To fix a connection</b>, click a stitch in the chart or a token on the right.</div>`; return; }
+  const k = roundOf(sel), below = view.rounds[k - 1];
+  const name = (r) => (r?.label === "start" ? "the start" : `R${esc(r?.label)}`);
+  el.innerHTML = `<div class="prompt"><b>Now click where this stitch goes</b> in ${name(below)}, the round left lit in the chart. Then the next stitch is selected.
+    Hold <kbd>⇧</kbd> as you click to move the rest of ${name(view.rounds[k])} along with it, when the whole round is off.</div>
+    <div class="row"><span>this stitch only</span><button data-mv="-1" data-alone="1">◀ one back</button><button data-mv="1" data-alone="1">one on ▶</button></div>
+    <div class="row"><span>it and the rest of ${name(view.rounds[k])}</span><button data-mv="-1">◀ one back</button><button data-mv="1">one on ▶</button></div>
+    <div class="row"><span>select</span><button data-step="-1">▲ previous stitch</button><button data-step="1">▼ next stitch</button><button data-done>done</button></div>`;
+}
+
+$("#graph-edit").addEventListener("click", (e) => {
+  const b = e.target.closest("button");
+  if (!b || sel === null) return;
+  if (b.dataset.mv) nudge(+b.dataset.mv, !!b.dataset.alone);
+  else if (b.dataset.step) stepSel(+b.dataset.step);
+  else select(null);
+});
 
 function select(i) {
   sel = i;

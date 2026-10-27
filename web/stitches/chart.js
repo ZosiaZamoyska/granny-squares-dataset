@@ -12,7 +12,8 @@
    was drawn from, so the page can style or highlight it per token ([from, to) is the round's
    token range). Given the stitch graph (parentsOf), each round is turned, and mirrored when it was
    worked the other way, so its stitches sit over what they're worked into; without it every round
-   starts at the same corner and runs counterclockwise. */
+   starts at the same corner and runs counterclockwise. With the graph, each stitch's base also sits
+   on what it's worked into (anchorBases), so a wrong connection shows as a stitch leaning the wrong way. */
 
 import { EOR, isColor, parseToken } from "./dsl.js";
 
@@ -304,6 +305,19 @@ function orient(prims, parentsOf, where, quarter) {
   }
 }
 
+/** Start each stitch at what it's worked into: the top of the stitch below, the middle of the chain
+    space, between the two stitches of a gap. Tops stay spread along the round, so a stitch leans
+    toward its parents. The ring keeps its own bases (it has no direction), and so do joins. */
+function anchorBases(prims, parentsOf, where) {
+  for (const p of prims) {
+    if (!p.b && !(p.k === "dot" && p.c)) continue;
+    const ps = p.i.flatMap((i) => parentsOf(i)).map((j) => where.get(j)).filter(Boolean);
+    if (!ps.length || ps.some((q) => Math.hypot(...q) < R0 + 1)) continue;
+    const q = [ps.reduce((s, x) => s + x[0], 0) / ps.length, ps.reduce((s, x) => s + x[1], 0) / ps.length];
+    if (p.b) p.b = q; else p.c = q;
+  }
+}
+
 /** rounds: arrays of tokens (as from splitRounds), in stream order. parentsOf(i): the token
     indices token i is worked into or stands on (from graph.js), to line rounds up. */
 export function layout(rounds, { parentsOf = null } = {}) {
@@ -328,7 +342,7 @@ export function layout(rounds, { parentsOf = null } = {}) {
     }
     const prims = placeRound(its, rIn, h, first, p, pOut, anchor);
     for (const q of prims) for (const k of Object.keys(q)) if (k[0] === "_") delete q[k];
-    if (parentsOf && !first) orient(prims, parentsOf, where, pOut >= 3);
+    if (parentsOf && !first) { orient(prims, parentsOf, where, pOut >= 3); anchorBases(prims, parentsOf, where); }
     for (const q of prims) for (const i of q.i) where.set(i, q.t || q.c); // a stitch's top, a chain's middle
     out.rounds.push({ prims, from, to: offset });
     p = pOut;

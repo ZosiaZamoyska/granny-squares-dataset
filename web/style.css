@@ -167,6 +167,12 @@ body.linking #link-start { display: none; }
 #gchart g.par .dot { fill: var(--accent); }
 #gchart g.below:hover *:not(.hitbox) { stroke: var(--accent) !important; stroke-width: 1.2; }
 .graph-info { font: 12px/1.6 var(--mono); min-height: 3.4em; margin-top: 6px; }
+.graph-edit { font-size: 12px; margin-top: 8px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); }
+.graph-edit:empty { display: none; }
+.graph-edit .prompt { margin-bottom: 6px; }
+.graph-edit .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 4px; }
+.graph-edit .row > span { min-width: 9em; color: var(--muted); }
+.graph-edit button { font-size: 12px; padding: 2px 8px; }
 .graph-help { font-size: 12px; line-height: 1.7; margin-bottom: 8px; }
 .graph-rounds { max-height: 640px; overflow: auto; }
 .gr { border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; margin-bottom: 8px; background: var(--panel); }
