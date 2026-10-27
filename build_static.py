@@ -44,8 +44,9 @@ def main():
     if OUT.exists():
         shutil.rmtree(OUT)
     (OUT / "static").mkdir(parents=True)
-    shutil.copy(HERE / "web" / "style.css", OUT / "static")
-    shutil.copy(HERE / "web" / "app.js", OUT / "static")
+    for f in ["style.css", "app.js", "graph-view.js"]:
+        shutil.copy(HERE / "web" / f, OUT / "static")
+    shutil.copytree(HERE / "web" / "stitches", OUT / "static" / "stitches")
     html = (HERE / "web" / "index.html").read_text()
     (OUT / "index.html").write_text(html.replace('<html lang="en">', '<html lang="en" data-readonly>', 1))
 

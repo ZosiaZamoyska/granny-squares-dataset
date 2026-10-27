@@ -6,7 +6,7 @@ const IMAGE_KINDS = ["finished", "in-progress", "chart", "diagram", "other"];
 // The static build (build_static.py) is read-only: no server, checks are precomputed.
 const READONLY = document.documentElement.hasAttribute("data-readonly");
 
-let current = null; // {meta, human, dsl}
+let current = null; // {meta, human, dsl, links, graph}
 let saveTimer = null, checkTimer = null;
 
 async function api(path, opts = {}) {
@@ -56,6 +56,7 @@ $("#new").addEventListener("click", async () => {
 async function openPattern(id) {
   await flushSave();
   current = await api(`/api/patterns/${id}`);
+  current.graph ??= { rounds: {} };
   location.hash = id;
   $("#empty").hidden = true;
   $("#editor").hidden = false;
@@ -143,9 +144,9 @@ function changed() {
 async function save() {
   saveTimer = null;
   if (!current) return;
-  const { meta, human, dsl, links } = current;
+  const { meta, human, dsl, links, graph } = current;
   try {
-    await api(`/api/patterns/${meta.id}`, { method: "PUT", body: { meta, human, dsl, links } });
+    await api(`/api/patterns/${meta.id}`, { method: "PUT", body: { meta, human, dsl, links, graph } });
     $("#save-state").textContent = "Saved";
     loadList();
   } catch (e) {
@@ -156,6 +157,15 @@ async function save() {
 async function flushSave() {
   if (saveTimer) { clearTimeout(saveTimer); await save(); }
 }
+
+// The stitch-graph panel (graph-view.js, a module) edits current.graph and calls back here.
+function graphChanged() {
+  if (READONLY) return;
+  $("#save-state").textContent = "Unsaved…";
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(save, 800);
+}
+window.editor = { get current() { return current; }, graphChanged, readonly: READONLY, linking: () => linking };
 
 document.addEventListener("keydown", (e) => {
   if ((e.metaKey || e.ctrlKey) && e.key === "s") { e.preventDefault(); flushSave(); }
@@ -295,6 +305,7 @@ async function runCheck() {
   }).join("");
   $("#rounds tbody").innerHTML = rows;
   if (["human", "dsl"].includes(document.activeElement?.id)) followSelection();
+  window.graphView?.render();
 }
 
 // ---- highlighting --------------------------------------------------------

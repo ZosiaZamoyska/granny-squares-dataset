@@ -59,6 +59,28 @@ The editor shows three panes:
 The starting highlight is a guess from `granny/align.py`; only what you confirm is saved, to `links.json`.
 A link turns amber ("to review") when its DSL line changes after you confirmed it.
 
+## Stitch graph
+
+The **Stitch graph** panel shows what each stitch is worked into, read exactly as the LLM app
+([granny-squares-llm](https://github.com/ZosiaZamoyska/granny-squares-llm)) reads the pattern, and lets you correct it.
+Each stitch is a graph token: `dc^0` goes into the place that is next in the round below, `dc^+2` two places on,
+`dc^-1` back into the place just used (five dc into one place: `^0 ^-1 ^-1 ^-1 ^-1`), and a trailing `g` into the gap
+before that place. Places are the stitch tops and chain spaces of the round below, in working order. Chains have no
+parents; `ch3=dc^0` says where a beginning chain stands.
+
+Rounds start as the app's guess (amber when it doesn't line up cleanly). Select a stitch in the chart or a token, then:
+- <kbd>←</kbd>/<kbd>→</kbd> move it and the rest of the round one place; <kbd>⌥←</kbd>/<kbd>⌥→</kbd> move just this stitch (gaps included).
+- Click a place in the round below to put it there and go on to the next stitch (<kbd>⇧</kbd>-click: the rest of the round follows; <kbd>⌥</kbd>-click: the gap before that place).
+- <kbd>↑</kbd>/<kbd>↓</kbd> previous / next stitch, <kbd>Esc</kbd> deselect.
+
+An edit marks the round **checked**; **Looks right** checks a guess as it is, **Use the guess** forgets the check.
+Checked rounds are saved to `graph.json` with the DSL line of the round and of the round below; if either changes, the
+round turns red ("out of date") and is guessed again. Only checked, up-to-date rounds are exported (`graph` in each
+record), and the LLM app uses those instead of its guess.
+
+The panel's code in `web/stitches/` is copied from granny-squares-llm, which owns it: after changing it there, run
+`scripts/sync-stitches.sh` here.
+
 ## Layout
 
 ```
@@ -68,6 +90,7 @@ data/patterns/0001/
   human.txt
   pattern.dsl
   links.json     confirmed DSL piece -> original text span, per round
+  graph.json     stitch connections checked by hand: per round label, {tokens, line, below} (see Stitch graph)
   images/
 ```
 

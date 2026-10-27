@@ -11,6 +11,8 @@ so UK and US patterns share one vocabulary; the original text is kept as-is.
 "uniform" is human-style text generated from the DSL. rounds[].alignment holds the
 manually confirmed links: DSL atom i <-> a span of the original human text
 (None = the atom has no counterpart there). Links whose DSL line changed are skipped.
+"graph" holds the stitch connections checked by hand in the editor, as graph tokens per round
+label (see web/graph-view.js); rounds whose DSL line, or the line below, changed since are left out.
 """
 
 from __future__ import annotations
@@ -68,6 +70,22 @@ def alignment(p: dict, abbrevs: dict) -> dict[str, list]:
             items.append(entry)
         out[label] = sorted(items, key=lambda x: x["i"])
     return out
+
+
+def checked_graph(p: dict, abbrevs: dict | None = None) -> dict[str, str]:
+    """Graph tokens of the rounds whose connections were checked by hand, by round label, skipping
+    any whose DSL line or the line of the round below has changed since (as the editor does)."""
+    lines, below = {}, ""
+    for raw in p["dsl"].split("\n"):
+        try:
+            line = dsl.parse_line(raw, abbrevs)
+        except dsl.DSLError:
+            continue
+        if line and line.label not in lines:
+            lines[line.label] = (raw.strip(), below)
+            below = raw.strip()
+    return {label: r["tokens"] for label, r in p.get("graph", {}).get("rounds", {}).items()
+            if lines.get(label) == (r.get("line"), r.get("below"))}
 
 
 def export_pattern(pid: str) -> dict:
@@ -129,6 +147,7 @@ def export_pattern(pid: str) -> dict:
         "rounds": rounds,
         "verified": report["ok"],
         "errors": report["errors"],
+        "graph": checked_graph(p, abbrevs),
     }
 
 

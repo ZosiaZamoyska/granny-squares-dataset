@@ -156,3 +156,27 @@ body.linking #link-start { display: none; }
   body { flex-direction: column; } aside { width: auto; height: auto; position: static; }
   .texts, .meta { grid-template-columns: 1fr; } main { padding: 16px; }
 }
+
+/* stitch graph (graph-view.js) */
+.graph-cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; align-items: start; }
+#gchart g[data-i] { cursor: pointer; }
+#gchart.selecting g[data-i]:not(.below):not(.mine):not(.sel):not(.par) { opacity: .3; }
+#gchart g.sel *:not(.hitbox) { stroke: var(--ink) !important; stroke-width: 1.4; }
+#gchart g.sel .dot { fill: var(--ink); }
+#gchart g.par *:not(.hitbox) { stroke: var(--accent) !important; stroke-width: 1.3; stroke-dasharray: 1.2 0.8; }
+#gchart g.par .dot { fill: var(--accent); }
+#gchart g.below:hover *:not(.hitbox) { stroke: var(--accent) !important; stroke-width: 1.2; }
+.graph-info { font: 12px/1.6 var(--mono); min-height: 3.4em; margin-top: 6px; }
+.graph-help { font-size: 12px; line-height: 1.7; margin-bottom: 8px; }
+.graph-rounds { max-height: 640px; overflow: auto; }
+.gr { border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; margin-bottom: 8px; background: var(--panel); }
+.ghead { display: flex; gap: 8px; align-items: center; font-size: 12px; margin-bottom: 5px; }
+.gbtns { margin-left: auto; display: flex; gap: 6px; }
+.gbtns button { font-size: 12px; padding: 2px 8px; }
+.gtok { display: inline-block; font: 11.5px/1.2 var(--mono); padding: 2px 5px; margin: 1px; border-radius: 4px; cursor: pointer;
+  background: color-mix(in srgb, var(--c, var(--muted)) 16%, var(--panel)); border: 1px solid color-mix(in srgb, var(--c, var(--muted)) 45%, transparent); }
+.gtok.plain { cursor: default; opacity: .6; }
+.gtok.sel { outline: 2px solid var(--ink); }
+.gtok.par { outline: 2px dashed var(--accent); }
+.tag.checked { background: var(--ok); } .tag.stale { background: var(--bad); } .tag.unclear { background: var(--warn); }
+.flash { color: var(--bad); }

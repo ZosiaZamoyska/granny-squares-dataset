@@ -183,3 +183,18 @@ class DatasetTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class GraphExportTest(unittest.TestCase):
+    def test_checked_rounds_go_stale_when_their_lines_change(self):
+        from export import checked_graph
+        dsl_text = "start: mr\nR1: 3ch=tr 11tr@ring ss@top\nR2: 3ch=tr tr\n"
+        graph = {"rounds": {
+            "1": {"tokens": "ch3=dc^0 dc^-1", "line": "R1: 3ch=tr 11tr@ring ss@top", "below": "start: mr"},
+            "2": {"tokens": "ch3=dc^0 dc^0", "line": "R2: 3ch=tr tr", "below": "R1: 3ch=tr 11tr@ring ss@top"},
+        }}
+        self.assertEqual(set(checked_graph({"dsl": dsl_text, "graph": graph})), {"1", "2"})
+        # R1 edited: R1 is stale, and so is R2, which was checked against the old R1.
+        edited = dsl_text.replace("11tr", "15tr")
+        self.assertEqual(checked_graph({"dsl": edited, "graph": graph}), {})
+        self.assertEqual(checked_graph({"dsl": dsl_text}), {})

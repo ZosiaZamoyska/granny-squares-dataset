@@ -94,6 +94,26 @@
     <div id="chart-photo" class="chart-photo"></div>
   </section>
 
+  <section class="graph-wrap" id="graph-wrap">
+    <h2>Stitch graph <small>what each stitch is worked into, as the LLM app reads it · <span id="graph-summary"></span></small></h2>
+    <div class="graph-cols">
+      <div>
+        <div id="gchart" class="chart"></div>
+        <div id="graph-info" class="graph-info muted"></div>
+      </div>
+      <div>
+        <div id="graph-help" class="muted graph-help">
+          Click a stitch (in the chart or a token) to select it; it shows dashed what it's worked into.
+          <kbd>←</kbd> <kbd>→</kbd> move it and the rest of the round one place · <kbd>⌥←</kbd> <kbd>⌥→</kbd> move just this stitch (also into the gaps between groups) ·
+          click a place in the round below to put it there (<kbd>⇧</kbd>-click: the rest of the round follows, <kbd>⌥</kbd>-click: the gap before it) ·
+          <kbd>↑</kbd> <kbd>↓</kbd> previous / next stitch · <kbd>Esc</kbd> deselect.
+          An edit marks the round checked; <b>Looks right</b> checks a guess as it is.
+        </div>
+        <div id="graph-rounds" class="graph-rounds"></div>
+      </div>
+    </div>
+  </section>
+
   <section id="help" class="help" hidden>
     <table>
       <tr><td><code>start: mr</code></td><td>setup line (magic ring, <code>4ch join</code>…)</td></tr>
@@ -123,5 +143,6 @@
 </main>
 
 <script src="/static/app.js"></script>
+<script type="module" src="/static/graph-view.js"></script>
 </body>
 </html>

@@ -48,8 +48,8 @@ class Handler(BaseHTTPRequestHandler):
         try:
             if method == "GET" and not p:
                 return self._file(WEB / "index.html")
-            if method == "GET" and p[0] == "static" and len(p) == 2:
-                return self._file(WEB / Path(p[1]).name)
+            if method == "GET" and p[0] == "static" and len(p) in (2, 3):  # web/<file>, web/<dir>/<file>
+                return self._file(WEB.joinpath(*(Path(x).name for x in p[1:])))
             if method == "GET" and p[0] == "images" and len(p) == 3:
                 return self._file(store.image_path(p[1], p[2]))
             if p[:2] != ["api", "patterns"] and p != ["api", "check"]:
@@ -77,7 +77,7 @@ class Handler(BaseHTTPRequestHandler):
                 if method == "PUT":
                     b = self._json()
                     store.save(pid, meta=b.get("meta"), human=b.get("human"), dsl=b.get("dsl"),
-                               links=b.get("links"))
+                               links=b.get("links"), graph=b.get("graph"))
                     return self._send(200, store.load(pid))
             if len(p) >= 4 and p[3] == "images":
                 if method == "POST" and len(p) == 4:

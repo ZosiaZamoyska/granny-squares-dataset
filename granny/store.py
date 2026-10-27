@@ -6,6 +6,7 @@
         human.txt      the pattern as published
         pattern.dsl    the machine-readable version
         links.json     manual DSL <-> human links (see web/app.js "link mode")
+        graph.json     stitch connections checked by hand, per round (see web/graph-view.js)
         images/        photos, charts
 """
 
@@ -41,12 +42,13 @@ def load(pid: str) -> dict:
     meta["id"] = pid
     read = lambda name: (d / name).read_text() if (d / name).exists() else ""
     links = json.loads(read("links.json") or "{}")
+    graph = json.loads(read("graph.json") or "{}")
     return {"meta": meta, "human": read("human.txt"), "dsl": read("pattern.dsl"),
-            "links": {"rounds": {}, **links}}
+            "links": {"rounds": {}, **links}, "graph": {"rounds": {}, **graph}}
 
 
 def save(pid: str, meta: dict | None = None, human: str | None = None, dsl: str | None = None,
-         links: dict | None = None):
+         links: dict | None = None, graph: dict | None = None):
     d = _dir(pid)
     d.mkdir(parents=True, exist_ok=True)
     if meta is not None:
@@ -58,6 +60,11 @@ def save(pid: str, meta: dict | None = None, human: str | None = None, dsl: str 
         (d / "pattern.dsl").write_text(dsl)
     if links is not None:
         (d / "links.json").write_text(json.dumps(links, indent=1, ensure_ascii=False) + "\n")
+    if graph is not None:
+        if graph.get("rounds"):
+            (d / "graph.json").write_text(json.dumps(graph, indent=1, ensure_ascii=False) + "\n")
+        elif (d / "graph.json").exists():
+            (d / "graph.json").unlink()  # nothing checked: no file
 
 
 def create(title: str) -> str:
