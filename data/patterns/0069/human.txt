@@ -1,0 +1,20 @@
+ABBREVIATIONS / REFERENCES
+beg = begin(s)(ning)
+ch(s) = chain(s)
+ch-space = space previously made
+dc = double crochet
+rep = repeat(s)(ing)
+rnd(s) = round(s)
+sc = single crochet
+sk = skip
+sl = slip
+sp(s) = space(s)
+st(s) = stitch(es)
+tr = treble (triple) crochet
+
+Make a magic ring.
+Round 1: Ch 1, work 8 sc in ring, join with sl st in beg sc.
+Round 2: Ch 4 (counts as dc and ch-1), (dc in next sc, ch 1) around, join with sl st in 3rd ch of beg ch-4 – 8 ch-1 sps.
+Round 3: Ch 3 (counts as dc), 3 dc in next ch-1 sp, (dc in next dc, 3 dc in next ch-1 sp) around, join with sl st in top of beg ch – 32 dc.
+Round 4: Ch 9 (counts as tr and ch-5), tr in same st, [sk 3 dc, (3 tr, ch 5, 3 tr) in next dc, sk 3 dc, * (tr, ch 5, tr) in next dc] around, end last rep at *, join with sl st in 4th ch of beg ch-9.
+Round 5: Sl st into 2nd ch of next ch-5 sp, ch 1, sc in same ch-5 sp, [ch 7, (3 tr, ch 5, 3 tr) in next ch-5 sp, ch 7, * sc in next ch-5 sp] around, end last rep at *, join with sl st in beg sc. Fasten off.

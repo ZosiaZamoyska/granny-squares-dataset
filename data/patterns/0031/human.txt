@@ -1,0 +1,24 @@
+ch: chain
+ch-sp: chain space
+ch-2 sp: chain 2 space
+dc: double crochet (US)
+sl st: slip stitch
+st: stitch
+sts: stitches
+
+Start by making a magic ring (or magic circle) but without pulling the ring closed.
+Round 1: (all in open magic ring)
+Chain 3 (counts as first dc), dc2, *ch 2, dc3*(this forms the first corner), three times, ch2, Slst into the top of the beginning ch3.
+Work into the ring: Ch 3 (counts as first dc), work 2 dc, ch 2 (this forms the first corner).
+[3 dc, ch 2] Repeat three more times. You should have four groups of 3 dc with four 2 ch sp (chain spaces) between them.
+Join: Slst to the top of the starting ch 3 to close the round.
+Pull the magic ring to close (there will be no visible hole in the middle).
+Round 2: Ch 3: Counts as the first dc, then dc in the next 2 sts.
+In the corner space: Work [in ch-2 sp = 2 dc, ch 2, 2 dc].
+Continue: Dc in each dc along the side until you reach the next corner (2nd Round = 3dc’s in every dc from the previous round + 2 sets of dc’s in each corner = 7dc’s in each row).
+Corners: In each ch-2 corner sp, work [2 dc, ch 2, 2 dc].
+Join: Sl st to the top of the starting ch 3.
+Rounds 3-5: (or until your square is big enough).
+Repeat the Pattern:
+Begin: Ch 3 (counts as first dc), then dc in each st along the side, (dc’s in every dc from the previous round + 2 dc’s in each corner = x dc’s per side).
+Corners: In each corner space, work [2 dc, ch 2, 2 dc].

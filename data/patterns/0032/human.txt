@@ -1,0 +1,32 @@
+ch – chain
+ch-sp – chain space
+dc – double crochet
+sc – single crochet
+sl-st – slip stitch
+sp – space
+rep – repeat
+You will use 5 colors total: Yarn A, B, C, D, and E.
+
+Make a magic ring.
+Round 1: Ch 5 (counts as 1 dc and ch 2), [3 dc into the ring, ch 2] 3 times,
+2 dc into the ring.
+Join with a sl-st into the 3rd ch of the beg ch-5.
+(You should have 4 groups of 3dc and four ch-2 corner spaces.)
+No need to turn your work. Continue in rounds.
+Break off Yarn A.
+Round 2: Join Yarn B – Sl-st into next ch-2 sp, ch 7 (counts as 1 dc and ch 3), *2 dc into same 2ch-sp, 1dc in each dc across the side of the square, **2 dc into next 2ch-sp, ch 4; rep from * twice more, then from * to ** once more, 1 dc into final 2ch-sp.
+Join with a sl-st into 3rd ch of beg ch-7.
+(You should have 4 groups of 7dc and four ch-4 corner spaces.)
+Break off Yarn B.
+Round 3: Join Yarn C into any ch-4 sp, ch 7 (counts as 1 dc and ch 4), *2 dc into same 2ch-sp, 1dc in each dc across the side of the square, **2 dc into next 4ch-sp, ch 4; rep from * twice more, then from * to ** once more, 1 dc into final 4ch-sp.
+Join with a sl-st into 3rd ch of beg ch-7.
+(You should have 4 groups of 11dc and four ch-4 corner spaces.)
+Break off Yarn C.
+Round 4: Join Yarn D into any ch-4 sp.
+Repeat instructions from Round 3.
+(You should have 4 groups of 15dc and four ch-4 corner spaces.)
+Break off Yarn D.
+Round 5: Join Yarn E into any ch-4 sp.
+Repeat Round 3.
+(You should have 4 groups of 19dc and four ch-4 corner spaces.)
+Break off Yarn E.

@@ -1,0 +1,20 @@
+USA STITCH TERMS
+Abbreviations:
+· Ch = Chain
+· DC = Double crochet
+· Rep = Repeat
+· St = Stitch
+· Ch sp = Chain space
+
+Make a magic circle.
+Round 1: Ch 3 (counts as 1 DC) and make 2 DC in the ring.
+Rep *ch 2, 3 DC* three times.
+At the end of the round, make 1 DC on top of the ch 3 you started with. This acts as a ch 2.
+Pull the tail end to tighten the magic ring.
+Round 2: Ch 2 (counts as 1 DC) and make 1 DC in the same space.
+Make 1 DC in each st across and for each corner ch sp, make (2 DC, ch 2, 2 DC).
+At the end of the round, make 2 DC in the corner ch sp you started in and 1 DC on top of the ch 2 to close the round.
+Round 3: Ch 2 (counts as 1 DC) and make 1 DC in the same space.
+Make 1 DC in each st across and for each corner ch sp, make (2 DC, ch 2, 2 DC).
+At the end of the round, make 2 DC in the corner ch sp you started in and 1 DC on top of the ch 2 to close the round.
+Rep Round 3 for as big as you want your square to be. Each side will increase by 4 st as you go on.

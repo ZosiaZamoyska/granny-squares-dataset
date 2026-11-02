@@ -1,0 +1,14 @@
+Mc - Magic circle
+Ch - Chain stitch
+Sc - Single crochet stitch
+Hdc - Half double crochet stitch
+Dc - Double crochet stitch
+Tr - Treble crochet stitch
+Sl st - Slip stitch
+
+Make a magic ring.
+Round 1: Ch 3, dc 14 into the mc, sl st into the top of the ch 3.
+Round 2: Ch 2, dc into the same space, tr 3 into the next space, dc 2 into the next space, hdc 4, (dc 1, tr 1, dc 1) into the next space, hdc 4, dc 2 into the next space, tr 3 into the next space, and (dc 1, ch 2, sl st) into the final space. Now cut your yarn and weave in the ends. Join your second yarn color into the top of the treble crochet at your heart's point.
+Round 3: Ch 2 (counts as 1 sc) and sc 1 into the same space. Hdc 1, dc 2 into the next space, dc 4, (dc 1, hdc 1) into the next space, hdc 1, sc 1, hdc 1, hdc 2 into the next space, dc 1. Dc 1 into top of the ch 2 from the previous round. Now tr 2 into the space between the ch3 and final dc of round 1. Dc into the top of the ch 2 from the previous round. Hdc 2 into the next space, hdc 1, sc 1, hdc 1, (hdc 1, dc 1) into the next space, dc 4, dc 2 into the next space, hdc 1. Sc1 into the next space – which should be the same space you started in. Sl st into the top of the ch 2 from the beginning of the round. Cut your yarn and weave in the ends. You see the two treble crochets at the top of your heart? Join the next color of yarn into the one on the left.
+Round 4: Ch 2 (counts as 1 sc), sc 1 into the same space. Hdc 1, dc 2, (tr 1, ch 2, tr 1) into the next space. Dc 1, hdc 1, sc 2, hdc 2, dc 2, (tr 1, ch 2, tr 1) into the next space. Hdc 1, sc 6, hdc 1, (tr 1, ch 2, tr 1) into the next space. Dc 2, hdc 2, sc 2, hdc 1, dc 1, (tr 1, ch 2, tr 1) into the next space. Dc 2, hdc 1, sl st into ch 2. You should now have a broadly square shape, with 10 stitches along each side, and 2 chains at each corner. Cut your yarn and weave in the ends. Join your final color in any of the corner spaces.
+Round 5: Ch 5 (counts as 1 dc and 2 ch). Dc 2 into the same corner space. *Dc 10 along the side, (dc 2, ch 2, dc 2) into the next corner space* three times. Dc 10, dc into corner space, sl st into 3rd st of the ch 5.

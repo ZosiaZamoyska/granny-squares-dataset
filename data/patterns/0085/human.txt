@@ -1,0 +1,13 @@
+Abbreviations Used:
+Ch – Chain
+Sl st – Slip Stitch
+Dc – Double Crochet
+Ch2 Sp – Chain 2 Space
+Beg – Beginning
+Rep – Repeat
+
+Make a magic ring.
+Round 1: Ch 5 (counts as dc and ch 2), [3dc into ring, ch 2] 3 times. Ch 2, 2dc into ring, sl st to 3rd ch from beg chain. (12dc total; 3dc each side)
+Round 2: Sl st to ch2 sp, Ch 5, 2dc into same sp. *Dc in each of the next 3 st, [2dc, ch 2, 2dc] in corner ch2 sp. Rep * until you reach the last side. Dc in each of the next 3 st, dc in first space where you created your ch 5. Sl st to 3rd ch. (28dc total; 7dc each side)
+Round 3: Sl st to ch2 sp, Ch 5, 2dc into same sp. *Dc in each of the next 7 st, [2dc, ch 2, 2dc] in corner ch2 sp. Rep * until you reach the last side. Dc in each of the next 7 st, dc in first space where you created your ch 5. Sl st to 3rd ch. (44dc total; 11dc each side)
+Round 4: Sl st to ch2 sp, Ch 5, 2dc into same sp. *Dc in each of the next 11 st, [2dc, ch 2, 2dc] in corner ch2 sp. Rep * until you reach the last side. Dc in each of the next 11 st, dc in first space where you created your ch 5. Sl st to 3rd ch. (60dc total; 15dc each side)

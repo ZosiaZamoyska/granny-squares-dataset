@@ -1,0 +1,14 @@
+st/sts: stitch/stitches
+ch: chain
+ch-sp: chain space
+dc: double crochet
+sl st: slip stitch
+tr: triple crochet
+
+Make a magic ring.
+Round 1: Ch 4 (counts as tr here and throughout). Into the ring, work 3 dc, (1 tr, 3 dc) three times. Join with sl st to the top of the beginning ch 4 to close the round. [16 sts – 4 corner tr and 3 dc per side]
+Round 2: Ch 4, 2 dc in the same stitch (which is the top of previous round’s turning chain). * Dc in each dc on the first side of the square. Work (2dc, tr, 2dc) in the corner tr. Repeat from * for each side. In the last corner, work 2 dc in the base of the ch 4 to finish the corner. Join with a sl st to the top of the beginning ch 4 to close the round. [32 sts – 4 corner tr and 7 dc per side]
+Repeat the pattern established in Round 2 until your square is the desired size.
+Round 3: 48 sts [4 corner tr and 11 dc per side]
+Round 4: 64 sts [4 corner tr and 15 dc per side]
+Round 5: 80 sts [4 corner tr and 19 dc per side]

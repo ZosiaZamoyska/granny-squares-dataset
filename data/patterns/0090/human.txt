@@ -1,0 +1,17 @@
+This pattern is in U.S. terms.
+
+Make a magic ring.
+
+Round 1: In a Magic ring, ch 4, *3 dc in ring, tc in ring,* repeat three times, 3 dc in ring, sl st to the top of beg ch 4 to close the first round. Pull starting yarn tight to close the magic ring, and crochet over it as you continue to build your square. (16 sts)
+
+Round 2: Ch 4, 2 dc in same st, *dc in each dc on the first side, (2 dc, tc, 2 dc) in corner tc.* Repeat for each side. In last corner, 2 dc in base st of the ch4 to finish the corner. Sl st to top of beg ch 4 to close the round. (32 sts)
+
+Round 3: Repeat round 2 (48 sts)
+
+Round 4: Repeat round 2 (64 sts)
+
+Round 5: Repeat round 2 (80 sts)
+
+Round 6: Repeat round 2 (96 sts)
+
+Round 7: Repeat round 2 (112 sts)

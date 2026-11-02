@@ -1,0 +1,25 @@
+Beg = Begin(ning)
+Bet = Between 
+Ch(s) = Chain(s)
+Dc = Double crochet
+Hdc = Half double crochet
+Rep = Repeat
+Rnd(s) = Round(s)
+RS = Right side
+Sc = Single crochet
+Sk = Skip
+Sl st = Slip stitch
+Sp = Space
+St(s) = Stitch(es)
+WS = Wrong side
+
+Make a magic ring.
+Round 1: Ch 1. (1 sc. Ch 3) 4 times in ring. Join with sl st to first sc.
+Round 2: Sl st in next ch-3 sp. Ch 3. (2 dc. Ch 3. 3 dc) in same sp as last sl st. *(3 dc. Ch 3. 3 dc) in next ch-3 sp. Rep from * twice more. Join with sl st to top of ch 3. Fasten off.
+Round 3: Join B with sl st to any corner ch-3 sp. Ch 1. (1 sc. Ch 3. 1 sc) in same sp. Ch 3. Miss next 2 dc. 1 sc between next 2 dc. Ch 3.* (1 sc. Ch 3. 1 sc) in next corner ch-3 sp. Rep from * twice more, then from * to ** once more. Join with sl st to first sc.
+Round 4: Sl st to next ch-3 sp. Ch 3. (2 dc. Ch 3. 3 dc) in same sp. (3 dc in next ch-3 sp) twice.* (3 dc. Ch 3. 3 dc) in next corner ch-3 sp. Rep from * twice more, then from * to ** once more. Join with sl st to top of ch 3. Fasten off.
+Round 5: Join C with sl st to any corner ch-3 sp. Ch 1. (1 sc. Ch 3. 1 sc) in same sp. (Ch 3. Miss next 2 dc. 1 sc between next 2 dc) 3 times.* Ch 3. (1 sc. Ch 3. 1 sc) in next corner ch3 sp. Rep from * twice more, then from * to ** once more. Ch 3. Join with sl st to first sc.
+Round 6: Sl st in next corner ch-3 sp. Ch 3. (2 dc. Ch 3. 3 dc) in same sp. *3 dc in each ch-3 sp to next corner ch-3 sp. (3 dc. Ch 3. 3 dc) in next corner ch-3 sp. Rep from * around, ending with 3 dc in last ch-3 sp. Join with sl st to top of ch 3. Fasten off.
+Round 7: Join B with sl st to any corner ch-3 sp. Ch 1. (1 sc. Ch 3. 1 sc) in same sp. (Ch 3. Miss next 2 dc. 1 sc between next 2 dc) 5 times.* Ch 3. (1 sc. Ch 3. 1 sc) in next corner ch3 sp. Rep from * twice more, then from * to ** once more. Ch 3. Join with sl st to first sc.
+Round 8: Sl st in next corner ch-3 sp. Ch 3. (2 dc. Ch 3. 3 dc) in same sp. *3 dc in each ch-3 sp to next corner ch-3 sp. (3 dc. Ch 3. 3 dc) in next corner ch-3 sp. Rep from * around, ending with 3 dc in last ch-3 sp. Join with sl st to top of ch 3. Fasten off.
+Cont as established, working 2 rnds each in the following color sequence: A, B, C, B until Blanket from middle measures approx 18 ins [45.5 cm], ending with 2 rnds of any color.

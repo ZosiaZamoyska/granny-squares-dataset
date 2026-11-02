@@ -1,0 +1,19 @@
+ch- chain stitch
+sc- single crochet
+hdc- half double crochet
+dc- double crochet
+tr- treble crochet
+sl st- slip stitch
+V st- (1 dc, 2 ch, 1 dc) worked in same stitch or space
+beg- beginning
+ch-sp – chain space
+
+Make a magic ring.
+Round 1: 3 ch (counts as first dc st), working into a magic circle 15 dc, sl st to top of beg 3 ch. (16 dc)
+Round 2: 5 ch, 1 dc in same st at the bottom of 5 ch (counts as first V st), *miss next st, 1 V st in next; repeat from * around, sl st to 3rd ch of beg 5 ch. (8 V sts)
+Round 3: 1 ch, 1 sc in same st, *3 hdc into next 2 ch-sp, 1 sc into each of the next 2 dc; repeat from * around omitting the last sc, sl st to first sc instead. (40 sts)
+Round 4: 3 ch (counts as first dc), *miss next hdc, 1 sc into next hdc, miss next hdc, 1 dc into next sc, 3 ch **, 1 dc into next sc; repeat from * around ending last repeat **, sl st to top of beg 3 ch. (24 sts and eight 3 ch-sps)
+Round 5: 1 ch, 1 sc in the same st, *7 dc into the next 3 ch-sp, 1 sc into the next sc; repeat from * around omitting the last sc, sl st to first sc. (64 sts)
+Round 6: 4 ch (counts as first tr), (2 tr, 2 ch, 3 tr) in same st at the bottom of 4 ch, *3 ch, miss 3 dc, 1 sc in next, 3 ch, miss 3 dc, 1 dc into next sc, 3 ch, miss 3 dc, 1 sc in next, 3 ch, miss next 3 dc **, (3 tr, 2 ch, 3 tr) into next sc st; repeat from * around ending last repeat at **, sl st to top of beg 4 ch.
+Round 7: sl st across to the corner 2 ch-sp, 3 ch (counts as first dc), (2 dc, 2 ch,3 dc) in same corner 2 ch-sp, *(1 ch, 3 dc into next 3 ch-sp) repeat across to next corner 2 ch-sp, 1 ch, (3 dc, 2 ch, 3 dc) into next corner 2 ch-sp; repeat from * around omitting the last (3 dc, 2 ch, 3 dc), sl st to top of beg 3 ch.
+Round 8: sl st across to the corner 2ch-sp, 3 ch (counts as first dc), (2 dc, 2 ch,3 dc) in same corner 2 ch-sp, *(1 ch, 3 dc into next 1 ch-sp) repeat across to next corner 2 ch-sp, 1 ch**, (3 dc, 2 ch, 3 dc) into next corner 2 ch-sp; repeat from * around ending last repeat at **, sl st to top of beg 3 ch.

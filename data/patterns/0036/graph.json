@@ -1,0 +1,14 @@
+{
+ "rounds": {
+  "3": {
+   "tokens": "ch3=tr^+1 ch ch tr^-1 dc^+1 dc^-1 dc^0 dc^+1 dc^-1 tr^+1 ch ch tr^-1 dc^+1 dc^-1 dc^0 dc^+1 dc^-1 tr^+1 ch ch tr^-1 dc^+1 dc^-1 dc^0 dc^+1 dc^-1 tr^+1 ch ch tr^-1 dc^0 dc^-1 dc^+1 dc^+1 dc^-1 sl@top",
+   "line": "R3: 3ch=tr 2ch tr@same 2dc@st [dc@sp]>corner 2dc@st [{tr 2ch tr}@sp 2dc@st [dc]>corner 2dc@st]x3 ss@top",
+   "below": "R2: 3ch=tr 2ch tr@same [2dc@st]x2 [{tr 2ch tr}@st [2dc@st]x2]x3 ss@top"
+  },
+  "4": {
+   "tokens": "ch3=tr^+1 ch ch tr^-1 dc^+1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^-1 tr^+1 ch ch tr^-1 dc^+1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^-1 tr^+1 ch ch tr^-1 dc^+1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^-1 tr^+1 ch ch tr^-1 dc^+1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^-1",
+   "line": "R4: 3ch=tr 2ch tr@same 2dc@st 3dc 2dc@st [{tr 2ch tr}@sp 2dc@st 3dc 2dc@st]x3",
+   "below": "R3: 3ch=tr 2ch tr@same 2dc@st [dc@sp]>corner 2dc@st [{tr 2ch tr}@sp 2dc@st [dc]>corner 2dc@st]x3 ss@top"
+  }
+ }
+}

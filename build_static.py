@@ -2,7 +2,7 @@
 
     python3 build_static.py           # -> public/
 
-Public API (CORS open, see vercel.json); rejected patterns are left out:
+Public API (CORS open, see vercel.json); rejected, duplicate, copyright and ask-permission patterns are left out:
     /api/index.json              summary of every pattern
     /api/patterns/<id>.json      one pattern, same record as export.py
     /api/dataset.json            all records as one JSON array
@@ -23,6 +23,7 @@ from pathlib import Path
 from export import export_pattern
 from granny import store
 from granny.check import check
+from server import board_data
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "public"
@@ -44,16 +45,19 @@ def main():
     if OUT.exists():
         shutil.rmtree(OUT)
     (OUT / "static").mkdir(parents=True)
-    for f in ["style.css", "app.js", "graph-view.js"]:
+    for f in ["style.css", "app.js", "graph-view.js", "board.css", "board.js"]:
         shutil.copy(HERE / "web" / f, OUT / "static")
     shutil.copytree(HERE / "web" / "stitches", OUT / "static" / "stitches")
     html = (HERE / "web" / "index.html").read_text()
     (OUT / "index.html").write_text(html.replace('<html lang="en">', '<html lang="en" data-readonly>', 1))
+    board = (HERE / "web" / "board.html").read_text()
+    (OUT / "board" / "index.html").parent.mkdir()
+    (OUT / "board" / "index.html").write_text(board.replace('<html lang="en">', '<html lang="en" data-readonly>', 1))
 
     records, ui_list = [], []
     for pid in store.list_ids():
         p = store.load(pid)
-        if p["meta"]["status"] == "rejected":
+        if p["meta"]["status"] in store.EXCLUDED:
             continue
         r = check(p["human"], p["dsl"], p["meta"]["terms"], p["meta"]["abbreviations"])
         write(f"ui/{pid}.json", {**p, "check": r})
@@ -69,6 +73,10 @@ def main():
             shutil.copytree(store.ROOT / pid / "images", OUT / "images" / pid)
 
     write("ui/patterns.json", ui_list)
+    kept = {r["id"] for r in records}
+    data = board_data()
+    write("ui/board.json", {"groups": [{**g, "ids": [i for i in g["ids"] if i in kept]} for g in data["groups"]],
+                            "patterns": [p for p in data["patterns"] if p["meta"]["id"] in kept]})
     write("api/dataset.json", records)
     write("api/dataset.jsonl", records, jsonl=True)
     write("api/index.json", {

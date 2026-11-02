@@ -112,6 +112,8 @@ def clauses(text: str, offset: int = 0) -> list[tuple[int, int]]:
 def _place_key(text: str) -> str:
     if re.search(r"ring|circle|cent(?:re|er)", text):
         return "ring"
+    if re.search(r"\bfirst\b|beginning|\bstart", text) and "top" not in text:
+        return "start"
     for k in ("same", "corner", "top"):
         if k in text:
             return k
@@ -130,7 +132,7 @@ def _score(d, h) -> float | None:
         return 4 if d[2] == h[2] else 2
     if d[0] == "place":
         dk, hk = d[1], _place_key(h[1])
-        return 3 if dk == hk or {dk, hk} <= {"sp", "corner"} else 1
+        return 3 if dk == hk or {dk, hk} <= {"sp", "corner"} or {dk, hk} <= {"sp", "start", "same"} else 1
     return 3  # rep
 
 

@@ -1,0 +1,19 @@
+{
+ "rounds": {
+  "2": {
+   "tokens": "ch3=dc^+1 dc^-1 dc^0 dc^0 dc^0 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^-1 dc^-1 ch ch dc^0 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^-1 sl@top turn",
+   "line": "R2: C2@{3ch=dc dc@same 3dc {2dc 2ch 2dc}@same 3dc {2dc 2ch}@same} C1@{2dc@same 3dc {2dc 2ch 2dc}@same 3dc 2dc@sp slst@top} turn",
+   "below": "R1: C1@{3ch=dc {2dc 2ch 3dc ch}@ring} C2@{{3dc 2ch 3dc ch}@ring slst@top} turn"
+  },
+  "3": {
+   "tokens": "ch3=dc^0 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 sl@top turn",
+   "line": "R3: C1@{3ch=dc dc@same 7dc {2dc 2ch 2dc}@same 7dc {2dc 2ch}@same} C2@{2dc@same 7dc {2dc 2ch 2dc}@same 7dc 2dc@sp slst@top} turn",
+   "below": "R2: C2@{3ch=dc dc@same 3dc {2dc 2ch 2dc}@same 3dc {2dc 2ch}@same} C1@{2dc@same 3dc {2dc 2ch 2dc}@same 3dc 2dc@sp slst@top} turn"
+  },
+  "4": {
+   "tokens": "ch3=dc^0 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch sl@top",
+   "line": "R4: C2@{3ch=dc dc@same 11dc {2dc 2ch 2dc}@same 11dc {2dc 2ch}@same} C1@{2dc@same 11dc {2dc 2ch 2dc}@same 11dc {2dc 2ch}@same ss@top}",
+   "below": "R3: C1@{3ch=dc dc@same 7dc {2dc 2ch 2dc}@same 7dc {2dc 2ch}@same} C2@{2dc@same 7dc {2dc 2ch 2dc}@same 7dc 2dc@sp slst@top} turn"
+  }
+ }
+}

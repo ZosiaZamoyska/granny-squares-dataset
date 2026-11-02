@@ -1,0 +1,11 @@
+Make a magic ring.
+Round 1: Ch 1, * sc in ring, ch 5. Repeat from * 3 more times.
+Round 2: * Sc in next sc, 2 sc in next sp, ch 5. Repeat from * 3 more times.
+Round 3-5: * Sc in each sc around, 2 sc in sp, ch 5. Repeat from * 3 more times.
+Round 6: Same as 5th rnd making ch 6 (instead of ch 5).
+Round 7: * Skip next sc, sc in each sc around to within last sc of group, ch 6, sc in next loop, ch 6. Repeat from * 3 more times.
+Round 8: * Skip next sc, sc in each sc around to within last sc of group, (ch 7, sc in next loop) twice; ch 7. Repeat from * 3 more times.
+Round 9: * Skip next sc, sc in each sc around to within last sc of group, (ch 7, sc in next loop) 3 times; ch 7. Repeat from * 3 more times.
+Round 10: * Skip next sc, sc in each sc around to within last sc of group, (ch 7, sc in next loop) 4 times; ch 7. Repeat from * around, ending with sc in last loop.
+Round 11: Ch 8, dc in next loop, ch 5, dc in next loop, * ch 5, in center st of next loop make dc, ch 9 and dc; (ch 5, dc in next loop) 4 times. Repeat from * around. Join last ch-5 with sl st to 3rd st of ch-8.
+Round 12: Ch 3, dc in each st around, making 3 dc in center st of each corner loop. Join and fasten off.

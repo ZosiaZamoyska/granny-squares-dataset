@@ -1,0 +1,10 @@
+Abbreviations:
+ss - slip stitch / sc - single crochet / dc - double crochet / hdc - half double crochet / tc - triple crochet / chsp - chain space
+
+Make a magic ring.
+NOTE: when you see "corner" - insert *2 dc + chain 2 + 2 dc* in the chsp
+Round 1: chain 5, 3 dc, chain 2, 3 dc, chain 2, 3 dc, chain 2, 2 dc, ss into 3rd chain
+Round 2: chain 3, corner, 3 dc, corner, 3 dc, corner, 3 dc, corner, 2 dc, ss into the 3rd chain
+Round 3: chain 3, 2 dc, corner, 7 dc, corner, 7 dc, corner, 7 dc, corner, 4 dc, ss into 3rd chain
+Round 4: chain 3, 4 dc, corner, 11 dc, corner, 11 dc, corner, 11 dc, corner, 6 dc, ss into 3rd chain
+Round 5: onwards - start every round with a chain 3, 1 dc in every stitch across the sides until you reach a chsp, insert the steps for a corner in the chsp, repeat until you reach where you started, ss into the 3rd chain to end the round

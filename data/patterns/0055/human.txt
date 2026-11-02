@@ -1,0 +1,16 @@
+sl st – slip stitch
+ch – chain
+dc – double crochet
+Ch 3 at beginning of each round counts as dc
+
+With Color A make a magic ring
+Round 1: ch 3, 2 dc, ch 2, 3 dc, ch 1 into ring
+Join color B, drop color A and leave it there to pick up later
+3 dc, ch 2, 3 dc, ch 2, join to top of first ch 3 with sl st, pull ring closed (12 dc, 8 ch)
+Round 2: Turn, sl st into the ch 2 space, ch 3
+Dc into ch 2 space, dc in next 3 stitches, (2 dc, ch 2, 2 dc) in ch 2 space, dc in next 3 stitches, 2 dc in ch 2 space
+Ch 1, pick up Color A and join, drop color B and leave it there to pick up later, 2 dc in ch 2 space
+Dc in next 3 stitches, (2 dc, ch 2, 2 dc) in ch 2 space, dc in next 3 stitches, 2 dc in ch 2 space, ch 2, join to top of first ch 3 with sl st (28 dc, 8 ch)
+Round 3: Turn, sl st into the ch 2 space, ch 3, dc in ch 2 space
+dc in next 7 stitches, (2 dc, ch 2, 2 dc) in ch 2 space, dc in next 7 stitches, 2 dc in ch 2 space, ch 1, pick up color B and join, drop color A
+2 dc in ch 2 space, dc in next 7 stitches, (2 dc, ch 2, 2 dc) in ch 2 space, dc in next 7 stitches, 2 dc in last ch 2 space, ch 2, join to first ch 3 with sl st (44 dc, 8 ch)

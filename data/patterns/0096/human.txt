@@ -1,0 +1,28 @@
+Make a magic ring.
+
+Round 1: into ring work, 3 ch (count as first tr (US dc), beg-ch), 2 tr (US dc), 3 ch, 3 tr (US dc), changing to Col-B in the last 2 loops of last tr (US dc) of 3-tr group (US 3-dc group) just made
+drop Col-A & carry
+continue with Col-B, make 3 ch, 3 tr (US dc), 3 ch, 3 tr (US dc), 3 ch, changing to Col-A in the last 2 loops of last tr (US dc) of 3-tr group (US 3-dc group) just made, join with ss to first tr (US dc), (3rd ch of beg-ch) 
+drop Col-B & carry
+Round 2: continue with Col-A, make 4 ch (count as tr (US dc) + 1-ch sp, beg-ch), in next 3-ch sp work (3 tr (US dc), 3 ch, 3 tr (US dc), 1 ch,) 3 tr in next 3-ch sp, changing to Col-B in the last 2 loops of last tr (US dc) of 3-tr group (US 3-dc group) just made
+drop Col-A & carry
+continue with Col-B, in same 3-ch sp work (3 ch, 3 tr (US dc), 1 ch), in next 3-ch sp work (3 tr (US dc), 3 ch, 3 tr (US dc), 1 ch,), in next 3-ch sp work 3 tr (US dc), changing to Col-A in the last 2 loops of last tr (US dc) of 3-tr group (US 3-dc group) just made
+drop Col-B & carry
+continue with Col-A, in same 3-ch sp work, 3 ch, 2 tr (US dc), join with ss to first tr (US dc) (3rd ch of beginning-ch)
+Round 3: continue with Col-A, make 3 ch (count as tr (US dc), beg-ch), in same 1-ch sp work (2 tr (US dc), 1 ch), in next 3-ch sp work (3 tr (US dc), 3 ch, 3 tr (US dc), 1 ch), in next 1-ch sp work (3 tr (US dc), 1 ch), in next 3-ch sp work 3 tr (US dc), changing to Col-B in the last 2 loops of last tr (US dc) of 3-tr group (US 3-dc group) just made
+drop Col-A & carry
+continue with Col-B, in same 3-ch sp work (3 ch, 3 tr (US dc), 1 ch), in next 1-ch sp work (3 tr (US dc), 1 ch), in next 3-ch sp work (3 tr (US dc), 3 ch, 3 tr (US dc), 1 ch), in next 1-ch sp work (3 tr (US dc), 1 ch), in next 3-ch sp work 3 tr (US dc), changing to Col-A in the last 2 loops of last tr (US dc) of 3-tr group (US 3-dc group) just made
+drop Col-B & carry
+continue with Col-A, in same 3-ch sp work, (3 ch, 3 tr (US dc), 1 ch), join with ss to first tr (US dc) (3rd ch of beg-ch)
+Round 4: continue with Col-A, make 4 ch (count as tr (US dc) + 1-ch sp, beg-ch), in next & in each 1-ch sp to next corner work (3 tr (US dc), 1 ch), in next 3-ch sp work (3 tr (US dc), 3 ch, 3 tr (US dc), 1 ch), in next & in each 1-ch sp to next corner work (3 tr (US dc), 1 ch), in next 3-ch sp work 3 tr (US dc), changing to Col-B in the last 2 loops of last tr (US dc) of 3-tr group (US 3-dc group) just made
+drop Col-A & carry
+continue with Col-B, in same 3-ch sp work (3 ch, 3 tr (US dc), 1 ch), in next & in each 1-ch sp to next corner work (3 tr (US dc), 1 ch), in next 3-ch sp work (3 tr (US dc), 3 ch, 3 tr
+(US dc), 1 ch), in next & in each 1-ch sp to next corner work (3 tr (US dc), 1 ch), in next 3-ch sp work 3 tr (US dc), changing to Col-A in the last 2 loops of last tr (US dc) of 3-tr group (US 3-dc group) just made
+drop Col-B & carry
+continue with Col-A, in same 3-ch sp work, (3 ch, 3 tr (US dc), 1 ch), in next 1-ch sp work 2 tr (US dc), join with ss to first tr (US dc) (3rd ch of beg-ch)
+Round 5: continue with Col-A, make 3 ch (count as tr (US dc), beg-ch), in same 1-ch sp work (2 tr (US dc), 1 ch), in next & in each 1-ch sp to next corner work (3 tr (US dc), 1 ch), in next 3-ch sp work (3 tr (US dc), 3 ch, 3 tr (US dc), 1 ch), in next & in each 1-ch sp to next corner work (3 tr (US dc), 1 ch), in next 3-ch sp work 3 tr (US dc), changing to Col-B in the last 2 loops of last tr (US dc) of 3-tr group (US 3-dc group) just made
+drop Col-A & carry
+continue with Col-B, in same 3-ch sp work (3 ch, 3 tr (US dc), 1 ch), in next & in each 1-ch sp to next corner work (3 tr (US dc), 1 ch), in next 3-ch sp work (3 tr (US dc), 3 ch, 3 tr (US dc), 1 ch), in next & in each 1-ch sp to next corner work (3 tr (US dc), 1 ch), in next 3-ch sp work 3 tr (US dc), changing to Col-A in the last 2 loops of last tr (US dc) of 3-tr group (US 3-dc group) just made
+drop Col-B & carry
+continue with Col-A, in same 3-ch sp work, (3 ch, 3 tr (US dc), 1 ch), in next 1-ch sp work (3 tr (US dc) 1 ch), join with ss to first tr (US dc) (3rd ch of beg-ch)
+Subsequent Rounds: repeat rounds 4 & 5 to desired size

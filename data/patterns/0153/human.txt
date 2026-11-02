@@ -1,0 +1,14 @@
+ch – chain
+sl-st – slip stitch
+sc – single crochet
+hdc – half double crochet
+dc – double crochet
+sp – space
+rep – repeat
+Make a magic ring.
+Round 1: (Yarn A) *Ch 3 (counts as dc), ch 3, dc into ring — repeat from * 7 more times (8 dc, 8 ch-3 spaces). Join with sl-st to the top of the beginning ch-3. Break off Yarn A.
+Round 2: (Yarn B) Join in any ch-3 space. Ch 1, work (sc, hdc, 3 dc, hdc, sc) all into the same ch-3 space (petal made). Repeat in each ch-3 space around (8 petals total). Join with sl-st to the first sc. Break off Yarn B.
+Round 3: (Yarn C) Join in the center dc at the top of any petal. Ch 1, sc in same st, *ch 5, skip next 4 sts (top of petal), sc in center dc of next petal — Rep from * around to form 8 ch-5 loops. Join with sl-st to the first sc.
+Round 4: Sl-st into the next ch-5 space. Ch 3 (counts as dc), 2 dc in same space, ch 2, 3 dc (corner made), *ch 1, 3 dc in next sp, ch 1, [3 dc, ch 2, 3 dc] in next sp — Repeat from * around. Join with sl-st to the top of ch-3. Break off Yarn C.
+Round 5: (Yarn D) Join in any ch-2 corner space. Ch 3 (counts as dc), dc, ch 2, 2 dc in same space (corner made). Work 1 dc in each dc across the side. Repeat [2 dc, ch 2, 2 dc] in each corner. Join with sl-st. Break off Yarn D.
+Round 6: (Yarn E) Join in any ch-2 corner space. Ch 2 (counts as hdc), 1 hdc, ch 2, 2 hdc in same space. Work 1 hdc in each dc across the side. Repeat [2 hdc, ch 2, 2 hdc] in each corner. Join with sl-st. Break off Yarn E.

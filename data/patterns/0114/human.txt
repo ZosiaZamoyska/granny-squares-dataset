@@ -1,0 +1,17 @@
+ch- chain stitch
+mc- magic circle
+dc- double crochet
+sc- single crochet
+V st- (1 dc, 2 ch, 1 dc) worked in same sp/st
+beg- beginning
+sl st- slip stitch
+
+Make a magic ring.
+Round 1: 3 ch (counts as first dc), 15 dc into mc, sl st to top of beg 3 ch. 16 dc
+Round 2: 3 ch (counts as first dc), 1 dc in same st at the bottom of 3 ch, 2 ch, miss next st, (2 dc in next st, 2 ch, miss next st) repeat around, sl st to top of beg 3 ch. 16 dc and eight 2 ch-sps
+Round 3: 1 ch (doesn’t count as a st), (1 sc in the space between next 2 dc, 5 dc into next 2 ch-sp) repeat around, sl st into first sc. 40 dc and 8 sc
+Round 4: 1 ch, 1 sc in same st at the bottom of 1 ch, (3 ch, miss next 5 dc, 1 sc in next sc) repeat around omitting last sc, sl st to first sc instead. 8 sc and eight 3 ch-sp
+Pop the petals through the 3 ch-sp loops so they sit at the back. Fasten off and join Lime in any 3 ch-sp.
+Round 5: 5 ch, 1 dc in same 3 ch-sp (counts as first V st), 1 V st in same 3 ch-sp, (2 V st in next 3 ch-sp) repeat around, sl st to 3rd ch of beg 5 ch. 16 V sts
+Round 6: sl st into first V st, 5 ch, 1 dc in same V st (counts as first V st), 2 ch, 1 V st in same V st (first corner created), *(1 V st in next V st) three times**, (1 V st, 2 ch, 1 V st) in next V st; repeat from * around ending last repeat at **, sl st to 3rd ch of beg 5 ch. 20 V sts
+Round 7: 3 ch (counts as first dc), 2 dc in same ch-sp, 2 ch, 3 dc in same ch-sp, *(3 dc in next V st) repeat to next corner 2 ch-sp **, (3 dc, 2 ch, 3 dc) in next corner 2 ch-sp; repeat from * around ending last repeat at **, sl st to top of beg 3 ch. 84 dc

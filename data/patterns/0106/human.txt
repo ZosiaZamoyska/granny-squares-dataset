@@ -1,0 +1,19 @@
+USA STITCH TERMS
+Abbreviations:
+· Ch = Chain
+· Inc = Increase
+· SC = Single crochet
+· HDC = Half double crochet
+· DC = Double crochet
+· Rep = Repeat
+· St = Stitch
+· Ch sp = Chain space
+
+Make a magic ring.
+Round 1: Ch 3 (counts as 1 DC) and make 9 DC in the ring. Sl st to join. (10) Pull the tail to close the ring.
+Round 2: Ch 2 and make 1 DC in the same st. Rep *2DC inc* in each st across. Sl st to join. (20)
+Round 3: Ch 2 and make 1 DC in the same st. Rep *1 DC, 2DC inc* across. Sl st to join. (30)
+Round 4: Ch 2 and make 1 DC in the same st. Rep *2 DC, 2DC inc* across. Sl st to join. (40) Fasten off and cut the yarn. Attach the second colour.
+Round 5: Make (1 DC, ch 2, 2 DC) in the same st. Rep *1 DC, 1 HDC, 5 SC, 1 HDC, 1 DC, and (2 DC, ch 2, 2 DC)* three times. For the last side, make 1 DC, 1 HDC, 5 SC, 1 HDC, and 1 DC. Sl st to join.
+Round 6: Ch 1 and make 1 HDC in the same st and each st across. For every corner ch 2 sp, make (2 HDC, ch 2, 2 HDC). At the end of the round, sl st to join.
+Round 7: Ch 1 and make 1 SC in the same space and each st across. For each corner ch sp, make (1 SC, ch 2, 1 SC). At the end of the round, sl st to join. Fasten off and cut the yarn. Weave in the ends.

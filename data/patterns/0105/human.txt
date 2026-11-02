@@ -1,0 +1,19 @@
+USA STITCH TERMS
+Abbreviations:
+· Ch = Chain
+· DC = Double crochet
+· HDC = Half double crochet
+· Rep = Repeat
+· St = Stitch
+· YO = Yarn over
+· Ch sp = Chain space
+Standing Double Crochet: Make a slip knot, YO, insert hook in st, YO, pull up a loop, YO, pull through 2 loops, YO, and pull through the remaining 2 loops.
+Standing Half Double Crochet: Make a slip knot, YO, insert hook in st, YO, pull up a loop, YO, pull through all loops on the hook.
+
+Make a magic ring.
+Round 1: Ch 5 (counts as 1 DC and ch 2). In the ring, rep *3 DC, ch 2* three times. Make 2 DC and sl st to join. Fasten off and cut the yarn. Tighten the magic ring. Join the next colour to any ch 2 sp with a Standing DC.
+Round 2: Make 2 DC in the same space and rep *3 DC, ch 2, 3 DC* three times, working in the ch 2 sp only. In the first ch 2 sp of the round, make 3 DC, ch 2, and sl st to join. Fasten off and cut the yarn. Join the next colour to any ch 2 sp with a Standing DC.
+Round 3: Make 2 DC in the same space. In between every 3-DC cluster of the previous round, make 3 DC (forming the sides of the square). For every corner ch 2 sp, make (3 DC, ch 2, 3 DC). At the end of the round, in the first corner ch 2 sp, make 3 DC, ch 2, and sl st to join. Fasten off and cut the yarn. Join the next colour to any ch 2 sp with a Standing DC.
+Round 4: Make 2 DC in the same space. In between every 3-DC cluster of the previous round, make 3 DC. For every corner ch 2 sp, make (3 DC, ch 2, 3 DC). At the end of the round, in the first corner ch 2 sp, make 3 DC, ch 2, and sl st to join. Fasten off and cut the yarn. Join the next colour to any ch 2 sp with a Standing DC.
+Round 5: Make 2 DC in the same space. In between every 3-DC cluster of the previous round, make 3 DC. For every corner ch 2 sp, make (3 DC, ch 2, 3 DC). At the end of the round, in the first corner ch 2 sp, make 3 DC, ch 2, and sl st to join. Fasten off and cut the yarn. Join the next colour to any ch 2 sp with a Standing HDC.
+Round 6: Make 1 HDC in the same space. In each st across, make 1 HDC. For every corner ch 2 sp, make (2 HDC, ch 2, 2 HDC). At the end of the round, in the first corner ch 2 sp, make 2 HDC, ch 2, and sl st to join. Fasten off and cut the yarn.

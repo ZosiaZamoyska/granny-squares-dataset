@@ -1,0 +1,22 @@
+{
+  "title": "How to Crochet a Circle Granny Square",
+  "status": "done",
+  "terms": "US",
+  "source": "https://www.hookedonhomemadehappiness.com/crochet-circle-granny-square/",
+  "author": "Breann (Hooked on Homemade Happiness)",
+  "license": "",
+  "notes": "Round 1 text omits the beginning ch 3 (pattern note says ch 3 counts as dc; DSL includes it). Round 5: repeat taken as ending with 10 dc so the stated 64 dc holds. pattern.dsl left empty: the checker cannot parse the stated count '48 crochet stitches' in Round 4 (the DSL gives 48 sts). Draft DSL (all other rounds ok): start: mr | R1: 3ch=dc 11dc@ring ss@top # the beginning ch 3 is implied by the pattern note | R2: 3ch=dc dc@same [2dc@st]x11 ss@top | R3: 3ch=dc 2dc@st [dc 2dc@st]x11 ss@top | R4: 3ch=dc {dc 2ch 2dc}@same dc 2hdc 2sc 2hdc dc [{2dc 2ch 2dc}@st dc 2hdc 2sc 2hdc dc]x3 ss@top | R5: 3ch=dc dc [{2dc 2ch 2dc}@sp 12dc]x3 {2dc 2ch 2dc}@sp 10dc ss@top # last repeat ends at the beginning ch 3, so 10 dc",
+  "tags": [],
+  "images": [
+    {
+      "file": "pasted-1793654183509.png",
+      "kind": "finished",
+      "round": null,
+      "caption": ""
+    }
+  ],
+  "abbreviations": [],
+  "todo": [],
+  "duplicate_of": "",
+  "id": "0033"
+}

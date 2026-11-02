@@ -1,0 +1,12 @@
+Make a magic ring.
+Round 1: Ch 4, 23 tr in ring. Join.
+Round 2: Sc in same place as sl st, * ch 7, skip 2 tr, sc in next tr. Repeat from * around. Join.
+Round 3: Sl st in next loop, ch 3, 6 dc in same loop, * in next loop make dc, ch 9 and dc; 7 dc in next loop. Repeat from * around. Join.
+Round 4: Sl st in next 3 dc, ch 8, dc in same place as last sl st, * in next loop make 5 dc, ch 5 and 5 dc; in center dc of next group make dc, ch 5 and dc. Repeat from * around. Join to 3rd ch of ch-8.
+Round 5: Sl st in next loop, ch 4, 6 tr in same loop, * ch 3, 13 tr in next loop, ch 3, 7 tr in next loop. Repeat from * around. Join.
+Round 6: Ch 5, (tr in next tr, ch 1) 5 times; tr in next tr, * ch 3, (tr in next tr, ch 1) 6 times; in next tr make tr, ch 5 and tr; (ch 1, tr in next tr) 6 times; ch 3, (tr in next tr, ch 1) 6 times; tr in next tr. Repeat from * around. Join to 4th ch of ch-5.
+Round 7: Sl st in next sp, sc in same sp, * (ch 3, sc in next sp) 5 times; ch 4, skip next sp, (sc in next sp, ch 3) 5 times; (sc in next sp, ch 5) twice; (sc in next sp, ch 3) 5 times; ch 4, skip next sp, sc in next sp. Repeat from * around. Join.
+Round 8: Sl st in next loop, sc in same loop, * (ch 3, sc in next loop) 4 times; ch 5, skip next sp, (sc in next loop, ch 3) 4 times; sc in next loop, (ch 5, sc in next loop) 3 times; (ch 3, sc in next loop) 4 times; ch 5, skip next sp, sc in next loop. Repeat from * around. Join.
+Round 9: Sl st in next loop, sc in same loop, * (ch 3, sc in next loop) 3 times; ch 6, skip next sp, (sc in next loop, ch 3) 3 times; (sc in next loop, ch 5) twice; in next loop make (tr, ch 5) twice; sc in next loop, ch 5, (sc in next loop, ch 3) 3 times; sc in next loop, ch 6, skip next sp, sc in next loop. Repeat from * around. Join.
+Round 10: Sl st in next loop, sc in same loop, * (ch 3, sc in next loop) twice; ch 7, skip next sp, (sc in next loop, ch 3) twice; sc in next loop, ch 7, skip next sp, (sc in next sp, ch 7) 3 times; skip next sp, (sc in next loop, ch 3) twice; sc in next loop, ch 7, skip next sp, sc in next loop. Repeat from * around. Join.
+Round 11: Sl st in next loop, sc in same loop, ch 3, sc in next loop, ch 9, skip next sp, sc in next loop, ch 3, sc in next loop, * ch 9, skip next sp, sc in next loop, ch 15, sc in next loop, (ch 9, skip next sp, sc in next loop, ch 3, sc in next loop) 3 times. Repeat from * around. Join and break off.

@@ -1,0 +1,18 @@
+Abbreviations
+US Terminology
+Beg – Beginning
+Ch – Chain
+Dc – Double crochet
+Hdc – Half-double crochet
+Sc – Single crochet
+Sl st – Slip Stitch
+Sp/sps – Space/spaces
+St/sts – Stitch/stitches
+[] – Stitches to be made in the same st/sp
+() – Repeat instructions between brackets the number of times specified
+
+Make a magic ring.
+Round 1: Working into a magic ring, ch 4 (counts as dc + ch-1 sp). (Dc, ch 1) 11 times. Join by making a sl st in the first ch-1 sp. (12 dc and 12 ch-1 sps)
+Round 2: Ch 1 (doesn't count as a st throughout), sc in the same ch-1 sp. (Ch 4, sc in the next ch-1 sp) 11 times. Ch 4, join to the first sc with a sl st. Sl st in the next 2 ch sts. (12 sc and 12 ch-4 sps)
+Round 3: Sc in the same ch-4 sp. (Ch 3, hdc in the next ch-4 sp. Ch 5, hdc in the next ch-4 sp. Ch 3, sc in the next ch-4 sp) 4 times, omitting the last sc on the last repeat. Join to the first sc with a sl st. Sl st in the next ch-3 sp. (4 sc, 8 hdc, 8 ch-3 sps, and 4 ch-5 sps)
+Round 4: Ch 3 (counts as your first dc). Make 3 dc in the same ch-3 sp. ([4 dc, ch 2, 4 dc] in the next ch-5 sp. Make 4 dc in each of the next 2 ch-3 sps) 3 times. [4 dc, ch 2, 4 dc] in the last ch-5 sp. Make 4 dc in the last ch-3 sp. Join to the top of the beg ch-3 with a sl st. Fasten off and work away your ends. {16 dc per side, not including ch-2 corner sps}

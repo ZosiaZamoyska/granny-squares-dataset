@@ -4,7 +4,7 @@
     python3 export.py --strict        # skip patterns with mismatches / parse errors
     python3 export.py --done-only     # only patterns marked finished
 
-Patterns marked "rejected" are never exported.
+Patterns marked "permission", "rejected", "duplicate" or "copyright" are never exported.
 
 Each line is one pattern. DSL is normalised to US stitch names (dsl_us, tokens),
 so UK and US patterns share one vocabulary; the original text is kept as-is.
@@ -164,7 +164,7 @@ def main():
     with out.open("w") as f:
         for pid in store.list_ids():
             status = store.load(pid)["meta"]["status"]
-            if status == "rejected" or (args.done_only and status != "done"):
+            if status in store.EXCLUDED or (args.done_only and status != "done"):
                 excluded.append(pid)
                 continue
             rec = export_pattern(pid)
@@ -177,7 +177,7 @@ def main():
 
     print(f"wrote {kept} patterns to {out}")
     if excluded:
-        print(f"excluded (rejected{' or WIP' if args.done_only else ''}): {', '.join(excluded)}")
+        print(f"excluded (rejected/duplicate/copyright/permission{' or not done' if args.done_only else ''}): {', '.join(excluded)}")
     if skipped:
         print(f"skipped (failed checks): {', '.join(skipped)}")
     print(f"vocab: {len(vocab)} tokens, {sum(vocab.values())} total")

@@ -3,7 +3,8 @@
 
    A stitch token says what the stitch is and where the hook goes:
      "dc"         dc into the next stitch
-     "dc@corner"  dc into the corner space (also @ring @sp @same @top @st @side)
+     "dc@corner"  dc into the corner space (also @ring @sp @same @top @st @side, and @start: the
+                  place the round's first stitch went into, to finish a group split over the join)
      "dc+"        dc into the same place as the stitch before it (the rest of a {…}@place group)
      "ch3=dc"     beginning chain that counts as a stitch
      "ch" "sk" "sl@top" "turn" "fo"   one chain / skip / slip stitch / …
@@ -200,6 +201,7 @@ export function describe(t) {
   let s = p.as ? `${p.n} chains (count as ${NAMES[p.as] || p.as})` : NAMES[p.st] || p.st;
   if (p.same) s += ", into the same place as the last stitch";
   else if (p.place) s += { ring: " into the ring", sp: " into the next space", corner: " into the corner space", same: " into the same place",
-    top: " into the top of the beginning chain", st: " into the next stitch", side: " into the side" }[p.place] || ` @${p.place}`;
+    top: " into the top of the beginning chain", st: " into the next stitch", side: " into the side",
+    start: " into the same place as the round's first stitch" }[p.place] || ` @${p.place}`;
   return s;
 }

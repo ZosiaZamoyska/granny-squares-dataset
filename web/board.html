@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Granny Square Board</title>
+<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="/static/board.css">
+</head>
+<body class="board">
+<main>
+  <header class="bbar">
+    <h1>Review board</h1>
+    <a href="/" class="muted">← Editor</a>
+    <input id="q" type="search" placeholder="Search title, author, id…">
+    <span id="status-filter" class="chips"></span>
+    <select id="todo-filter" title="Show only patterns with this to-do">
+      <option value="">Any to-do</option>
+    </select>
+    <label class="muted"><input id="charts-only" type="checkbox"> Charts only</label>
+    <label class="muted">Size <input id="size" type="range" min="110" max="320" step="10"></label>
+    <span class="grow"></span>
+    <button id="suggest" title="Make a cluster of each set of unsorted patterns whose first three rounds are the same, whichever point of the round they start at">Suggest clusters</button>
+    <button id="add-group">+ Cluster</button>
+  </header>
+  <p class="help muted">Drag a card to sort it, into a cluster or back to Unsorted. Drop it on the
+    middle of another card to mark it a duplicate of that one. Click a card for details.
+    <span id="msg"></span></p>
+  <div id="sections"></div>
+</main>
+
+<aside id="panel" hidden>
+  <button id="close" title="Close (Esc)">×</button>
+  <div id="detail"></div>
+</aside>
+
+<script type="module" src="/static/board.js"></script>
+</body>
+</html>

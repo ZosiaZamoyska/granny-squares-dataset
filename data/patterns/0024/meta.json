@@ -1,13 +1,22 @@
 {
   "title": "Diagonal Two Colors Solid Granny Square",
-  "status": "wip",
+  "status": "done",
   "terms": "US",
   "source": "https://grannysquare.me/diagonal-two-colors-solid-granny-square/",
   "author": "",
   "license": "",
   "notes": "",
   "tags": [],
-  "images": [],
+  "images": [
+    {
+      "file": "pasted-1793638784726.png",
+      "kind": "finished",
+      "round": null,
+      "caption": ""
+    }
+  ],
   "abbreviations": [],
+  "todo": [],
+  "duplicate_of": "",
   "id": "0024"
 }

@@ -1,0 +1,16 @@
+Abbreviations (US Terms)
+ch - chain
+sc - single crochet
+dc - double crochet
+hdc - half double crochet
+tr - treble crochet
+sl - slip stitch
+dc inc - double crochet increase
+hdc inc - half double crochet increase
+
+Make a magic ring.
+Round 1: Start with a magic ring. Chain 3 (counts as first double crochet). Make 9 double crochet in the ring. Slip stitch to join in top of beginning chain-3.
+Round 2: Change color. Chain 2 (counts as first half double crochet). Make half double crochet increase in each stitch around (9 times). Work 1 half double crochet. Slip stitch to join in top of beginning chain-2.
+Round 3: Work [slip stitch, (double crochet, treble crochet), (3 treble crochet), (treble crochet, double crochet)] 5 times around. Slip stitch to join in first slip stitch.
+Round 4: Change color. Chain 1. Work [half double crochet, 2 double crochet, treble crochet, 2 double crochet, half double crochet]. Repeat [single crochet, half double crochet, 2 double crochet, treble crochet, 2 double crochet, half double crochet] 4 times. Slip stitch to join in first half double crochet.
+Round 5: Chain 5. Work [treble crochet, double crochet increase, double crochet, half double crochet, 3 single crochet]. Repeat [half double crochet, double crochet, double crochet increase, (treble crochet, chain 1, treble crochet), double crochet increase, double crochet, half double crochet, 3 single crochet] 3 times. Work half double crochet, double crochet, double crochet increase. Slip stitch to join in 3rd chain of beginning chain-5.

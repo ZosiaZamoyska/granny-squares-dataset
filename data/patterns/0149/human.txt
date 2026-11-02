@@ -1,0 +1,16 @@
+Mc - Magic circle
+Ch - Chain stitch
+Sc - Single crochet stitch
+Hdc - Half double crochet stitch
+Dc - Double crochet stitch
+Tr - Treble crochet stitch
+Sl st - Slip stitch
+Inc - Increase – make two stitches in the same space
+( ) - When stitches are in brackets, make them all in the same space
+* * - When a sequence of stitches is enclosed in asterisks, repeat that sequence as many times as stipulated after the second asterisk
+
+Make a magic ring.
+Round 1: Ch 3 (counts as 1 dc), dc 11 into the magic circle, sl st into top of the ch 3. 12 sts.
+Round 2: Ch 3 (counts as 1 dc), dc 1 into the same space, dc 2 into all the remaining spaces, sl st into the top of the ch 3. 24 sts. Cut yarn and join with 2nd color.
+Round 3: Ch 5 (counts as 2 ch and 1 dc), dc 1 into the same space, hdc 1, sc 1, sl st, sc 1, hdc 1, (dc 1, ch 2, dc 1) into same space* 3 times, hdc 1, sc 1, sl st, sc 1, hdc 1, sl st into 3rd ch.
+Round 4: Ch 5 (counts as 2 ch and 1 dc), dc 2 into the corner space, *dc 7, (dc 2, ch 2, dc 2) into the next corner space* 3 times, dc 7, dc1 into corner space, sl st into 3rd ch. Cut yarn and weave in ends.

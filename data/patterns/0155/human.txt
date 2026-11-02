@@ -1,0 +1,10 @@
+Ch = Chain
+DC= Double Crochet
+TR= Treble Crochet
+St = Stitch
+Sl St = Slip Stitch
+Make a magic ring.
+Round 1: Using 1st Colour Foundation Ring: Ch 3 (Counts as first DC) Place 11 DC inside ring Sl st to beginning Ch 3 (12 DC total) Tie off. Using 2nd Colour
+Round 2: Pick a stitch, attach yarn. Ch 3 (Counts as first DC) DC in same st Repeat Ch 1, 2DC into next st. around Sl st to beginning Ch 3 (24 DC total) Tie off. Using 3rd Colour
+Round 3: Pick a Ch 1 space, attach yarn. Ch 3 (Counts as first DC) 2DC in same sp. Repeat Ch 1, 3DC into the next Ch 1 sp. around Sl st to beginning Ch 3 (36 DC total) Using 4th Colour
+Round 4: Pick a Ch 1 space, attach yarn. Ch 4 (Counts as first TR) 2TR in same sp. Ch 3, Place 3TR into same sp. (Creates corner) Ch 1, 3DC into next Ch 1 sp. Ch 1, 3DC into next Ch 1 sp. Ch 1, 3TR into next Ch 1 sp. Ch 3, Place 3TR into same sp. (Creates corner) Ch 1, 3DC into next Ch 1 sp. Ch 1, 3DC into next Ch 1 sp. Ch 1, 3TR into next Ch 1 sp. Ch 3, Place 3TR into same sp. (Creates corner) Ch 1, 3DC into next Ch 1 sp. Ch 1, 3DC into next Ch 1 sp. Ch 1, 3TR into next Ch 1 sp. Ch 3, Place 3TR into same sp. (Creates corner) Ch 1, 3DC into next Ch 1 sp. Ch 1, 3DC into next Ch 1 sp. Sl st to beginning Ch 4 Tie off, and weave in any loose ends.

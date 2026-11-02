@@ -11,6 +11,7 @@
   <header>
     <button id="fold" title="Fold sidebar (⌘B)">«</button>
     <h1>Granny squares</h1>
+    <a id="to-board" href="/board" title="Review board: every pattern as a chart, sorted into clusters">Board</a>
     <button id="new">+ New</button>
   </header>
   <ul id="list"></ul>
@@ -21,8 +22,12 @@
 <main id="editor" hidden>
   <div class="topbar">
     <input id="title" class="title" placeholder="Pattern title">
-    <select id="status" class="status" title="Completion status; rejected patterns are left out of the export">
-      <option value="wip">WIP</option><option value="done">Finished</option><option value="rejected">Rejected</option>
+    <select id="status" class="status" title="Review status; only to review, promising, WIP and finished patterns are exported of the export">
+      <option value="review">To review</option><option value="promising">Promising</option>
+      <option value="wip">WIP</option><option value="done">Finished</option>
+      <option value="permission">Ask permission</option>
+      <option value="duplicate">Duplicate</option><option value="rejected">Rejected</option>
+      <option value="copyright">Copyright issue</option>
     </select>
     <span id="save-state"></span>
   </div>
@@ -122,6 +127,7 @@
       <tr><td><code>3ch=tr</code></td><td>chain that counts as a stitch</td></tr>
       <tr><td><code>3sk</code></td><td>skip 3 stitches</td></tr>
       <tr><td><code>3tr@sp</code></td><td>placement: <code>@ring @sp @corner @same @st @top @side</code></td></tr>
+      <tr><td><code>dc@start</code></td><td>into the place the round's first stitch went into (the end of a group split over the join)</td></tr>
       <tr><td><code>{3tr 3ch 3tr}@corner</code></td><td>group worked into one place</td></tr>
       <tr><td><code>C2@3tr</code> <code>C2@{…}</code></td><td>yarn colour for a stitch, group, repeat or any run of stitches in <code>{…}</code>; pick the colour under the chart</td></tr>
       <tr><td><code>vs@sp</code></td><td>a pattern abbreviation (defined above, e.g. <code>vs</code> = <code>tr 1ch tr</code>); with <code>@place</code> its stitches all go into that place</td></tr>

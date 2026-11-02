@@ -1,0 +1,18 @@
+Abbreviations/Stitches Used:
+** - Repeat instructions between asterisks as many times as directed
+[ ] - Repeat instructions within brackets as a set as many times as directed
+st/sts - stitch/stitches
+sl st - slip stitch
+sc - single crochet
+dc - double crochet
+tr - treble
+
+Make a magic ring.
+Round 1: Ch 3 (counts as dc), 2 dc into ring, ch 3, repeat [3 dc, ch 3] 3 times into ring. Join with a sl st to top of ch 3.
+Round 2: Ch 3, dc in next 2 dc, [2 dc, ch 3, 2 dc] in ch-3 space, **dc in next 3 dc, [2 dc, ch 3, 2 dc] in ch-3 space** Repeat from ** to ** around. Join with a sl st to 1st st.
+Round 3: Sl st in next dc, ch 6, skip next dc, dc in next 2 dc, [2 dc, ch 3, 2 dc] in ch-3 space, **dc in next 2 dc, ch 2, skip next dc, tr in next dc, ch 2, skip next dc, dc in next 2 dc, [2 dc, ch 3, 2 dc] in ch-3 space** Repeat from ** to ** around, dc in next 2 dc, ch 2, join with a sl st to the 4th ch.
+Round 4: Ch 1, sc in ch-2 space, ch 2, skip next 2 dc, dc in next 2 dc, [2 dc, ch 3, 2 dc] in ch-3 space, **dc in next 2 dc, ch 2, sc in ch-2 space, sc in tr, sc in next ch-2 space, ch 2, skip 2 dc, dc in next 2 dc, [2 dc, ch 3, 2 dc] in ch-3 space** Repeat from ** to ** around, dc in next 2 dc, ch 2, sc in ch-2 space, sl st in ch 1.
+Round 5: Ch 1, sc in sc, sc in ch-2 space, ch 2, skip next 2 dc, dc in next 2 dc, [2 dc, ch 3, 2 dc] in ch-3 space, **dc in next 2 dc, ch 2, sc in ch-2 space, sc in 3 sc, sc in next ch-2 space, ch 2, skip 2 dc, dc in next 2 dc, [2 dc, ch 3, 2 dc] in ch-3 space** Repeat from ** to ** around, dc in next 2 dc, ch 2, sc in ch-2 space, sc in sc, sl st in ch 1.
+Round 6: Ch 1, sc in sc, ch 2, 2 dc in ch-2 space, dc in next 4 dc, [2 dc, ch 3, 2 dc] in ch-3 space, **dc in next 4 dc, 2 dc in ch-2 space, ch 2, skip next sc, sc in next 3 sc, ch 2, 2 dc in ch-2 space, dc in next 4 dc, [2 dc, ch 3, 2 dc] in ch-3 space** Repeat from ** to ** around, dc in next 4 dc, 2 dc in ch-2 space, ch 2, skip next sc, sc in next sc, sl st in ch 1.
+Round 7: Ch 5 (counts as tr + ch 1), 2 dc in ch-2 space, dc in next 8 dc, [2 dc, ch 3, 2 dc] in ch-3 space, **dc in next 8 dc, 2 dc in ch-2 space, ch 1, skip next sc, tr in next sc, ch 1, 2 dc in ch-2 space, dc in next 8 dc, [2 dc, ch 3, 2 dc] in ch-3 space** Repeat from ** to ** around, dc in next 8 dc, 2 dc in ch-2 space, ch 1, sl st in 4th ch.
+Round 8: Ch 3 (counts as dc), dc in ch-1 space, dc in next 12 dc, [2 dc, ch 3, 2 dc] in ch-3 space, **dc in next 12 dc, dc in ch-1 space, dc in tr, dc in next ch-1 space, dc in next 12 dc, [2 dc, ch 3, 2 dc] in ch-3 space** Repeat from ** to ** around, dc in next 12 dc, dc in ch-1 space, sl st in the 3rd ch. Fasten off. Block the square.

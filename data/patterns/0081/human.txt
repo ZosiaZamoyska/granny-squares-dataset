@@ -1,0 +1,13 @@
+Pattern Notes & Stitches to Know
+sl st – slip stitch
+ch – chain
+dc – double crochet
+Magic ring
+Ch 3 at beginning of each round COUNTS as dc
+
+Make a magic ring
+Round 1: ch 3 (counts as dc), 2 dc, ch 3, 3 dc, ch 3, 3 dc, ch 3, 3 dc, ch 3, join to first ch 3 with sl st, pull ring closed tight (12 dc)
+Round 2: sl st over the next 2 dc to the ch 3 space, ch 3, (2 dc, ch 3, 3 dc) into ch 3 space, *(3 dc, ch 3, 3 dc) into next ch 3 space* repeat from * to * around 2 more times, join to top of first ch 3 with sl st (24 dc)
+Round 3: sl st over next 2 dc to the ch 3 space, ch 3, (2 dc, ch 3, 3 dc) into ch 3 space, *3 dc in between the 3 dc groups from previous row, (3 dc, ch 3, 3 dc) into ch 3 space* repeat from * to * around, join to top of first ch 3 with sl st
+Repeat round 3 for pattern. In each corner ch 3 space work (3 dc, ch 3, 3 dc), and work 3 dc in between the 3 dc's from the previous row across each side. Each round will increase by 12 dc
+Repeat to round 29, or until desired size.

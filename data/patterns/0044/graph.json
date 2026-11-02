@@ -1,0 +1,19 @@
+{
+ "rounds": {
+  "1": {
+   "tokens": "ch2=hdc^0 hdc^-1 hdc^-1 hdc^-1 hdc^-1 hdc^-1 hdc^-1 hdc^-1 hdc^-1 hdc^-1 hdc^-1 hdc^-1 hdc^-1 hdc^-1 sl@top",
+   "line": "R1: {2ch=htr 13htr}@ring ss@top",
+   "below": "start: mr"
+  },
+  "2": {
+   "tokens": "ch2=hdc^0 hdc^0 hdc^-1 hdc^0 hdc^-1 hdc^0 hdc^-1 hdc^0 hdc^-1 hdc^0 hdc^-1 hdc^0 hdc^-1 hdc^0 hdc^-1 hdc^0 hdc^-1 hdc^0 hdc^-1 hdc^0 hdc^-1 hdc^0 hdc^-1 hdc^0 hdc^-1 hdc^0 hdc^-1 sl@top",
+   "line": "R2: 2ch=htr [2htr@st]x13 ss@top",
+   "below": "R1: {2ch=htr 13htr}@ring ss@top"
+  },
+  "5": {
+   "tokens": "ch2=hdc^0 hdc^0 hdc^0 hdc^0 hdc^0 dc^0 dc^0 dc^-1 dc^-1 dc^0 hdc^0 hdc^0 hdc^0 hdc^0 hdc^0 hdc^0 hdc^0 hdc^0 hdc^0 dc^0 dc^0 dc^-1 dc^-1 dc^0 hdc^0 hdc^0 hdc^0 hdc^0 hdc^0 hdc^0 hdc^0 hdc^0 hdc^0 dc^0 dc^0 dc^-1 dc^-1 dc^0 hdc^0 hdc^0 hdc^0 hdc^0 hdc^0 hdc^0 hdc^0 hdc^0 hdc^0 dc^0 dc^0 dc^-1 dc^-1 dc^0 hdc^0 hdc^0 hdc^0 hdc^0 sl@top",
+   "line": "R5: 2ch=htr 4htr [tr 3tr@st tr 9htr]x3 tr 3tr@st tr 4htr ss@top",
+   "below": "R4: 2ch=htr [2htr@st 4htr]x7 2htr@st 3htr ss@top"
+  }
+ }
+}

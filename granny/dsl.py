@@ -27,7 +27,7 @@ UK_TO_US = {"dc": "sc", "htr": "hdc", "tr": "dc", "dtr": "tr", "ttr": "dtr", "qt
 # Stitches that don't count toward stitch totals.
 NON_STITCH = {"ch", "sl", "sk", "join", "turn", "fo", "mr"}
 
-PLACES = {"ring", "sp", "same", "st", "corner", "top", "next", "side"}
+PLACES = {"ring", "sp", "same", "st", "corner", "top", "next", "side", "start"}  # start: where the round's first stitch went
 
 
 class DSLError(ValueError):

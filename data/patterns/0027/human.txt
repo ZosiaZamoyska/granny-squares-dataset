@@ -1,0 +1,10 @@
+ch = chain
+dc = double crochet
+sl st = slip stitch
+st = stitch(es)
+
+Make a magic ring.
+Round 1: Work all in the ring: Ch 3 (counts as 1st dc), 2 dc, ch 2, *3dc, ch 2. Repeat from * 2 more times. Sl st to top of starting ch-2 to join.
+Round 2: Sl st to next ch-2 space, then ch 3 (counts as 1st dc), 2dc, ch 2, 3 dc into same space, *3dc, ch 2, 3dc into next space. Repeat from * 2 more times. Sl st to top of starting ch-3 to join.
+Round 3: Continuing with red yarn, sl st to next ch-2 corner space, (ch 3 (counts as 1st dc), 2dc, ch 2, 3 dc into same space), 3dc into next space, changing to white yarn in the last dc. With white yarn, (3dc, ch 2, 3dc) into next corner space, changing to red yarn in the last dc. With red yarn, 3dc in the next space, changing to white yarn in the last dc. With white yarn, (3dc, ch 2, 3dc) into next corner space, changing to red yarn in the last dc. With red yarn, 3dc in the next sp, (3dc, ch 2, 3dc) into next corner space, changing to white yarn in the last dc. With white yarn, 3dc in the next space. Sl st to top of starting ch-3 to join. Fasten off white yarn.
+Round 4: Reattach white yarn to any corner sp. (Ch 3 (counts as 1st dc), 2dc, ch 2, 3 dc) into same corner space, 3dc into each of the next 2 sp, *(3dc, ch 2, 3 dc) into the corner space, 3 dc into each of the next 2 sp. Repeat from * twice. . Sl st to top of starting ch-3 to join. Fasten off white yarn.

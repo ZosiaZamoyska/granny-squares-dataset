@@ -1,0 +1,10 @@
+This pattern is written using UK terminology.
+
+Make a magic ring.
+Round 1: Ch2 (counts as htr throughout), 13htr in loop, ss to top f beg ch-2. (14 sts)
+Round 2: Ch2, 2htr in each rem st around, ss to top of beg ch-2. (27 sts)
+Round 3: Ch2, (htr in next st, 2htr in next st) 13 times, ss to top of beg ch-2. (40 sts)
+Round 4: Ch2, (2htr in next st, htr in next 4 sts) 7 times, 2htr in next st, htr in next 3 sts, ss to top of beg ch-2. (48 sts)
+Round 5: Ch2, htr in next 4 sts, *tr in next st, 3tr in next st, tr in next st, htr in next 9 sts; rep from * twice more, tr in next st, 3tr in next st, tr in next st, htr in next 4 sts, ss to top of beg ch-2. (56 sts)
+Round 6: Ch2, htr in next 5 sts, *tr in next st, 3tr in next st, tr in next st, htr in next 11 sts; rep from * twice more, tr in next st, 3tr in next st, tr in next st, htr in next 5 sts, ss to top of beg ch-2. (64 sts)
+Round 7: Ch2, htr in next 6 sts, *tr in next st, 3tr in next st, tr in next st, htr in next 13 sts; rep from * twice more, tr in next st, 3tr in next st, tr in next st, htr in next 6 sts, ss to top of beg ch-2. (72 sts)

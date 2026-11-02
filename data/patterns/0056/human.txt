@@ -1,0 +1,12 @@
+st(s) – stitch(es)
+ch – chain stitch
+sl st – slip stitch
+sc – single crochet
+dc – double crochet
+
+Make a magic ring.
+Round 1: Ch2, 2 dc in magic loop. *Ch2, 3 dc in magic loop. Repeat from the * 3 times. Ch2. Join with a sl st in top of “Ch2”. (12 sts)
+Round 2: Change yarn color to C. Ch2, turn your work. 2 dc in ‘ch2’ space made in previous rnd, ch2, 3 dc in same ‘ch2’ space. *Ch1. 3 dc in next ‘ch2’ space made in previous rnd, ch2, 3 dc in same ‘ch2’ space. Repeat from the * 3 times. Ch1, join with a sl st in top of ch2. (24 sts)
+Round 3: Change yarn color to A. Ch2, turn your work. 2 dc in ‘ch1’ space made in previous rnd. *Ch1. 3 dc in next ‘ch2’ space made in previous rnd, ch2, 3 dc in same ‘ch2’ space. Ch1, 3 dc in ‘ch1’ space made in previous rnd. Repeat from the * 3 times. Ch1. 3 dc in next ‘ch2’ space made in previous rnd, ch2, 3 dc in same ‘ch2’ space. Ch1, join with a sl st in top of ch2. (36 sts)
+Round 4: Ch2, turn your work. 2 dc in ‘ch1’ space made in previous rnd. *Ch1. 3 dc in next ‘ch2’ space made in previous rnd, ch2, 3 dc in same ‘ch2’ space. Ch1, 3 dc in ‘ch1’ space made in previous rnd. Ch1, 3 dc in next ‘ch1’ space made in previous rnd. Repeat from the * 3 times. Ch1. 3 dc in next ‘ch2’ space made in previous rnd, ch2, 3 dc in same ‘ch2’ space. Ch1, 3 dc in next ‘ch1’ space made in previous rnd. Ch1, join with a sl st in top of ch2. (48 sts)
+Round 5: Change yarn color to C. Ch2, turn your work. 2 dc in ‘ch1’ space made in previous rnd. Ch1, 3 dc in next ‘ch1’ space. *Ch1. 3 dc in next ‘ch2’ space made in previous rnd, ch2, 3 dc in same ‘ch2’ space. Ch1, 3 dc in ‘ch1’ space made in previous rnd. Ch1, 3 dc in ‘ch1’ space made in previous rnd. Ch1, 3 dc in next ‘ch1’ space made in previous rnd. Repeat from the * 3 times. Ch1. 3 dc in next ‘ch2’ space made in previous rnd, ch2, 3 dc in same ‘ch2’ space. Ch1, 3 dc in next ‘ch1’ space made in previous rnd. Ch1, join with a sl st in top of ch2. (60 sts)

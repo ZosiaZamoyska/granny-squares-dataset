@@ -1,0 +1,12 @@
+Abbreviations (US Terms)
+ch - chain
+sl - slip stitch
+dc - double crochet
+hdc - half double crochet
+
+Make a magic ring.
+Round 1: Make a magic ring, chain 3 (counts as first dc), work 15 double crochet into the ring, slip stitch into the top of chain-3 to join.
+Round 2: Change color, chain 3 (counts as first dc), work 2 double crochet, chain 2, then work (3 double crochet, chain 2) 7 times, slip stitch into the top of beginning chain-3.
+Round 3: Work 3 slip stitch, chain 2 (counts as first hdc), work 5 double crochet, half double crochet, then work (half double crochet, 5 double crochet, half double crochet) 7 times, slip stitch into the top of beginning chain-2.
+Round 4: Change color, chain 7 (counts as first d double crochet plus chain-5), work (double crochet, chain 5, double crochet), chain 5, then work [half double crochet, chain 5, (double crochet, chain 5, double crochet), chain 5] 3 times, slip stitch into the 2nd chain of beginning chain-7.
+Round 5: Change color, work (chain 3, 2 double crochet, chain 3, 3 double crochet), work (chain 1, 5 double crochet) twice, chain 1, then work [(3 double crochet, chain 3, 3 double crochet), (chain 1, 5 double crochet) twice, chain 1] 3 times, slip stitch into the top of beginning chain-3.

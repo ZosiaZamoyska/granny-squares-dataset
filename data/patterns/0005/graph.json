@@ -1,0 +1,34 @@
+{
+ "rounds": {
+  "1": {
+   "tokens": "ch3=dc^0 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch ch ch sl@top turn",
+   "line": "R1: 3ch=tr@ring 2tr 3ch [3tr 3ch]x3 ss@top turn",
+   "below": "start: mr"
+  },
+  "2": {
+   "tokens": "ch3=dc^+1 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 sl@top turn",
+   "line": "R2: 3ch=tr {2tr 3ch 2tr}@same [3tr {2tr 3ch 2tr}@same]x3 2tr ss@top turn",
+   "below": "R1: 3ch=tr@ring 2tr 3ch [3tr 3ch]x3 ss@top turn"
+  },
+  "3": {
+   "tokens": "ch3=dc^0 ch dc^+1 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 ch dc^+1 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 ch dc^+1 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 ch dc^+1 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 sl@top turn",
+   "line": "R3: 3ch=tr ch sk 3tr [{2tr 3ch 2tr}@same 3tr ch sk 3tr]x3 {2tr 3ch 2tr}@same 2tr ss@top turn",
+   "below": "R2: 3ch=tr {2tr 3ch 2tr}@same [3tr {2tr 3ch 2tr}@same]x3 2tr ss@top turn"
+  },
+  "4": {
+   "tokens": "ch3=dc^0 ch dc^+1 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 ch dc^+1 dc^0 dc^0 ch dc^+1 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 ch dc^+1 dc^0 dc^0 ch dc^+1 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 ch dc^+1 dc^0 dc^0 ch dc^+1 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 ch dc^+1 dc^0 sl@top turn",
+   "line": "R4: 3ch=tr ch sk 3tr [{2tr 3ch 2tr}@same 3tr ch sk 3tr ch sk 3tr]x3 {2tr 3ch 2tr}@same 3tr ch sk 2tr ss@top turn",
+   "below": "R3: 3ch=tr ch sk 3tr [{2tr 3ch 2tr}@same 3tr ch sk 3tr]x3 {2tr 3ch 2tr}@same 2tr ss@top turn"
+  },
+  "5": {
+   "tokens": "ch3=dc^0 ch dc^+1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 ch dc^+1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 ch dc^+1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 ch dc^+1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 sl@top turn",
+   "line": "R5: 3ch=tr ch sk 7tr [{2tr 3ch 2tr}@same 5tr tr tr ch sk tr tr 5tr]x3 {2tr 3ch 2tr}@same 6tr ss@top turn",
+   "below": "R4: 3ch=tr ch sk 3tr [{2tr 3ch 2tr}@same 3tr ch sk 3tr ch sk 3tr]x3 {2tr 3ch 2tr}@same 3tr ch sk 2tr ss@top turn"
+  },
+  "6": {
+   "tokens": "ch3=dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 sl@top",
+   "line": "R6: 3ch=tr 8tr [{2tr 3ch 2tr}@same 9tr 1tr 9tr]x3 {2tr 3ch 2tr}@same 9tr tr ss@top",
+   "below": "R5: 3ch=tr ch sk 7tr [{2tr 3ch 2tr}@same 5tr tr tr ch sk tr tr 5tr]x3 {2tr 3ch 2tr}@same 6tr ss@top turn"
+  }
+ }
+}

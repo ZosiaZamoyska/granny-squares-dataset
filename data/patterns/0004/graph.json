@@ -1,0 +1,19 @@
+{
+ "rounds": {
+  "3": {
+   "tokens": "ch3=dc^0 dc^-1 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^-1 dc^0 sl^0",
+   "line": "R3: {3ch=tr tr}@same tr [2tr@same tr]x11 ss",
+   "below": "R2: {3ch=tr tr}@same [2tr@same]x11 ss@top"
+  },
+  "4": {
+   "tokens": "ch3=dc^0 dc^-1 dc^0 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^0 dc^-1 dc^0 dc^0 dc^0 dc^-1 dc^0 dc^0 sl^0",
+   "line": "R4: {3ch=tr tr}@same 2tr [2tr@same 2tr]x11 ss",
+   "below": "R3: {3ch=tr tr}@same tr [2tr@same tr]x11 ss"
+  },
+  "5": {
+   "tokens": "ch3=dc^0 dc^-1 ch dc^0 dc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 dc^0 dc^-1 ch dc^0 dc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 dc^0 dc^-1 ch dc^0 dc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 dc^0 dc^-1 ch dc^0 dc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sc^-1 hdc^0 sl@top",
+   "line": "R5: {3ch=tr tr}@same ch 2tr@same [{htr dc}@same]x8 [htr 2tr@same ch 2tr@same [htr dc]x8]x3 htr ss@top",
+   "below": "R4: {3ch=tr tr}@same 2tr [2tr@same 2tr]x11 ss"
+  }
+ }
+}

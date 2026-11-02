@@ -1,0 +1,14 @@
+sl st – slip stitch
+ch – chain
+dc – double crochet
+hdc – half double crochet
+sc – single crochet
+Ch 3 at the beginning of each round counts as a dc
+
+Make a magic ring
+Round 1: 11 dc into ring, pull ring closed tight, join to top of first ch 3 with sl st (12 dc)
+Round 2: ch 3, dc into same stitch, 2 dc into each stitch around, join to top of first ch 3 with sl st (24 dc)
+Round 3: ch 3, 2 dc in next stitch, *dc, 2 dc in next* repeat from * to * around, stop before last yarn over in last stitch
+Pull a loop of your contrasting color, join to top of first ch 3 with sl st (36 dc)
+Round 4: ch 3, (dc, ch 2, 2 dc) all in same stitch, dc in next, hdc in next 2, sc in next 2, hdc in next 2, dc in next, *(2 dc, ch 2, 2 dc) all in next, dc in next, hdc in next 2, sc in next 2, hdc in next 2, dc in next* repeat from * to * around, join to top of first ch 3 with sl st (48 crochet stitches, 4 ch 2 spaces)
+Round 5: ch 3, dc in next, *(2 dc, ch 2, 2 dc) in ch 2 space, dc in next 12 stitches* repeat from * to * around, join to top of first ch 3 with sl st (64 dc)

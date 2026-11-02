@@ -1,0 +1,17 @@
+Stitches/Abbreviations Used
+** - Repeat instructions between asterisks as many times as directed
+st/sts - stitch/stitches
+ch - chain
+sl st - slip stitch
+sc - single crochet
+hdc - half double crochet
+dc - double crochet
+tr - treble
+
+Round 1: Using color A make a magic ring, ch 3 (counts as 1st st), 15 dc into ring. Join with a sl st to 3rd ch. (16 sts). Fasten off.
+Round 2: Pull color B through the loop, ch 1, sc in same st, hdc in next st, dc in next st, tr in next st, **ch 4, sc in next st, hdc in next st, dc in next st, tr in next st** Repeat from ** to ** 2 more times, ch 4, sl st in the 1st sc. Fasten off.
+Round 3: Join color C in the previous ch-4 space, ch 1, **2 sc and 2 hdc in ch-4 space, dc in next 2 sts, tr in next 2 sts, ch 4** Repeat from ** to ** around, sl st in 1st sc. Fasten off.
+Round 4: Join color D in the previous ch-4 space, ch 1, **3 sc and 1 hdc in ch-4 space, hdc in next 2 sc, dc in next 3 sts, tr in next 3 sts, ch 4** Repeat from ** to ** around, sl st in the 1st sc. Fasten off.
+Round 5: Join color E in the previous ch-4 space, ch 1, **4 sc in ch-4 space, hdc in next 4 sts, dc in next 4 sts, tr in next 4 sts, ch 4** Repeat from ** to ** around, sl st in the 1st sc. Fasten off.
+Round 6: Join color F in the previous ch-4 space, ch 1, **4 sc in ch-4 space, sc in next st, hdc in next 5 sts, dc in next 5 sts, tr in next 5 sts, ch 4**Repeat from ** to ** around, sl st in 1st sc. Fasten off.
+Round 7: Pull color G through the hook, ch 3, **dc in next st and in each st across up to the ch-5 space, [4 dc, ch 2, 4 dc] in ch-5 space** Repeat from ** to ** around. Join with a sl st to the 3rd ch. Fasten off.

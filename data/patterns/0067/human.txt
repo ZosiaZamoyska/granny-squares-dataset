@@ -1,0 +1,15 @@
+Abbreviations
+CH = chain
+DC = double crochet
+RND = round
+SC = single crochet
+SL = slip
+ST = stitch
+
+Make a magic ring.
+Round 1: (with Opal): ch 2 (counts as first dc), work 15 dc into center of ring. Join with a sl st to the top of the beginning ch-2 – 16 dc
+Round 2: (with Opal): ch 5 (counts as 1 dc and ch 2), *1 dc in next st, ch 2; rep from * another 14 times, join with a sl st to 3rd ch of beginning ch-5 – 16 ch-2 sps
+Round 3: (with Opal): sl st in first ch-2 sp, (ch 2, 2 dc) in the same sp, ch 1; *work (3 dc, ch 1) in next ch-2 sp; rep from * another 14 times, join with a sl st in the top of beginning ch-2 – 16 ch-1 sps
+Round 4: (with Cream): join with a sl st to any ch-1 sp, (ch 1, sc) in the same sp, *(ch 3, sc) in the next 3 sps, ch 6, sc in next sp; rep from * another 3 times, join with a sl st to first sc – 12 ch-3 sps & 4 ch-6 sps
+Round 5: (with Cream): sl st in first ch-3 sp, (ch 2, 2 dc) in same sp, 3 dc in the next 2 ch-3 sps; *(5 dc, ch 3, 5dc) in ch-6 sp, 3 dc in next 3 ch-3 sps; rep from * twice more, (5 dc, ch 3, 5 dc) in last ch-6 sp, join with a sl st to the top of the beginning ch-2 – 76 dc & 4 ch-3 sps
+Round 6: (with Cream): ch 2 (counts as 1st dc), work 1 dc in each st across edge, work [1 dc, ch 3, 1 dc] in each corner ch-3 sps, end by joining with a slip st to beginning of rnd ch – 84 dc & 4 ch-3 sps

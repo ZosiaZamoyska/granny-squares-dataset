@@ -1,0 +1,16 @@
+This pattern uses all US terminology
+MC - magic circle (tutorial from Every Trick on the Hook)
+st - stitch 
+slst - slip stitch
+ch - chain
+sc - single crochet
+hdc - half double crochet
+dc - double crochet
+Blanket stitch block: (sc, 2dc)
+Make a magic ring.
+Round 1: Into MC, (sc, 2dc) 4 times. slst to first sc, ch1 and turn. (1 block on each side)
+Round 2: In the stitch you just joined to in the round below (so just behind your working yarn), (sc, 2dc, sc, 2dc). *Skip 2st, (sc, 2dc, sc, 2dc) into the next st, which is the sc from the previous round* Repeat * to * 3 times. slst to first sc, ch1 and turn. (2 blocks on each side)
+NOTE: Each stitch that has two blocks in it (i.e. sc, 2dc, sc, 2dc) is a corner! In the next row, the corner is worked in the central sc which is bolded above.
+Round 3: In the stitch you just joined to in the round below (so just behind your working yarn), (sc, 2dc). *Skip 2st, (sc, 2dc, sc, 2dc) into the next st, which is the sc from the previous round, skip 2st, (sc, 2dc) in next stitch* Repeat * to * around your square. slst to first sc, ch1 and turn. (3 blocks on each side)
+Round 4-14: Repeat Row 3, adding one more blanket stitch block (sc, 2dc) in between the corners of each row. Measure your square after Row 14 to see if you're close to 10"/25cm; if not, do another row or two! 
+Round 15: (make sure you turned at the end of Row 14!) sc in each stitch. In corner sc, work (hdc, ch2, hdc). slst to first sc to finish, cut yarn and weave in ends.

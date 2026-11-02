@@ -1,0 +1,12 @@
+Make a magic ring.
+Round 1: Ch 3, 3 d c in ring; (ch 4, 4 d c in ring) 3 times; ch 1, d c in 3rd st of ch-3 first made.
+Round 2: S c in sp; (ch 10, s c in next sp) 3 times; ch 10, sl st in 1st s c made.
+Round 3: 12 s c in each ch-10 loop around. Join to 1st s c made.
+Round 4: Sl st in next s c, ch 1, s c in same place as sl st, * s c in each s c to within last s c of this 12-s c group. Ch 5, skip last s c of this s c-group and the 1st s c of next s c-group. Repeat from * around. Join last ch-5 to 1st s c made.
+Round 5: Sl st in next s c, ch 1, s c in same place as sl st, * s c in each s c to within last s c of this s c-group, ch 5, 4 d c in next loop, ch 5, skip 1 s c of next s c-group. Repeat from * around; join.
+Round 6: Sl st in next s c, ch 1, s c in same place as sl st, * s c in each s c to within last s c of this s c-group. (Ch 5, 4 d c in next loop) twice; ch 5, skip 1 s c of next s c-group. Repeat from * around; join.
+Round 7: Sl st in next s c, ch 1, s c in same place as sl st, * s c in each s c to within last s c of this s c-group; ch 5, 4 d c in next loop. Ch 5, in next loop make s c, ch 5 and s c; ch 5, 4 d c in next loop, ch 5, skip 1 s c. Repeat from * around, ending with d tr in 1st s c made.
+Round 8: Ch 3, 3 d c in loop formed by d tr; 4 d c in next loop, * ch 5, s c in next loop, ch 5. In ch-5 loop between s c's make 4 d c, ch 3 and 4 d c. Ch 5, s c in next loop, ch 5, 4 d c in next 2 loops. Repeat from * around, ending with ch-2, d c in 3rd st of ch-3 first made.
+Round 9: S c in loop just made, * ch 6, s c between next two 4-d c groups. (Ch 6, s c in next loop) twice; ch 5. In corner ch-3 sp make 4 d c, ch 3 and 4 d c. Ch 5, s c in next loop, ch 6, s c in next loop. Repeat from * around, ending with ch 2, tr in 1st s c made.
+Round 10: S c in loop just made; (ch 6, s c in next loop) 4 times; * ch 5, in corner sp make 4 d c, ch 3 and 4 d c. Ch 5, s c in next loop; (ch 6, s c in next loop) 5 times. Repeat from * around, ending rnd as before.
+Round 11: S c in loop just made; (ch 6, s c in next loop) 5 times; * ch 5, in corner sp make 4 d c, ch 3 and 4 d c. Ch 5, s c in next loop; (ch 6, s c in next loop) 6 times. Repeat from * around, ending with ch 6, join to 1st s c made. Fasten off.

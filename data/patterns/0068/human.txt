@@ -1,0 +1,13 @@
+Abbreviations
+CH = chain
+DC = double crochet
+RND = round
+SC = single crochet
+SL = slip
+ST = stitch
+
+Make a magic ring.
+Round 1: (with Opal) ch 2 (this counts as your first dc), work 2 dc into center of ring, *ch 2, work 3 dc into center of ring; rep from * twice more, ch 2, join with a sl st to top of beginning ch-2. If changing colors, cut yarn and fasten off. If NOT changing colors, work sl st to corner ch-space — 4 groups of 3 dc sts (12 dc sts total)
+Round 2: (attach Goldmine yarn to any ch-2 corner sp.) Ch 2 (counts as first dc), work 2 dc into same corner sp, ch 2, 3 dc in same space, ch 2, *work [3 dc, ch 2] twice into next corner space; rep from * twice more, join with a sl st to top of beginning ch-2. If changing colors, cut yarn and fasten off. If NOT changing colors, work sl st to corner ch-space — 24 dc sts
+Round 3: (attach Cream yarn to any ch-2 corner sp.) Ch 2 (counts as first dc), work 2 dc into same corner sp, ch 2, 3 dc in same sp, ch 1, 3 dc in next ch-sp, ch 1, *(3 dc, ch 2, 3 dc) into next corner sp, ch 1, 3 dc in next ch-sp, ch1; rep from * twice more, join with a sl st to top of beginning ch-2. If changing colors, cut yarn and fasten off. If NOT changing colors, work sl st to corner ch-space — 36 dc sts
+Round 4: (I continued with Cream, or attach next color to any corner ch-2 sp.) Ch 2 (counts as first dc), work 2 dc into same corner sp, ch 2, 3 dc in same sp, [ch 1, 3 dc in next ch-sp] twice, ch 1, *(3 dc, ch 2, 3 dc) into next corner sp, [ch 1, 3 dc in next ch-sp] twice, ch1; rep from * twice more, join with a sl st to top of beginning ch-2 — 48 dc sts

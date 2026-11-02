@@ -1,0 +1,43 @@
+Abbreviations (US Terms)
+approx – approximately
+beg – begin(ning)
+ch – chain
+dc – double crochet
+rep – repeat
+rnd(s) – round(s)
+sl-st – slip stitch
+sp – space
+st(s) – stitch(es)
+tog – together
+
+Make a magic ring.
+Round 1: Center Ring (Color 1)
+Ch 6 (counts as 1 dc + ch-3 corner sp).
+(3 dc, ch 3) 3 times into the ring.
+2 dc into ring.
+Join with sl st to 3rd ch of beg ch-6.
+Color Change: Join Color 2 for the next round.
+Round 2: Forming Corners
+Sl st into ch-3 space.
+Ch 6, 3 dc into same ch-3 space.
+*Ch 1, (3 dc, ch 3, 3 dc) in next ch-3 space.
+Repeat from * two more times.
+Ch 1, 2 dc in first ch-3 space.
+Join with sl st to 3rd ch of beg ch-6.
+Color Change: Join Color 3.
+Round 3: Expanding the Shape
+Sl st into ch-3 space.
+Ch 6, 3 dc in same space.
+*(Ch 1, 3 dc) in next ch-1 space, ch 1, (3 dc, ch 3, 3 dc) in next ch-3 space.
+Repeat from * two more times.
+Ch 1, 3 dc in last ch-1 sp, ch 1, 2 dc in first ch-3 sp.
+Join with sl st to 3rd ch of beg ch-6.
+Color Change: Join Color 4.
+Round 4-5: Larger Squares
+Sl st into ch-3 sp, ch 6, 3 dc in same space.
+*(Ch 1, 3 dc) in each ch-1 space until next corner, ch 1.
+(3 dc, ch 3, 3 dc) in ch-3 space.
+Repeat from * around the square shape.
+End final round with 2 dc in beg corner, join with sl st to 3rd ch of beg ch-6.
+Color Change: Join Color 5 for Round 5.
+Fasten off.

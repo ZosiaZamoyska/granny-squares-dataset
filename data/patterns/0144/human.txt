@@ -1,0 +1,15 @@
+Abbreviations
+ch – chain
+dc – double crochet
+rep – repeat
+sl st – slip stitch
+sc – single crochet
+yo – yarn over
+
+With MC, make magic ring, ch 1,
+Round 1: (3 dc, ch 1) 4 times in magic ring, sl st in first dc to join. (12 dc)
+Round 2: With CC, join in any corner st, ch 1, *(sc, ch 3, sc) in ch-sp, ch 2, sc rep from * around, sl st in first sc to join. (8 sc)
+Round 3: With MC, join in any corner st, ch 1, *(3 dc, ch 1, 3 dc) in corner, 3 dc in next ch-2 sp, rep from * around, sl st in first dc to join. (36 dc)
+Round 4: With CC, join in any corner st, ch 1, *(sc, ch 3, sc) in ch-sp, ch 2, [sc between next 2 groups of 3dc] across, rep from * around, sl st in first sc to join.
+Rounds 5-10: Repeat Rounds 3 & 4.
+Round 11: With MC, join in any corner, ch 1, (2 sc, ch 1, 2 sc) in corner, [3 sc in next ch-2 sp] across, rep from * around, sl st in first sc to join.

@@ -1,0 +1,12 @@
+Abbreviations to Remember (US Terms)
+Magic ring (mr)
+Chain (ch)
+Single crochet (sc)
+Double crochet (dc)
+Slip stitch (sl st)
+
+Make a magic ring.
+Round 1: ch x3 (counts as a dc) and then dc x2 in the circle.
+Ch x2, (dc x3, ch x2) x3. Sl st to the 3rd chain at the beginning of the round.
+Round 2-3: Ch x3. Dc in each dc stitch from the previous round, (dc x2, ch x2, dc x2) in each ch-2 corner stitch from the previous round. Then sl st to the 3rd chain at the beginning of the round.
+After the 3rd round, fasten off and weave in any tails.

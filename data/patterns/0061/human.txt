@@ -1,0 +1,3 @@
+Make a magic ring.
+Round 1: ch 3 (counts as 1 dc), dc in ring, (ch 5, 2 dc in ring) 3 times, ch 5, sl st in top of beginning ch-3: 28 sts
+Round 2: ch 3, skip 2 dc, ([2 sc, ch 5, 2 sc] in next ch-space, ch 2, skip 2 dc) 3 times, [2 sc, ch 5, 2 sc] in next ch-space, sl st in beginning ch-1: 44 sts

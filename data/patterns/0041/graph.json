@@ -1,0 +1,14 @@
+{
+ "rounds": {
+  "3": {
+   "tokens": "sl^+1 ch3=dc^-1 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch sl@top fo",
+   "line": "R3: ss@corner 3ch=tr {2tr 3ch 3tr}@same [ch 3tr@sp ch {3tr 3ch 3tr}@corner]x3 ch 3tr@sp ch ss@top fo",
+   "below": "R2: ss@sp ch {dc 3ch dc}@same [2ch {dc 3ch dc}@sp]x3 2ch ss@top fo"
+  },
+  "5": {
+   "tokens": "sl^+1 ch3=dc^-1 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch dc^+1 dc^-1 dc^-1 ch sl@top fo",
+   "line": "R5: ss@corner 3ch=tr {2tr 3ch 3tr}@same [ch [3tr@sp ch]x3 {3tr 3ch 3tr}@corner]x3 ch [3tr@sp ch]x3 ss@top fo",
+   "below": "R4: ss@corner ch {dc 3ch dc}@same [2ch [dc@sp 2ch]x2 {dc 3ch dc}@corner]x3 2ch [dc@sp 2ch]x2 ss@top fo"
+  }
+ }
+}

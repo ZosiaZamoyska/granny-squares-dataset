@@ -1,0 +1,12 @@
+Beginning ch 3 of each round counts as a stitch.
+Abbreviations (US terms):
+Ch = chain, sc = single crochet, dc = double crochet, sk = skip, st = stich, sp = space, 
+v-st = v-stitch, beg = beginning
+Special Stitches:
+V-Stitch: (dc, ch 1, dc) all in one stitch/space
+
+Make a magic ring.
+Round 1: Ch 3, 2dc, *ch 2, 3dc, repeat from * 2 more times, ch 2, join to top of beg ch 3, sl st in next 2 st and into ch 2 corner sp
+Round 2: (Ch 3, dc, ch 2, 2dc) all in ch 2 corner sp, *sk 1, v-st in next st, sk 1, (2dc, ch 2, 2dc) in ch 2 corner sp, repeat from * 2 more times, sk 1, v-st in next st, join to beg ch 3, sl st in next st and into ch 2 corner sp
+Round 3: (Ch 3, dc, ch 2, 2dc) in ch 2 sp, *sk 1, v-st in next st, v-st across in the ch 1 sp from previous row of v-st, v-st in 2nd to last st before ch 2 corner sp, (2dc, ch 2, 2dc) in ch 2 corner sp, repeat from * 2 more times, sk 1, v-st across in the ch 1 sp from previous row of v-st, v-st in 2nd to last st before ch 2 corner sp, join to beg ch 3, sl st in next st and into ch 2 corner sp
+Repeat Round 3 until the blanket is the width/length desired.

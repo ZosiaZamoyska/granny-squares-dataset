@@ -1,0 +1,22 @@
+Abbreviations
+US Crochet Terms
+Sl st – slip stitch
+Sc – single crochet
+Hdc – half double crochet
+Dc – double crochet
+Tr – treble crochet
+Ch – chain
+St – stitch
+Sp – space
+Beg – beginning
+Rep – repeat
+CC – contrast color
+RS – right side
+
+Make a magic ring.
+Round 1: (RS) Ch 3 (counts as 1 dc here and throughout at beg of a round), 2 dc in ring, [ch 2, 3 dc in ring] 3 times, ch 2, join with a sl st in 3rd ch of beg ch 3. Sl st into the next 2 dc and the next ch-2 sp ready to start Round 2.
+Round 2: Ch 3, (2 dc, ch 2, 3 dc) in same ch-sp, [ch 1, (3 dc, ch 2, 3 dc) in next ch-2 sp] 3 times, ch 1, join with a sl st in 3rd ch of beg ch 3. Sl st into the next 2 dc and the next ch-2 sp.
+Round 3: Ch 3, (2 dc, ch 2, 3 dc) in same ch-sp, ch 1, 3 dc in next ch-1 sp, ch 1 in next ch-1 sp, * (3 dc, ch 2, 3 dc) in next ch-2 sp, ch 1, 3 dc in next ch-1 sp, ch 1 in next ch-1 sp; rep from * twice, join with a sl st in 3rd ch of beg ch 3. Sl st into the next 2 dc and the next ch-2 sp.
+Round 4: Ch 3, (2 dc, ch 2, 3 dc) in same ch-sp, ch 1, [3 dc in next ch-1 sp, ch 1] to next corner ch-2 sp, * (3 dc, ch 2, 3 dc) in next ch-2 sp, ch 1, [3 dc in next ch-1 sp, ch 1] to next corner ch-2 sp; rep from * twice, join with a sl st in 3rd ch of beg ch 3. Sl st into the next 2 dc and the next ch-2 sp.
+Round 5: Ch 3, (2 dc, ch 2, 3 dc) in same ch-sp, ch 1, [3 dc in next ch-1 sp, ch 1] to next corner ch-2 sp, * (3 dc, ch 2, 3 dc) in next ch-2 sp, ch 1, [3 dc in next ch-1 sp, ch 1] to next corner ch-2 sp; rep from * twice, join with a sl st in 3rd ch of beg ch 3. Sl st into the next 2 dc and the next ch-2 sp.
+Round 6: Ch 3, (2 dc, ch 2, 3 dc) in same ch-sp, ch 1, [3 dc in next ch-1 sp, ch 1] to next corner ch-2 sp, * (3 dc, ch 2, 3 dc) in next ch-2 sp, ch 1, [3 dc in next ch-1 sp, ch 1] to next corner ch-2 sp; rep from * twice, join with a sl st in 3rd ch of beg ch 3. Sl st into the next 2 dc and the next ch-2 sp. Fasten off yarn.

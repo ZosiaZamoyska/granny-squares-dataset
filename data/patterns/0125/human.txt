@@ -1,0 +1,10 @@
+Make a magic ring.
+Round 1: Ch 4 (make your 1st ch a little looser), 2 dc in 4th ch from hook, ch 2. (3 dc, ch 2) in the same ch 3 more times. Join with a sl st to the top of the beginning ch 4.
+Round 2: Ch 1, sc in the same ch as the joining st. Sc in each dc around with (sc, ch 2, sc) in each corner ch-2 space. Join with a sl st to the 1st sc.
+Round 3: Ch 1, sc in the same sc as the joining st, ch 3, skip next sc, sc in the next sc, ch 3, skip next sc, (sc, ch 3, sc) in corner ch-2 space. *(ch 3, skip next sc, sc in next sc) 2 times, ch 3, skip next sc, (sc, ch 3, sc) in corner ch-2 space. Repeat from * 2 more times. Ch 3, skip next sc, join with a sc to 1st sc.
+Round 4: Sl st into the 1st ch-3 loop, (ch 3, 2 dc) in same loop, ch 1, skip next ch-3 loop, (3 dc, ch 2, 3 dc) in corner ch-3 loop. *ch 1, skip next ch-3 loop, 3 dc in next ch-3 loop, ch 1, skip next ch-3 loop, (3 dc, ch 2, 3 dc) in corner ch-3 loop. Repeat from * 2 more times. Ch 1, join with a sl st to top of beginning ch 3. 
+Round 5: Ch 1, sc in the same ch as the joining st. Sc in each dc and ch-1 space around with (sc, ch 2, sc) in each corner ch-2 space. Join with a sl st to the 1st sc. 
+Round 6: Ch 1, sc in the same sc as the joining st, ch 3. *(skip next sc, sc in the next sc, ch 3) across side. (sc, ch 3, sc) in the corner ch-2 space, ch 3. Repeat from * 3 more times. (ch 3, skip next sc, sc in the next sc) across side to beginning. Ch 3, join with a sl st to the 1st sc.
+Round 7: Sl st into the 1st ch-3 loop, (ch 3, 2dc) in same ch-3 loop, ch 1. *(skip next ch-3 loop, 3 dc in next ch-3 loop, ch 1) across side. (3 dc, ch 2, 3 dc) in the corner ch-3 loop, ch 1. Repeat from * 3 more times. (skip next ch-3 loop, 3 dc in next ch-3 loop, ch 1) across to beginning. Join with a sl st to top of beginning ch 3.
+Round 8: Repeat Rnd 5.
+Round 9: Repeat Rnd 6.

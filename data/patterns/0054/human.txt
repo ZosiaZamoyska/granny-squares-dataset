@@ -1,0 +1,11 @@
+sl st – slip stitch
+ch – chain
+dc – double crochet
+NOTE: There are many different ways of doing the basic granny square. I like this method because I think it hides the join and ch 3 the best
+ch 3 at beginning of each round counts as dc
+
+Make a magic ring.
+Round 1: ch 3 (counts as dc), working in the ring, 2 dc, ch 3, 3 dc, ch 3, 3 dc, ch 3, 3 dc, ch 3, join to first ch 3 with sl st (12 dc)
+Round 2: sl st in next 2 stitches so you’re working in the ch 3 space, (ch 3, 2 dc, ch 3, 3 dc) all in ch 3 space, *(3 dc, ch 3, 3 dc) all in next ch 3 space*, repeat from * to * around, join to first ch 3 with sl st (24 dc)
+Round 3: sl st in next 2 stitches so you’re working in the first ch 3 space, (ch 3, 2 dc, ch 3, 3 dc) all in ch 3 space, 3 dc in the space between the 3 dc groups from previous row (see picture below) *(3 dc, ch 3, 3 dc) all in ch 3 space, 3 dc in between the 3 dc groups from the previous row* repeat from * to * around, join to first ch 3 with sl st (36 dc)
+Round 4: sl st over the next 2 stitches, insert hook in ch 3 space, pull up new color, working in the first ch 3 space, (ch 3, 2 dc, ch 3, 3 dc) all in ch 3 space, 3 dc in each space between the 3 dc groups from the previous row across to the next ch 3 space, *(3 dc, ch 3, 3 dc) in ch 3 space, 3 dc in each space between the 3 dc groups from the previous row across to the next ch 3 space* repeat from * to * around, join to first ch 3 with sl st (48 dc)

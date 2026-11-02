@@ -1,0 +1,24 @@
+{
+ "rounds": {
+  "2": {
+   "tokens": "ch3=dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch sl@top",
+   "line": "R2: C1@{3ch=dc 2dc@same ch 3dc@sp ch} C2@{ch 3dc@same ch 3dc@sp ch} C3@{ch 3dc@same ch 3dc@sp ch} C4@{ch 3dc@same ch 3dc@sp ch} C1@{ch ss@top}",
+   "below": "R1: C1@{3ch=dc 2dc@ring ch} C2@{ch 3dc@ring ch} C3@{ch 3dc@ring ch} C4@{ch 3dc@ring ch} C1@{ch ss@top}"
+  },
+  "3": {
+   "tokens": "ch3=dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch sl@top",
+   "line": "R3: C1@{3ch=dc 2dc@same ch 3dc@sp ch 3dc@sp ch} C2@{ch 3dc@same ch 3dc@sp ch 3dc@sp ch} C3@{ch 3dc@same ch 3dc@sp ch 3dc@sp ch} C4@{ch 3dc@same ch 3dc@sp ch 3dc@sp ch} C1@{ch ss@top}",
+   "below": "R2: C1@{3ch=dc 2dc@same ch 3dc@sp ch} C2@{ch 3dc@same ch 3dc@sp ch} C3@{ch 3dc@same ch 3dc@sp ch} C4@{ch 3dc@same ch 3dc@sp ch} C1@{ch ss@top}"
+  },
+  "4": {
+   "tokens": "ch3=dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch sl@top",
+   "line": "R4: C1@{3ch=dc 2dc@same ch [3dc@sp ch]x2 3dc@sp ch} C2@{ch 3dc@same ch [3dc@sp ch]x2 3dc@sp ch} C3@{ch 3dc@same ch [3dc@sp ch]x2 3dc@sp ch} C4@{ch 3dc@same ch [3dc@sp ch]x2 3dc@sp ch} C1@{ch ss@top}",
+   "below": "R3: C1@{3ch=dc 2dc@same ch 3dc@sp ch 3dc@sp ch} C2@{ch 3dc@same ch 3dc@sp ch 3dc@sp ch} C3@{ch 3dc@same ch 3dc@sp ch 3dc@sp ch} C4@{ch 3dc@same ch 3dc@sp ch 3dc@sp ch} C1@{ch ss@top}"
+  },
+  "5": {
+   "tokens": "ch3=dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch sl@top",
+   "line": "R5: C1@{3ch=dc 2dc@same ch [3dc@sp ch]x3 3dc@sp ch} C2@{ch 3dc@same ch [3dc@sp ch]x3 3dc@sp ch} C3@{ch 3dc@same ch [3dc@sp ch]x3 3dc@sp ch} C4@{ch 3dc@same ch [3dc@sp ch]x3 3dc@sp 2ch ss@top}",
+   "below": "R4: C1@{3ch=dc 2dc@same ch [3dc@sp ch]x2 3dc@sp ch} C2@{ch 3dc@same ch [3dc@sp ch]x2 3dc@sp ch} C3@{ch 3dc@same ch [3dc@sp ch]x2 3dc@sp ch} C4@{ch 3dc@same ch [3dc@sp ch]x2 3dc@sp ch} C1@{ch ss@top}"
+  }
+ }
+}

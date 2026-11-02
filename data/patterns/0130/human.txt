@@ -1,0 +1,20 @@
+UK crochet terms - dc = double crochet (US sc)
+htr = half treble (US hdc)
+tr = treble (US dc)
+slst = slip stitch
+ch = chain
+Chains at start of each round do not count as stitches
+Make a magic ring.
+Centre Circle: Using circle colour
+Round 1: In a magic loop, make 8 dc, join to first dc with a slst to create first round. ( 8 sts)
+Round 2: Ch 1, 2dc in 1st stitch, 2dc in each stitch around, join to 1st dc with a slst. (16 sts)
+Round 3: Ch 1, 2dc in 1st stitch, 1dc in next stitch, *2dc in next stitch, 1dc in next stitch,* repeat to end of round, join to first dc with a slst. (24 sts)
+Round 4: Ch 1, 2dc in 1st stitch, 1dc in next 2 stitches, *2dc in next stitch, 1dc in next 2 stitches* repeat to end of round, join to first dc with a slst. (32 sts)
+Round 5: Ch 1, 2dc in 1st stitch, 1dc in next 3 stitches, *2dc in next stitch, 1dc in next 3 stitches* repeat to end of round, join to first dc with a slst (40 sts)
+Round 6: Ch 1, 2dc in 1st stitch, 1dc in next 4 stitches, *2dc in next stitch, 1dc in next 4 stitches* repeat to end of round, join to first dc with a slst (48 sts)
+Round 7: Ch1, 1dc in each stitch to end of round, join to first dc with a slst (48 sts)
+Round 8: Ch1, 1dc in each stitch to end of round, join to first dc with a slst (48 sts)
+Background:
+Round 9: join background colour to any stitch, ch1, *3dc, 3htr, 3dc in next stitch, 3 htr, 2 dc* repeat *to* 4 times, join to first dc with a slst.
+Round 10: Ch1, *2slst, 2dc, 1htr, 4tr in next stitch, 1htr, 4dc, 1slst* repeat *to* 4 times, join to first slst with a slst.
+Round 11: Ch1, 1dc in each stitch of the round, making 2dc, in each of the 2 centre stitches of each 4tr corner. Bind off .

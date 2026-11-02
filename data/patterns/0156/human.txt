@@ -1,0 +1,16 @@
+Ch = Chain
+Inc = Increase
+SC = Single crochet
+HDC = Half double crochet
+DC = Double crochet
+TR = Treble crochet
+Rep = Repeat
+St = Stitch
+Ch sp = Chain space
+Standing Single Crochet: Insert your hook into the stitch, yarn over, pull up a loop so that there are two loops on the hook. Yarn over and pull through to complete a single crochet stitch.
+Make a magic ring.
+Round 1: Ch 1 and make 1 SC, 1 HDC, and 1 DC in the ring. With Colour B, make 1 standing SC, 1 HDC, and 1 DC in the ring. With Colour C, make 1 standing SC, 1 HDC, and 1 DC in the ring. With Colour D, make 1 standing SC, 1 HDC, and 1 DC in the ring. Pull the tail end to close the magic ring. Each colour will be worked over the stitches of the following colour.
+Round 2: With Colour A, make 2HDC inc, 2DC inc, 2DC inc. With Colour B, make 2HDC inc, 2DC inc, 2DC inc. With Colour C, make 2HDC inc, 2DC inc, 2DC inc. With Colour D, make 2HDC inc, 2DC inc, 2DC inc.
+Round 3: With Colour A, rep *1 DC, 2DC inc* three times. With Colour B, rep *1 DC, 2DC inc* three times. With Colour C, rep *1 DC, 2DC inc* three times. With Colour D, rep *1 DC, 2DC inc* three times.
+Round 4: With Colour A, rep *2 DC, 2DC inc* three times. With Colour B, rep *2 DC, 2DC inc* three times. With Colour C, rep *2 DC, 2DC inc* three times. With Colour D, rep *2 DC, 2DC inc* three times.
+Round 5: With Colour A, make 2 TR, ch 1, 2 TR, 1 DC, 1 HDC, 1 SC, 1 sl st. Fasten off and cut the yarn for Colour A. With Colour B, make 2 TR, ch 1, 2 TR, 1 DC, 1 HDC, 1 SC, 1 sl st. Fasten off and cut the yarn for Colour B. With Colour C, make 2 TR, ch 1, 2 TR, 1 DC, 1 HDC, 1 SC, 1 sl st. Fasten off and cut the yarn for Colour C. With Colour D, make 2 TR, ch 1, 2 TR, 1 DC, 1 HDC, 1 SC, 1 sl st. Fasten off and cut the yarn for Colour D.

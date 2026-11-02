@@ -1,0 +1,14 @@
+Make a magic ring.
+Round 1: Ch 3 (to count as 1 dc), 15 d c in ring. Join this and every rnd with a sl st.
+Round 2: Ch 3, 1 d c in same st from which ch-3 started, * ch 2, 2 d c in same st, ch 5, skip 1 d c, 1 s c in next d c, ch 5, skip 1 d c, 2 d c in next d c, and repeat from * around (4 shells made).
+Round 3: Sl st to center of ch-2 (all rnds from now on begin in the same way), ch 3 (to count as 1 dc), 1 dc under ch-2, * ch 2, 2 d c under same ch-2, ch 5, 1 s c in loop, ch 5, 1 s c in next loop, ch 5, 2 d c under ch-2, and repeat from * around.
+Round 4: * Shell over shell, ch 5, 1 s c in loop, ch 5, 4 d c (1 block) in next loop, ch 5, 1 s c in next loop, ch 5 and repeat from * around.
+Round 5: Same as 3rd rnd, but having 5 loops (instead of 3) on each side of square.
+Round 6: Same as 4th rnd, but with 3 blocks over the 3 center loops on each side.
+Round 7: Same as 3rd rnd but with 7 loops.
+Round 8: Same as 4th rnd but with 5 blocks on each side.
+Round 9: Same as 3rd rnd but with 9 loops on each side.
+Round 10: Same as 4th rnd but with 3 blocks on each side.
+Round 11: Same as 3rd rnd but with 11 loops.
+Round 12: Same as 4th rnd but with 1 block on each side.
+Round 13: Same as 3rd rnd but with 13 loops.

@@ -1,0 +1,17 @@
+ch – chain
+dc – double crochet
+rep – repeat
+sl st – slip stitch
+sc – single crochet
+yo – yarn over
+
+Make a magic ring.
+Round 1: Ch 2 (does not count as st), 12 dc in magic ring, pull magic ring closed, sl st in 1st dc to join. (12 dc)
+Round 2: Ch 1, sc in same dc as join, ch 3, sc in next dc, *sc in next dc, ch 3, sc in next dc, repeat from * around, sl st in first sc to join.
+Round 3: Sl st in ch-3 sp, ch 2 (does not count as st), *(3 dc, ch 3, 3 dc) in ch-3 sp, repeat from * around, sl st in first dc to join. 
+Round 4: Sl st in each dc to first ch-3 sp, sl st in ch-3 sp, *sc in ch-3 sp, ch 7, repeat from * around, sl st in first sc to join.
+Round 5: Ch 1, sc in first sc, *[8 sc in ch-7 sp, sc in next sc] 2 times, 9 sc in next ch-7 sp**, sc in next sc, repeat from * around ending last rep at **, sl st in first sc to join.
+Round 6: Ch 1, sc in first 2 sts, hdc in next 3 sts, dc in next 2 sts, (dc, ch 3, dc) in next st, *dc in next 2 sts, hdc in next 3 sts, sc in next 3 sts, hdc in next 3 sts, dc in next 2 sts, (dc, ch 3, dc) in next st, repeat from * 2 more times, dc in next 2 sts, hdc in next 3 sts, sc in last st, sl st in first sc to join.
+Round 7: Ch 2 (does not count as st), 2 dc in same st as join, *sk next st, 2 dc in next st, rep from * across to ch-3 sp, (2 dc, ch 3, 2 dc) in corner sp, rep from * around, sl st in first sc to join.
+Rounds 8-9: Ch 1, sk 2 dc, *2 dc sp between dc groups, sk next 2 dc, rep from * across to ch-3 sp, (2 dc, ch 3, 2 dc) in corner sp, rep from * around, sl st in first sc to join.
+Round 10: Ch 1, *hdc in each dc across to ch-3 sp, (2 hdc, ch 2, 2 hdc) in corner sp, rep from * around, sl st in first hdc to join.

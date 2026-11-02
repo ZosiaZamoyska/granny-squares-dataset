@@ -1,0 +1,23 @@
+Make a magic ring.
+Round 1: You need to start off with the same height as a double crochet stitch, and therefore you are going to chain 3 (counts as first dc), 2 dc in ring (first granny cluster = turning chain and 2 dc),
+*ch 2, 3 dc in ring, repeat from * 3 times (4 clusters), ch 2; join with sl st in top of beg ch-3.
+If you’ve made a magic ring, pull it closed and join with sl st in top of beg ch-3.
+(12 dc and 4 ch-2 sps in this rnd).
+In round one, the ch-2 space creates the corners of your granny.
+Round 2: Ch 3 (first dc) and 2 dc into same ch-2 sp (last corner made). This may feel ‘wrong’ as it may feel that you are cramping the stitches into this space, but we will come and finish this corner in the end. For clarity’s sake – you’ll have 3 chains and to the left of it, you’ll be making the 2 dc’s,
+*ch 1, (3 dc, ch 2, 3 dc) in next ch-2 sp (corner); rep from * 2 more times, ch 1;
+and now we’ll be finishing the last corner – in the last ch-2 space, 3dc, ch2 and join with sl st in top of beg ch-3.
+(24 dc (8 x 3), 4 ch-2 spaces and 4 ch-1 spaces in this round).
+Round 3: In this round, we will be making single clusters in each ch-1 space (of the previous round). This forms the sides of your square and you’ll be chaining 1 before and after each single cluster.
+Ch3 (first dc) and 2 dc in same ch-2 sp (same as round 2),
+*ch 1, 3dc in next ch-1 sp, ch 1, (3 dc, ch 2, 3 dc) in corner ch-2 sp, rep from * 3 times,
+ch 1, 3dc in next ch-1 sp, ch1, 3dc, ch2, join with sl st in top of beg ch-3.
+(36 dc (12 x 3), 4 ch-2 spaces and 8 ch-1 spaces in this round).
+Round 4: Ch3 (first dc) and 2 dc in same ch-2 sp (same as round 2),
+*ch 1, 3dc in next ch-1 sp, ch 1, 3dc in next ch-1 sp, ch 1, (3 dc, ch 2, 3 dc); rep from * 3 times,
+ch 1, 3dc in next ch-1 sp (twice), ch1, 3dc, ch2, join with sl st in top of beg ch-3.
+(48 dc (16 x 3), 4 ch-2 spaces and 12 ch-1 spaces in this round).
+Round 5: Ch3 (first dc) and 2 dc in same ch-2 sp (same as round 2),
+*ch 1, 3dc in next ch-1 sp, ch 1, 3dc in next ch-1 sp, ch 1, 3dc in next ch-1 sp, ch 1, (3 dc, ch 2, 3 dc); rep from * 3 times,
+ch 1, 3dc in next ch-1 sp (3-times), ch1, 3dc, ch2, join with sl st in top of beg ch-3.
+(60 dc (20 x 3), 4 ch-2 spaces and 16 ch-1 spaces in this round).

@@ -1,0 +1,18 @@
+Glossary/Abbreviations
+ch(s) – chain(s)
+ss – slip stitch
+sk – skip
+st(s) – stitch (es)
+RS – right side
+WS – wrong side
+rep – repeat
+sp – space
+beg – beginning
+tr – treble crochet
+
+In Standard UK Terms:
+Make a magic ring.
+Round 1: *3tr, ch2, rep from * three more times, ss in 1st to join. Turn work for next round.
+Round 2: Join yarn to any ch2-corner, ch2, *(3tr, ch2, 3tr) in ch2-sp, ch1, rep from * three more times, ss in 1st to join. Turn work for next round.
+Round 3: Join yarn to any ch2-corner, ch2, *(3tr, ch2, 3tr) in ch2-sp, ch1, 3tr in ch1-sp, ch1, rep from * three more times, ss in 1st to join. Turn work for next round.
+Round 4: Join yarn to any ch2-corner, ch2, *(3tr, ch2, 3tr) in ch2-sp, ch1, (3tr in ch1-sp, ch1,) twice, rep from * three more times, ss in 1st to join. Turn work for next round.

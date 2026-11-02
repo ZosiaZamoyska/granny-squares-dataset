@@ -1,0 +1,14 @@
+Crochet terms (US):
+ch: chain.
+st: stitch.
+mr: magic ring.
+sl st: slip stitch.
+dc: double crochet.
+
+Make a magic ring.
+Round 1: ch 4 (counts as dc and ch 1), (dc, ch 1) nine times, sl st into third ch of the first ch 4.
+Round 2: ch 4, *dc in ch 1 space, ch 1, dc in dc, ch 1, repeat from * 8 more times, dc in ch1 space, ch 1, sl st into third ch of the first ch 4.
+Round 3: ch 3, (dc 2 in ch 1 space, dc in dc, *skip ch 1 space, ch 2, dc in dc, repeat from * 3 more times), repeat between () two more times, dc 2 in ch1 space, dc in dc, **skip ch 1 space, ch 2, dc in dc, repeat from ** two more times, ch 2, sl st into the third ch of the first ch 3.
+Round 4: ch 3, (dc in dc three times, dc 2 in ch 2 space, dc in dc, *skip ch 2 space, ch 3, dc in dc, repeat from * two more times), repeat between () two more times, dc in dc three times, dc 2 in ch 2 space, dc in dc, **skip ch 2 space, ch 3, dc in dc, repeat from ** one more time, ch 3, sl st into the third ch of the first ch 3.
+Round 5: ch 3, (dc in dc six times, dc 3 in ch 3 space, dc in dc, *skip ch 3 space, ch 4, dc in dc, repeat from * one more time), repeat between () two more times, dc in dc six times, dc 3 in ch 3 space, dc in dc, skip ch 3 space, ch 4, dc in dc, skip ch 3 space, ch 4, sl st into the third ch of the first ch 3.
+Round 6: ch 3 , (dc in dc ten times, dc 4 in ch 4 space, dc in dc, skip ch 4 space, ch 5, dc in dc), repeat between () two more times, dc in dc ten more times, dc 4 in ch 4 space, dc in dc, skip ch 4 space, ch 5, sl st into the third ch of the first ch 3.

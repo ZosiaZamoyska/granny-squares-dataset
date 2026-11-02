@@ -1,0 +1,10 @@
+Make a magic ring.
+Round 1: Ch 3, dc in ring, ch 2, 2 dc in ring, * ch 3, in ring make 2 dc, ch 2 and 2 dc. Repeat from * 2 more times; ch 3, sl st in top of starting chain.
+Round 2: Sl st in next dc and in sp, ch 3, in same sp make dc, ch 2 and 2 dc (shell made over shell), * ch 1, in next ch-3 sp make 2 dc, ch 3 and 2 dc (corner shell); ch 1, shell over shell. Repeat from * around, ending with ch 1. Join.
+Round 3: * Shell over shell, ch 3, corner shell over corner shell, ch 3. Repeat from * around. Join.
+Round 4: * Shell over shell, ch 4, corner shell over corner shell, ch 4. Repeat from * around. Join.
+Round 5: * Shell over shell, ch 6, in sp of corner shell make shell, ch 3 and shell; ch 6. Repeat from * around. Join.
+Round 6: * Shell over shell, ch 6, shell over shell, ch 2, corner shell in next ch-3 sp, ch 2, shell over shell, ch 6. Repeat from * around. Join.
+Round 7: * Shell over shell, ch 6, shell over shell, ch 1, shell in next sp (between shells), ch 2, corner shell over corner shell, ch 2, shell in next ch-2 sp, ch 2, shell over shell, ch 6. Repeat from * around. Join.
+Round 8: * Shell over shell, ch 6, (shell over shell, ch 3) twice; corner shell over corner shell, (ch 3, shell over shell) twice; ch 6. Repeat from * around. Join.
+Round 9: * Shell over shell, ch 6, (shell over shell, ch 4) twice; corner shell over corner shell, (ch 4, shell over shell) twice; ch 6. Repeat from * around. Join.

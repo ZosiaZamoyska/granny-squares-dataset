@@ -1,0 +1,23 @@
+{
+  "title": "Candy Kisses V Stitch Crochet Blanket Pattern",
+  "status": "review",
+  "terms": "US",
+  "source": "https://nanascraftyhome.com/modern-v-stitch-crochet-blanket-pattern-free-crochet-pattern/",
+  "author": "Tonya Bush (Nana's Crafty Home)",
+  "license": "",
+  "notes": "Centre-out square blanket. start: original 'Make MC.' written as 'Make a magic ring.'. pattern.dsl is left empty only because the checker cannot parse the page's stated counts written with '+' (e.g. '(4 V-sts + 4 ch-2 sp)' reads as one stitch called 'v-sts + 4 ch-2 sp'), and in Rnds 4/6 'sc sts' means only the single sc between the loops. The transcription below agrees with every stated count (R1 4 V + 4 ch-2; R2 8 ch-3; R3 12 V + 4 ch-2; R4 16 ch-3 + 8 single sc; R5 20 V + 4 ch-2; R6 24 ch-3 + 16 single sc). Ready DSL (vs = dc ch dc; Beg V-st = ch 4, dc, written as vs; joins 'sk first sc st and sl st in first ch-3 sp' = sl@sp): start: mr | R1: {vs 2ch [vs 2ch]x3}@ring ss@top # beg V-st = ch 4 (dc + ch 1), dc | R2: ch [{sc 3ch sc}@sp]x8 sl@sp | R3: vs@same ch [{vs 2ch vs}@corner ch vs@sp ch]x3 {vs 2ch vs}@corner ch ss@top | R4: ch {sc 3ch sc}@sp sc@sp {sc 3ch sc}@sp [{sc 3ch sc}@corner {sc 3ch sc}@sp [sc@sp {sc 3ch sc}@sp]x2]x3 {sc 3ch sc}@corner {sc 3ch sc}@sp sc@sp sl@sp | R5: vs@same ch vs@sp ch [{vs 2ch vs}@corner ch [vs@sp ch]x3]x3 {vs 2ch vs}@corner ch vs@sp ch ss@top | R6: ch {sc 3ch sc}@sp [sc@sp {sc 3ch sc}@sp]x2 [{sc 3ch sc}@corner {sc 3ch sc}@sp [sc@sp {sc 3ch sc}@sp]x4]x3 {sc 3ch sc}@corner {sc 3ch sc}@sp sc@sp {sc 3ch sc}@sp sc@sp sl@sp DSL: the agent's draft, left out of staging only because the checker misreads this page's stated counts; check the counts by hand.",
+  "tags": [],
+  "images": [],
+  "abbreviations": [
+    {
+      "abbr": "vs",
+      "name": "V-st",
+      "dsl": "dc ch dc"
+    }
+  ],
+  "todo": [
+    "counts"
+  ],
+  "duplicate_of": "",
+  "id": "0118"
+}

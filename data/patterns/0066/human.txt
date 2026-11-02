@@ -1,0 +1,6 @@
+Make a magic ring.
+Round 1: ch 1, 6 sc in ring, sl st in first sc: 6 sc
+Round 2: ch, 2 hdc in each sc around, sl st in first hdc: 12 hdc
+Round 3: ch 4 (counts as 1 dc and 1 ch), skip first 2 hdc, 3 dc in next hdc, dc in next hdc, (ch 1, skip 1 hdc, 3 dc in next hdc, dc in next hdc) 2 times, ch 1, skip 1 hdc, 3 dc in next hdc, sl st in third ch of beginning ch-4: 20 sts
+Round 4: ch 1, sc in next 3 sts, 3 sc in next dc, (sc in next 4 sts, 3 sc in next dc) 3 times, sc in last dc, sl st in first sc: 28 sc
+Round 5: ch 2, dc in next 4 sc, 3 dc in next sc, (dc in next 6 sc, 3 dc in next sc) 3 times, dc in last 2 sc, sl st in first dc: 36 sc

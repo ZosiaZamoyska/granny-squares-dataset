@@ -1,0 +1,6 @@
+Make a magic ring.
+Round 1: ch 3 (counts as 1 dc now and throughout), 2 dc in ring, ch 1, *3 dc in ring, ch 1, repeat from * 2 more times, sl st in top of beginning ch-3: 12 dc
+Round 2: sl st in next 2 sts, ch 3, (2 dc, ch 1, 3 dc) in next ch-1 space, ch 1, *(3 dc, ch 1, 3 dc) in next ch-1 space, ch 1, repeat from * 2 more times, sl st in top of beginning ch-3: 24 dc
+Round 3: sl st in next 2 sts, ch 3, (2 dc, ch 2, 3 dc) in next ch-1 space, ch 1, 3 dc in next ch-1 space, ch 1, *(3 dc, ch 1, 3 dc) in next ch-1 space, ch 1, 3 dc in next ch-1 space, ch 1, repeat from * 2 more times, sl st in top of beginning ch-3: 36 dc
+Round 4: sl st in next 2 sts, ch 3, (2 dc, ch 1, 3 dc) in next ch-1 space, (ch 1, 3 dc) in each ch-1 space across until corner ch-1 space is reached, ch 1, *(3 dc, ch 1, 3 dc) in next corner ch-1 space, (ch 1, 3 dc) in each ch-1 space across until corner ch-1 space is reached, ch 1, repeat from * 2 more times, sl st in top of beginning ch-3: 48 dc
+Repeat round 4, 13 more times. Each time round 4 is repeated the total stitch count increases by 12 double crochets.

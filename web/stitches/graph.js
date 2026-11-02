@@ -13,7 +13,8 @@
 
    The DSL says where a stitch goes only loosely: "dc" is the next stitch, "@sp" the next chain
    space, "@corner" the next corner space, and "@same" either the place just used or the next one,
-   both as one place. Patterns also leave out the slip stitches that move to a round's start. So
+   both as one place. "@start" is exact: the place the round's first stitch went into, for the end
+   of a group split over the join ("3ch=dc dc@same … dc@start sl@top"). Patterns also leave out the slip stitches that move to a round's start. So
    each round is aligned to the places of the round below (its stitch tops and chain spaces, in
    working order, reversed after a turn) by dynamic programming: every stitch or {…}@place group
    goes into one place, in order, at the lowest cost of breaking crochet habits (an unworked chain
@@ -21,8 +22,8 @@
    either side of where the round below was joined (a corner split over the join, or the far side
    of the beginning group after a turn), or next to any chain space (new yarn joined elsewhere).
    Places are stitch tops, chain spaces (a 1-chain space also takes a plain "dc", as in "dc in each
-   st and ch") and the gaps between two neighbouring groups worked into different spaces (the
-   "sp between clusters" of a granny round with no chains there). A round's cost is 0 when it
+   st and ch") and gaps: spaces with no chains, between two neighbouring stitches whose bases below
+   have unworked stitch tops or chain spaces between them (see withGaps). A round's cost is 0 when it
    reads cleanly; a high cost marks a transcription to check. */
 
 import { EOR, isColor, parseToken, splitRounds } from "./dsl.js";
@@ -37,7 +38,7 @@ const ONE_CHAIN = new Set(["next", "st", "endsl"]); // land on a 1-chain space a
 const NOT_CORNER = 0.5;   // "@corner" into a chain space that isn't one of the four longest
 const SKIP_ST = 1;        // per stitch top passed over without "sk"
 const SKIP_SP = 2;        // per chain space left unworked
-const WRAP = 1;           // working back into the round's first place at its end
+const WRAP = 1;           // working back into the round's first place at its end (free with "@start")
 const CROWD = 3;          // a stitch into the place just used, without saying so
 const SHELL = 1;          // a group with chains in it ({3dc 2ch 3dc}) on a stitch or in a gap, when there are chain spaces
 const MAX_JUMP = 30;      // places one unit may pass over
@@ -133,20 +134,24 @@ function align(R, L, cornersKnown) {
 function alignFrom(R, L, cornersKnown) {
   const n = L.length, m = R.units.length;
   const st = [0], sp = [0], shellCost = L.some((a) => a.kind === "sp") ? SHELL : 0;
+  // With "@start" in the round, its first unit goes into L[0] and "@start" units back into it (p 0 or n).
+  const pinned = R.units.some((u) => u.kind === "start");
   const best = Array.from({ length: m }, () => new Float64Array(n + 1).fill(Infinity));
   const from = Array.from({ length: m }, () => new Int32Array(n + 1).fill(-2));
   for (const a of L) { st.push(st.at(-1) + (a.kind === "st")); sp.push(sp.at(-1) + (a.kind === "sp")); }
   // Cost of unit k going to position p (0..n, n = back to L[0]) after the unit before it at q (-1: none yet).
   const cost = (k, q, p) => {
     const u = R.units[k], afterCol = k > 0 && R.units[k - 1].kind === "col";
+    if (u.kind === "start" && p !== 0 && p !== n) return Infinity;
     if (p === q) {
       if (q < 0) return Infinity;
       const skipped = u.sk * SKIP_ST + (u.shell && L[q % n].kind !== "sp" ? shellCost : 0); // "2sk" written, but nothing skipped
       if (u.kind === "same") return skipped + (k > 1 && from[k - 1][q] === q ? CROWD : 0); // a third group in one place
-      if (u.kind === "col") return skipped;
+      if (u.kind === "col" || u.kind === "start") return skipped;
       if (u.kind === "endsl") return skipped + 0.3; // the join
       return skipped + CROWD;
     }
+    if (u.kind === "start") return (sp[p] - sp[q + 1]) * SKIP_SP + (u.sk ? Math.abs(st[p] - st[q + 1] - u.sk) * SKIP_ST : 0);
     const a = L[p % n], kind = LAND[u.kind] ? u.kind : "same";
     let c = a.kind === "sp" && a.nodes.length === 1 && ONE_CHAIN.has(kind) ? 0 : LAND[kind][a.kind];
     if (u.kind === "corner" && cornersKnown && !a.corner) c += NOT_CORNER;
@@ -158,11 +163,13 @@ function alignFrom(R, L, cornersKnown) {
     const free = a.kind !== "st" && ["same", "corner", "sp", "slide", "col"].includes(u.kind); // "next space" passes stitches
     return c + nsp * SKIP_SP + (u.sk ? Math.abs(nst - u.sk) : free ? 0 : nst) * SKIP_ST;
   };
-  for (let p = 0; p <= Math.min(n, MAX_JUMP); p++) { best[0][p] = cost(0, -1, p); from[0][p] = -1; }
+  for (let p = 0; p <= (pinned ? 0 : Math.min(n, MAX_JUMP)); p++) { best[0][p] = cost(0, -1, p); from[0][p] = -1; }
   for (let k = 1; k < m; k++) {
     for (let q = 0; q <= n; q++) {
       if (best[k - 1][q] === Infinity) continue;
-      for (let p = q; p <= Math.min(n, q + MAX_JUMP); p++) {
+      // "@start" goes back to the first place however far that is; anything else moves up to MAX_JUMP on.
+      const ps = R.units[k].kind === "start" ? [...new Set([q, n])] : range(q, Math.min(n, q + MAX_JUMP));
+      for (const p of ps) {
         const c = best[k - 1][q] + cost(k, q, p);
         if (c < best[k][p]) { best[k][p] = c; from[k][p] = q; }
       }
@@ -184,6 +191,8 @@ function alignFrom(R, L, cornersKnown) {
   return { cost: total, placed, joins };
 }
 
+const range = (a, b) => Array.from({ length: b - a + 1 }, (_, j) => a + j);
+
 function place(u, a) {
   for (const node of u.tokens) put(node, a);
 }
@@ -202,17 +211,23 @@ function workingOrder(R) {
   return R.turned ? [a0, ...rest.reverse()] : R.anchors;
 }
 
-/** Places plus a gap between neighbouring stitches worked into different chain spaces or gaps. */
-function withGaps(anchors, nodes) {
+/** Places plus a gap (a space with no chains) between neighbouring stitches x, y whose bases in
+    the round below (L, working order) have stitch tops or chain spaces between them, left unworked:
+    "dc, sk 2, dc", or groups in two chain spaces with the stitches between them below. That
+    unworked stretch is the gap's floor. Stitches in one place, or in neighbouring places, close up. */
+function withGaps(anchors, nodes, L) {
   const out = [];
   anchors.forEach((a, j) => {
     const b = anchors[(j + 1) % anchors.length]; // the last one's neighbour is across the join
     out.push(a);
-    if (a.kind !== "st" || b.kind !== "st" || a === b) return;
+    if (a.kind !== "st" || b.kind !== "st" || a === b || !L) return;
     const x = nodes[a.nodes[0]], y = nodes[b.nodes[0]];
-    const into = (nd) => nd.via === "sp" || nd.via === "gap" || nd.kind === "col";
-    const where = (nd) => String(nd.parents.length ? nd.parents : nd.on);
-    if (into(x) && into(y) && where(x) !== where(y)) out.push({ kind: "gap", nodes: [x.i, y.i] });
+    if (!x.at || !y.at || x.at === y.at) return;
+    const n = L.length, from = L.indexOf(x.at), d = mod(L.indexOf(y.at) - from, n);
+    if (d > n / 2) return; // y went back: no space opens
+    const floor = [];
+    for (let k = 1; k < d; k++) if (L[(from + k) % n].kind !== "gap") floor.push(L[(from + k) % n]);
+    if (floor.length) out.push({ kind: "gap", nodes: [x.i, y.i], floor });
   });
   return out;
 }
@@ -240,7 +255,7 @@ function build(tokens, placeRound) {
     R.toks = toks;
     const cost = L ? placeRound(R, L, below, k) : 0;
     for (const j of R.joins) if (R.first) { j.parents = [R.first.i]; j.via = "join"; }
-    R.anchors = withGaps(R.anchors, nodes);
+    R.anchors = withGaps(R.anchors, nodes, L);
     rounds.push({ from: offset, to: offset + toks.length, cost, places: L, given: !!R.given, stale: !!R.stale });
     offset += toks.length;
     if (R.anchors.length) below = R;
@@ -401,6 +416,6 @@ export function linkText(g, tokens, i) {
   if (nd.via === "join") return `joins to the ${tokens[ps[0]]} at this round's start`;
   if (nd.via === "ring") return "into the magic ring";
   if (nd.via === "sp") return `into the ${ps.length}-chain space of ${where}`;
-  if (nd.via === "gap") return `into the gap between two groups of ${where}`;
+  if (nd.via === "gap") return `into the gap over ${nd.at.floor.length} unworked place${nd.at.floor.length > 1 ? "s" : ""} of ${where}`;
   return `into the ${tokens[ps[0]]} of ${where}`;
 }

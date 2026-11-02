@@ -1,0 +1,29 @@
+This pattern is in U.S. terms.
+Abbreviations:
+beg – beginning
+ch – chain
+dc – double crochet
+sc – single crochet
+sl st – slip stitch
+st – stitch
+sts – stitches
+
+Make a magic ring.
+
+Round 1: In a Magic ring, sc 1, then ch 5, (3 dc in ring, chain 2), repeat two more times,
+2 dc in ring, sl st into the 3rd st of beg ch 5 to make the third dc of the last cluster and close the first round.
+Pull starting yarn tight to close the magic ring, and crochet over it as you continue to build your square. (12 sts, 4 ch 2 spaces)
+
+Round 2: 1 Sl st into the corner space. This helps make room for the last st of the ending cluster later. Ch 5, 2 dc in same ch 2 space, *dc in each dc on the first side, (2 dc, ch 2, 2 dc) in corner ch 2 space.* Repeat for the next two sides.
+Dc in each dc on the last side.
+In last corner, 1 dc over the starting sl st, then to finish the corner, sl st into the 3rd st of beg ch 5 to make the second dc in the ch 2 space and close the first round. (28 sts, 4 ch 2 spaces)
+
+Round 3: Repeat round 2 (44 sts, 4 ch 2 spaces)
+
+Round 4: Repeat round 2 (60 sts, 4 ch 2 spaces)
+
+Round 5: Repeat round 2 (76 sts, 4 ch 2 spaces)
+
+Round 6: Repeat round 2 (92 sts, 4 ch 2 spaces)
+
+Round 7: Repeat round 2 (108 sts, 4 ch 2 spaces)

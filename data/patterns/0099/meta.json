@@ -1,0 +1,15 @@
+{
+  "title": "Star Granny Square Motif",
+  "status": "review",
+  "terms": "UK",
+  "source": "https://sewhappycreativeuk.wordpress.com/2019/12/13/star-granny-square-motif/",
+  "author": "SewHappyCreative",
+  "license": "",
+  "notes": "start: original \"Foundation Round Make a magic loop, which is the method I always use or chain 5, ss to join into a ring.\" replaced by magic ring; round headings normalised to \"Round N:\"; photo-caption lines omitted; pattern.dsl left empty: the stated counts in R3 '(12 x 1tr, ch-2 1tr groups)' and R4 '(6 x 7tr groups)' use an 'N x group' form the checker parses as stitch names 'x 1tr'/'x 7tr groups', so they always show mismatch even though the transcription agrees (12 V-groups, 6 dc + 6 7tr groups). Draft DSL that otherwise parses: start: mr | R1: 3ch=tr 11tr@ring ss@top fo | R2: 3ch=tr ch tr@same [{tr ch tr}@sp]x11 ss@top fo | R3: 3ch=tr 2ch tr@same [{tr 2ch tr}@sp]x11 ss@top fo | R4: 3ch=tr 6tr@same dc@sp [7tr@sp dc@sp]x5 ss@top fo | R5: ch=dc 2ch dc@same 3dc ss 3dc [{dc 2ch dc}@st 3dc ss 3dc]x5 ss@top fo | R6: 3ch=tr 2tr 2htr dc dc@sp dc 2htr [3tr 2htr dc dc@sp dc 2htr]x5 ss@top fo | R7: ch=dc 3dc 2htr tr dtr 2ch dtr tr 2htr 7dc [2htr tr dtr 2ch dtr tr 2htr 7dc]x2 2htr tr dtr 2ch dtr tr 2htr 3dc ss@top fo | R8: 2ch=htr {htr 2ch 2htr}@same [htr]>corner [{2htr 2ch 2htr}@corner [htr]>corner]x3 ss@top fo | R9: ch=dc 2ch dc@same 2ch sk [dc 2ch sk]>corner [{dc 2ch dc}@corner 2ch sk [dc 2ch sk]>corner]x3 ss@top fo | R10: 2ch=htr {htr 2ch 2htr}@same [2htr@sp]>corner [{2htr 2ch 2htr}@corner [2htr@sp]>corner]x3 ss@top fo",
+  "tags": [],
+  "images": [],
+  "abbreviations": [],
+  "todo": [],
+  "duplicate_of": "",
+  "id": "0099"
+}

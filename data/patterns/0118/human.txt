@@ -1,0 +1,21 @@
+MC = magic circle
+ch = chain
+dc = double crochet
+sp = space
+sc = single crochet
+st = stitch
+sk = skip
+Beg V-st = beginning v stitch (see special stitches section below)
+V-st = v stitch (see special stitches section below)
+Special stitches:
+V-st (v stitch): (1 dc, ch 1, 1 dc) worked in the same st.
+Beg V-st (beginning v stitch): (ch 4, dc) in first st.
+
+Make a magic ring.
+Round 1: (Beg V-St, ch 2, *V-St, ch 2* repeat from * to * twice) in MC, sl st top of ch-3. Tighten MC. (4 V-sts + 4 ch-2 sp)
+Round 2: Note (optional): place st market in each ch-3 sp made in a ch-2 corner from previous round. ch 1, (sc, ch 3, sc) is worked in each ch-1 and ch-2 sp around to end, sk first sc st and sl st in first ch-3 sp. (8 ch-3 sp)
+Round 3: Beg V-st in same ch-3 sp, ch 1, *(V-st, ch 2, V-st) in next ch-3 corner sp, ch 1, V-st in next ch-3 sp, ch 1,* repeat from * to * last ch-3 sp, (V-st, ch 2, V-st) in last ch-3 sp, ch 1, sl st top of ch-3. (12 V-st + 4 ch-2 corner sp)
+Round 4: ch 1, (sc, ch 3, sc) in next ch-1 sp, *sc in next ch-1 sp, (sc, ch 3, sc in next ch-1 sp,* [(sc, ch 3, sc) in corner sp, (sc, ch 3, sc) in next ch-1 sp, repeat from * to * to next corner sp,] three times, (sc, ch 3, sc) in next corner sp, (sc, ch 3, sc) in next ch-1 sp, sc in last ch-1 sp, sl st in first ch-3 sp. (16 ch-3 sp + 8 sc sts)
+Round 5: Beg V-st in same ch-3 sp, ch 1, V-st in next ch-3 sp, ch 1; *(V-st, ch 2, V-st) in ch-3 corner sp, ch 1, (V-st, ch 1) in each ch-3 sp to corner,* repeat from * to * end, sl st top of ch-3. (20 V-St + 4 ch-2 corner sp)
+Round 6: ch 1, (sc, ch 3, sc) in next ch-1 sp, *sc in next ch-1 sp, (sc, ch 3, sc) in next ch-1 sp,* repeat from * to * to next corner sp, [(sc, ch 3, sc) in corner sp, (sc, ch 3, sc) in next ch-1 sp, repeat from * to * to next corner sp,] repeat from [ to ] to last ch-1 sp, sc in last ch-1 sp, sl st in first ch-3 sp. (24 ch-3 sp + 16 sc sts)
+Repeat rounds 5 - 6 to desired size.

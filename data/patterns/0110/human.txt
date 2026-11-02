@@ -1,0 +1,8 @@
+Crochet the symmetrical square in spiral rounds in Capri.
+Make a magic ring.
+Round 1: 4 sc into the Magic Ring (4 stitches).
+Round 2: [3 sc into the next stitch] repeat till end of the round (12 stitches).
+Round 3: 1 sc, [3 sc into the next stitch, 2 sc] repeat 3 times, 3 sc into the next stitch, 1 sc (20 stitches).
+Round 4: 2 sc, [3 sc into the next stitch, 4 sc] repeat 3 times, 3 sc into the next stitch, 2 sc (28 stitches).
+Round 5: 3 sc, [3 sc into the next stitch, 6 sc] repeat 3 times, 3 sc into the next stitch, 3 sc (36 stitches).
+Round 6: 4 sc, [3 sc into the next stitch, 8 sc] repeat 3 times, 3 sc into the next stitch, 4 sc (44 stitches).

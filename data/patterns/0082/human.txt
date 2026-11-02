@@ -1,0 +1,9 @@
+Notes:
+Chain 2 in beginning of rounds do not count as a stitch
+
+Round 1: Magic ring, Chain 2, 10DC into magic ring, join to first DC
+Round 2: Chain 2, 2DC into each stitch around, join to first DC
+Round 3: Chain 2, *DC, HDC into next 2 stitches, DC, [2DC, Chain 2, 2DC] all in one stitch, repeat from * , join to first DC
+Round 4: Chain 2, *DC until you get to the Chain 2 space from previous row, [2DC, Chain 2, 2DC] all in chain 2 space, repeat from * , DC in next 2 spaces until you get to the beginning of the round, join to first DC
+Round 5: Chain 2, *DC until you get to the Chain 2 space from previous row, [2DC, Chain 2, 2DC] all in chain 2 space, repeat from * , DC in next 4 spaces until you get to the beginning of the round, join to first DC
+Round 6: Chain 2, *DC until you get to the Chain 2 space from previous row, [2DC, Chain 2, 2DC] all in chain 2 space, repeat from * , DC in next 6 spaces until you get to the beginning of the round, join to first DC, fasten off and weave in all ends

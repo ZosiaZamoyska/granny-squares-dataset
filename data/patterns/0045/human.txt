@@ -1,0 +1,24 @@
+Abbreviations
+US Terminology
+Beg – Beginning
+Ch – Chain
+Dc – Double crochet
+Hdc – Half-double crochet
+Rem – Remaining/remains
+Sc – Single Crochet
+Sl st – Slip stitch
+Sp/sps – Space/spaces
+St/sts – Stitch/stitches
+Punctuation
+* An asterisk indicates pattern repeats. You will need to repeat all the instructions between asterisks the number of times specified. This is a hard-core repeat and will consist of multiple instructions.
+Parentheses () indicate repeats. You will need to repeat the instructions between parentheses the number of times specified. This is a lower level repeat.
+
+Make a magic ring.
+Round 1: Into a Magic Ring: Ch 1 (doesn't count as a st throughout), (sc, ch 4) 6 times. Join to the first sc with a sl st. (6 sc and 6 ch-4 sps)
+Round 2: Sl st into the next ch-4 sp. Ch 3 (counts as dc throughout), 3 dc in the same ch-4 sp. Make 4 dc in each rem ch-4 sp. Join to the top of the beg ch-3 with a sl st. (24 dc)
+Round 3: Ch 1, sc in the same st. (Ch 4, skip the next st, sc in the next st) 11 times. Ch 4 and skip the last st. Join to the first sc with a sl st. (12 sc and 12 ch-4 sps)
+Round 4: Sl st into the next ch-4 sp. Ch 3, 3 dc in same ch-4 sp. Make 4 dc in each rem ch-4 sp. Join to the top of the beg ch-3 with a sl st. (48 dc)
+Round 5: Ch 1, sc in the first 6 sts. The last sc should fall in the second dc of the second 4-dc group. *Ch 5, skip the next st, sc in the next st. Ch 8, sc in the next st, which should be the first dc of the next 4-dc group. Ch 5, skip the next st, sc in the next 8 sts.* Repeat from * to * 3 more times, omitting the last 6 sc on the last repeat. Join to the first sc with a sl st. {10 sc and 2 ch-5 sps per side, not including ch-8 corner sp}
+Round 6: Ch 2 (counts as hdc throughout). Sc in the next 2 sts, hdc in the next st, dc in the next st. Ch 2, skip the last st, and sc in the next ch-5 sp. *Ch 3, (sc, ch 2, sc) in the ch-8 corner sp. Ch 3, sc in the next ch-5 sp. Ch 2, skip the first sc, dc in the next st**. Hdc in the next st, sc in the next 2 sts, hdc in the next st, dc in the next st. Ch 2, skip the last st, and sc in the next ch-5 sp.* Repeat from * to * twice and from * to ** once. Join to the top of the beg ch-2 with a sl st. {6 sc, 2 hdc, 2 dc, 2 ch-2 sps, and 2 ch-3 sps per side – not including ch-2 corner sps}
+Round 7: Ch 2, hdc in the next 4 sts. Make 3 hdc in the next ch-2 sp. Make 4 hdc in the next ch-3 sp. (2 dc, ch 2, 2 dc) in the next ch-2 corner sp. *Make 4 hdc in the next ch-3 sp. Make 3 hdc in the next ch-2 sp. Skip the first (hidden) st and hdc in the next 5 sts. Make 3 hdc in the next ch-2 sp. Make 4 hdc in the next ch-3 sp. (2 dc, ch 2, 2 dc) in the next ch-2 corner sp.* Repeat from * to * 2 more times. Make 4 hdc in the next ch-3 sp. Make 3 hdc in the last ch-2 sp. Join to the top of the beg ch-2 with a sl st. {23 sts per side – 19 hdc and 4 dc, not including ch-2 corner sps}
+Round 8: {Optional} Ch 3, dc in the next 13 sts. *(2 dc, ch 2, 2 dc) in next ch-2 corner sp. Dc in each of the 23 sts across.* Repeat from * to * 2 more times. (2 dc, ch 2, 2 dc) in the last ch-2 corner sp. Dc in each of the remaining 9 sts. Join to the top of the beg ch-3 with a sl st. Fasten off and work away ends. {27 dc per side – not including ch-2 corner sps}

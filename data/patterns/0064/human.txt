@@ -1,0 +1,4 @@
+Make a magic ring.
+Round 1: ch 3 (counts as 1 dc now and throughout), 2 dc in loop, ch 2, (3 dc in loop, ch 2) 3 times, sl st in top of beginning ch-3: 12 dc
+Round 2: ch 3, turn, 2 dc in next ch-2 space, ch 2, 3 dc in same ch-2 space, ch 2, (3 dc in next ch-2 space, ch 2, 3 dc in same ch-2 space, ch 2) 3 times, sl st in top of beginning ch-3: 24 dc
+Round 3: ch 3, turn, 2 dc in next ch-2 space, (ch 2, 3 dc in next ch-2 space, ch 2, 3 dc in same ch-2 space, ch 2, 3 dc in next ch-2 space) 3 times, ch 2, 3 dc in next ch-2 space, ch 2, 3 dc in same ch-2 space, ch 2, sl st in top of beginning ch-3: 36 dc

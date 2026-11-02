@@ -1,0 +1,9 @@
+{
+ "rounds": {
+  "4": {
+   "tokens": "ch4=tr^+3 tr^-1 ch ch ch tr^-1 tr^-1 ch dc^+3 dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 dc^-1 ch tr^+3 tr^-1 ch ch ch tr^-1 tr^-1 ch dc^+3 dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 dc^-1 ch tr^+3 tr^-1 ch ch ch tr^-1 tr^-1 ch dc^+3 dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 dc^-1 ch tr^+3 tr^-1 ch ch ch tr^-1 tr^-1 ch dc^+3 dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 dc^-1 ch sl@top",
+   "line": "R4: {4ch=tr tr 3ch 2tr}@sp [1ch 4dc@sp 1ch 4dc@sp 1ch {2tr 3ch 2tr}@sp]x3 1ch 4dc@sp 1ch 4dc@sp 1ch ss@top",
+   "below": "R3: {3ch=dc 2dc 1ch}@sp [{3dc 1ch}@sp]x11 ss@top"
+  }
+ }
+}

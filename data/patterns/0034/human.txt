@@ -1,0 +1,10 @@
+Sl st – slip stich
+Ch – chain
+Dc – double crochet
+Ch 3 at beginning of each round counts as dc
+For consistency purposes, the solid granny squares are still worked in turned rounds so they have the same “front and back” as the half and half squares
+
+Make a magic ring
+Round 1: ch 3, 2 dc, ch 2, 3 dc, ch 2, 3 dc, ch 2, 3 dc, ch 2, join to first ch 3 with sl st (12 dc, 8 ch)
+Round 2: Turn, sl st into the ch 2 space, ch 3, dc into ch 2 space, dc in next 3 stitches, *(2 dc, ch 2, 2 dc) in ch 2 space, dc in next 3 stitches* repeat from * to * repeat from * to * 2 more times to last ch 2 space, (2 dc, ch 2) in ch 2 space, join to first ch 3 with sl st (28 dc, 8 ch)
+Round 3: turn, sl st into ch 2 space, ch 3, dc into ch 2 space, dc in next 7 stitches, *(2 dc, ch 2, 2 dc) in ch 2 space, dc in next 7 stitches* repeat from * to * 2 more times to last ch 2 space, (2 dc, ch 2) in ch 2 space, join to first ch 3 with sl st (44 dc, 8 ch)

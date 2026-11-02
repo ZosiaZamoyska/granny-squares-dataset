@@ -1,0 +1,17 @@
+Chain Stitch (ch)
+Slip Stitch (ss)
+Treble Crochet (tr)
+
+Make a magic ring.
+Round 1: Chain 3. This counts as your first treble crochet for the round.
+Work 2 more trebles into the centre of the ring. You now have your first cluster of 3 trebles (the chain-3 counts as one of them).
+Chain 2. This forms your first corner space.
+Work 3 trebles into the ring, then chain 2. Repeat this twice more. You'll end up with four clusters of 3 trebles and four corner spaces.
+Slip stitch into the top of the chain-3 you started with. Round 1 done.
+Round 2: If you want to change colour for Round 2, fasten off your first colour now and join the new one with a slip stitch into any chain-2 corner space. If you're sticking with one colour, slip stitch your way along to the nearest corner space and carry on.
+Chain 3 (counts as first treble). In the same corner space, work 2 trebles, chain 2, then 3 trebles. That's your first corner of Round 2 complete.
+Chain 1. Then in the next corner space, work 3 trebles, chain 2, 3 trebles. Chain 1.
+Repeat around the square. Each corner gets 3 trebles, chain 2, 3 trebles. Each side gets a chain 1 between corners.
+Slip stitch into the top of the chain-3 you started with. Round 2 done.
+Round 3: Round 3 follows the same logic as Round 2, but now you have one extra cluster on each side. So between two corners, you'll work: chain 1, 3 trebles into the side chain-space, chain 1, then on to the next corner.
+Each new round adds one more 3-treble cluster on every side. Round 4 has two side clusters per side, Round 5 has three, and so on.

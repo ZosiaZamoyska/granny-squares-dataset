@@ -1,0 +1,9 @@
+ch = chain
+dc = double crochet
+sl st = slip stitch
+st = stitch(es)
+
+Make a magic ring.
+Round 1: Chain 3 (counts as 1st dc). In the loop work 2dc, ch-2, 3dc, ch-2, 3dc, ch-2, 3dc, ch-2, sl st to top of starting ch 3.
+Round 2: Sl st to next space. Ch 3, 2 dc, ch-2, 3 dc (1st corner made), *ch-1, [3dc, ch-2, 3dc] in next corner*, repeat * to * 2 more times. Ch 1. Join with a sl st to the top of the 1st ch.
+Round 3: Sl st to next space, [ch3, 2dc, ch2, 3 dc] in space for corner, *ch1, 3 dc in next space, ch1, in next corner space work 3dc, ch2, 3dc*, repeat * to * twice, ch1, 3dc, ch1, join to top of starting ch3.

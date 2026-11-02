@@ -1,0 +1,11 @@
+Notes:
+- the ch 2 at the beginning of Rnds 1 & 2 do not count as a st.
+Make a magic ring.
+Round 1: Ch 3 (make the 1st ch a little loose), 12 dc in 3rd ch from hook. Join with a sl st to 1st dc. (12 dc)
+Round 2: Ch 2, 2 dc in same st as joining. 2 dc in each dc around. Join as before. (24 dc)
+Round 3: Ch 3, dc in same st as joining, ch 1, skip next dc. *2 dc in next dc, ch 1, skip next dc. Repeat from * around. Join with a sl st to top of beginning ch 3.
+Round 4: Ch 1, sc in same st as joining, sc in next dc, 2 sc in next ch-1 space. *sc in each of next 2 dc, 2 sc in next ch-1 space. Repeat from * around. Join with a sl st to 1st sc.
+Round 5: Ch 1, sc in same st as joining, ch 2, skip next sc. *sc in next sc, ch 2, skip next sc. Repeat from * around. Join as before.
+Round 6: Sl st into ch-2 space, ch 1, sc in same ch-2 space, ch 3. *sc in next ch-2 space, ch 3. Repeat from * around. Join as before.
+Round 7: Sl st into ch-3 space, (ch 3, 2 dc, ch 2, 3 dc) in same ch-3 space, ch 2, skip next ch-3 space, {2 sc in next ch-3 space, ch 1} 2 times, 2 sc in next ch-3 space, ch 2, skip next ch-3 space. *(3 dc, ch 2, 3 dc) in next ch-3 space, ch 2, skip next ch-3 space, {2 sc in next ch-3 space, ch 1} 2 times, 2 sc in next ch-3 space, ch 2, skip next ch-3 space. Repeat from * 2 more times. Join with a sl st to top of beginning ch 3.
+Round 8: Sl st over to corner ch-2 space, (ch3, 2 dc, ch 2, 3 dc) in same corner ch-2 space, ch 2, 2 hdc in ch-2 space, {hdc in each of next 2 sc, ch 1} 2 times, hdc in each of next 2 sc, 2 hdc in next ch-2 space, ch 2. *(3 dc, ch 2, 3 dc) in next corner ch-2 space, ch 2, 2 hdc in ch-2 space, {hdc in each of next 2 sc, ch 1} 2 times, hdc in each of next 2 sc, 2 hdc in next ch-2 space, ch 2. Repeat from * 2 more times. Join as before. End off.

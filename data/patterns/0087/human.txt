@@ -1,0 +1,22 @@
+Abbreviations (US Terms):
+Ch - Chain
+Dc -Double Crochet
+Sk - Skip
+Sl st - Slip Stitch
+Sp - Space
+
+Important Notes:
+-3 dc = dc cluster
+-All joins are made with a sl st.
+-These brackets [ ] indicate a group of stitches that all need to be worked in the same space.
+-The beginning Ch 2 of each row counts as a dc.
+
+Make a magic ring.
+
+Round 1: ch 2, 2 dc in circle, ch 2. *3 dc in circle, ch 2.* Repeat *to* 2 more times. Pull circle tight and join. (12 dc)
+
+Round 2: Sl st over next sp, sl st into ch sp. [Ch 2, 2 dc, ch 2, 3 dc] all in ch 2 space. *Sk 3 dc, in next ch sp: [3 dc, ch 2, 3dc].* Repeat *to* 2 more times. Join. (24 dc)
+
+Round 3: Sl st over next sp, sl st into ch sp. [Ch 2, 2 dc, ch 2, 3 dc] all in ch 2 space. Sk 3 dc, 3 dc between dc clusters. *Sk 3 dc, [3 dc, ch 2, 3dc] all in next ch 2 sp. Sk 3 dc, 3 dc between dc clusters.* Repeat *to* 2 more times. Join. (36 dc)
+
+Now, you can continue on for as many rows as you would like, working [3 dc, ch 2, 3 dc] in each corner space & working 3 dc between each dc clusters.

@@ -1,0 +1,9 @@
+Make a magic ring.
+Round 1: ch 3 (counts as dc), 2 dc into ring, ch 2, *3 dc into ring ch 2, rep from * 2 more times. Slst into 3rd ch of ch 3 to close ring. (12)
+Round 2: ch 2 (counts as dc), dc in next 2 st, work the corner into ch-2-sp (2 dc + ch 2 + 2 dc),* 3 dc, (2 dc + ch 2 + 2 dc) into ch-2-sp, rep from * 2 more times, slst into 2nd ch of first ch 2 to close rnd. (28)
+Round 3: ch 2 (counts as dc), 4 dc, work corner into ch-2-sp (2 dc + ch 2 + 2 dc), *7 dc, (2 dc + ch 2 + 2 dc) into ch-2-sp, rep from * 2 more times, 2 dc, slst into 2nd ch of first ch 2 to close rnd. (44)
+Round 4: ch 2 (counts as dc), 6 dc, work corner into ch-2-sp (2 dc + ch 2 + 2 dc), *11 dc, (2 dc + ch 2 + 2 dc) into ch-2-sp, rep from * 2 more times, 4 dc, slst into 2nd ch of first ch 2 to close rnd. (60)
+Round 5: ch 2 (counts as dc), 8 dc, work corner into ch-2-sp (2 dc + ch 2 + 2 dc), *15 dc, (2 dc + ch 2 + 2 dc) into ch-2-sp, rep from * 2 more times, 6 dc, slst into 2nd ch of first ch 2 to close rnd. (76)
+Round 6: ch 2 (counts as dc), 10 dc, work corner into ch-2-sp (2 dc + ch 2 + 2 dc), *19 dc, (2 dc + ch 2 + 2 dc) into ch-2-sp, rep from * 2 more times, 8 dc, slst into 2nd ch of first ch 2 to close rnd. (92)
+Round 7: ch 2 (counts as dc), 12 dc, work corner into ch-2-sp (2 dc + ch 2 + 2 dc), *23 dc, (2 dc + ch 2 + 2 dc) into ch-2-sp, rep from * 2 more times, 10 dc, slst into 2nd ch of first ch 2 to close rnd. (108)
+Round 8: ch 2 (counts as dc), 14 dc, work corner into ch-2-sp (dc + ch 2 + dc), *27 dc, (2 dc + ch 2 + 2 dc) into ch-2-sp, rep from * 2 more times, 12 dc, slst into 2nd ch of first ch 2 to close rnd. (124)

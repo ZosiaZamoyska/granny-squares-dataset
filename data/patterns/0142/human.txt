@@ -1,0 +1,5 @@
+Make a magic ring.
+Round 1: Ch 3, 4 d c in ring, * ch 5, 5 d c in ring. Repeat from * 2 more times, ch 5. Join with sl st to 3rd st of ch-3 first made.
+Round 2: Sl st in each of next 4 d c, sl st in ch-5 loop, ch 3, 2 d c in same loop, ch 3, 3 d c in same loop (corner); * ch 3, skip next 2 d c, s c in next d c, ch 3; in next ch-5 loop make 3 d c, ch 3, 3 d c. Repeat from * around, ending with ch 3, sl st in 3rd st of ch-3 first made.
+Round 3: Sl st in each of next 2 d c, sl st in ch-3 sp, ch 3, 2 d c in same sp, ch 3, 3 d c in same sp, * ch 3, s c in next ch-3 loop, ch 3, s c in next ch-3 loop, ch 3; in corner ch-3 make 3 d c, ch 3, 3 d c. Repeat from * around, ending with ch 3. Join with sl st to 3rd st of ch-3 first made.
+Round 4: Sl st in each of next 2 d c, sl st in corner ch-3 sp, ch 3, 2 d c in same sp, ch 3, 3 d c in same sp, * ch 3, s c in next ch-3 loop, ch 2, 2 half d c in next ch-3 loop, ch 2, s c in next ch-3 loop, ch 3; in corner ch-3 make 3 d c, ch 3, 3 d c. Repeat from * around, ending with ch 3. Join with sl st to 3rd st of ch-3 first made. Fasten and break off.

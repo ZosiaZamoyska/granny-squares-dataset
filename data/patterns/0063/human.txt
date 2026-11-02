@@ -1,0 +1,4 @@
+Make a magic ring.
+Round 1: ch 3 (counts as 1 dc), 2 dc in loop, ch 2, (3 dc, ch 2) 3 times in loop, sl st in first dc, finish off: 12 dc
+Round 2: change colors, start with slip knot on hook, turn, (3 dc, ch 2, 3 dc, ch 1) in each ch-2 space around, sl st in first dc, finish off: 24 dc
+Round 3: change colors, start with slip knot on hook, turn, 3 dc in first ch-1 space, ch 1, (3 dc, ch 2, 3 dc, ch 1) in next ch-2 space, *3 dc in next ch-1 space, ch 1, (3 dc, ch 2, 3 dc, ch 1) in next ch-2 space, repeat from * around, sl st in first dc, finish off: 36 dc

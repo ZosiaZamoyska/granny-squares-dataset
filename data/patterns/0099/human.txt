@@ -1,0 +1,32 @@
+Abbreviations (US in brackets)
+ch = chain (chain)
+ss= slip stitch (slip stitch)
+tr = treble (double crochet)
+sp = space (space)
+st = stitch. (stitch)
+dc = double crochet (single crochet)
+htr = half treble ( half double crochet)
+skst = skip stitch
+dtr = double treble (treble crochet)
+
+Make a magic ring.
+
+Round 1: Into the magic loop or ring ch3 (counts as tr), 11tr into the ring, ss to join into beg ch-3, fasten off. (12tr)
+
+Round 2: Attach a new colour between any tr of round 1, ch4 (counts as tr, ch1), 1tr, in same space, (1tr, ch1, 1tr,), in between each tr around, ss to join into 3rd ch of beg ch-4, fasten off.(24 tr)
+
+Round 3: Attach a new colour in,any ch-1sp of round 2, ch5 (counts as tr,ch2 ), 1tr in same space, (1tr, ch2, 1tr ), in each ch-1sp around, ss to join into 3rd ch of beg ch-5, fasten off.(12 x 1tr, ch-2 1tr groups)
+
+Round 4: Attach a new colour in, any ch-2sp of round 3, ch3, ( counts as tr ), 6tr in same ch-2sp, dc in next ch-2 sp, * 7tr in next ch-2 sp, dc in next ch-2 sp, * repeat from * to * around, ss to join into beg ch-3, fasten off. (6dc, 6 x 7tr groups)
+
+Round 5: Starting in the centre tr of any 7tr cluster group, ch 3, (counts as dc plus 2 ch), dc in same stitch, 1 dc in each of next 3 tr, ss in dc, 1dc in each of next 3 tr, *(dc, ch2, dc), in centre tr of 7tr clusters, dc in each of next 3tr, ss, in dc, dc in each of next 3tr * repeat from * to * and ss to join into first ch of beg ch3.fasten off
+
+Round 6: Starting one stitch to the left of any ss of round 5 where my needle is, ch3 (counts as tr), 1tr in each of next 2 stitches, 1 htr in each of next 2 stitches, 1dc in next stitch, 1 dc in ch-2 at point of your star, dc in next stitch, 1htr in each of next 2 stitches, *1tr in each of next 3 stitches, 1 htr in each of next 2 stitches, 1dc in next stitch, 1 dc in ch2 at point of your star, dc in next stitch, htr in each of next 2 stitches, * repeat from * to * and ss to join into first ch of beg ch3. Fasten off.
+
+Round 7: Please note it's not critical which stitch you start this round in but working into the centre dc will make your star look even when you look at your square. Attach yarn in the centre dc at the peak of your star (where my needle is), ch 1,counts as dc), 1dc in each of next 3 stitches, 1 htr in each of next 2 stitches, 1tr, in next stitch, and for the corner 1 dtr in next stitch, ch2, 1dtr in next stitch, 1tr in next stitch, 1htr in each of next 2 stitches, 1dc in next 7 stitches, *1 htr in each of next 2 stitches, 1tr, in next stitch, 1 dtr, in next stitch, ch2, 1dtr in next stitch, 1tr in next stitch, 1htr in each of next 2 stitches, 1dc in each of next 7 stitches * repeat from * to * around omitting "1dc in next 7 stitches" on your last repeat instead work 1 dc in each of next 3 stitches, ss to join into first ch of beg ch3, fasten off. ( 60sts)
+
+Round 8: Attach a new colour in, any ch-2sp corner of round 7, ch2, ( counts as htr ), 1htr, ch2, 2htr, in same ch-2sp, 1 htr in each stitch until you reach the corner *( 2htr, ch2, 2htr) in the corner ch-2sp, 1 htr in every stitch* repeat from * to * around, ss to join into beg ch-2, fasten off.
+
+Round 9: For this round you work dc in alternate stitches with ch-2 between them, and (dc ,ch2, dc,) in the corners. Attach a new colour in, any ch-2sp corner of round 8 ch3 ( counts as dc, 2ch ), 1dc, in same sp, ch2, skst, (dc in next st, ch2,) repeat all in the brackets until the next corner, (dc, ch2, dc,) for the corner, (dc in next st, ch2,) repeat all in brackets until the corner*. Repeat from * to * ss to join into beg ch-3 fasten off.
+
+Round 10: Attach a new colour in, any ch-2sp corner of round 9, ch2, ( counts as htr ), 1htr, ch2, 2htr, in same ch-2sp, 2htr in each ch-sp until you reach the corner *( 2htr, ch2, 2htr) in the corner ch-2sp, 2htr in each ch-2p* repeat from * to * around, ss to join into beg ch-2, fasten off.

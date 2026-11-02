@@ -1,0 +1,19 @@
+Ch – chain
+hdc – half double crochet
+rep – repeat 
+sc – single crochet
+sk – skip
+sl st – slip stitch 
+sm – stitch marker
+st(s) – stitch(es)
+tch – turning chain
+RS – Right Side
+WS – Wrong Side
+
+NOTE – The first Ch 2 in each round counts as 1 hdc. Each ch 2 in between hdc stitches indicates a corner space.
+Make a magic ring.
+Round 1: Ch 2, 1 hdc in ring, ch 2, *2 hdc in ring, ch 2; rep from * two more times, join with sl st to 2nd ch of first ch-2. Break color A. 
+Round 2: Join color B to any ch-2 corner sp with a sl st, ch 2, [1 hdc, ch 2, 2 hdc] in same sp to make a corner, *ch 1, [2 hdc, ch 2, 2 hdc] in next ch-2 sp; rep from * two more times, ch 1, join with sl st to 2nd ch of first ch-2. Break color B. 
+Round 3: Join color C to any ch-2 corner sp with a sl st, ch 2, [1 hdc, ch 2, 2 hdc] in same sp to make a corner, *ch 1, 2 hdc in ch-1 sp, ch 1, [2 hdc, ch 2, 2 hdc] in next ch-2 sp; rep from * two more times, ch 1, 2 hdc in ch-1 sp, ch 1, join with sl st to 2nd ch of first ch-2. Break color C. 
+Round 4: Join color A to any ch-2 corner sp with a sl st, ch 2, [1 hdc, ch 2, 2 hdc] in same sp to make a corner, *[ch 1, 2 hdc] in each ch-1 sp along side of square, ch 1, [2 hdc, ch 2, 2 hdc] in next ch-2 sp; rep from * two more times, [ch 1, 2 hdc] in each ch-1 sp along last side of square, ch 1, join with sl st to 2nd ch of first ch-2. Break color A.
+At this point, you are free to continue repeating Round 4 with your choice of color to make the square larger.

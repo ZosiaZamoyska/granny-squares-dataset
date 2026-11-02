@@ -1,0 +1,16 @@
+Abbreviations (US Terms)
+Beg beginning
+Ch chain
+St stitch
+Sl st slip stitch
+Sc single crochet
+Dc double crochet
+Tr treble crochet
+Sp space
+RS right side
+
+Make a magic ring.
+Round 1: Ch 3 (counts as 1 dc here and throughout), 11 dc into ring, join with a sl st to top of beg ch 3 – 12 dc
+Round 2: Ch 3, (2 dc, 1 tr) in next st, (1 tr, 2 dc) in next st, * 1 dc in next st, (2 dc, 1 tr) in next st, (1 tr, 2 dc) in next st; rep from * 2 more times, join with a sl st to top of beg ch 3 – 20 dc, 8 tr
+Round 3: Ch 3, 1 dc in each of the next 2 sts, (2 dc, 1 tr) in next st, (1 tr, 2 dc) in next st, * 1 dc in each of the next 5 sts, (2 dc, 1 tr) in next st, (1 tr, 2 dc) in next st; rep from * 2 more times, 1 dc in each of the next 2 sts, join with a sl st to top of beg ch 3 – 36 dc, 8 tr
+Round 4: Ch 3, 1 dc in each of the next 4 sts, (2 dc, 1 tr) in next st, (1 tr, 2 dc) in next st, * 1 dc in each of the next 9 sts, (2 dc, 1 tr) in next st, (1 tr, 2 dc) in next st; rep from * 2 more times, 1 dc in each of the next 4 sts, join with a sl st to top of beg ch 3. Fasten off yarn and weave in all threads – 52 dc, 8 tr

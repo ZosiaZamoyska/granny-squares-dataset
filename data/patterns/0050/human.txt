@@ -1,0 +1,7 @@
+Our granny square tutorial is written in UK terminology.
+
+Make a magic ring.
+Round 1: (RS) Ch5 (this counts as a treble crochet (tr) and ch2 throughout), (3tr, ch2) 3 times, 2tr, ss to 3rd ch of beginning ch-5 to join. (12 tr)
+Round 2: (RS) ss into ch-2 space, ch5, (3tr, ch1) into same ch-space, (3tr, ch2, 3tr, ch1) into each of the next three ch2-spaces, 2tr in same place as ss from start of round 2, ss into third ch of beginning ch-5. (24 sts)
+Round 3: Using new colour ss into any ch-2 space, ch5, (3tr, ch1) in same space, *(3tr, ch1) in next ch-1 space, (3tr, ch2, 3tr, ch1) in ch-2 space; rep from * another two times, (3tr, ch1) in next ch-1 space, 2tr in same place as ss from start of round 3, ss into third ch of beginning ch-5. (36 sts)
+Round 4: Using new colour ss into any ch-2 space, ch5, (3tr, ch1) in same space, *(3tr, ch1) in each ch-1 space across to next corner, (3tr, ch2, 3tr, ch1) in ch-2 space; rep from * another two times, (3tr, ch1) in each ch-1 space across to last, 2tr in same place as ss from start of round 4, ss into third ch of beginning ch-5.

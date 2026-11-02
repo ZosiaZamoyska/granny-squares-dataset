@@ -1,0 +1,12 @@
+Abbreviations (US terms)
+beg: beginning
+ch: chain
+ch-sp: chain-space
+dc: double crochet
+ss: slip stitch
+
+Make a magic ring.
+Round 1: Ch3 (counts as first dc), 2dc in ch-sp, (ch2, 3dc in ch-sp) 3 times, ch2, join with ss in 3rd ch of beg-ch.
+Round 2: Ch4 (counts as first dc + ch 1), *(3dc, ch2, 3dc) in corner ch-sp, ch1; repeat from * 2 more times, (3dc, ch2, 2dc) in corner ch-sp, join with ss in 3rd ch of beg-ch.
+Round 3: Ch3 (counts as first dc), 2dc in ch-sp, ch1, *(3dc, ch2, 3dc) in corner ch-sp, ch1, 3dc in next ch-sp, ch1; repeat from * 2 more times, (3dc, ch2, 3dc) in corner ch-sp, ch1, join with ss in 3rd ch of beg-ch.
+Continue as in Round 3, but crochet 3dc and ch1 in each ch-sp between corner spaces. This will grow your granny square motif to the desired size.

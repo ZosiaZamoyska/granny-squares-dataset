@@ -1,0 +1,13 @@
+Stitch Abbreviations
+ch: chain
+st: stitch
+sc– single crochet
+hdc: half double crochet
+sl st: slip stitch
+
+Make a magic ring.
+Round 1: With color A, ch 1 (counts as a hdc), working over the beginning tail, 1 hdc in the chain ring, ch 2, *(2 hdc in the ring, ch 2), repeat from * to 2 more times, sl st to beg ch 1, do not turn. Fasten off. ——4 hdc clusters
+Round 2: With color B, sl st to the corner space before the fasten-off point, ch 1 (counts as a hdc here and throughout), pull the beginning tail to tighten the sl st, (1 hdc, ch 2, 2 hdc) into the same corner space, (ch 1, 2 hdc, ch 2, 2 hdc) in each of the next 3 corner spaces, ch 1, sl st to beginning ch-1, do not turn. Fasten off.—-8 hdc clusters
+Round 3: With color C, sl st to the corner space before the fasten-off point, ch 1, pull the beginning tail to tighten the sl st, (1 hdc, ch 2, 2 hdc) into the same corner space, *[ch 1, 2 hdc in next ch-1 space, (ch 1, 2 hdc, ch 2, 2 hdc) in next corner space], repeat from * 2 more times, ch 1, 2 hdc in next ch-1 space, ch-1 sl st to beginning ch-1, do not turn. Fasten off. ——12 hdc clusters
+Round 4: With color D, sl st to the corner space before the fasten-off point, ch 1, pull the beginning tail to tighten the sl st, (1 hdc, ch 2, 2 hdc) into the same corner, *ch 1, 2 hdc in next ch-1 space, ch 1, 2 hdc in next ch-1 space, (ch 1, 2 hdc, ch 2, 2 hdc) in next corner space, repeat from * 2 more times, ch 1, 2 hdc in next ch-1 space, ch1, 2 hdc in next ch-1 space, ch 1, sl st to beginning ch-1, do not turn. Fasten off. ——16 hdc clusters
+Round 5: With color A, sl st to the corner space before the fasten-off point, ch 1, pull the beginning tail to tighten the sl st, (1 hdc, ch 2, 2 hdc) into the same corner, *(ch 1 and 2 hdc) in each of the ch-1 spaces up to the next corner, (ch 1, 2 hdc, ch 2, 2 hdc) in next corner, repeat from * 2 more times, (ch1 and 2 hdc) in each of the remaining ch-1 spaces, ch-1, sl st to beginning ch-1, do not turn. Fasten off. ——20 hdc clusters

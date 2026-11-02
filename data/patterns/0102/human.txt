@@ -1,0 +1,12 @@
+SPECIAL STITCHES
+Vst– V stitch
+[1dc, ch 2, 1dc] in the same st/sp
+SH – Shell
+[2dc, ch 2, 2dc] in the same st/sp
+
+Make a magic ring.
+Round 1: Ch 5, [1 dc into ring, ch 2] 7 times, sl st into 3rd ch of the first ch 5 to join round.
+Round 2: Sl st into the next ch-2 sp. [Ch 5 and 1dc] in the same ch-2 sp, ch 1, [Vst in the next ch-2 sp, ch 1,] 7 times, sl st in the 3rd ch of the first ch-5 to join round.
+Round 3: Sl st into the next ch-2 sp. [Ch3, 1dc, Ch 2, 2dc] in the same ch-2 sp, ch 2, [SH in the next Vst, ch 2] 7 times, sl st in the first ch-3 to join round.
+Round 4: Sl st into the next dc, sl st into the ch-2 sp of the next SH. [Ch 3, 2dc, ch3, 3dc] in the same SH (first corner), ch 3, sc in the next SH, ch 3, *[3dc, ch 3, 3dc] in next SH (3 remaining corners), ch 3, sc in the next SH, ch 3, repeat from * 2x, sl st in top of first ch-3 to join round.
+Round 5: Ch 3 and 1dc in the same st, dc in each of the next 2 dc, [2 dc, ch 1, 2 dc] in next ch-3 corner sp, dc in each of the next 2 dc, 2dc in the next dc,3 dc in next ch-3, dc in next sc, 3 dc in next ch-3, *2 dc in the next dc, dc in each of the next 2dc, [2 dc, ch 1, 2 dc] in next ch-3 corner sp, dc in each of the next 2 dc, 2dc in the next dc, 3 dc in next ch-3, dc in next sc, 3 dc in next ch-3, repeat from * 2x, sl st in top of first ch-3 to join round. Fasten off and weave in ends.

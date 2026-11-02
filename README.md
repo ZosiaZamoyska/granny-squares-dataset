@@ -14,7 +14,25 @@ python3 -m unittest        # every pattern must parse with no count mismatches
 python3 export.py          # -> exports/dataset.jsonl   (--strict skips failing patterns, --done-only skips WIP)
 ```
 
-The editor autosaves. Each pattern has a status next to its title (WIP, finished, rejected), also shown in the sidebar; rejected patterns are never exported.
+The editor autosaves. Each pattern has a status next to its title, also shown in the sidebar:
+**to review** (not looked at yet), **promising** (worth the work), **WIP**, **finished**, **ask permission**
+(worth the work, but the source forbids copying, so ask the author first), **duplicate** (of
+`duplicate_of`), **rejected** and **copyright issue** (the source forbids copying or opts out of AI use).
+Ask-permission, duplicate, rejected and copyright patterns are never exported.
+
+## Review board
+
+`http://localhost:8765/board` shows every pattern as its chart, so similar squares are easy to spot.
+- Drag cards into clusters (**+ Cluster**, click a name to rename it), or back to Unsorted.
+- Drop a card on the **middle** of another to mark it a duplicate of that one. It joins that card's cluster.
+- **Suggest clusters** groups unsorted patterns whose first three rounds are the same stitches in the
+  same order around the round, wherever the round starts or whichever way it goes. That's how one
+  square gets published many times.
+- Click a card to set its status and to-dos (add DSL, fix counts, check stitch graph / spaces,
+  review text, check credit, add photo) and to see which patterns share its first rounds. Filter by
+  status (⌥-click: only that one), to-do or text; **Charts only** hides the captions.
+
+Clusters are saved in `data/board.json`.
 
 The editor lines up each `Round N:` in the human text with `RN:` in the DSL.
 It also compares the stitch counts it computes against the counts stated in the pattern, e.g. `(24 tr, 4 3-ch sps.)`.
@@ -65,7 +83,10 @@ The **Stitch graph** panel shows what each stitch is worked into, read exactly a
 ([granny-squares-llm](https://github.com/ZosiaZamoyska/granny-squares-llm)) reads the pattern, and lets you correct it.
 Each stitch is a graph token: `dc^0` goes into the place that is next in the round below, `dc^+2` two places on,
 `dc^-1` back into the place just used (five dc into one place: `^0 ^-1 ^-1 ^-1 ^-1`), and a trailing `g` into the gap
-before that place. Places are the stitch tops and chain spaces of the round below, in working order. Chains have no
+before that place. Places are the stitch tops and chain spaces of the round below, in working order.
+A gap is a space without chains. It opens between two neighbouring stitches whose bases have unworked
+stitch tops or chain spaces between them, as in "dc, sk 2, dc" or groups in two chain spaces. Stitches in
+the same place or in neighbouring places leave no gap, and gaps never count as places to skip. Chains have no
 parents; `ch3=dc^0` says where a beginning chain stands.
 
 Rounds start as the app's guess (amber when it doesn't line up cleanly). Select a stitch in the chart or a token, then:
@@ -85,7 +106,8 @@ The panel's code in `web/stitches/` is copied from granny-squares-llm, which own
 
 ```
 data/patterns/0001/
-  meta.json      title, status (wip|done|rejected), terms (UK|US), source, author, license, tags, images[{file, kind, round, caption}],
+  meta.json      title, status (review|promising|wip|done|permission|duplicate|rejected|copyright), duplicate_of, todo[],
+                 terms (UK|US), source, author, license, tags, images[{file, kind, round, caption}],
                  colors {"C1": "#hex"} (set from the chart's swatches), abbreviations [{abbr, name, dsl}]
   human.txt
   pattern.dsl
@@ -107,6 +129,7 @@ The export converts everything to US names, so UK and US patterns share one voca
 | `3ch=tr` | chain that counts as a stitch |
 | `3sk` | skip 3 stitches |
 | `3tr@sp` | placement: `@ring @sp @corner @same @st @top @side` |
+| `dc@start` | into the place the round's first stitch went into: the end of a group split over the join (`2ch=dc dc@same … dc@start join`) |
 | `{3tr 3ch 3tr}@corner` | group worked into one place |
 | `C2@3tr`, `C2@{…}@corner`, `C2@[…]x3` | yarn colour C2 for one stitch, group or repeat |
 | `C2@{…}` | colour block: everything inside in C2 (no `@place`, so not worked into one place) |

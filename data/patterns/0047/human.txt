@@ -1,0 +1,16 @@
+Stitches and Abbreviations (US terms)
+ch = chain
+dc = double crochet
+MR = magic ring
+sp = space
+ss = slip stitch
+
+Make a magic ring.
+Round 1: Ch2 (does not count as st), work 3dc into MR, ch2 (this will make a corner space), continuing to work into MR, [3dc, ch2] three times, ss to the top of first st, turn.
+Fasten off
+Round 2: Join new colour in one of the corner ch2 spaces.
+Ch2, 3dc in ch2-sp, (3dc, ch2, 3dc) in next 3 ch2 -sp, 3dc, ch2 in starting corner and ss to top of first st, turn.
+Fasten off
+Round 3: Join new colour to corner. Ch2, 3dc in corner. 3dc in the gap between the two 3dc clusters from the previous row. *(3dc, ch2, 3dc) in next corner, 3dc in gap between 3dc clusters from previous row. Repeat from * to the last corner, 3dc in starting corner, ch2 and ss to top of first st, turn.
+Fasten off
+You can continue in this way round after round. The increase always happens in the corners and you will work more 3dc clusters in the gaps between the ones in the previous row.

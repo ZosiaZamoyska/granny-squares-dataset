@@ -1,0 +1,10 @@
+Chain stitch (ch)
+Double crochet (dc)
+Slip stitch (sl st)
+
+Make a magic ring.
+Round 1: Ch 3, 2 dc, ch 3, (3 dc, ch 3) three times. Sl st to top of ch-3 to join round.
+Round 2: Turn. Ch 3, (2 dc, ch 3, 3 dc) in next ch-3-sp, ch 1, *(3 dc, ch 3, 3 dc) in next ch-3-sp, ch 1; repeat from * twice more, Sl st into top of ch-3 to join round.
+Round 3: Turn. Ch 3, 2 dc in next ch-1 sp, ch 1, *(3 dc, ch 3, 3 dc) in next ch-3-sp, ch 1, 3 dc in next ch-1-sp, ch 1; repeat from * twice more. (3dc, ch 3, 3 dc) in last ch-3-sp, ch-1, sl st into top of ch-3 to join round.
+Round 4: Turn. Ch 3, 2 dc in next ch-1 sp, ch 1, *(3 dc, ch 3, 3 dc) in next ch-3-sp, ch 1, [3 dc in next ch-1-sp, ch 1] two times; repeat from * twice more. (3dc, ch 3, 3 dc) in last ch-3-sp, ch-1, sl st into top of ch-3 to join round.
+Round 5: Turn. Ch 3, 2 dc in next ch-1 sp, ch 1, *(3 dc, ch 3, 3 dc) in next ch-3-sp, ch 1, [3 dc in next ch-1-sp, ch 1] three times; repeat from * twice more. (3dc, ch 3, 3 dc) in last ch-3-sp, ch-1, sl st into top of ch-3 to join round.

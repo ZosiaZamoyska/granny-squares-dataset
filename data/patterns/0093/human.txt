@@ -1,0 +1,29 @@
+Make a magic ring.
+
+Round 1: ch 3 (counts as 1 dc), 1 dc, ch 1, [2 dc, ch1] 5 times, join with sl st in top of ch 3, fasten off
+You should have 6 groups of 2 dc with ch 1 spaces in between.
+
+Round 2: In each ch 1 space [2 dc, ch 1, 2 dc, ch 1], join with sl st in first dc, fasten off
+
+Round 3: In each ch 1 space [3 dc, ch1], join with sl st in first dc, fasten off
+
+Round 4: In each ch 1 space [2 dc, ch 1, 2 dc, ch1], join with sl st in first dc, fasten off
+
+Round 5: In each ch 1 space [2 dc, ch1], join with sl st in first dc, fasten off
+
+Round 6: In each ch 1 space [3 dc, ch 1], join with sl st in first dc, fasten off
+
+Round 7: In each ch 1 space [1 sc, ch 3], join with a sl st in first sc, don't fasten off
+
+Round 8: Sl st into ch 3 space, ch 1, 3 sc, ch1...
+* in next ch 3 space, [2 sc, 1 hdc, ch 1]...
+in next ch 3 space, [1 hdc, 2 dc, ch 1]...
+in next ch 3 space, [3 tr, ch 2, 3 tr, ch 1]... (corner made)
+in next ch 3 space, [2 dc, 1 hdc, ch 1]...
+in next ch 3 space, [1 hdc, 2 sc, ch1]...
+in next ch 3 space, [3 sc, ch 1]...
+repeat from * around, join with sl st in first sc, don't fasten off
+
+Round 9: sl st in next two sc, sl st in next ch 1 space...
+ch 3, 2 dc, ch 1
+in each ch 1 space [3 dc, ch 1], and in corner spaces [3 dc, ch 2, 3 dc, ch 1]... sl st in first dc, fasten off!!

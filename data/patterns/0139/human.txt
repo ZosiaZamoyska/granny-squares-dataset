@@ -1,0 +1,8 @@
+Make a magic ring.
+Round 1: Ch 4 (to count as 1 tr), 23 tr in ring. Join with sl st in top st of 1st ch-4.
+Round 2: Ch 4, tr in next 2 tr, * ch 5, tr in next 3 tr. Repeat from * around, joining last ch-5 to top st of 1st ch-4.
+Round 3: Sl st in next st, ch 4, tr in next tr, 3 tr in next loop, * ch 6, skip next tr, tr in next 2 tr, 3 tr in next loop. Repeat from * around. Join.
+Round 4: Sl st in next st, ch 4, tr in next 3 tr, 3 tr in next loop, * ch 7, skip 1 tr, tr in next 4 tr, 3 tr in next loop. Repeat from * around. Join.
+Round 5: Sl st in next st, ch 4, tr in next 5 tr, 3 tr in next loop, * ch 11, skip next tr, tr in next 6 tr, 3 tr in next loop. Repeat from * around. Join.
+Round 6: Sl st in next st, ch 4, tr in next 4 tr, * ch 8, in center st of loop below make tr, ch 2, tr, ch 5, tr, ch 2 and tr; ch 8, skip 1 tr, tr in next 5 tr, ch 8, sc in next loop, ch 8, skip 1 tr, tr in next 5 tr. Repeat from * around. Join.
+Round 7: Sl st in next st, ch 4, tr in next 2 tr, * ch 8, sc in next loop, ch 8, in next ch-5 sp (corner sp) make tr, ch 2, tr, ch 6, tr, ch 2 and tr; ch 8, sc in next loop, ch 8, skip next tr, tr in next 3 tr, ch 8, sc in next loop, ch 8, sc in next loop, ch 8, skip next tr, tr in next 3 tr. Repeat from * around. Join and fasten off.

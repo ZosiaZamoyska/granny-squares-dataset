@@ -1,6 +1,7 @@
 const $ = (s) => document.querySelector(s);
 const META_FIELDS = ["title", "status", "terms", "source", "author", "license", "notes"];
-const STATUS_LABELS = { wip: "WIP", done: "Finished", rejected: "Rejected" };
+const STATUS_LABELS = { review: "To review", promising: "Promising", wip: "WIP", done: "Finished", permission: "Ask permission",
+  duplicate: "Duplicate", rejected: "Rejected", copyright: "Copyright" };
 const IMAGE_KINDS = ["finished", "in-progress", "chart", "diagram", "other"];
 
 // The static build (build_static.py) is read-only: no server, checks are precomputed.

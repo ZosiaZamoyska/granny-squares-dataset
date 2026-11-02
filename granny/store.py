@@ -1,13 +1,14 @@
 """Filesystem storage. One folder per pattern:
 
     data/patterns/<id>/
-        meta.json      title, status (wip|done|rejected), terms (UK/US), source, license, images[...],
-                       abbreviations[{abbr, name, dsl}]
+        meta.json      title, status (see STATUSES), terms (UK/US), source, license, images[...],
+                       abbreviations[{abbr, name, dsl}], todo [TODOS keys], duplicate_of (an id)
         human.txt      the pattern as published
         pattern.dsl    the machine-readable version
         links.json     manual DSL <-> human links (see web/app.js "link mode")
         graph.json     stitch connections checked by hand, per round (see web/graph-view.js)
         images/        photos, charts
+    data/board.json    the review board's clusters: {"groups": [{"name", "ids": [...]}]}
 """
 
 from __future__ import annotations
@@ -19,10 +20,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent / "data" / "patterns"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".heic"}
 
-STATUSES = ("wip", "done", "rejected")
+# review: not looked at yet; promising: worth the work; duplicate: same as duplicate_of;
+# permission: worth the work, but the source forbids copying, so ask the author first;
+# copyright: rejected because the source forbids copying or opts out of AI use.
+STATUSES = ("review", "promising", "wip", "done", "permission", "duplicate", "rejected", "copyright")
+EXCLUDED = ("rejected", "duplicate", "copyright", "permission")  # never exported
+TODOS = ("dsl", "counts", "spaces", "text", "credit", "photo")
+BOARD = ROOT.parent / "board.json"
 
 DEFAULT_META = {"title": "", "status": "wip", "terms": "US", "source": "", "author": "", "license": "",
-                "notes": "", "tags": [], "images": [], "abbreviations": []}
+                "notes": "", "tags": [], "images": [], "abbreviations": [], "todo": [], "duplicate_of": ""}
 
 
 def _dir(pid: str) -> Path:
@@ -104,3 +111,14 @@ def remove_image(pid: str, name: str):
 
 def image_path(pid: str, name: str) -> Path:
     return _dir(pid) / "images" / Path(name).name
+
+
+def load_board() -> dict:
+    board = json.loads(BOARD.read_text()) if BOARD.exists() else {}
+    return {"groups": [], **board}
+
+
+def save_board(board: dict):
+    groups = [{"name": str(g.get("name", "")), "ids": [str(i) for i in g.get("ids", [])]}
+              for g in board.get("groups", [])]
+    BOARD.write_text(json.dumps({"groups": groups}, indent=1, ensure_ascii=False) + "\n")

@@ -1,0 +1,15 @@
+{
+  "title": "How To Crochet A Classic Granny Square",
+  "status": "review",
+  "terms": "US",
+  "source": "https://www.lionbrand.com/community/blog/how-to-crochet-a-classic-granny-square/",
+  "author": "Erica Jackofsky",
+  "license": "",
+  "notes": "start: original \"(with Opal) chain 4 and then join with a slip stitch to the first chain to form a ring\" replaced by magic ring. BORDER RND omitted. pattern.dsl left empty only because the checker parses the stated '(12 dc sts total)' as a stitch named 'dc sts total' (count 12 dc does match). Ready transcription: start: mr | R1: 2ch=dc {2dc [2ch 3dc]x3 2ch}@ring ss@top | R2: 2ch=dc {2dc 2ch 3dc 2ch}@sp [{[3dc 2ch]x2}@sp]x3 ss@top | R3: 2ch=dc {2dc 2ch 3dc}@sp ch 3dc@sp ch [{3dc 2ch 3dc}@sp ch 3dc@sp ch]x3 ss@top | R4: 2ch=dc {2dc 2ch 3dc}@sp [ch 3dc@sp]x2 ch [{3dc 2ch 3dc}@sp [ch 3dc@sp]x2 ch]x3 ss@top",
+  "tags": [],
+  "images": [],
+  "abbreviations": [],
+  "todo": [],
+  "duplicate_of": "",
+  "id": "0068"
+}

@@ -1,0 +1,21 @@
+Abbreviations/stitches used (US terms):
+** - Repeat instructions within asterisks as many times as directed
+[ ] - Work instructions within parenthesis as a set as many times as directed
+ch - chain
+st/sts - stitch/stitches
+sl st - slip stitch
+sc - single crochet (UK - double crochet) 
+dc - double crochet (UK - treble)
+hdc - half double crochet (UK - half treble) 
+tr - treble crochet (UK - double treble)
+
+Round 1: Using cream make a magic ring, ch 3 (counts as 1st dc), work 7 dc into ring. Join with a sl st to the 1st st.
+Round 2: Ch 3 (counts as dc), 5 dc in next st, repeat [dc in next st, 5 dc in next st] 3 more times. Join with a sl st to the 1st st.
+Round 3: Ch 3 (counts as dc), dc in same st, ch 1, skip next 2 sts, 5 dc in next st (forms a corner), ch 1, skip next 2 sts, **3 dc in next st, ch 1, skip next 2 sts, 5 dc in next st, ch 1, skip next 2 sts** Repeat from ** to ** 2 more times, dc in the same st as the 1st st. Join with a sl st to the 1st st. 
+Round 4: Sl st in next st, sl st in ch-1 space, ch 3 (counts as dc), 2 dc in same space, ch 1, skip next 2 sts, 5 dc in next st, **ch 1, skip next 2 sts, 3 dc in next ch-1 space, ch 1, 3 dc in next ch-1 space, ch 1, skip next 2 sts, 5 dc in next st** Repeat from ** to ** 2 more times, ch 1, skip next 2 sts, 3 dc in next ch-1 space, ch 1. Join with a sl st to the 1st st.
+Round 5: Pull grey through the loop, tighten the loop and cut off cream. Using grey ch 3, dc in next 2 sts, work dc in each ch 1 space and each dc around except for the 4 corner sts where you will work 5 dc. Join with a sl st to the 1st st. Place a stitch marker at each corner st for easy identification moving them up as you progress.
+Round 6-8: Ch 3, dc in each st and 5 dc in each corner st around. Join with a sl st to the 1st st. Cut off grey.
+Round 9: Join cream at a corner st, ch 5 (counts as tr + ch 1), 3 dc in same st, **ch 1, skip next 2 sts, repeat [3 dc in next st, ch 1, skip next 3 sts] across until you have 2 sts left before the next corner st, [3 dc, ch 1, tr, ch 1, 3 dc] in next corner st** Repeat from ** to ** 2 more times, ch 1, skip next 2 sts, repeat [3 dc in next st, ch 1, skip next 3 sts] across until you have 2 sts left before the next corner st, 3 dc and ch 1 in the corner st where you worked the 1st st. Join with a sl st to the 4th ch.
+Round 10: Ch 5 (counts as tr + ch 1), 3 dc in next ch-1 space, ch 1, repeat [3 dc, ch 1] each ch-1 space and tr in each corner st around. Join with a sl st to the 4th ch.
+Round 11: Pull grey through the loop, tighten the loop and cut off cream. Using grey ch 3 (counts as dc), 2 dc in same st, work dc in each ch 1 space, dc in each st and 5 dc in each corner st around finishing with 2 dc in the corner st at the beginning of round. Join with a sl st to the 1st st.
+Round 12-16: Ch 3, 2 dc in same st, repeat dc in each st and 5 dc in each corner st around finishing with 2 dc in the corner st at the beginning of round. Join with a sl st to the 1st st. Cut off yarn and weave in the loose ends.

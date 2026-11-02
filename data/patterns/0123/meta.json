@@ -1,0 +1,18 @@
+{
+  "title": "FREE PATTERN: The Blanket Stitch, Squared",
+  "status": "review",
+  "terms": "US",
+  "source": "https://crochetbetweentwoworlds.blogspot.com/2022/09/free-pattern-blanket-stitch-squared.html",
+  "author": "Michelle (Crochet between worlds)",
+  "license": "",
+  "notes": "Start: original 'Make a magic circle.' written as 'Make a magic ring.' (Round 1 works 'Into MC' as published). Headings 'Round N - ' normalised to 'Round N:'. Turned rounds of (sc, 2dc) blocks, each block worked into the sc of the block below; corners are two blocks in one sc. Materials and join-as-you-go instructions omitted. pattern.dsl left empty: Rounds 1-3 state blocks PER SIDE ('(3 blocks on each side)'), which the checker reads as a round total and flags as a mismatch. Draft DSL (consistent with the text): start: mr | R1: {[sc 2dc]x4}@ring ss@top ch turn | R2: {sc 2dc sc 2dc}@same [2sk {sc 2dc sc 2dc}@st]x3 ss@top ch turn | R3: {sc 2dc}@same [2sk {sc 2dc sc 2dc}@st 2sk {sc 2dc}@st]x3 2sk {sc 2dc sc 2dc}@st 2sk ss@top ch turn | R4-14: {sc 2dc}@same [[2sk {sc 2dc}@st]>corner 2sk {sc 2dc sc 2dc}@st]x4 [2sk {sc 2dc}@st]>end ss@top ch turn | R15: [[sc]>corner {hdc 2ch hdc}@st]x4 [sc]>end ss@top fo DSL: the agent's draft, left out of staging only because the checker misreads this page's stated counts; check the counts by hand. Stitch graph: round 4 reads badly (cost 37.0); check where its stitches go.",
+  "tags": [],
+  "images": [],
+  "abbreviations": [],
+  "todo": [
+    "counts",
+    "spaces"
+  ],
+  "duplicate_of": "",
+  "id": "0123"
+}

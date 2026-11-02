@@ -1,0 +1,7 @@
+Make a magic ring.
+Round 1: Ch3 (counts as first dc), 11dc into loop, ss to top of beg ch-3 to join. [12 dc] Fasten off Yarn A. Join Yarn B in any dc.
+Round 2: Ch3 (counts as first dc), dc in st at base of ch-3, *2dc in next dc; repeat from * around, ss to top of beg ch-3 to join. [24 dc] Fasten off Yarn B. Join Yarn C in any dc.
+Round 3: Ch3 (counts as dc), dc in the stitch at the base of the 3-ch length, dc in next dc, *2dc in next dc, dc in next dc; repeat from * around, ss to top of beg ch-3 to join. [36 dc] Fasten off Yarn C. Join Yarn D in any dc.
+Round 4: Ch1 (does not count as stitch), *sc in each of the first 2 dc, hdc in next dc, dc in each of next 2 dc, (2tr, ch2, 2tr) in next dc (forms corner), dc in each of next 2 dc, hdc in next dc; repeat from * three more times, ss to first dc. [48 sts, 4 ch-2 corners] Fasten off Yarn D. Join Yarn E in any st.
+Round 5: Ch1 (does not count as st), *sc in each stitch to next ch-2 corner, (2sc, ch1, 2sc) in ch-2 corner; repeat from * around, sc in each stitch to first sc, ss to first sc. [64 sc]
+Fasten off Yarn E.

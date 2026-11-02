@@ -20,6 +20,7 @@ from .dsl import Abbrev, Color, Group, Line, Op
 PLACE_TEXT = {
     "ring": "into ring", "sp": "in next sp", "same": "in same sp", "corner": "in corner sp",
     "st": "in next st", "next": "in next st", "top": "in top of beginning ch", "side": "along side",
+    "start": "in first sp",
 }
 UNTIL_TEXT = {"corner": "to corner", "end": "to end"}
 

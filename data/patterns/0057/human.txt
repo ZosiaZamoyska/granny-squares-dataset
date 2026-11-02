@@ -1,0 +1,16 @@
+CB – color B
+CC – color C
+ch – chain
+dc – double crochet
+beg – beginning
+st(s) – stitch(es)
+rep – repeat
+sp – space
+sl st – slip stitch
+Note: Feel free to use different yarn weights from your stash… I use two strands of sock yarn or lighter-weight yarn, and separate strands of chunkier yarn for consistent sizing.
+
+With CA, make a magic ring
+Round 1: Ch 3 (counts as dc), 2 dc in ring, ch 3, *3 dc in ring, ch 3, repeat from *twice more, join with a sl st in top of beg ch, drop CA — 12 sts.
+Round 2: Join CB in any ch-3 sp, ch 3 (counts as dc), work [2 dc, ch 3, 3 dc] in same ch-3 sp, ch 2 *[3 dc, ch 3, 3 dc] in next ch-3 sp, ch 2, rep from * twice more, join with a sl st in top of beg ch, drop CB — 24 sts.
+Round 3: Join CC in any ch-3 sp, ch 3 (counts as dc), work [2 dc, ch 3, 3 dc] in same ch-3 sp, *ch 2, 3 dc in next ch-2 sp, ch 2, [3 dc, ch 3, 3 dc] in next ch-3 sp, rep from * twice more, ch 2, 3 dc in next ch-2 sp, ch 2, join with a sl st in top of beg ch, drop CC — 36 sts.
+Round 4: Join Color D in any ch-3 sp, ch 3 (counts as dc), work [2 dc, ch 3, 3 dc] in same ch-3 sp, *ch 2, 3 dc in next ch-2 sp, ch 2, 3 dc in next ch-2 sp, ch 2, [3 dc, ch 3, 3 dc] in next ch-3 sp, rep from * twice more, ch 2, 3 dc in next ch-2 sp, ch 2, 3 dc in next ch-2 sp, ch 2, join with a sl st in top of beg ch, drop Color D — 48 sts.

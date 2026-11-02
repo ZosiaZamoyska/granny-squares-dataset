@@ -1,0 +1,15 @@
+st/sts: stitch/stitches
+ch: chain
+ch-2-sp: chain 2 space (which will be the corner space)
+dc: double crochet
+sl st: slip stitch
+Pattern Notes:
+
+Make a magic ring.
+Round 1: Ch 3. Into the ring, work 1 dc, ch 2. Into ring, work (3 dc, ch 2) three times. Work 1 dc, and join with sl st into the beginning chain. Sl st into the ch-2-sp [12 sts, 4 ch 2 spaces]
+Round 2: Ch 3. Work (1 dc, 2 ch, 2dc) in the next ch-2-sp. Make *1 dc in each dc along the side, make (2 dc, ch 2, 2 dc) in ch-2-space. Repeat for the next two sides. Dc in the dc on the last side. Make 1 dc into each of the sl sts from the previous round. Sl st into the ch-2-sp. [28 sts, 4 ch-2-spaces]
+Round 3: Repeat round 2 [44 sts, 4 ch-2-spaces]
+Round 4: Repeat round 2 [60 sts, 4 ch-2-spaces]
+Round 5: Repeat round 2 [76 sts, 4 ch-2-spaces]
+Round 6: Repeat round 2 [92 sts, 4 ch-2-spaces]
+Round 7: Repeat round 2 [108 sts, 4 ch-2-spaces]

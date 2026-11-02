@@ -1,0 +1,21 @@
+Stitches/Abbreviations Used:
+** - repeat instructions between asterisks as many times as directed
+[ ] - repeat instructions within parenthesis as a set as many times as directed
+ch - chain
+st/sts - stitch/stitches
+sl st - slip stitch
+sc - single crochet
+dc - double crochet
+Note:
+Each round is worked using the 2 colours alternately.
+Do not cut the yarn off after every round and also you'll not be carrying it behind your work. At the end of each round you'll pull a long loop and keep the loop and yarn away from your current working yarn.
+This square can be made as big as you want just by increasing the number of rounds.
+Make a magic ring.
+Round 1: Using colour A, make a magic ring, ch 3 (counts as 1st dc), 2 dc into ring, ch 2, repeat [3 dc into ring, ch 2] 3 more times. Join with a sl st to the 3rd ch at the beginning of round. Leave a long loop.
+Round 2: (In this round you'll be working in the space between the stitches and not in the stitches. Take care to keep the loop and yarn of the previous round out of your way) Pull colour B through the space after the 1st st of previous round. Using colour B, ch 3 (1st ch counts as sc), sc in the space after the 2nd dc, **ch 3, sc in the space after the 1st dc on the next side, ch 2, sc in the space after the 2nd dc** Repeat from ** to ** 2 more times, ch 3, join with a sl st to the 1st ch at the beginning of round. Pull up and long loop and leave it aside.
+Round 3: Insert hook into the corner ch-2 space of round 1 and insert hook into the loop of colour A, pull the yarn to tighten the loop and pull the yarn through the loop as well as the ch-2 space. Using colour A, ch 3 (counts as 1st dc), 2 dc in same space, **ch 1, [3 dc, ch 2, 3 dc] in next corner ch-2 space of round 1** Repeat from ** to ** 2 more times, ch 1, [3 dc, ch 2] in the 1st space. Join with a sl st to the 1st st. Pull a long loop and leave it aside.
+Round 4: Pull colour B through the space after the 1st st of previous round, ch 3, sc in the space after the next dc, ch 2, sc in space after 1st dc of next 3 dc, ch 2, sc in the space after next dc, **ch 3, [sc in the space after the 1st dc of next 3 dc on the next side, ch 2, sc in the space after the next dc] 2 times** Repeat from ** to ** 2 more times, ch 3. Join with a sl st to the 1st ch. Pull a long loop and leave it aside.
+Round 5: Insert hook into the corner ch-2 space of round 3 and insert hook into the loop of colour A, pull the yarn to tighten the loop and pull the yarn through the loop as well as the ch-2 space. Using colour A, ch 3 (counts as 1st dc), 2 dc in same space, **ch 1, 3 dc in next ch-1 space of round 3, ch 1, [3 dc, ch 2, 3 dc] in next corner ch-2 space of round 3** Repeat from ** to ** 2 more times, ch 1, 3 dc in next ch-1 space of round 3, ch 1, [3 dc, ch 2] in the 1st space. Join with a sl st to the 1st st. Pull a long loop and leave it aside.
+Round 6: Pull colour B through the space after the 1st st of previous round, ch 3, sc in the space after the next dc, [ch 2, sc in space after 1st dc of next 3 dc, ch 2, sc in the space after next dc] 2 times, **ch 3, [sc in the space after the 1st dc of next 3 dc on the next side, ch 2, sc in the space after the next dc] 3 times** Repeat from ** to ** 2 more times, ch 3. Join with a sl st to the 1st ch. Cut yarn off.
+Round 7: Insert hook into the corner ch-2 space of round 3 and insert hook into the loop of colour A, pull the yarn to tighten the loop and pull the yarn through the loop as well as the ch-2 space. Using colour A, ch 3 (counts as 1st dc), 2 dc in same space, **[ch 1, 3 dc in next ch-1 space of round 5] 2 times, ch 1, [3 dc, ch 2, 3 dc] in next corner ch-2 space of round 3** Repeat from ** to ** 2 more times, [ch 1, 3 dc in next ch-1 space of round 5] 2 times, ch 1, [3 dc, ch 2] in the 1st space. Join with a sl st to the 1st st.
+Round 8: Ch 1, work sc in each st and each ch-1 space around and [2 sc, ch 1, 2 sc] in each corner. Join with a sl st to the 1st sc and cut off yarn. Weave in all the loose ends of yarn.

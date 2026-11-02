@@ -1,0 +1,13 @@
+beg = beginning
+ch = chain
+dc = double crochet
+sl st = slip stitch
+sp = space
+
+Make a magic ring.
+
+Round 1: Ch 3 (counts as first dc), work 2 dc in ring, [ch 2, work 3 dc in ring] 3 times, ch 2. Join with sl st to top of beg ch 3.
+
+Round 2: Ch 4 (counts as last dc and ch 1 sp for this round), [in next ch 2 sp work (3 dc, ch 2, 3 dc, ch 1)] 3 times for three corners. In last ch 2 sp work (3 dc, ch 2, 2 dc). Join with sl st in the third ch of the beg ch 4.
+
+Round 3: Ch 3, in ch 1 sp work 2 dc, ch 1. [In the next ch 2 sp work (3 dc, ch 2, 3 dc) ch 1, work 3 dc in next ch 1 sp, ch 1] 3 times for three corners. In last ch 2 sp work (3 dc, ch2, 3 dc) ch 1. Join with sl st to top of beg ch 3. Fasten off.

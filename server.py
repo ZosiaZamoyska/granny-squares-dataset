@@ -17,6 +17,18 @@ WEB = Path(__file__).resolve().parent / "web"
 PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8765
 
 
+def board_data() -> dict:
+    """Everything the review board draws: its clusters, and per pattern meta, DSL, checked graph
+    and the round statuses of the count check."""
+    patterns = []
+    for pid in store.list_ids():
+        d = store.load(pid)
+        r = check(d["human"], d["dsl"], d["meta"]["terms"], d["meta"]["abbreviations"])
+        patterns.append({"meta": d["meta"], "dsl": d["dsl"], "graph": d["graph"],
+                         "statuses": [x["status"] for x in r["rounds"]]})
+    return {**store.load_board(), "patterns": patterns}
+
+
 class Handler(BaseHTTPRequestHandler):
     def log_message(self, fmt, *args):
         pass
@@ -48,6 +60,14 @@ class Handler(BaseHTTPRequestHandler):
         try:
             if method == "GET" and not p:
                 return self._file(WEB / "index.html")
+            if method == "GET" and p == ["board"]:
+                return self._file(WEB / "board.html")
+            if p == ["api", "board"]:
+                if method == "GET":
+                    return self._send(200, board_data())
+                if method == "PUT":
+                    store.save_board(self._json())
+                    return self._send(200, store.load_board())
             if method == "GET" and p[0] == "static" and len(p) in (2, 3):  # web/<file>, web/<dir>/<file>
                 return self._file(WEB.joinpath(*(Path(x).name for x in p[1:])))
             if method == "GET" and p[0] == "images" and len(p) == 3:

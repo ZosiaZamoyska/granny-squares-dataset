@@ -1,0 +1,19 @@
+{
+ "rounds": {
+  "4": {
+   "tokens": "ch3=dc^+3 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 dc^+4 dc^-1 dc^-1 dc^+4 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 dc^+4 dc^-1 dc^-1 dc^+4 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 dc^+4 dc^-1 dc^-1 dc^+4 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 dc^+4 dc^-1 dc^-1 sl@top fo",
+   "line": "R4: {3ch=dc 2dc 2ch 3dc}@sp 3dc@sp[{3dc 2ch 3dc}@sp 3dc@sp]x3 ss@top fo",
+   "below": "R3: {3ch=dc 2dc 2ch 3dc}@sp 3dc@sp [{3dc 2ch 3dc}@sp 3dc@sp]x3 ss@top fo"
+  },
+  "5": {
+   "tokens": "ch3=dc^+3 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 dc^+2 dc^-1 dc^-1 dc^-1 dc^-1 dc^-1 dc^-1 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 dc^-1 dc^-1 dc^-1 dc^-1 dc^-1 dc^-1 dc^-1 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 dc^-1 dc^-1 dc^-1 dc^+9 dc^-1 dc^-1 dc^+9 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 dc^+9 dc^-1 dc^-1 dc^+9 dc^-1 dc^-1 sl@top fo",
+   "line": "R5: [{3ch=dc 2dc 2ch 3dc}@sp]>corner 3dc@sp 3dc@sp [{3dc 2ch 3dc}@sp [3dc@sp]x2]x3 ss@top fo",
+   "below": "R4: {3ch=dc 2dc 2ch 3dc}@sp 3dc@sp[{3dc 2ch 3dc}@sp 3dc@sp]x3 ss@top fo"
+  },
+  "5-8": {
+   "tokens": "ch3=dc^+3 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 dc^+4 dc^-1 dc^-1 dc^+4 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 dc^+4 dc^-1 dc^-1 dc^+9 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 dc^+9 dc^-1 dc^-1 dc^+9 dc^-1 dc^-1 ch ch dc^-1 dc^-1 dc^-1 dc^+9 dc^-1 dc^-1 sl@top fo",
+   "line": "R5-8: {3ch=dc 2dc 2ch 3dc}@sp [3dc@sp]>corner [{3dc 2ch 3dc}@sp [3dc@sp]>corner]x3 ss@top fo",
+   "below": "R4: {3ch=dc 2dc 2ch 3dc}@sp 3dc@sp[{3dc 2ch 3dc}@sp 3dc@sp]x3 ss@top fo"
+  }
+ }
+}

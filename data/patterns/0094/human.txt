@@ -1,0 +1,28 @@
+Abbreviations Used:-
+Ch - Chain
+HDC - Half Double Crochet
+SC - Single Crochet
+DC - Double Crochet
+Trbl - Treble Crochet
+Sk - Skip
+St/Sts - Stitch/Stitches
+
+Notes:-
+For this whole Pattern, the Starting Chain 2 is not counted as a stitch. It is Just to bring the yarn to a working height.
+Start the next stitch in the same stitch.
+
+Make a magic ring.
+
+Round 1: Chain 2. 12 Double Crochets in the circle. Pull the yarn end to close the gap. Slip Stitch on top of the first Double Crochet. 12 Stitches.
+
+Round 2: Chain 2. 2 Double Crochets in each stitch around. Slip stitch on top of the first Double Crochet. 24 stitches.
+
+Round 3: Chain 3 Skip 2 Stitches. 1 Single Crochet in the next stitch. Repeat(Ch2,Sk2,1SC) 8 Chain Spaces.
+
+Round 4: Slip Stitch into the Chain 3 space. Change the yarn color while making the Slip Stitch. (Chain 2,1 Half Double Crochet,5 Double Crochets,1 Half Double Crochet) - all in the same Chain space. 1 Single Crochet into the next stitch. Repeat(1HDC,5DC,1HDC)-all in the same Ch space, 1SC) Slip Stitch on top of the 1st Half Double Crochet. Change the yarn color while making the Slip Stitch.
+
+Round 5: Chain 6(the starting Chain 3 will be counted as 1 Double Crochet and the remaining stitches will be counted as Chain 3 space) 1 Single Crochet into the Middle Stitch of the bunch(.ie.the 4th Stitch) 1 Double Crochet into the next Single Crochet. Repeat(Ch3,1SC-into the Middle St(i.e the 4th St),Ch3,1DC(into the next SC) Once you reach the end , make a Slip Stitch into the 3rd Chain .
+
+Round 6: Slip Stitch into the Chain space. Chain 1(this wont be counted as a stitch) 4 Single Crochets into the same space. 5 Single Crochets into the next Chain 3 space. Repeat(4SC,5SC into the next space) Once you reach the end , make a Slip Stitch into the 1st Single Crochet. 72 Stitches.
+
+Round 7: Chain 1(this wont be counted as a stitch) 1 Single Crochet each into 4 stitches. 1 Half Double Crochet each in the next 3 stitches. 1 Double Crochet each in the next 2 stitches. 3 Treble Crochets in the next stitch.(this will make the 1st corner) 1 Double Crochet each in the next 2 stitches. 1 Half Double Crochet each in the next 3 stitches. 1 Single crochet each in the next 7 stitches. Repeat(1HDC*3,,1DC*2,3Trbl,1DC*2,1HDC*3,1SC*7) At the end you will have 3 stitches left, make 1 Single Crochet each of the 3 Stitches.(this will make the 7SCs including the starting 4SCs) Make a Slip Stitch on top of the 1st Single Crochet and Weave off.
