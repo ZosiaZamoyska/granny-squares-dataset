@@ -16,7 +16,7 @@ _SP = re.compile(r"^(?:(\d+)\s*-?\s*ch|ch\s*-?\s*(\d+))[\s-]*(?:sp|space)s?$")
 
 # Plural / long-form stitch names in stated counts -> DSL names.
 _NAMES = {
-    "sts": "st", "stitches": "st", "stitch": "st",
+    "sts": "st", "stitches": "st", "stitch": "st", "crochet stitches": "st", "total stitches": "st",
     "trebles": "tr", "treble": "tr", "trs": "tr",
     "doubles": "dc", "dcs": "dc", "scs": "sc", "hdcs": "hdc", "htrs": "htr",
     "chs": "ch", "chains": "ch", "ch sps": "1ch-sp", "ch-sps": "1ch-sp",
