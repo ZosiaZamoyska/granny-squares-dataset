@@ -1,6 +1,6 @@
 {
   "title": "Super Solid Granny Square",
-  "status": "done",
+  "status": "duplicate",
   "terms": "UK",
   "source": "https://blog.bellacococrochet.com/super-solid-granny-square/",
   "author": "Sarah-Jayne Fragola",
@@ -16,5 +16,7 @@
     }
   ],
   "abbreviations": [],
+  "todo": [],
+  "duplicate_of": "",
   "id": "0003"
 }

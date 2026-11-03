@@ -1,0 +1,9 @@
+{
+ "rounds": {
+  "6": {
+   "tokens": "ch2=dc^-3 dc^0 dc^-5 ch ch ch dc^-1 dc^0 dc^+18 ch ch ch dc^-1 dc^0 dc^+18 ch ch ch dc^-1 dc^0 dc^+18 ch ch ch dc^-1 dc^0 sl@top",
+   "line": "R6: 2ch=dc [[dc]>corner {dc 3ch dc}@corner]x4 [dc]>end ss@top",
+   "below": "R5: sl@sp {2ch=dc 2dc}@same [3dc@sp]x2 [{5dc 3ch 5dc}@sp [3dc@sp]x3]x3 {5dc 3ch 5dc}@sp ss@top"
+  }
+ }
+}

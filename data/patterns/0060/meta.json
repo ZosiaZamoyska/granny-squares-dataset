@@ -1,13 +1,20 @@
 {
   "title": "How to Crochet a Solid Granny Square with No Gaps",
-  "status": "review",
+  "status": "done",
   "terms": "US",
   "source": "https://sarahmaker.com/solid-granny-square-no-gaps/",
   "author": "Sarah Stearns",
   "license": "",
   "notes": "start: original \"Foundation Ring: Chain 5 and join with sl st to make a ring. Or, use the magic ring technique.\" replaced by magic ring. Rounds 3-5 give only stitch counts (repeat pattern of Round 2); DSL R3-R5 follow Round 2 and match the stated totals 48/64/80 (in square brackets, not read by checker).",
   "tags": [],
-  "images": [],
+  "images": [
+    {
+      "file": "pasted-1793698914625.png",
+      "kind": "finished",
+      "round": null,
+      "caption": ""
+    }
+  ],
   "abbreviations": [],
   "todo": [],
   "duplicate_of": "",

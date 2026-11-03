@@ -1,0 +1,34 @@
+{
+ "rounds": {
+  "2": {
+   "tokens": "ch3=dc^+2 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 sl^-1",
+   "line": "R2: 3ch=dc {dc 2ch 2dc}@sp [3dc {2dc 2ch 2dc}@sp]x3 dc 2dc ss@sp # last 2 dc into the 2 sl sts of the previous round",
+   "below": "R1: 3ch=dc {dc 2ch [3dc 2ch]x3 dc}@ring ss@top ss@sp"
+  },
+  "3": {
+   "tokens": "ch3=dc^+2 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 sl^-1",
+   "line": "R3: 3ch=dc {dc 2ch 2dc}@sp [7dc {2dc 2ch 2dc}@sp]x3 5dc 2dc ss@sp",
+   "below": "R2: 3ch=dc {dc 2ch 2dc}@sp [3dc {2dc 2ch 2dc}@sp]x3 dc 2dc ss@sp # last 2 dc into the 2 sl sts of the previous round"
+  },
+  "4": {
+   "tokens": "ch3=dc^+2 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 sl^-1",
+   "line": "R4: 3ch=dc {dc 2ch 2dc}@sp [11dc {2dc 2ch 2dc}@sp]x3 9dc 2dc ss@sp",
+   "below": "R3: 3ch=dc {dc 2ch 2dc}@sp [7dc {2dc 2ch 2dc}@sp]x3 5dc 2dc ss@sp"
+  },
+  "5": {
+   "tokens": "ch3=dc^+2 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 sl^-1",
+   "line": "R5: 3ch=dc {dc 2ch 2dc}@sp [15dc {2dc 2ch 2dc}@sp]x3 13dc 2dc ss@sp",
+   "below": "R4: 3ch=dc {dc 2ch 2dc}@sp [11dc {2dc 2ch 2dc}@sp]x3 9dc 2dc ss@sp"
+  },
+  "6": {
+   "tokens": "ch3=dc^+2 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 sl^-1",
+   "line": "R6: 3ch=dc {dc 2ch 2dc}@sp [19dc {2dc 2ch 2dc}@sp]x3 17dc 2dc ss@sp",
+   "below": "R5: 3ch=dc {dc 2ch 2dc}@sp [15dc {2dc 2ch 2dc}@sp]x3 13dc 2dc ss@sp"
+  },
+  "7": {
+   "tokens": "ch3=dc^+2 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 sl^-1",
+   "line": "R7: 3ch=dc {dc 2ch 2dc}@sp [23dc {2dc 2ch 2dc}@sp]x3 21dc 2dc ss@sp",
+   "below": "R6: 3ch=dc {dc 2ch 2dc}@sp [19dc {2dc 2ch 2dc}@sp]x3 17dc 2dc ss@sp"
+  }
+ }
+}

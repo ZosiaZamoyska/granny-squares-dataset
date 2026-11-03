@@ -1,13 +1,20 @@
 {
   "title": "Classic Granny Square Crochet Pattern",
-  "status": "review",
+  "status": "done",
   "terms": "US",
   "source": "https://www.hopefulhoney.com/2016/06/classic-granny-square-free-crochet.html",
   "author": "Olivia Kent",
   "license": "",
   "notes": "start: original \"Create a magic loop using B yarn and 5mm hook.\" replaced by \"Make a magic ring.\". \"Rnd N:\" normalised to \"Round N:\". Beginning ch 2 counts as a dc (stated totals 12/24/36/48/60 include it). Work is turned after every round.",
   "tags": [],
-  "images": [],
+  "images": [
+    {
+      "file": "pasted-1793698934264.png",
+      "kind": "finished",
+      "round": null,
+      "caption": ""
+    }
+  ],
   "abbreviations": [],
   "todo": [],
   "duplicate_of": "",
