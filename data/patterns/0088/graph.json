@@ -1,0 +1,9 @@
+{
+ "rounds": {
+  "5": {
+   "tokens": "dc^-6 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 ch ch ch dc^-1 dc^-1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 ch ch ch dc^-1 sl@top",
+   "line": "R5: [[dc]x12 {dc 3ch dc}@corner]x4 ss@top",
+   "below": "R4: 3ch=dc 3dc [{2tr 2ch 2tr}@st 7dc]x3 {2tr 2ch 2tr}@st 3dc ss@top"
+  }
+ }
+}

@@ -3,7 +3,8 @@
    to read the token stream instead of the DSL tree, so it can draw any stream: a real
    pattern, a half-made round, or whatever the model predicts.
 
-   The four corner chains (each round's longest chain spaces) go to the corners and the
+   The four corner chains (each round's longest chain spaces, or else the chains inside
+   stitch groups like "{sc 2ch sc}@corner") go to the corners and the
    stitches between them spread along the sides; stitches worked into one place ("dc@corner
    dc+ dc+") fan out from a shared base. Rounds without four corner chains get a
    superellipse between circle and square.
@@ -77,12 +78,20 @@ function cornerChains(its) {
   // Corners are the longest chain spaces; a chain that opens the round is the beginning chain.
   const chains = its.map((it, i) => (it.kind === "ch" && i > 0 ? i : -1)).filter((i) => i >= 0);
   const longest = Math.max(0, ...chains.map((i) => its[i].n));
-  return [chains.filter((i) => its[i].n === longest), longest];
+  const corners = chains.filter((i) => its[i].n === longest);
+  if (corners.length !== 4) {
+    // Not four of those (0045 R6: ch-3s beside each corner): the chains inside a group, as in
+    // "{sc 2ch sc}@corner", when there are four.
+    const inside = chains.filter((i) => its[i - 1].group && its[i - 1].group === its[i + 1]?.group);
+    if (inside.length === 4) return [inside, its[inside[0]].n];
+  }
+  return [corners, longest];
 }
 
 function features(its) {
   // How much a round squares itself up (four clusters of its tallest stitches, or four
-  // shells), and the item at its first corner.
+  // shells), and the first and last item of the first one: the round is turned so its middle
+  // goes to a corner.
   const sts = its.map((it, i) => (["ch", "dot", "chcol"].includes(it.kind) ? -1 : i)).filter((i) => i >= 0);
   const hs = sts.map((i) => height(its[i]));
   let boost = 0, anchor = null;
@@ -100,7 +109,7 @@ function features(its) {
     if (clusters.length === 4) {
       const median = [...hs].sort((a, b) => a - b)[Math.floor(hs.length / 2)];
       boost = 8 * (hmax / median - 1);
-      anchor = clusters[0][Math.floor(clusters[0].length / 2)];
+      anchor = [clusters[0][0], clusters[0].at(-1)];
     }
   }
   const groups = {};
@@ -108,7 +117,7 @@ function features(its) {
   const shells = Object.values(groups).filter((g) => g.length >= 3);
   if (shells.length === 4) {
     boost = Math.max(boost, 2);
-    if (anchor === null) anchor = shells[0][Math.floor(shells[0].length / 2)];
+    if (anchor === null) anchor = [shells[0][0], shells[0].at(-1)];
   }
   return [boost, anchor];
 }
@@ -156,7 +165,12 @@ function placeShaped(its, rIn, h, ring, pIn, pOut, anchor) {
   const starts = [];
   let cum = 0;
   for (const it of its) { starts.push(cum); cum += slot(it); }
-  const shift = anchor !== null ? (starts[anchor] + slot(its[anchor]) / 2) / width : 0;
+  // The anchor's middle, not its middle stitch: a shell "3tr 5ch 3tr" fans out from the middle of its chain.
+  let shift = 0;
+  if (anchor !== null) {
+    const [a, z] = anchor, end = starts[z] + slot(its[z]) + (z < a ? width : 0); // a cluster can wrap past the round's start
+    shift = (starts[a] + end) / 2 / width;
+  }
   const prims = [], bases = {};
   its.forEach((it, k) => {
     const c0 = starts[k], f = (c0 + slot(it) / 2) / width - shift;
@@ -272,7 +286,8 @@ function placeRound(its, rIn, h, ring, pIn = 2, pOut = 2, anchor = null) {
 
 /** Turn (and mirror if that fits better) a round's prims so each stitch's base points the way its
     parents lie: where (token index -> point in the round below), parentsOf(i) -> token indices.
-    quarter: square rounds only take quarter turns, so their corners stay in the corners. */
+    quarter: a squared-up round only takes quarter turns, so its corners stay in the corners.
+    Returns {m, phi, free} (free: the turn that would fit best without that), or null. */
 function orient(prims, parentsOf, where, quarter) {
   const pairs = [];
   for (const p of prims) {
@@ -285,18 +300,23 @@ function orient(prims, parentsOf, where, quarter) {
       if (Math.hypot(...q) > R0 + 1) pairs.push([Math.atan2(base[1], base[0]), Math.atan2(q[1], q[0])]); // the ring has no direction
     }
   }
-  if (pairs.length < 2) return;
+  if (pairs.length < 2) return null;
   let best = null;
   for (const m of [1, -1]) {
     let sx = 0, sy = 0;
     for (const [s, q] of pairs) { sx += Math.cos(q - m * s); sy += Math.sin(q - m * s); }
-    let phi = Math.atan2(sy, sx);
-    if (quarter) phi = Math.round(phi / (Math.PI / 2)) * (Math.PI / 2);
-    const score = pairs.reduce((sum, [s, q]) => sum + Math.cos(q - m * s - phi), 0);
-    if (!best || score > best.score + 1e-9) best = { m, phi, score };
+    const free = Math.atan2(sy, sx), phi = quarter ? Math.round(free / (Math.PI / 2)) * (Math.PI / 2) : free;
+    const score = pairs.reduce((sum, [s, q]) => sum + Math.cos(q - m * s - free), 0);
+    if (!best || score > best.score + 1e-9) best = { m, phi, free, score };
   }
-  const { m, phi } = best, c = Math.cos(phi), s = Math.sin(phi);
+  turn(prims, best.m, best.phi);
+  return best;
+}
+
+/** Mirror (m = -1) and then turn prims by phi, in place. */
+function turn(prims, m, phi) {
   if (m === 1 && Math.abs(phi) < 1e-9) return;
+  const c = Math.cos(phi), s = Math.sin(phi);
   const move = (pt) => { const y = m * pt[1]; return [pt[0] * c - y * s, pt[0] * s + y * c]; };
   for (const p of prims) {
     for (const k of ["b", "t", "c"]) if (p[k]) p[k] = move(p[k]);
@@ -310,6 +330,13 @@ export function layout(rounds, { parentsOf = null } = {}) {
   const out = { rounds: [], ring: null, size: R0 + U };
   let rIn = R0, first = true, p = 2, offset = 0;
   const color = { c: null }, where = new Map(); // token index -> where the next round works into it
+  const block = []; // rounds since the last locked one: they turn together
+  const turnBlock = (phi) => {
+    for (const r of block) {
+      turn(r.prims, 1, -phi);
+      for (const q of r.prims) for (const i of q.i) where.set(i, q.t || q.c);
+    }
+  };
   for (const toks of rounds) {
     const its = items(toks, offset, color, parentsOf, out.ring?.i[0]);
     const mr = toks.indexOf("mr");
@@ -328,12 +355,26 @@ export function layout(rounds, { parentsOf = null } = {}) {
     }
     const prims = placeRound(its, rIn, h, first, p, pOut, anchor);
     for (const q of prims) for (const k of Object.keys(q)) if (k[0] === "_") delete q[k];
-    if (parentsOf && !first) orient(prims, parentsOf, where, pOut >= 3);
+    // Squared-up rounds keep their corners in the corners; only nearly round ones turn freely.
+    const square = corners.length === 4, locked = square || pOut > 4;
+    const t = parentsOf && !first ? orient(prims, parentsOf, where, locked) : null;
+    // A locked round can only take quarter turns; the rounds below it since the last locked one
+    // have no corners to keep, so they turn instead, to sit under it.
+    if (t && locked) turnBlock(t.free - t.phi);
     for (const q of prims) for (const i of q.i) where.set(i, q.t || q.c); // a stitch's top, a chain's middle
     out.rounds.push({ prims, from, to: offset });
+    if (locked) block.length = 0;
+    else block.push({ prims, t, anchor: anchor !== null && pOut >= 3 });
     p = pOut;
     rIn += h;
     first = false;
+  }
+  // Squared up without corner chains: turn those rounds so the outer one's corner (its shell or
+  // cluster, placed at the top-right corner before turning) is in a corner.
+  const last = block.at(-1);
+  if (parentsOf && last?.anchor && last.t) {
+    const a = last.t.m * (-Math.PI / 4) + last.t.phi;
+    turnBlock(a - (Math.round((a - Math.PI / 4) / (Math.PI / 2)) * (Math.PI / 2) + Math.PI / 4));
   }
   out.size = rIn + 0.8 * U;
   return out;

@@ -1,0 +1,24 @@
+{
+ "rounds": {
+  "2": {
+   "tokens": "sl^+2 ch1=hdc^-1 hdc^-1 ch ch hdc^-1 hdc^-1 ch hdc^+2 hdc^-1 ch ch hdc^-1 hdc^-1 ch hdc^+2 hdc^-1 ch ch hdc^-1 hdc^-1 ch hdc^+2 hdc^-1 ch ch hdc^-1 hdc^-1 ch sl@top fo",
+   "line": "R2: ss@corner ch=hdc {hdc 2ch 2hdc}@same [ch {2hdc 2ch 2hdc}@corner]x3 ch ss@top fo",
+   "below": "R1: ch=hdc {hdc 2ch [2hdc 2ch]x3}@ring ss@top fo"
+  },
+  "3": {
+   "tokens": "sl^+2 ch1=hdc^-1 hdc^-1 ch ch hdc^-1 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch ch hdc^-1 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch ch hdc^-1 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch ch hdc^-1 hdc^-1 ch hdc^+2 hdc^-1 ch sl@top fo",
+   "line": "R3: ss@corner ch=hdc {hdc 2ch 2hdc}@same [ch 2hdc@sp ch {2hdc 2ch 2hdc}@corner]x3 ch 2hdc@sp ch ss@top fo",
+   "below": "R2: ss@corner ch=hdc {hdc 2ch 2hdc}@same [ch {2hdc 2ch 2hdc}@corner]x3 ch ss@top fo"
+  },
+  "4": {
+   "tokens": "sl^+2 ch1=hdc^-1 hdc^-1 ch ch hdc^-1 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch ch hdc^-1 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch ch hdc^-1 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch ch hdc^-1 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch sl@top fo",
+   "line": "R4: ss@corner ch=hdc {hdc 2ch 2hdc}@same [ch 2hdc@sp ch 2hdc@sp ch {2hdc 2ch 2hdc}@corner]x3 ch 2hdc@sp ch 2hdc@sp ch ss@top fo",
+   "below": "R3: ss@corner ch=hdc {hdc 2ch 2hdc}@same [ch 2hdc@sp ch {2hdc 2ch 2hdc}@corner]x3 ch 2hdc@sp ch ss@top fo"
+  },
+  "5": {
+   "tokens": "sl^+2 ch1=hdc^-1 hdc^-1 ch ch hdc^-1 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch ch hdc^-1 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch ch hdc^-1 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch ch hdc^-1 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch hdc^+2 hdc^-1 ch sl@top fo",
+   "line": "R5: ss@corner ch=hdc {hdc 2ch 2hdc}@same [[ch 2hdc@sp]x3 ch {2hdc 2ch 2hdc}@corner]x3 [ch 2hdc@sp]x3 ch ss@top fo",
+   "below": "R4: ss@corner ch=hdc {hdc 2ch 2hdc}@same [ch 2hdc@sp ch 2hdc@sp ch {2hdc 2ch 2hdc}@corner]x3 ch 2hdc@sp ch 2hdc@sp ch ss@top fo"
+  }
+ }
+}

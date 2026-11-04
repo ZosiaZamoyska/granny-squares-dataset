@@ -1,13 +1,20 @@
 {
   "title": "Emma Square",
-  "status": "permission",
+  "status": "done",
   "terms": "US",
   "source": "https://lookatwhatimade.net/crafts/yarn/crochet/free-crochet-patterns/emma-crochet-square-pattern/",
   "author": "Dedri Uys",
-  "license": "waiting for copyright approval",
+  "license": "received copyright approval",
   "notes": "already starts with a magic ring; written-only instructions used; total stitch counts in {} on the page converted to () for the checker in Rounds 1-4; per-side counts in Rounds 5-8 left in {} as published (checker cannot read per-side counts); gauge/size notes omitted",
   "tags": [],
-  "images": [],
+  "images": [
+    {
+      "file": "pasted-1793719777724.png",
+      "kind": "finished",
+      "round": null,
+      "caption": ""
+    }
+  ],
   "abbreviations": [],
   "todo": [],
   "duplicate_of": "",

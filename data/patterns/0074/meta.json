@@ -1,13 +1,20 @@
 {
   "title": "Magic Granny Square",
-  "status": "review",
+  "status": "done",
   "terms": "US",
   "source": "http://wiamscrafts.blogspot.com/2017/09/magic-granny-square.html",
   "author": "Wiam's Crafts",
   "license": "",
   "notes": "Found via Ravelry (https://www.ravelry.com/patterns/library/magic-granny-square); blog page used as source. start: original \"Make a magic ring, or ch 6 sts and slip into the first st.\" shortened to \"Make a magic ring.\". Finishing and joining instructions omitted.",
   "tags": [],
-  "images": [],
+  "images": [
+    {
+      "file": "pasted-1793722313878.png",
+      "kind": "finished",
+      "round": null,
+      "caption": ""
+    }
+  ],
   "abbreviations": [],
   "todo": [],
   "duplicate_of": "",

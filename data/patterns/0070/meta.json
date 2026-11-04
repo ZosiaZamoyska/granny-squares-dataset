@@ -1,13 +1,20 @@
 {
   "title": "Stitchfinder: Crochet Motif 3: Circle in the Square",
-  "status": "review",
+  "status": "done",
   "terms": "US",
   "source": "https://www.lionbrand.com/pages/stitchfinder-crochet-motif-3-circle-in-the-square/",
   "author": "Lion Brand Yarn",
   "license": "",
   "notes": "start: original \"Ch 8, sl st in first ch to form a ring.\" replaced by magic ring. Finishing (weave in ends) omitted. Similar to Motif 4 but with ch-3 corners.",
   "tags": [],
-  "images": [],
+  "images": [
+    {
+      "file": "pasted-1793721337653.png",
+      "kind": "finished",
+      "round": null,
+      "caption": ""
+    }
+  ],
   "abbreviations": [],
   "todo": [],
   "duplicate_of": "",

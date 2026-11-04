@@ -1,0 +1,24 @@
+{
+ "rounds": {
+  "3": {
+   "tokens": "ch3=dc^0 dc^0 dc^-1 dc^0 ch ch dc^+1 ch ch dc^+1 ch ch dc^+1 ch ch dc^+1 dc^0 dc^-1 dc^0 ch ch dc^+1 ch ch dc^+1 ch ch dc^+1 ch ch dc^+1 dc^0 dc^-1 dc^0 ch ch dc^+1 ch ch dc^+1 ch ch dc^+1 ch ch dc^+1 dc^0 dc^-1 dc^0 ch ch dc^+1 ch ch dc^+1 ch ch dc^+1 ch ch sl@top",
+   "line": "R3: 3ch=dc [2dc@sp dc [sk 2ch dc]x4]x3 2dc@sp dc [sk 2ch dc]x3 2ch ss@top",
+   "below": "R2: 3ch=dc ch [dc@sp ch dc ch]x9 dc@sp ch ss@top"
+  },
+  "4": {
+   "tokens": "ch3=dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 dc^0 ch ch ch dc^+1 ch ch ch dc^+1 ch ch ch dc^+1 dc^0 dc^0 dc^0 dc^0 dc^-1 dc^0 ch ch ch dc^+1 ch ch ch dc^+1 ch ch ch dc^+1 dc^0 dc^0 dc^0 dc^0 dc^-1 dc^0 ch ch ch dc^+1 ch ch ch dc^+1 ch ch ch dc^+1 dc^0 dc^0 dc^0 dc^0 dc^-1 dc^0 ch ch ch dc^+1 ch ch ch dc^+1 ch ch ch sl@top",
+   "line": "R4: 3ch=dc [3dc 2dc@sp dc [sk 3ch dc]x3]x3 3dc 2dc@sp dc [sk 3ch dc]x2 3ch ss@top",
+   "below": "R3: 3ch=dc [2dc@sp dc [sk 2ch dc]x4]x3 2dc@sp dc [sk 2ch dc]x3 2ch ss@top"
+  },
+  "5": {
+   "tokens": "ch3=dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 dc^-1 dc^0 ch ch ch ch dc^+1 ch ch ch ch dc^+1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 dc^-1 dc^0 ch ch ch ch dc^+1 ch ch ch ch dc^+1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 dc^-1 dc^0 ch ch ch ch dc^+1 ch ch ch ch dc^+1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 dc^-1 dc^0 ch ch ch ch dc^+1 ch ch ch ch sl@top",
+   "line": "R5: 3ch=dc [6dc 3dc@sp dc [sk 4ch dc]x2]x3 6dc 3dc@sp dc sk 4ch dc sk 4ch ss@top",
+   "below": "R4: 3ch=dc [3dc 2dc@sp dc [sk 3ch dc]x3]x3 3dc 2dc@sp dc [sk 3ch dc]x2 3ch ss@top"
+  },
+  "6": {
+   "tokens": "ch3=dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 dc^-1 dc^-1 dc^0 ch ch ch ch ch dc^+1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 dc^-1 dc^-1 dc^0 ch ch ch ch ch dc^+1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 dc^-1 dc^-1 dc^0 ch ch ch ch ch dc^+1 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^0 dc^-1 dc^-1 dc^-1 dc^0 ch ch ch ch ch sl@top",
+   "line": "R6: 3ch=dc [10dc 4dc@sp dc sk 5ch dc]x3 10dc 4dc@sp dc sk 5ch ss@top",
+   "below": "R5: 3ch=dc [6dc 3dc@sp dc [sk 4ch dc]x2]x3 6dc 3dc@sp dc sk 4ch dc sk 4ch ss@top"
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "rounds": {
+  "7": {
+   "tokens": "ch2=dc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sc^+3 ch ch ch sl@top",
+   "line": "R7: {2ch=dc} 3ch [sc@sp 3ch]x23 join",
+   "below": "R6: {3ch=dc 2dc} ch [3dc@sp ch]x23 join fo"
+  },
+  "8": {
+   "tokens": "sl^0 ch ch2=sc^0 sc^-1 sc^-1 ch sc^+1 sc^-1 hdc^-1 ch hdc^+1 dc^-1 dc^-1 ch tr^+1 tr^-1 tr^-1 ch ch tr^-1 tr^-1 tr^-1 ch dc^+1 dc^-1 hdc^-1 ch hdc^+1 sc^-1 sc^-1 ch sc^+1 sc^-1 sc^-1 ch sc^+1 sc^-1 hdc^-1 ch hdc^+1 dc^-1 dc^-1 ch tr^+1 tr^-1 tr^-1 ch ch tr^-1 tr^-1 tr^-1 ch dc^+1 dc^-1 hdc^-1 ch hdc^+1 sc^-1 sc^-1 ch sc^+1 sc^-1 sc^-1 ch sc^+1 sc^-1 hdc^-1 ch hdc^+1 dc^-1 dc^-1 ch tr^+1 tr^-1 tr^-1 ch ch tr^-1 tr^-1 tr^-1 ch dc^+1 dc^-1 hdc^-1 ch hdc^+1 sc^-1 sc^-1 ch sc^+1 sc^-1 sc^-1 ch sc^+1 sc^-1 hdc^-1 ch hdc^+1 dc^-1 dc^-1 ch tr^+1 tr^-1 tr^-1 ch ch tr^-1 tr^-1 tr^-1 ch dc^+1 dc^-1 hdc^-1 ch hdc^+1 sc^-1 sc^-1 ch sl@top",
+   "line": "R8: ss@sp ch {2ch=sc 2sc}@same ch [{2sc hdc}@sp ch {hdc 2dc}@sp ch {3tr 2ch 3tr}@sp ch {2dc hdc}@sp ch {hdc 2sc}@sp ch 3sc@sp ch]x3 {2sc hdc}@sp ch {hdc 2dc}@sp ch {3tr 2ch 3tr}@sp ch {2dc hdc}@sp ch {hdc 2sc}@sp ch join # last repeat ends at the starting 3 sc",
+   "below": "R7: {2ch=dc} 3ch [sc@sp 3ch]x23 join"
+  }
+ }
+}

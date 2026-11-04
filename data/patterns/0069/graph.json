@@ -1,0 +1,9 @@
+{
+ "rounds": {
+  "5": {
+   "tokens": "sl^+1 ch sc^-1 ch ch ch ch ch ch ch tr^+4 tr^-1 tr^-1 ch ch ch ch ch tr^-1 tr^-1 tr^-1 ch ch ch ch ch ch ch sc^+4 ch ch ch ch ch ch ch tr^+4 tr^-1 tr^-1 ch ch ch ch ch tr^-1 tr^-1 tr^-1 ch ch ch ch ch ch ch sc^+4 ch ch ch ch ch ch ch tr^+4 tr^-1 tr^-1 ch ch ch ch ch tr^-1 tr^-1 tr^-1 ch ch ch ch ch ch ch sc^+4 ch ch ch ch ch ch ch tr^+4 tr^-1 tr^-1 ch ch ch ch ch tr^-1 tr^-1 tr^-1 ch ch ch ch ch ch ch sl@top fo",
+   "line": "R5: 2sl ch sc@sp [7ch {3tr 5ch 3tr}@sp 7ch sc@sp]x3 7ch {3tr 5ch 3tr}@sp 7ch ss@top fo",
+   "below": "R4: 4ch=tr 5ch tr@same [3sk {3tr 5ch 3tr}@st 3sk {tr 5ch tr}@st]x3 3sk {3tr 5ch 3tr}@st 3sk ss@top"
+  }
+ }
+}

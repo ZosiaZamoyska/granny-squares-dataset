@@ -1,0 +1,14 @@
+{
+ "rounds": {
+  "2": {
+   "tokens": "ch sc^-1 ch ch ch ch sc^+1 ch ch ch ch sc^+1 ch ch ch ch sc^+1 ch ch ch ch sc^+1 ch ch ch ch sc^+1 ch ch ch ch sc^+1 ch ch ch ch sc^+1 ch ch ch ch sc^+1 ch ch ch ch sc^+1 ch ch ch ch sc^+1 ch ch ch ch sc^+1 ch ch ch ch sl@top sl^+1",
+   "line": "R2: ch sc@same [4ch sc@sp]x11 4ch ss@top 2ss",
+   "below": "R1: {3ch=dc ch [dc ch]x11}@ring ss@sp"
+  },
+  "3": {
+   "tokens": "sc^-2 ch ch ch hdc^+1 ch ch ch ch ch hdc^+1 ch ch ch sc^+1 ch ch ch hdc^+1 ch ch ch ch ch hdc^+1 ch ch ch sc^+1 ch ch ch hdc^+1 ch ch ch ch ch hdc^+1 ch ch ch sc^+1 ch ch ch hdc^+1 ch ch ch ch ch hdc^+1 ch ch ch sl@top sl^+1",
+   "line": "R3: sc@same [3ch hdc@sp 5ch hdc@sp 3ch sc@sp]x3 3ch hdc@sp 5ch hdc@sp 3ch ss@top ss@sp",
+   "below": "R2: ch sc@same [4ch sc@sp]x11 4ch ss@top 2ss"
+  }
+ }
+}
