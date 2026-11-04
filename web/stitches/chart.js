@@ -388,25 +388,30 @@ export const ROUND_COLORS = ["#c2546b", "#3a7bd5", "#e8892b", "#3f8f5a", "#8a5cc
 export const yarnColor = (y) => ROUND_COLORS[(+y.slice(1) - 1 + ROUND_COLORS.length) % ROUND_COLORS.length];
 
 const hasYarns = (chart) => chart.rounds.some((r) => r.prims.some((p) => p.y));
-// Each yarn gets its own colour, or, in a one-yarn pattern, each round. In a coloured pattern,
-// stitches without a colour are drawn neutral (as in the dataset editor).
-const baseColor = (yarns, ri, y) => (!yarns ? ROUND_COLORS[ri % ROUND_COLORS.length] : y ? yarnColor(y) : "var(--muted)");
+/** Stitches with no yarn colour: two grays taking turns by round, so neighbouring rounds stand
+    apart; both darker than the page's grays for predictions (--plain and --plain2 set them). */
+export const PLAIN = ["var(--plain, #3d3733)", "var(--plain2, #7a726b)"];
+const plain = (ri) => PLAIN[Math.max(ri, 0) % PLAIN.length];
+// Each yarn gets its own colour; a pattern that names no colours, and any stitch without one, is gray.
+const baseColor = (y, ri) => (y ? yarnColor(y) : plain(ri));
 
 /** The colour draw() gives every token of the stream by default, so token chips can match the
     chart. Tokens without a symbol (sk, ↵, C2, …) take their round's or yarn's colour; tokens
     outside any drawn round (<s>, the start line's ↵) get null. */
 export function tokenColors(chart, tokens) {
   const yarns = hasYarns(chart), out = new Array(tokens.length).fill(null);
-  if (chart.ring) out[chart.ring.i[0]] = chart.ring.y ? yarnColor(chart.ring.y) : "var(--muted)";
+  if (chart.ring) out[chart.ring.i[0]] = baseColor(chart.ring.y, 0);
+  const roundOf = new Array(tokens.length).fill(0);
   chart.rounds.forEach((r, ri) => {
-    for (const p of r.prims) for (const i of p.i) out[i] = baseColor(yarns, ri, p.y);
-    if (!yarns) for (let i = r.from; i < r.to; i++) out[i] ??= baseColor(yarns, ri, null);
+    for (const p of r.prims) for (const i of p.i) out[i] = baseColor(p.y, ri);
+    for (let i = r.from; i < r.to; i++) roundOf[i] = ri;
+    if (!yarns) for (let i = r.from; i < r.to; i++) out[i] ??= plain(ri);
   });
   if (yarns) {
     let y = null;
     tokens.forEach((t, i) => {
       if (isColor(t)) y = t;
-      if (t[0] !== "<") out[i] ??= baseColor(yarns, 0, y);
+      if (t[0] !== "<") out[i] ??= baseColor(y, roundOf[i]);
     });
   }
   return out;
@@ -454,13 +459,12 @@ export function draw(chart, { style = () => ({}), size = null, empty = "No stitc
   }
   if (chart.ring) {
     const st = style(chart.ring.i[0], -1, chart.ring);
-    svg += `<g class="${st.cls || ""}" data-i="${chart.ring.i[0]}"><circle cx="0" cy="0" r="${chart.ring.r}" fill="none" stroke="${st.color || (chart.ring.y ? yarnColor(chart.ring.y) : "var(--muted)")}" stroke-width="0.6"/></g>`;
+    svg += `<g class="${st.cls || ""}" data-i="${chart.ring.i[0]}"><circle cx="0" cy="0" r="${chart.ring.r}" fill="none" stroke="${st.color || baseColor(chart.ring.y, 0)}" stroke-width="0.6"/></g>`;
   }
-  const yarns = hasYarns(chart);
   chart.rounds.forEach((r, ri) => {
     for (const p of r.prims) {
       const st = style(p.i[0], ri, p);
-      const color = st.color || baseColor(yarns, ri, p.y);
+      const color = st.color || baseColor(p.y, ri);
       svg += `<g class="${st.cls || ""}" data-i="${p.i.join(" ")}">${symbol(p, color, st.width || 0.6)}</g>`;
     }
   });

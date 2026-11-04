@@ -1,0 +1,19 @@
+{
+ "rounds": {
+  "2": {
+   "tokens": "ch3=dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 sl@top",
+   "line": "R2: C1@{3ch=tr ch {3tr 3ch 3tr}@sp ch 3tr@sp} C2@{{3ch 3tr}@same ch {3tr 3ch 3tr}@sp ch 3tr@sp} C1@{{3ch 2tr}@same ss@top}",
+   "below": "R1: C1@{3ch=tr {2tr 3ch 3tr}@ring} C2@{3ch 3tr 3ch 3tr 3ch}@ring ss@top"
+  },
+  "3": {
+   "tokens": "ch3=dc^+1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch sl@top",
+   "line": "R3: C1@{3ch=tr 2tr@same ch {3tr 3ch 3tr}@corner ch 3tr@sp ch 3tr@corner} C2@{{3ch 3tr}@same ch 3tr@sp ch {3tr 3ch 3tr}@corner ch 3tr@sp ch 3tr@corner} C1@{{3ch 3tr}@same ch ss@top}",
+   "below": "R2: C1@{3ch=tr ch {3tr 3ch 3tr}@sp ch 3tr@sp} C2@{{3ch 3tr}@same ch {3tr 3ch 3tr}@sp ch 3tr@sp} C1@{{3ch 2tr}@same ss@top}"
+  },
+  "4": {
+   "tokens": "ch3=dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch dc^+3 dc^-1 dc^-1 ch ch ch dc^-1 dc^-1 dc^-1 ch dc^+3 dc^-1 sl@top",
+   "line": "R4: C1@{3ch=tr ch 3tr@sp ch {3tr 3ch 3tr}@corner ch [3tr@sp ch]x2 3tr@corner} C2@{{3ch 3tr}@same ch [3tr@sp ch]x2 {3tr 3ch 3tr}@corner ch [3tr@sp ch]x2 3tr@corner} C1@{{3ch 3tr}@same ch 2tr@sp ss@top}",
+   "below": "R3: C1@{3ch=tr 2tr@same ch {3tr 3ch 3tr}@corner ch 3tr@sp ch 3tr@corner} C2@{{3ch 3tr}@same ch 3tr@sp ch {3tr 3ch 3tr}@corner ch 3tr@sp ch 3tr@corner} C1@{{3ch 3tr}@same ch ss@top}"
+  }
+ }
+}
